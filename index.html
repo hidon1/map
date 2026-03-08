@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>מפת העולם - מידע מדינתי</title>
+  <title>מפת המזרח התיכון - מידע מדינתי</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet" />
@@ -12,7 +12,7 @@
     :root{--bg:#f8f4ea;--panel:#fff;--line:#e6decf;--text:#171717;--muted:#666;--accent:#1459c7;--shadow:0 12px 28px rgba(48,39,18,.12);--radius:16px}
     *{box-sizing:border-box} html,body{height:100%}
     body{margin:0;font-family:"Heebo",Arial,sans-serif;color:var(--text);background:var(--bg)}
-    .app{display:grid;grid-template-columns:330px 1fr;gap:14px;height:100vh;padding:14px;transition:.25s ease}
+    .app{display:grid;grid-template-columns:350px 1fr;gap:14px;height:100vh;padding:14px;transition:.25s ease}
     .app.map-focus{grid-template-columns:0 1fr}
     .sidebar,.main{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
     .sidebar{display:flex;flex-direction:column;min-height:0;transition:.25s ease}
@@ -21,8 +21,10 @@
     .sidebarHeader h1{margin:0 0 8px;font-size:1.2rem}
     .sidebarHeader p{margin:0 0 10px;color:var(--muted);font-size:.93rem;line-height:1.45}
     .searchInput{width:100%;padding:11px;border:1px solid #d8d0c3;border-radius:11px;font-family:inherit}
-    .countryList{padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:9px;overflow:auto}
-    .countryBtn{border:1px solid #e4ddcf;background:#fff;border-radius:11px;padding:10px 8px;font-weight:700;font-family:inherit;cursor:pointer}
+    .navRow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+    .navBtn{border:1px solid #d6d0c5;background:#fff;border-radius:10px;padding:8px 6px;font-weight:700;font-family:inherit;cursor:pointer}
+    .countryList{padding:12px;display:grid;grid-template-columns:1fr;gap:8px;overflow:auto}
+    .countryBtn{border:1px solid #e4ddcf;background:#fff;border-radius:11px;padding:10px 8px;font-weight:700;font-family:inherit;cursor:pointer;text-align:right}
     .countryBtn.active{border-color:#85a9eb;background:#eef5ff;color:#134da8}
     .sidebarFooter{margin-top:auto;padding:12px 14px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
     .main{display:grid;grid-template-rows:auto 1fr;min-height:0}
@@ -42,31 +44,32 @@
     .app.map-focus #map{min-height:calc(100vh - 110px)}
     .mapBanner{position:absolute;top:14px;right:14px;z-index:600;max-width:360px;background:#fffffff2;border:1px solid #ded6c8;border-radius:12px;padding:10px;display:none}
     .mapBanner.open{display:block}
-    .country-label{background:transparent!important;border:none!important;box-shadow:none!important}
-    .country-bar{width:30px;height:4px;border-radius:999px;background:linear-gradient(90deg,#195fd1,#4c9dff);box-shadow:0 2px 7px rgba(20,89,199,.24);cursor:pointer}
-    .country-bar.active{background:linear-gradient(90deg,#0f4ab6,#2d83f0);box-shadow:0 0 0 2px rgba(20,89,199,.2),0 2px 10px rgba(20,89,199,.28)}
     @media (max-width:1000px){.mainContent{grid-template-columns:1fr}.infoPanel{border-right:none;border-bottom:1px solid var(--line)}}
-    @media (max-width:850px){.app{grid-template-columns:1fr;height:auto;min-height:100vh}.sidebar{display:none}.countryList{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:850px){.app{grid-template-columns:1fr;height:auto;min-height:100vh}.sidebar{display:none}}
   </style>
 </head>
 <body>
   <div class="app" id="app">
     <aside class="sidebar">
       <div class="sidebarHeader">
-        <h1>מפת העולם</h1>
-        <p>אין יותר צביעה כחולה של כל המדינה. רק פס כחול קטן לכל מדינה, ולחיצה עליו פותחת את כל הנתונים.</p>
+        <h1>מפת המזרח התיכון</h1>
+        <p>רשימת מדינות המזרח התיכון עם כל הנתונים. אין קווי סימון כחולים על המפה — אפשר לבחור דרך הרשימה או בלחיצה על שטח המדינה במפה.</p>
         <input id="searchInput" class="searchInput" type="text" placeholder="חפש מדינה..." list="countriesDatalist" />
         <datalist id="countriesDatalist"></datalist>
+        <div class="navRow">
+          <button id="prevCountry" class="navBtn" type="button">הקודם</button>
+          <button id="nextCountry" class="navBtn" type="button">הבא</button>
+        </div>
       </div>
       <div class="countryList" id="countryList"></div>
-      <div class="sidebarFooter">מוצגים נתונים לכל מדינות העולם מתוך Rest Countries וגבולות מפה גלובליים.</div>
+      <div class="sidebarFooter">מקור הנתונים: Rest Countries + גבולות מדינות GeoJSON. לחיצה על שם או על שטח מדינה במפה פותחת את הנתונים שלה.</div>
     </aside>
 
     <section class="main">
       <div class="mainHeader">
         <div>
-          <div><strong>לוח מידע גלובלי</strong></div>
-          <div style="color:#666;font-size:.9rem">בחירת פס כחול מעדכנת את כל נתוני המדינה</div>
+          <div><strong>לוח מידע - המזרח התיכון</strong></div>
+          <div style="color:#666;font-size:.9rem">בחירה מהרשימה או מהמפה מעדכנת את הפרטים</div>
         </div>
         <button id="toggleMapView" class="viewBtn" type="button">🗺️ הגדל מפה</button>
       </div>
@@ -82,6 +85,11 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script>
+    const MIDDLE_EAST_ISO3 = new Set([
+      "BHR", "CYP", "EGY", "IRN", "IRQ", "ISR", "JOR", "KWT", "LBN",
+      "OMN", "PSE", "QAT", "SAU", "SYR", "TUR", "ARE", "YEM"
+    ]);
+
     const app = document.getElementById("app");
     const countryListEl = document.getElementById("countryList");
     const infoPanel = document.getElementById("infoPanel");
@@ -89,18 +97,21 @@
     const countriesDatalist = document.getElementById("countriesDatalist");
     const mapBanner = document.getElementById("mapBanner");
     const toggleMapViewBtn = document.getElementById("toggleMapView");
+    const prevCountryBtn = document.getElementById("prevCountry");
+    const nextCountryBtn = document.getElementById("nextCountry");
 
     let map;
     let activeCountryKey = "";
     let countries = {};
     let orderedKeys = [];
     const layers = {};
-    const barElements = {};
 
     const val = (v, empty = "אין נתון") => (v === undefined || v === null || v === "" ? empty : v);
 
     function renderButtons() {
-      countryListEl.innerHTML = orderedKeys.map((key) => `<button class="countryBtn ${key === activeCountryKey ? "active" : ""}" data-key="${key}">${countries[key].name}</button>`).join("");
+      countryListEl.innerHTML = orderedKeys
+        .map((key) => `<button class="countryBtn ${key === activeCountryKey ? "active" : ""}" data-key="${key}">${countries[key].name}</button>`)
+        .join("");
       countryListEl.querySelectorAll(".countryBtn").forEach((btn) => btn.addEventListener("click", () => selectCountry(btn.dataset.key, true)));
     }
 
@@ -108,11 +119,7 @@
       countriesDatalist.innerHTML = orderedKeys.map((key) => `<option value="${countries[key].name}"></option>`).join("");
     }
 
-    function updateActiveBar() {
-      Object.entries(barElements).forEach(([key, el]) => {
-        if (!el) return;
-        el.classList.toggle("active", key === activeCountryKey);
-      });
+    function updateActiveList() {
       document.querySelectorAll(".countryBtn").forEach((btn) => btn.classList.toggle("active", btn.dataset.key === activeCountryKey));
     }
 
@@ -133,12 +140,20 @@
       mapBanner.classList.add("open");
     }
 
+    function moveCountry(step) {
+      if (!orderedKeys.length || !activeCountryKey) return;
+      const currentIndex = orderedKeys.indexOf(activeCountryKey);
+      if (currentIndex === -1) return;
+      const nextIndex = (currentIndex + step + orderedKeys.length) % orderedKeys.length;
+      selectCountry(orderedKeys[nextIndex], true);
+    }
+
     function selectCountry(key, fly = false) {
       if (!countries[key]) return;
       activeCountryKey = key;
       searchInput.value = countries[key].name;
       renderInfo(key);
-      updateActiveBar();
+      updateActiveList();
       if (fly && layers[key]) {
         map.fitBounds(layers[key].getBounds().pad(0.7), { maxZoom: 6, animate: true });
       }
@@ -148,10 +163,19 @@
       const key = (country.cca3 || country.cca2 || country.name?.common || "").toLowerCase();
       const currencies = country.currencies ? Object.values(country.currencies).map((c) => c.name).join(", ") : "";
       const langs = country.languages ? Object.values(country.languages).join(", ") : "";
+      const iso3 = (country.cca3 || "").toUpperCase();
       return {
         key,
+        iso3,
         name: country.translations?.heb?.common || country.name?.common || key.toUpperCase(),
-        searchNames: [country.name?.common, country.name?.official, country.translations?.heb?.common, country.translations?.heb?.official, country.cca2, country.cca3].filter(Boolean).map((x) => String(x).toLowerCase()),
+        searchNames: [
+          country.name?.common,
+          country.name?.official,
+          country.translations?.heb?.common,
+          country.translations?.heb?.official,
+          country.cca2,
+          country.cca3
+        ].filter(Boolean).map((x) => String(x).toLowerCase()),
         capital: Array.isArray(country.capital) ? country.capital.join(", ") : country.capital,
         population: country.population ? new Intl.NumberFormat("he-IL").format(country.population) : "",
         area: country.area ? `${new Intl.NumberFormat("he-IL").format(Math.round(country.area))} קמ״ר` : "",
@@ -179,38 +203,33 @@
 
       rest.forEach((r) => {
         const c = normalizeRestCountry(r);
-        countries[c.key] = c;
+        if (MIDDLE_EAST_ISO3.has(c.iso3)) {
+          countries[c.key] = c;
+        }
       });
 
       L.geoJSON(geo, {
-        style: { color: "transparent", weight: 0, fillOpacity: 0, interactive: false },
+        style: { color: "transparent", weight: 0, fillColor: "#000", fillOpacity: 0, interactive: true },
         onEachFeature: (feature, layer) => {
           const props = feature.properties || {};
           const iso = (props.ISO_A3 || props.ADM0_A3 || props.ISO3 || "").toLowerCase();
-          const key = countries[iso] ? iso : null;
-          if (!key) return;
+          if (!countries[iso]) return;
 
-          layers[key] = layer;
-          const center = layer.getBounds().getCenter();
-          const icon = L.divIcon({ className: "country-label", html: `<div class="country-bar" data-key="${key}" title="פתח נתונים"></div>`, iconSize: [30, 8], iconAnchor: [15, 4] });
-          const marker = L.marker(center, { icon, interactive: true }).addTo(map);
-          marker.on("add", () => {
-            const el = marker.getElement()?.querySelector(".country-bar");
-            if (!el) return;
-            barElements[key] = el;
-            el.addEventListener("click", (ev) => { ev.stopPropagation(); selectCountry(key, true); });
-          });
+          layers[iso] = layer;
+          layer.on("click", () => selectCountry(iso, false));
         },
       }).addTo(map);
 
       orderedKeys = Object.keys(layers).sort((a, b) => countries[a].name.localeCompare(countries[b].name, "he"));
       renderButtons();
       renderSearchOptions();
-      selectCountry(orderedKeys[0], true);
+      if (orderedKeys.length) {
+        selectCountry(orderedKeys[0], true);
+      }
     }
 
     function initMap() {
-      map = L.map("map", { zoomControl: true, minZoom: 2, maxZoom: 8, worldCopyJump: true }).setView([20, 0], 2.2);
+      map = L.map("map", { zoomControl: true, minZoom: 2, maxZoom: 8, worldCopyJump: true }).setView([30, 42], 4);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap" }).addTo(map);
     }
 
@@ -220,6 +239,9 @@
       toggleMapViewBtn.textContent = expanded ? "↩️ חזרה לרגיל" : "🗺️ הגדל מפה";
       setTimeout(() => map.invalidateSize(), 250);
     });
+
+    prevCountryBtn.addEventListener("click", () => moveCountry(-1));
+    nextCountryBtn.addEventListener("click", () => moveCountry(1));
 
     searchInput.addEventListener("change", () => {
       const key = findCountryBySearch(searchInput.value);
@@ -234,7 +256,7 @@
 
     initMap();
     loadWorldData().catch(() => {
-      infoPanel.innerHTML = '<div class="card"><h3>שגיאת טעינה</h3><div>לא ניתן לטעון כרגע נתוני עולם.</div></div>';
+      infoPanel.innerHTML = '<div class="card"><h3>שגיאת טעינה</h3><div>לא ניתן לטעון כרגע נתוני מדינות המזרח התיכון.</div></div>';
     });
   </script>
 </body>
