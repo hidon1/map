@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מפת המזרח התיכון - מידע מדינתי</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
+
+  <style>
+    :root{
+      --bg1:#07111d;
+      --bg2:#0c1b2b;
+      --panel:#0f1f33;
+      --panel2:#132740;
+      --line:#234566;
+      --text:#eef6ff;
+      --muted:#9bb3cf;
+      --accent:#46b3ff;
+      --accent2:#6fffd7;
+      --card:#102338;
+      --shadow:0 12px 35px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(70,179,255,.12), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(111,255,215,.08), transparent 25%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+    }
+
+    .app{
+      display:grid;
+      grid-template-columns:360px 1fr;
+      gap:16px;
+      height:100vh;
+      padding:16px;
+    }
+
+    .sidebar,.main{
+      background:rgba(11,21,35,.88);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(8px);
+    }
+
+    .sidebar{
+      display:flex;
+      flex-direction:column;
+      min-height:0;
+    }
+
+    .sidebarHeader{
+      padding:18px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg, rgba(255,255,255,.04), transparent);
+    }
+
+    .sidebarHeader h1{
+      margin:0 0 8px;
+      font-size:1.35rem;
+    }
+
+    .sidebarHeader p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:.95rem;
+    }
+
+    .searchBox{
+      margin-top:14px;
+    }
+
+    .searchInput{
+      width:100%;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background:#0f2136;
+      color:#fff;
+      outline:none;
+      font-size:.95rem;
+    }
+
+    .searchInput:focus{
+      border-color:rgba(70,179,255,.55);
+      box-shadow:0 0 0 3px rgba(70,179,255,.12);
+    }
+
+    .countryList{
+      padding:14px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      overflow:auto;
+    }
+
+    .countryBtn{
+      border:none;
+      border-radius:14px;
+      padding:12px 10px;
+      color:#fff;
+      background:linear-gradient(180deg,#17314f,#12233a);
+      cursor:pointer;
+      transition:.2s;
+      border:1px solid rgba(255,255,255,.08);
+      font-size:.95rem;
+    }
+
+    .countryBtn:hover,
+    .countryBtn.active{
+      transform:translateY(-2px);
+      border-color:rgba(70,179,255,.45);
+      box-shadow:0 10px 20px rgba(0,0,0,.22);
+      background:linear-gradient(180deg,#1b3d64,#17304e);
+    }
+
+    .sidebarFooter{
+      margin-top:auto;
+      padding:14px 16px 18px;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:var(--muted);
+      font-size:.82rem;
+      line-height:1.5;
+    }
+
+    .main{
+      display:grid;
+      grid-template-rows:auto 1fr;
+      min-height:0;
+    }
+
+    .mainHeader{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 16px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg, rgba(255,255,255,.04), transparent);
+    }
+
+    .mainHeader .t1{
+      font-weight:700;
+      font-size:1.05rem;
+    }
+
+    .mainHeader .t2{
+      color:var(--muted);
+      font-size:.9rem;
+      margin-top:4px;
+    }
+
+    .mainContent{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      min-height:0;
+    }
+
+    #map{
+      width:100%;
+      height:100%;
+      min-height:520px;
+      background:#0a1624;
+    }
+
+    .infoPanel{
+      border-right:1px solid rgba(255,255,255,.08);
+      overflow:auto;
+      padding:16px;
+      background:
+        radial-gradient(circle at top left, rgba(70,179,255,.08), transparent 28%),
+        linear-gradient(180deg, rgba(255,255,255,.02), transparent);
+    }
+
+    .hero{
+      background:linear-gradient(135deg, rgba(70,179,255,.18), rgba(111,255,215,.08));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      padding:16px;
+      margin-bottom:14px;
+    }
+
+    .hero h2{
+      margin:0 0 8px;
+      font-size:1.45rem;
+    }
+
+    .hero p{
+      margin:0;
+      color:#d7e6f6;
+      line-height:1.6;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      padding:14px;
+    }
+
+    .card.full{
+      grid-column:1 / -1;
+    }
+
+    .card h3{
+      margin:0 0 10px;
+      font-size:1rem;
+    }
+
+    .rows{
+      display:grid;
+      gap:8px;
+    }
+
+    .row{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      padding:8px 0;
+      border-bottom:1px dashed rgba(255,255,255,.08);
+    }
+
+    .row:last-child{border-bottom:none}
+
+    .k{
+      color:var(--muted);
+      font-size:.92rem;
+    }
+
+    .v{
+      color:#fff;
+      font-weight:700;
+      text-align:left;
+      font-size:.93rem;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .chip{
+      padding:7px 10px;
+      border-radius:999px;
+      background:#17324b;
+      border:1px solid rgba(70,179,255,.18);
+      color:#dcefff;
+      font-size:.84rem;
+    }
+
+    .note{
+      margin-top:12px;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:.82rem;
+    }
+
+    .leaflet-container{
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    /* תווית מדינה */
+    .country-label{
+      background:transparent !important;
+      border:none !important;
+      box-shadow:none !important;
+    }
+
+    .country-label-wrap{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:4px;
+      pointer-events:auto;
+      user-select:none;
+      transform:translateY(-6px);
+    }
+
+    .country-name{
+      color:#ffffff;
+      font-weight:700;
+      font-size:14px;
+      line-height:1;
+      text-shadow:
+        0 1px 2px rgba(0,0,0,.9),
+        0 0 6px rgba(0,0,0,.7);
+      white-space:nowrap;
+    }
+
+    .country-bar{
+      width:44px;
+      height:7px;
+      border-radius:999px;
+      background:linear-gradient(90deg,#2e8fff,#66d7ff);
+      border:1px solid rgba(255,255,255,.35);
+      box-shadow:
+        0 2px 10px rgba(70,179,255,.45),
+        inset 0 1px 0 rgba(255,255,255,.35);
+      cursor:pointer;
+      transition:.18s ease;
+    }
+
+    .country-bar:hover{
+      transform:scale(1.08);
+      filter:brightness(1.08);
+    }
+
+    .country-label-wrap.active .country-bar{
+      background:linear-gradient(90deg,#49c1ff,#7cffda);
+      box-shadow:
+        0 0 0 2px rgba(255,255,255,.18),
+        0 3px 14px rgba(111,255,215,.35);
+    }
+
+    @media (max-width:1100px){
+      .mainContent{
+        grid-template-columns:1fr;
+      }
+      .infoPanel{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.08);
+      }
+    }
+
+    @media (max-width:900px){
+      .app{
+        grid-template-columns:1fr;
+        height:auto;
+        min-height:100vh;
+      }
+
+      .countryList{
+        grid-template-columns:repeat(3,1fr);
+      }
+    }
+
+    @media (max-width:650px){
+      .countryList{grid-template-columns:1fr 1fr}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebarHeader">
+        <h1>מפת המזרח התיכון</h1>
+        <p>
+          לחץ על הפס הכחול שמתחת לשם המדינה, או חפש למעלה, כדי לפתוח את המידע.
+        </p>
+
+        <div class="searchBox">
+          <input
+            id="searchInput"
+            class="searchInput"
+            type="text"
+            placeholder="חפש מדינה..."
+            list="countriesDatalist"
+          />
+          <datalist id="countriesDatalist"></datalist>
+        </div>
+      </div>
+
+      <div class="countryList" id="countryList"></div>
+
+      <div class="sidebarFooter">
+        שמות המדינות נשארים קבועים על המפה, והלחיצה היא רק על הפס הכחול הקטן שמתחת לשם.
+      </div>
+    </aside>
+
+    <section class="main">
+      <div class="mainHeader">
+        <div>
+          <div class="t1">לוח מידע אזורי</div>
+          <div class="t2">בחירת מדינה תעדכן את המידע בצד</div>
+        </div>
+      </div>
+
+      <div class="mainContent">
+        <div class="infoPanel" id="infoPanel"></div>
+        <div id="map"></div>
+      </div>
+    </section>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+
+  <script>
+    const countries = {
+      israel: {
+        name: "ישראל",
+        searchNames: ["ישראל", "israel"],
+        center: [31.4, 34.9],
+        zoom: 7,
+        labelOffset: [0, 0],
+        group: "רוב יהודי",
+        capital: "ירושלים",
+        population: "10.0 מיליון",
+        gdp: "540 מיליארד דולר",
+        gdpPerCapita: "54,000$",
+        activePersonnel: "169,500",
+        tanks: "1,300",
+        aircraft: "597",
+        militaryRank: "גבוה מאוד אזורית",
+        alliances: ["שיתוף אסטרטגי עם ארה״ב", "קשרים אזוריים עם חלק ממדינות המפרץ"],
+        interests: [
+          "הרתעה מול איראן ושלוחותיה",
+          "עליונות אווירית ומודיעינית",
+          "הגנה מפני טילים ורקטות"
+        ],
+        summary: "יתרון טכנולוגי, מודיעיני ואווירי גבוה ביחס לאזור."
+      },
+
+      iran: {
+        name: "איראן",
+        searchNames: ["איראן", "iran"],
+        center: [32.2, 53.7],
+        zoom: 5,
+        labelOffset: [0, 0],
+        group: "רוב שיעי",
+        capital: "טהראן",
+        population: "91.6 מיליון",
+        gdp: "475 מיליארד דולר",
+        gdpPerCapita: "5,190$",
+        activePersonnel: "610,000",
+        tanks: "2,675",
+        aircraft: "551",
+        militaryRank: "מעצמה אזורית",
+        alliances: ["ציר פרו-איראני אזורי", "OPEC"],
+        interests: [
+          "השפעה אזורית רחבה",
+          "הרתעה מול ישראל וארה״ב",
+          "שליטה והשפעה בנתיבי אנרגיה"
+        ],
+        summary: "עומק דמוגרפי, מסה צבאית וחשיבות גיאו-אסטרטגית גבוהה."
+      },
+
+      saudi: {
+        name: "ערב הסעודית",
+        searchNames: ["ערב הסעודית", "סעודיה", "saudi", "saudi arabia"],
+        center: [23.9, 45.1],
+        zoom: 5,
+        labelOffset: [0, 0],
+        group: "רוב סוני",
+        capital: "ריאד",
+        population: "35 מיליון",
+        gdp: "1.24 טריליון דולר",
+        gdpPerCapita: "35,000$",
+        activePersonnel: "247,000",
+        tanks: "1,085",
+        aircraft: "917",
+        militaryRank: "כוח מרכזי במפרץ",
+        alliances: ["OPEC", "קשר ביטחוני עם ארה״ב"],
+        interests: [
+          "ביטחון משטר וגבולות",
+          "איזון מול איראן",
+          "שמירת יציבות שוק האנרגיה"
+        ],
+        summary: "כוח כלכלי גדול וחיל אוויר משמעותי."
+      },
+
+      qatar: {
+        name: "קטר",
+        searchNames: ["קטר", "qatar"],
+        center: [25.3, 51.2],
+        zoom: 8,
+        labelOffset: [0, 0],
+        group: "רוב סוני",
+        capital: "דוחא",
+        population: "2.86 מיליון",
+        gdp: "219 מיליארד דולר",
+        gdpPerCapita: "76,000$",
+        activePersonnel: "26,550",
+        tanks: "62",
+        aircraft: "263",
+        militaryRank: "קטנה אך עשירה",
+        alliances: ["קשר ביטחוני מערבי", "השפעה דיפלומטית אזורית"],
+        interests: [
+          "הגנה על משטר קטן אך עשיר",
+          "תיווך והשפעה אזורית",
+          "שמירת יצוא הגז"
+        ],
+        summary: "מדינה קטנה עם עושר גבוה והשפעה מדינית בולטת."
+      },
+
+      uae: {
+        name: "איחוד האמירויות",
+        searchNames: ["איחוד האמירויות", "אמירויות", "uae", "united arab emirates"],
+        center: [24.3, 54.4],
+        zoom: 7,
+        labelOffset: [0, 0],
+        group: "רוב סוני",
+        capital: "אבו דאבי",
+        population: "11 מיליון",
+        gdp: "552 מיליארד דולר",
+        gdpPerCapita: "50,000$",
+        activePersonnel: "65,000",
+        tanks: "354",
+        aircraft: "581",
+        militaryRank: "מתקדם טכנולוגית",
+        alliances: ["OPEC", "קשרים ביטחוניים עם המערב"],
+        interests: [
+          "ביטחון ימי ומסחרי",
+          "הרחבת השפעה אזורית",
+          "שילוב טכנולוגי וביטחוני"
+        ],
+        summary: "שילוב של עוצמה כלכלית, מקצועיות צבאית והשקעה בטכנולוגיה."
+      },
+
+      egypt: {
+        name: "מצרים",
+        searchNames: ["מצרים", "egypt"],
+        center: [26.8, 30.8],
+        zoom: 6,
+        labelOffset: [0, 0],
+        group: "רוב סוני",
+        capital: "קהיר",
+        population: "111 מיליון",
+        gdp: "389 מיליארד דולר",
+        gdpPerCapita: "3,339$",
+        activePersonnel: "438,500",
+        tanks: "3,620",
+        aircraft: "1,088",
+        militaryRank: "מהגדולות באזור",
+        alliances: ["האיחוד האפריקאי", "קשרי ביטחון עם ארה״ב"],
+        interests: [
+          "ביטחון תעלת סואץ וסיני",
+          "יציבות פנימית",
+          "מאזן מול איומים אזוריים"
+        ],
+        summary: "אחת המעצמות הצבאיות הגדולות באזור."
+      },
+
+      syria: {
+        name: "סוריה",
+        searchNames: ["סוריה", "syria"],
+        center: [35.0, 38.5],
+        zoom: 7,
+        labelOffset: [0, 0],
+        group: "רוב סוני",
+        capital: "דמשק",
+        population: "25 מיליון",
+        gdp: "כ-26 מיליארד דולר",
+        gdpPerCapita: "1,052$",
+        activePersonnel: "100,000",
+        tanks: "168",
+        aircraft: "104",
+        militaryRank: "נחלשה מאוד",
+        alliances: ["תלות בגורמים חיצוניים", "קשרים עם ציר פרו-איראני"],
+        interests: [
+          "שרידות משטר",
+          "שליטה טריטוריאלית",
+          "ייצוב אזורי לחימה"
+        ],
+        summary: "מדינה שנשחקה קשות ממלחמה ממושכת."
+      },
+
+      jordan: {
+        name: "ירדן",
+        searchNames: ["ירדן", "jordan"],
+        center: [31.2, 36.4],
+        zoom: 7,
+        labelOffset: [0, 0],
+        group: "רוב סוני",
+        capital: "עמאן",
+        population: "11.17 מיליון",
+        gdp: "53.3 מיליארד דולר",
+        gdpPerCapita: "4,618$",
+        activePersonnel: "114,500",
+        tanks: "1,508",
+        aircraft: "279",
+        militaryRank: "צבא מסודר יחסית לגודל",
+        alliances: ["קשרים ביטחוניים מערביים ואזוריים"],
+        interests: [
+          "יציבות פנימית",
+          "הגנת גבולות",
+          "איזון עדין בין שחקנים אזוריים"
+        ],
+        summary: "חשיבות גיאוגרפית גבוהה ומערכת ביטחונית יציבה יחסית."
+      },
+
+      iraq: {
+        name: "עיראק",
+        searchNames: ["עיראק", "iraq"],
+        center: [33.2, 43.9],
+        zoom: 6,
+        labelOffset: [0, 0],
+        group: "רוב שיעי עם מיעוטים סוניים וכורדיים",
+        capital: "בגדאד",
+        population: "46 מיליון",
+        gdp: "279 מיליארד דולר",
+        gdpPerCapita: "6,074$",
+        activePersonnel: "193,000",
+        tanks: "1,188",
+        aircraft: "360",
+        militaryRank: "בעל משקל אזורי",
+        alliances: ["OPEC", "איזון בין גורמי חוץ"],
+        interests: [
+          "ייצוב המדינה",
+          "הגנה על תשתיות אנרגיה",
+          "איזון בין כוחות חיצוניים"
+        ],
+        summary: "מדינה מרכזית גיאו-פוליטית עם מורכבות פנימית גבוהה."
+      }
+    };
+
+    const mapAreas = {
+      israel: [
+        [33.3, 35.7],[32.7,35.5],[31.9,35.4],[31.2,35.2],[29.6,34.95],[30.5,34.4],[31.3,34.3],[32.2,34.6],[33.0,35.1]
+      ],
+      iran: [
+        [39.5,44.0],[38.0,48.0],[37.0,52.5],[36.0,57.5],[31.0,61.5],[27.0,61.0],[25.0,57.0],[26.0,52.0],[29.0,48.0],[32.0,46.0],[36.0,44.5]
+      ],
+      saudi: [
+        [31.5,34.8],[31.0,40.0],[29.0,46.0],[26.0,50.0],[20.0,52.0],[17.0,49.0],[16.0,44.0],[18.0,41.0],[20.0,39.0],[24.0,36.0],[28.0,34.5]
+      ],
+      qatar: [
+        [26.2,50.7],[25.4,51.0],[24.8,51.3],[25.6,51.6],[26.1,51.3]
+      ],
+      uae: [
+        [26.2,51.5],[25.8,54.0],[24.8,55.6],[24.0,55.2],[23.2,53.8],[24.0,52.2],[24.8,51.6]
+      ],
+      egypt: [
+        [31.8,25.0],[31.5,34.2],[29.5,34.8],[27.0,34.0],[24.0,33.5],[22.0,32.8],[22.0,25.0],[26.0,24.5],[30.0,25.0]
+      ],
+      syria: [
+        [37.3,35.7],[37.0,40.9],[35.7,42.2],[32.8,40.8],[32.3,36.0],[34.2,35.7]
+      ],
+      jordan: [
+        [33.4,35.6],[32.0,39.3],[29.2,39.2],[29.3,34.9],[31.5,35.0]
+      ],
+      iraq: [
+        [37.3,39.1],[37.0,45.0],[34.5,48.5],[30.0,48.6],[29.0,46.0],[30.8,42.0],[32.5,39.0]
+      ]
+    };
+
+    const infoPanel = document.getElementById("infoPanel");
+    const countryList = document.getElementById("countryList");
+    const searchInput = document.getElementById("searchInput");
+    const countriesDatalist = document.getElementById("countriesDatalist");
+
+    let map;
+    let layers = {};
+    let labelMarkers = {};
+    let activeCountryKey = "israel";
+
+    function renderButtons() {
+      Object.entries(countries).forEach(([key, country]) => {
+        const btn = document.createElement("button");
+        btn.className = "countryBtn";
+        btn.dataset.key = key;
+        btn.textContent = country.name;
+        btn.onclick = () => selectCountry(key, true);
+        countryList.appendChild(btn);
+      });
+      updateActiveButton();
+    }
+
+    function renderSearchOptions() {
+      Object.values(countries).forEach(country => {
+        const option = document.createElement("option");
+        option.value = country.name;
+        countriesDatalist.appendChild(option);
+      });
+    }
+
+    function updateActiveButton() {
+      document.querySelectorAll(".countryBtn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.key === activeCountryKey);
+      });
+    }
+
+    function updateActiveLabels() {
+      Object.entries(labelMarkers).forEach(([key, marker]) => {
+        const el = marker.getElement();
+        if (!el) return;
+        const wrap = el.querySelector(".country-label-wrap");
+        if (!wrap) return;
+        wrap.classList.toggle("active", key === activeCountryKey);
+      });
+    }
+
+    function renderInfo(key) {
+      const c = countries[key];
+      infoPanel.innerHTML = `
+        <div class="hero">
+          <h2>${c.name}</h2>
+          <p>${c.summary}</p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>נתונים כלליים</h3>
+            <div class="rows">
+              <div class="row"><div class="k">בירה</div><div class="v">${c.capital}</div></div>
+              <div class="row"><div class="k">אוכלוסייה</div><div class="v">${c.population}</div></div>
+              <div class="row"><div class="k">קבוצה מרכזית</div><div class="v">${c.group}</div></div>
+              <div class="row"><div class="k">מעמד אזורי</div><div class="v">${c.militaryRank}</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>כלכלה</h3>
+            <div class="rows">
+              <div class="row"><div class="k">תמ״ג</div><div class="v">${c.gdp}</div></div>
+              <div class="row"><div class="k">תמ״ג לנפש</div><div class="v">${c.gdpPerCapita}</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>כוח צבאי</h3>
+            <div class="rows">
+              <div class="row"><div class="k">חיילים בשירות פעיל</div><div class="v">${c.activePersonnel}</div></div>
+              <div class="row"><div class="k">טנקים</div><div class="v">${c.tanks}</div></div>
+              <div class="row"><div class="k">מטוסים</div><div class="v">${c.aircraft}</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>בריתות / שיוכים</h3>
+            <div class="chips">
+              ${c.alliances.map(x => `<span class="chip">${x}</span>`).join("")}
+            </div>
+          </div>
+
+          <div class="card full">
+            <h3>אינטרסים מרכזיים</h3>
+            <div class="chips">
+              ${c.interests.map(x => `<span class="chip">${x}</span>`).join("")}
+            </div>
+          </div>
+        </div>
+
+        <div class="note">
+          החיפוש למעלה מאפשר לפתוח מדינה גם בלי ללחוץ על המפה.
+        </div>
+      `;
+    }
+
+    function resetLayerStyles() {
+      Object.values(layers).forEach(layer => {
+        layer.setStyle({
+          color: "#8dd4ff",
+          weight: 2,
+          fillColor: "#2a8dff",
+          fillOpacity: 0.18
+        });
+      });
+    }
+
+    function highlightLayer(key) {
+      if (!layers[key]) return;
+      layers[key].setStyle({
+        color: "#71ffd6",
+        weight: 3,
+        fillColor: "#33b0ff",
+        fillOpacity: 0.30
+      });
+      layers[key].bringToFront();
+    }
+
+    function findCountryBySearch(text) {
+      const q = text.trim().toLowerCase();
+      if (!q) return null;
+
+      for (const [key, country] of Object.entries(countries)) {
+        if (country.searchNames.some(n => n.toLowerCase() === q)) return key;
+      }
+
+      for (const [key, country] of Object.entries(countries)) {
+        if (country.searchNames.some(n => n.toLowerCase().includes(q))) return key;
+      }
+
+      return null;
+    }
+
+    function selectCountry(key, fly = false) {
+      activeCountryKey = key;
+      updateActiveButton();
+      renderInfo(key);
+      resetLayerStyles();
+      highlightLayer(key);
+      updateActiveLabels();
+      searchInput.value = countries[key].name;
+
+      const c = countries[key];
+      if (fly && map) {
+        map.flyTo(c.center, c.zoom, { duration: 0.8 });
+      }
+    }
+
+    function createCountryLabel(key, country) {
+      const icon = L.divIcon({
+        className: "country-label",
+        html: `
+          <div class="country-label-wrap" data-key="${key}">
+            <div class="country-name">${country.name}</div>
+            <div class="country-bar" title="פתח מידע על ${country.name}"></div>
+          </div>
+        `,
+        iconSize: [80, 34],
+        iconAnchor: [40, 17]
+      });
+
+      const marker = L.marker(country.center, { icon, interactive: true }).addTo(map);
+
+      marker.on("add", () => {
+        const el = marker.getElement();
+        if (!el) return;
+        const bar = el.querySelector(".country-bar");
+        if (!bar) return;
+
+        bar.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          selectCountry(key, true);
+        });
+      });
+
+      labelMarkers[key] = marker;
+    }
+
+    function initMap() {
+      map = L.map("map", {
+        zoomControl: true,
+        minZoom: 4,
+        maxZoom: 8
+      }).setView([29.8, 42.5], 5);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "© OpenStreetMap"
+      }).addTo(map);
+
+      Object.entries(mapAreas).forEach(([key, coords]) => {
+        const c = countries[key];
+
+        const polygon = L.polygon(coords, {
+          color: "#8dd4ff",
+          weight: 2,
+          fillColor: "#2a8dff",
+          fillOpacity: 0.12
+        }).addTo(map);
+
+        polygon.on("click", () => {
+          selectCountry(key, false);
+        });
+
+        polygon.on("mouseover", () => {
+          if (activeCountryKey !== key) {
+            polygon.setStyle({
+              color: "#b7ebff",
+              weight: 3,
+              fillOpacity: 0.18
+            });
+          }
+        });
+
+        polygon.on("mouseout", () => {
+          if (activeCountryKey !== key) {
+            polygon.setStyle({
+              color: "#8dd4ff",
+              weight: 2,
+              fillColor: "#2a8dff",
+              fillOpacity: 0.12
+            });
+          }
+        });
+
+        layers[key] = polygon;
+        createCountryLabel(key, c);
+      });
+
+      selectCountry("israel", false);
+    }
+
+    searchInput.addEventListener("change", () => {
+      const key = findCountryBySearch(searchInput.value);
+      if (key) selectCountry(key, true);
+    });
+
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        const key = findCountryBySearch(searchInput.value);
+        if (key) selectCountry(key, true);
+      }
+    });
+
+    renderButtons();
+    renderSearchOptions();
+    renderInfo("israel");
+    initMap();
+  </script>
+</body>
+</html>
