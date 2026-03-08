@@ -410,221 +410,22 @@
 
   <script>
     const countries = {
-      israel: {
-        name: "ישראל",
-        searchNames: ["ישראל", "israel"],
-        center: [31.4, 34.9],
-        zoom: 7,
-        labelOffset: [0, 0],
-        group: "רוב יהודי",
-        capital: "ירושלים",
-        population: "10.0 מיליון",
-        gdp: "540 מיליארד דולר",
-        gdpPerCapita: "54,000$",
-        activePersonnel: "169,500",
-        tanks: "1,300",
-        aircraft: "597",
-        militaryRank: "גבוה מאוד אזורית",
-        alliances: ["שיתוף אסטרטגי עם ארה״ב", "קשרים אזוריים עם חלק ממדינות המפרץ"],
-        interests: [
-          "הרתעה מול איראן ושלוחותיה",
-          "עליונות אווירית ומודיעינית",
-          "הגנה מפני טילים ורקטות"
-        ],
-        summary: "יתרון טכנולוגי, מודיעיני ואווירי גבוה ביחס לאזור."
-      },
-
-      iran: {
-        name: "איראן",
-        searchNames: ["איראן", "iran"],
-        center: [32.2, 53.7],
-        zoom: 5,
-        labelOffset: [0, 0],
-        group: "רוב שיעי",
-        capital: "טהראן",
-        population: "91.6 מיליון",
-        gdp: "475 מיליארד דולר",
-        gdpPerCapita: "5,190$",
-        activePersonnel: "610,000",
-        tanks: "2,675",
-        aircraft: "551",
-        militaryRank: "מעצמה אזורית",
-        alliances: ["ציר פרו-איראני אזורי", "OPEC"],
-        interests: [
-          "השפעה אזורית רחבה",
-          "הרתעה מול ישראל וארה״ב",
-          "שליטה והשפעה בנתיבי אנרגיה"
-        ],
-        summary: "עומק דמוגרפי, מסה צבאית וחשיבות גיאו-אסטרטגית גבוהה."
-      },
-
-      saudi: {
-        name: "ערב הסעודית",
-        searchNames: ["ערב הסעודית", "סעודיה", "saudi", "saudi arabia"],
-        center: [23.9, 45.1],
-        zoom: 5,
-        labelOffset: [0, 0],
-        group: "רוב סוני",
-        capital: "ריאד",
-        population: "35 מיליון",
-        gdp: "1.24 טריליון דולר",
-        gdpPerCapita: "35,000$",
-        activePersonnel: "247,000",
-        tanks: "1,085",
-        aircraft: "917",
-        militaryRank: "כוח מרכזי במפרץ",
-        alliances: ["OPEC", "קשר ביטחוני עם ארה״ב"],
-        interests: [
-          "ביטחון משטר וגבולות",
-          "איזון מול איראן",
-          "שמירת יציבות שוק האנרגיה"
-        ],
-        summary: "כוח כלכלי גדול וחיל אוויר משמעותי."
-      },
-
-      qatar: {
-        name: "קטר",
-        searchNames: ["קטר", "qatar"],
-        center: [25.3, 51.2],
-        zoom: 8,
-        labelOffset: [0, 0],
-        group: "רוב סוני",
-        capital: "דוחא",
-        population: "2.86 מיליון",
-        gdp: "219 מיליארד דולר",
-        gdpPerCapita: "76,000$",
-        activePersonnel: "26,550",
-        tanks: "62",
-        aircraft: "263",
-        militaryRank: "קטנה אך עשירה",
-        alliances: ["קשר ביטחוני מערבי", "השפעה דיפלומטית אזורית"],
-        interests: [
-          "הגנה על משטר קטן אך עשיר",
-          "תיווך והשפעה אזורית",
-          "שמירת יצוא הגז"
-        ],
-        summary: "מדינה קטנה עם עושר גבוה והשפעה מדינית בולטת."
-      },
-
-      uae: {
-        name: "איחוד האמירויות",
-        searchNames: ["איחוד האמירויות", "אמירויות", "uae", "united arab emirates"],
-        center: [24.3, 54.4],
-        zoom: 7,
-        labelOffset: [0, 0],
-        group: "רוב סוני",
-        capital: "אבו דאבי",
-        population: "11 מיליון",
-        gdp: "552 מיליארד דולר",
-        gdpPerCapita: "50,000$",
-        activePersonnel: "65,000",
-        tanks: "354",
-        aircraft: "581",
-        militaryRank: "מתקדם טכנולוגית",
-        alliances: ["OPEC", "קשרים ביטחוניים עם המערב"],
-        interests: [
-          "ביטחון ימי ומסחרי",
-          "הרחבת השפעה אזורית",
-          "שילוב טכנולוגי וביטחוני"
-        ],
-        summary: "שילוב של עוצמה כלכלית, מקצועיות צבאית והשקעה בטכנולוגיה."
-      },
-
-      egypt: {
-        name: "מצרים",
-        searchNames: ["מצרים", "egypt"],
-        center: [26.8, 30.8],
-        zoom: 6,
-        labelOffset: [0, 0],
-        group: "רוב סוני",
-        capital: "קהיר",
-        population: "111 מיליון",
-        gdp: "389 מיליארד דולר",
-        gdpPerCapita: "3,339$",
-        activePersonnel: "438,500",
-        tanks: "3,620",
-        aircraft: "1,088",
-        militaryRank: "מהגדולות באזור",
-        alliances: ["האיחוד האפריקאי", "קשרי ביטחון עם ארה״ב"],
-        interests: [
-          "ביטחון תעלת סואץ וסיני",
-          "יציבות פנימית",
-          "מאזן מול איומים אזוריים"
-        ],
-        summary: "אחת המעצמות הצבאיות הגדולות באזור."
-      },
-
-      syria: {
-        name: "סוריה",
-        searchNames: ["סוריה", "syria"],
-        center: [35.0, 38.5],
-        zoom: 7,
-        labelOffset: [0, 0],
-        group: "רוב סוני",
-        capital: "דמשק",
-        population: "25 מיליון",
-        gdp: "כ-26 מיליארד דולר",
-        gdpPerCapita: "1,052$",
-        activePersonnel: "100,000",
-        tanks: "168",
-        aircraft: "104",
-        militaryRank: "נחלשה מאוד",
-        alliances: ["תלות בגורמים חיצוניים", "קשרים עם ציר פרו-איראני"],
-        interests: [
-          "שרידות משטר",
-          "שליטה טריטוריאלית",
-          "ייצוב אזורי לחימה"
-        ],
-        summary: "מדינה שנשחקה קשות ממלחמה ממושכת."
-      },
-
-      jordan: {
-        name: "ירדן",
-        searchNames: ["ירדן", "jordan"],
-        center: [31.2, 36.4],
-        zoom: 7,
-        labelOffset: [0, 0],
-        group: "רוב סוני",
-        capital: "עמאן",
-        population: "11.17 מיליון",
-        gdp: "53.3 מיליארד דולר",
-        gdpPerCapita: "4,618$",
-        activePersonnel: "114,500",
-        tanks: "1,508",
-        aircraft: "279",
-        militaryRank: "צבא מסודר יחסית לגודל",
-        alliances: ["קשרים ביטחוניים מערביים ואזוריים"],
-        interests: [
-          "יציבות פנימית",
-          "הגנת גבולות",
-          "איזון עדין בין שחקנים אזוריים"
-        ],
-        summary: "חשיבות גיאוגרפית גבוהה ומערכת ביטחונית יציבה יחסית."
-      },
-
-      iraq: {
-        name: "עיראק",
-        searchNames: ["עיראק", "iraq"],
-        center: [33.2, 43.9],
-        zoom: 6,
-        labelOffset: [0, 0],
-        group: "רוב שיעי עם מיעוטים סוניים וכורדיים",
-        capital: "בגדאד",
-        population: "46 מיליון",
-        gdp: "279 מיליארד דולר",
-        gdpPerCapita: "6,074$",
-        activePersonnel: "193,000",
-        tanks: "1,188",
-        aircraft: "360",
-        militaryRank: "בעל משקל אזורי",
-        alliances: ["OPEC", "איזון בין גורמי חוץ"],
-        interests: [
-          "ייצוב המדינה",
-          "הגנה על תשתיות אנרגיה",
-          "איזון בין כוחות חיצוניים"
-        ],
-        summary: "מדינה מרכזית גיאו-פוליטית עם מורכבות פנימית גבוהה."
-      }
+      israel: { name: "ישראל", searchNames: ["ישראל", "israel"], center: [31.4, 34.9], zoom: 7, labelOffset: [0, 0], group: "רוב יהודי", capital: "ירושלים", population: "10.0 מיליון", area: "22,145 קמ״ר", currency: "שקל חדש (ILS)", language: "עברית (רשמית), ערבית", government: "דמוקרטיה פרלמנטרית", unemployment: "~3.4%", inflation: "~3.0%", mainExports: "היי-טק, יהלומים, תרופות", gdp: "540 מיליארד דולר", gdpPerCapita: "54,000$", activePersonnel: "169,500", tanks: "1,300", aircraft: "597", militaryRank: "גבוה מאוד אזורית", alliances: ["שיתוף אסטרטגי עם ארה״ב", "קשרים אזוריים עם חלק ממדינות המפרץ"], interests: ["הרתעה מול איראן ושלוחותיה", "עליונות אווירית ומודיעינית", "הגנה מפני טילים ורקטות"], summary: "יתרון טכנולוגי, מודיעיני ואווירי גבוה ביחס לאזור." },
+      iran: { name: "איראן", searchNames: ["איראן", "iran"], center: [32.2, 53.7], zoom: 5, labelOffset: [0, 0], group: "רוב שיעי", capital: "טהראן", population: "91.6 מיליון", area: "1.64 מיליון קמ״ר", currency: "ריאל איראני (IRR)", language: "פרסית", government: "רפובליקה אסלאמית", unemployment: "~8.1%", inflation: "גבוהה מאוד", mainExports: "נפט, גז, פטרוכימיה", gdp: "475 מיליארד דולר", gdpPerCapita: "5,190$", activePersonnel: "610,000", tanks: "2,675", aircraft: "551", militaryRank: "מעצמה אזורית", alliances: ["ציר פרו-איראני אזורי", "OPEC"], interests: ["השפעה אזורית רחבה", "הרתעה מול ישראל וארה״ב", "שליטה והשפעה בנתיבי אנרגיה"], summary: "עומק דמוגרפי, מסה צבאית וחשיבות גיאו-אסטרטגית גבוהה." },
+      saudi: { name: "ערב הסעודית", searchNames: ["ערב הסעודית", "סעודיה", "saudi", "saudi arabia"], center: [23.9, 45.1], zoom: 5.5, labelOffset: [0, 0], group: "רוב סוני", capital: "ריאד", population: "35 מיליון", area: "2.15 מיליון קמ״ר", currency: "ריאל סעודי (SAR)", language: "ערבית", government: "מונרכיה", unemployment: "~4.6%", inflation: "~1.7%", mainExports: "נפט, פטרוכימיה", gdp: "1.24 טריליון דולר", gdpPerCapita: "35,000$", activePersonnel: "247,000", tanks: "1,085", aircraft: "917", militaryRank: "כוח מרכזי במפרץ", alliances: ["OPEC", "קשר ביטחוני עם ארה״ב"], interests: ["ביטחון משטר וגבולות", "איזון מול איראן", "שמירת יציבות שוק האנרגיה"], summary: "כוח כלכלי גדול וחיל אוויר משמעותי." },
+      qatar: { name: "קטר", searchNames: ["קטר", "qatar"], center: [25.3, 51.2], zoom: 8, labelOffset: [0.5, 1.2], group: "רוב סוני", capital: "דוחא", population: "2.86 מיליון", area: "11,610 קמ״ר", currency: "ריאל קטרי (QAR)", language: "ערבית", government: "מונרכיה", unemployment: "~0.1%", inflation: "~3.0%", mainExports: "LNG, פטרוכימיה", gdp: "219 מיליארד דולר", gdpPerCapita: "76,000$", activePersonnel: "26,550", tanks: "62", aircraft: "263", militaryRank: "קטנה אך עשירה", alliances: ["קשר ביטחוני מערבי", "השפעה דיפלומטית אזורית"], interests: ["הגנה על משטר קטן אך עשיר", "תיווך והשפעה אזורית", "שמירת יצוא הגז"], summary: "מדינה קטנה עם עושר גבוה והשפעה מדינית בולטת." },
+      uae: { name: "איחוד האמירויות", searchNames: ["איחוד האמירויות", "אמירויות", "uae", "united arab emirates"], center: [24.3, 54.4], zoom: 7.4, labelOffset: [0, 1], group: "רוב סוני", capital: "אבו דאבי", population: "11 מיליון", area: "83,600 קמ״ר", currency: "דירהם (AED)", language: "ערבית", government: "פדרציה מונרכית", unemployment: "~2.8%", inflation: "~2.3%", mainExports: "נפט, זהב, שירותים פיננסיים", gdp: "552 מיליארד דולר", gdpPerCapita: "50,000$", activePersonnel: "65,000", tanks: "354", aircraft: "581", militaryRank: "מתקדם טכנולוגית", alliances: ["OPEC", "קשרים ביטחוניים עם המערב"], interests: ["ביטחון ימי ומסחרי", "הרחבת השפעה אזורית", "שילוב טכנולוגי וביטחוני"], summary: "שילוב של עוצמה כלכלית, מקצועיות צבאית והשקעה בטכנולוגיה." },
+      kuwait: { name: "כווית", searchNames: ["כווית", "kuwait"], center: [29.35, 47.55], zoom: 7.5, labelOffset: [0.7, 0.8], group: "רוב סוני עם מיעוט שיעי", capital: "כווית סיטי", population: "4.3 מיליון", area: "17,818 קמ״ר", currency: "דינר כוויתי (KWD)", language: "ערבית", government: "אמירות חוקתית", unemployment: "~2.1%", inflation: "~3.6%", mainExports: "נפט, מוצרי זיקוק", gdp: "184 מיליארד דולר", gdpPerCapita: "42,000$", activePersonnel: "23,000", tanks: "367", aircraft: "119", militaryRank: "כוח קטן עם תקציב גבוה", alliances: ["מועצת שיתוף הפעולה במפרץ", "קשר הדוק עם ארה״ב"], interests: ["הגנת גבול צפוני", "יציבות שוק הנפט", "שיתופי פעולה מפרציים"], summary: "מדינת מפרץ קטנה ועשירה בעלת חשיבות אנרגטית גבוהה." },
+      oman: { name: "עומאן", searchNames: ["עומאן", "oman"], center: [20.6, 57.0], zoom: 6.4, labelOffset: [0, 0], group: "רוב איבאדי", capital: "מוסקט", population: "4.7 מיליון", area: "309,500 קמ״ר", currency: "ריאל עומאני (OMR)", language: "ערבית", government: "סולטנות", unemployment: "~3.2%", inflation: "~1.2%", mainExports: "נפט, גז, מתכות", gdp: "114 מיליארד דולר", gdpPerCapita: "24,000$", activePersonnel: "42,600", tanks: "117", aircraft: "128", militaryRank: "בינוני עם גישה זהירה", alliances: ["מועצת שיתוף הפעולה במפרץ", "מדיניות תיווך אזורית"], interests: ["ביטחון מצר הורמוז", "איזון דיפלומטי", "גיוון כלכלי"], summary: "מדינה יציבה יחסית עם מדיניות חוץ מאוזנת וזהירה." },
+      yemen: { name: "תימן", searchNames: ["תימן", "yemen"], center: [15.8, 47.8], zoom: 6, labelOffset: [0, 0], group: "סוני-שיעי מעורב", capital: "צנעא (דה-פקטו מחולקת)", population: "34 מיליון", area: "527,968 קמ״ר", currency: "ריאל תימני (YER)", language: "ערבית", government: "שלטון מפוצל", unemployment: "גבוהה מאוד", inflation: "גבוהה מאוד", mainExports: "נפט וגז מוגבלים, חקלאות", gdp: "כ-20 מיליארד דולר", gdpPerCapita: "נמוך מאוד", activePersonnel: "לא סדיר / מפוצל", tanks: "לא יציב", aircraft: "מעט מאוד", militaryRank: "מפוצל", alliances: ["השפעות סעודיות ואיראניות דרך שלוחות"], interests: ["שליטה טריטוריאלית", "שרידות אוכלוסייה", "גישה לנמלים"], summary: "זירת עימות ממושכת עם משבר הומניטרי עמוק." },
+      egypt: { name: "מצרים", searchNames: ["מצרים", "egypt"], center: [26.8, 30.8], zoom: 6, labelOffset: [0, 0], group: "רוב סוני", capital: "קהיר", population: "111 מיליון", area: "1.0 מיליון קמ״ר", currency: "לירה מצרית (EGP)", language: "ערבית", government: "רפובליקה", unemployment: "~7.1%", inflation: "~24%", mainExports: "גז, דשנים, טקסטיל", gdp: "389 מיליארד דולר", gdpPerCapita: "3,339$", activePersonnel: "438,500", tanks: "3,620", aircraft: "1,088", militaryRank: "מהגדולות באזור", alliances: ["האיחוד האפריקאי", "קשרי ביטחון עם ארה״ב"], interests: ["ביטחון תעלת סואץ וסיני", "יציבות פנימית", "מאזן מול איומים אזוריים"], summary: "אחת המעצמות הצבאיות הגדולות באזור." },
+      sudan: { name: "סודאן", searchNames: ["סודאן", "sudan"], center: [15.5, 30.0], zoom: 5.9, labelOffset: [0, 0], group: "רוב מוסלמי", capital: "ח׳רטום", population: "48 מיליון", area: "1.88 מיליון קמ״ר", currency: "לירה סודאנית (SDG)", language: "ערבית, אנגלית", government: "מעבר / עימות פנימי", unemployment: "גבוהה", inflation: "גבוהה מאוד", mainExports: "זהב, בעלי חיים, שומשום", gdp: "כ-34 מיליארד דולר", gdpPerCapita: "נמוך", activePersonnel: "במבנה משתנה", tanks: "מאות", aircraft: "מוגבל", militaryRank: "פנימי ולא יציב", alliances: ["קשרים משתנים אזורית"], interests: ["יציבות שלטונית", "שליטה בנתיבי הנילוס", "התאוששות כלכלית"], summary: "מדינה גדולה גיאוגרפית עם אי-יציבות פוליטית וביטחונית מתמשכת." },
+      somalia: { name: "סומליה", searchNames: ["סומליה", "somalia"], center: [5.4, 46.2], zoom: 6, labelOffset: [0.1, 0.9], group: "רוב סוני", capital: "מוגדישו", population: "18 מיליון", area: "637,657 קמ״ר", currency: "שילינג סומלי (SOS)", language: "סומלית, ערבית", government: "רפובליקה פדרלית", unemployment: "גבוהה", inflation: "תנודתית", mainExports: "בעלי חיים, בננות, דיג", gdp: "כ-11 מיליארד דולר", gdpPerCapita: "נמוך", activePersonnel: "19,000+", tanks: "מעט", aircraft: "מוגבל", militaryRank: "בנייה מחדש", alliances: ["האיחוד האפריקאי", "סיוע ביטחוני בינלאומי"], interests: ["לחימה בארגוני טרור", "ביטחון ימי", "חיזוק מוסדות שלטון"], summary: "מדינה אסטרטגית בקרן אפריקה עם מאמצי ייצוב ממושכים." },
+      somaliland: { name: "סומלילנד", searchNames: ["סומלילנד", "somaliland"], center: [9.7, 45.3], zoom: 7, labelOffset: [0.5, -0.4], group: "רוב סוני", capital: "הרגייסה", population: "כ-5.7 מיליון", area: "176,120 קמ״ר", currency: "שילינג סומלילנדי (SLSH)", language: "סומלית", government: "ממשל עצמי (ללא הכרה רחבה)", unemployment: "גבוהה", inflation: "בינונית", mainExports: "בעלי חיים, נמל ברברה", gdp: "נתונים חלקיים", gdpPerCapita: "נתונים חלקיים", activePersonnel: "כוחות ביטחון מקומיים", tanks: "מעט", aircraft: "כמעט אין", militaryRank: "מקומי", alliances: ["שיתופי פעולה כלכליים נקודתיים"], interests: ["הכרה בינלאומית", "פיתוח נמל ותשתיות", "יציבות פנימית"], summary: "ישות יציבה יחסית בקרן אפריקה עם ממשל עצמי בפועל." },
+      syria: { name: "סוריה", searchNames: ["סוריה", "syria"], center: [35.0, 38.5], zoom: 7, labelOffset: [0, 0], group: "רוב סוני", capital: "דמשק", population: "25 מיליון", area: "185,180 קמ״ר", currency: "לירה סורית (SYP)", language: "ערבית", government: "רפובליקה נשיאותית", unemployment: "גבוהה", inflation: "גבוהה מאוד", mainExports: "חקלאות, פוספטים (מצומצם)", gdp: "כ-26 מיליארד דולר", gdpPerCapita: "1,052$", activePersonnel: "100,000", tanks: "168", aircraft: "104", militaryRank: "נחלשה מאוד", alliances: ["תלות בגורמים חיצוניים", "קשרים עם ציר פרו-איראני"], interests: ["שרידות משטר", "שליטה טריטוריאלית", "ייצוב אזורי לחימה"], summary: "מדינה שנשחקה קשות ממלחמה ממושכת." },
+      lebanon: { name: "לבנון", searchNames: ["לבנון", "lebanon"], center: [33.9, 35.8], zoom: 8, labelOffset: [0.8, 0.6], group: "רב-עדתי ורב-דתי", capital: "ביירות", population: "5.5 מיליון", area: "10,452 קמ״ר", currency: "לירה לבנונית (LBP)", language: "ערבית", government: "רפובליקה פרלמנטרית", unemployment: "גבוהה", inflation: "גבוהה מאוד", mainExports: "זהב, תכשיטים, חקלאות", gdp: "כ-20 מיליארד דולר", gdpPerCapita: "נמוך-בינוני", activePersonnel: "80,000", tanks: "360", aircraft: "מעט מאוד", militaryRank: "בינוני", alliances: ["סיוע מערבי לצבא", "השפעה של שחקנים אזוריים"], interests: ["יציבות פוליטית", "שיקום פיננסי", "ביטחון גבול"], summary: "מדינה קטנה עם חשיבות פוליטית גבוהה ומשבר כלכלי מתמשך." },
+      jordan: { name: "ירדן", searchNames: ["ירדן", "jordan"], center: [31.2, 36.4], zoom: 7, labelOffset: [0, 0], group: "רוב סוני", capital: "עמאן", population: "11.17 מיליון", area: "89,342 קמ״ר", currency: "דינר ירדני (JOD)", language: "ערבית", government: "מונרכיה חוקתית", unemployment: "~22%", inflation: "~2.1%", mainExports: "דשנים, ביגוד, תרופות", gdp: "53.3 מיליארד דולר", gdpPerCapita: "4,618$", activePersonnel: "114,500", tanks: "1,508", aircraft: "279", militaryRank: "צבא מסודר יחסית לגודל", alliances: ["קשרים ביטחוניים מערביים ואזוריים"], interests: ["יציבות פנימית", "הגנת גבולות", "איזון עדין בין שחקנים אזוריים"], summary: "חשיבות גיאוגרפית גבוהה ומערכת ביטחונית יציבה יחסית." },
+      iraq: { name: "עיראק", searchNames: ["עיראק", "iraq"], center: [33.2, 43.9], zoom: 6.3, labelOffset: [0, 0], group: "רוב שיעי עם מיעוטים סוניים וכורדיים", capital: "בגדאד", population: "46 מיליון", area: "438,317 קמ״ר", currency: "דינר עיראקי (IQD)", language: "ערבית, כורדית", government: "רפובליקה פדרלית", unemployment: "~14%", inflation: "~3.5%", mainExports: "נפט", gdp: "279 מיליארד דולר", gdpPerCapita: "6,074$", activePersonnel: "193,000", tanks: "1,188", aircraft: "360", militaryRank: "בעל משקל אזורי", alliances: ["OPEC", "איזון בין גורמי חוץ"], interests: ["ייצוב המדינה", "הגנה על תשתיות אנרגיה", "איזון בין כוחות חיצוניים"], summary: "מדינה מרכזית גיאו-פוליטית עם מורכבות פנימית גבוהה." }
     };
 
     const mapAreas = {
@@ -643,11 +444,32 @@
       uae: [
         [26.2,51.5],[25.8,54.0],[24.8,55.6],[24.0,55.2],[23.2,53.8],[24.0,52.2],[24.8,51.6]
       ],
+      kuwait: [
+        [30.1,46.6],[29.9,48.4],[28.6,48.4],[28.5,47.5],[29.3,46.6]
+      ],
+      oman: [
+        [26.4,56.0],[25.3,58.9],[22.5,59.8],[17.0,56.5],[16.8,52.1],[20.7,56.0],[23.5,55.0]
+      ],
+      yemen: [
+        [16.8,42.5],[16.0,47.0],[18.0,53.0],[14.5,53.3],[12.4,50.8],[12.6,44.0],[14.0,42.5]
+      ],
       egypt: [
         [31.8,25.0],[31.5,34.2],[29.5,34.8],[27.0,34.0],[24.0,33.5],[22.0,32.8],[22.0,25.0],[26.0,24.5],[30.0,25.0]
       ],
+      sudan: [
+        [22.0,22.0],[22.0,38.0],[18.0,39.0],[12.0,38.0],[8.9,33.5],[9.0,24.0],[13.0,22.0]
+      ],
+      somalia: [
+        [11.8,41.8],[11.0,48.0],[8.5,51.5],[1.6,51.0],[-1.5,44.0],[1.2,41.5],[6.0,43.0]
+      ],
+      somaliland: [
+        [11.8,42.0],[11.5,47.8],[8.8,48.8],[8.4,44.8],[9.8,43.0]
+      ],
       syria: [
         [37.3,35.7],[37.0,40.9],[35.7,42.2],[32.8,40.8],[32.3,36.0],[34.2,35.7]
+      ],
+      lebanon: [
+        [34.7,35.1],[34.7,36.6],[33.1,36.6],[33.1,35.1]
       ],
       jordan: [
         [33.4,35.6],[32.0,39.3],[29.2,39.2],[29.3,34.9],[31.5,35.0]
@@ -717,6 +539,7 @@
             <div class="rows">
               <div class="row"><div class="k">בירה</div><div class="v">${c.capital}</div></div>
               <div class="row"><div class="k">אוכלוסייה</div><div class="v">${c.population}</div></div>
+              <div class="row"><div class="k">שטח</div><div class="v">${c.area}</div></div>
               <div class="row"><div class="k">קבוצה מרכזית</div><div class="v">${c.group}</div></div>
               <div class="row"><div class="k">מעמד אזורי</div><div class="v">${c.militaryRank}</div></div>
             </div>
@@ -727,6 +550,18 @@
             <div class="rows">
               <div class="row"><div class="k">תמ״ג</div><div class="v">${c.gdp}</div></div>
               <div class="row"><div class="k">תמ״ג לנפש</div><div class="v">${c.gdpPerCapita}</div></div>
+              <div class="row"><div class="k">אבטלה</div><div class="v">${c.unemployment}</div></div>
+              <div class="row"><div class="k">אינפלציה</div><div class="v">${c.inflation}</div></div>
+              <div class="row"><div class="k">יצוא מרכזי</div><div class="v">${c.mainExports}</div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>ממשל וחברה</h3>
+            <div class="rows">
+              <div class="row"><div class="k">שלטון</div><div class="v">${c.government}</div></div>
+              <div class="row"><div class="k">שפה</div><div class="v">${c.language}</div></div>
+              <div class="row"><div class="k">מטבע</div><div class="v">${c.currency}</div></div>
             </div>
           </div>
 
@@ -763,10 +598,10 @@
     function resetLayerStyles() {
       Object.values(layers).forEach(layer => {
         layer.setStyle({
-          color: "#8dd4ff",
-          weight: 2,
+          color: "#77c6f4",
+          weight: 1.3,
           fillColor: "#2a8dff",
-          fillOpacity: 0.18
+          fillOpacity: 0.01
         });
       });
     }
@@ -774,10 +609,10 @@
     function highlightLayer(key) {
       if (!layers[key]) return;
       layers[key].setStyle({
-        color: "#71ffd6",
-        weight: 3,
+        color: "#7cffda",
+        weight: 2.2,
         fillColor: "#33b0ff",
-        fillOpacity: 0.30
+        fillOpacity: 0.04
       });
       layers[key].bringToFront();
     }
@@ -825,7 +660,12 @@
         iconAnchor: [40, 17]
       });
 
-      const marker = L.marker(country.center, { icon, interactive: true }).addTo(map);
+      const labelCenter = [
+        country.center[0] + (country.labelOffset?.[0] || 0),
+        country.center[1] + (country.labelOffset?.[1] || 0)
+      ];
+
+      const marker = L.marker(labelCenter, { icon, interactive: true }).addTo(map);
 
       marker.on("add", () => {
         const el = marker.getElement();
@@ -845,9 +685,15 @@
     function initMap() {
       map = L.map("map", {
         zoomControl: true,
-        minZoom: 4,
-        maxZoom: 8
-      }).setView([29.8, 42.5], 5);
+        minZoom: 3,
+        maxZoom: 9,
+        zoomSnap: 0.25,
+        zoomDelta: 0.5,
+        worldCopyJump: false
+      }).setView([26.8, 42.5], 5.2);
+
+      map.setMaxBounds([[ -2.5, 19.5 ], [ 41.5, 67.5 ]]);
+      map.options.maxBoundsViscosity = 0.8;
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
@@ -858,10 +704,10 @@
         const c = countries[key];
 
         const polygon = L.polygon(coords, {
-          color: "#8dd4ff",
-          weight: 2,
+          color: "#77c6f4",
+          weight: 1.3,
           fillColor: "#2a8dff",
-          fillOpacity: 0.12
+          fillOpacity: 0.01
         }).addTo(map);
 
         polygon.on("click", () => {
@@ -871,9 +717,9 @@
         polygon.on("mouseover", () => {
           if (activeCountryKey !== key) {
             polygon.setStyle({
-              color: "#b7ebff",
-              weight: 3,
-              fillOpacity: 0.18
+              color: "#d5f3ff",
+              weight: 2,
+              fillOpacity: 0.05
             });
           }
         });
@@ -881,10 +727,10 @@
         polygon.on("mouseout", () => {
           if (activeCountryKey !== key) {
             polygon.setStyle({
-              color: "#8dd4ff",
-              weight: 2,
+              color: "#77c6f4",
+              weight: 1.3,
               fillColor: "#2a8dff",
-              fillOpacity: 0.12
+              fillOpacity: 0.01
             });
           }
         });
