@@ -1,742 +1,94 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!doctype html>
+<html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - CryptoVault</title>
-    <script>
-        // Load theme immediately to prevent flash
-        (function() {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        })();
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/templatemo-crypto-style.css">
-    <link rel="stylesheet" href="css/templatemo-crypto-dashboard.css">
-    <!--
-
-TemplateMo 609 Crypto Vault
-
-https://templatemo.com/tm-609-crypto-vault
-
--->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>חדשות עכשיו | כל מה שקורה בישראל</title>
+<meta name="description" content="אתר חדשות ישראלי דינמי המרכז כתבות ומבזקים ממקורות חדשות מובילים ומתעדכן אוטומטית.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d9182b;--red2:#a90f20;--ink:#12151a;--muted:#69707a;--bg:#f5f6f8;--card:#fff;--line:#e6e8ec;--blue:#165dff;--dark:#0c1118;--shadow:0 18px 50px rgba(20,25,32,.10);--radius:18px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Heebo',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1240px,calc(100% - 32px));margin:auto}.topbar{background:#0d1117;color:#fff;font-size:.82rem}.topbar .wrap{display:flex;justify-content:space-between;gap:20px;padding:9px 0}.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#ff3348;margin-left:7px;box-shadow:0 0 0 0 rgba(255,51,72,.6);animation:pulse 1.6s infinite}@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(255,51,72,0)}}header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}.head{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:15px 0}.logo{font:900 clamp(2rem,4vw,3.2rem) 'Frank Ruhl Libre',serif;color:var(--red);letter-spacing:-.04em}.head-actions{display:flex;justify-content:flex-end;gap:9px}.btn{border:0;border-radius:11px;padding:10px 14px;font-weight:800;cursor:pointer}.btn-dark{background:var(--dark);color:#fff}.btn-light{background:#f1f3f5;color:#222}.refresh.spin svg{animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}nav{border-top:1px solid var(--line)}.nav-scroll{display:flex;gap:6px;overflow:auto;padding:8px 0;scrollbar-width:none}.nav-scroll::-webkit-scrollbar{display:none}.nav-chip{white-space:nowrap;border:0;background:transparent;padding:8px 13px;border-radius:999px;font-weight:700;cursor:pointer;color:#39404a}.nav-chip.active,.nav-chip:hover{background:#111;color:#fff}.ticker{background:var(--red);color:#fff;overflow:hidden}.ticker-inner{display:flex;align-items:center;min-height:44px}.ticker-label{font-weight:900;padding:0 15px;border-left:1px solid #ffffff38;white-space:nowrap}.ticker-window{overflow:hidden;flex:1;position:relative}.ticker-track{display:flex;gap:38px;width:max-content;animation:ticker 38s linear infinite;padding:0 20px}.ticker-item{white-space:nowrap;font-weight:700}.ticker-item::before{content:'•';margin-left:10px;color:#fff9}@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(50%)}}.ticker:hover .ticker-track{animation-play-state:paused}.status-row{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:18px auto 14px;color:var(--muted);font-size:.82rem}.status-badge{display:inline-flex;gap:7px;align-items:center;background:#fff;border:1px solid var(--line);padding:7px 10px;border-radius:999px}.status-badge.ok{color:#13733c}.status-badge.warn{color:#9a5b00}.hero-grid{display:grid;grid-template-columns:1.65fr .85fr;gap:18px;margin-bottom:24px}.lead{position:relative;min-height:500px;border-radius:24px;overflow:hidden;background:#1a1d22;color:#fff;box-shadow:var(--shadow);cursor:pointer}.lead img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78}.lead::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 24%,rgba(0,0,0,.18) 46%,rgba(0,0,0,.88) 100%)}.lead-content{position:absolute;z-index:2;right:28px;left:28px;bottom:28px}.tag{display:inline-block;background:var(--red);color:#fff;font-size:.76rem;font-weight:900;padding:5px 9px;border-radius:6px;margin-bottom:10px}.lead h1{font:900 clamp(2rem,4.5vw,3.6rem)/1.08 'Frank Ruhl Libre',serif;margin:0 0 10px;letter-spacing:-.03em}.lead p{font-size:1.08rem;color:#f0f1f3;margin:0;max-width:850px}.meta{margin-top:12px;font-size:.78rem;color:#d7d9dd;display:flex;gap:12px;flex-wrap:wrap}.side-stack{display:grid;gap:14px}.side-card{display:grid;grid-template-columns:120px 1fr;gap:13px;background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;min-height:145px;cursor:pointer;transition:.2s}.side-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.side-card img{width:100%;height:100%;object-fit:cover}.side-card-content{padding:13px 0 13px 12px}.side-card h3{font:800 1.05rem/1.35 'Frank Ruhl Libre',serif;margin:4px 0 7px}.source{font-size:.74rem;font-weight:800;color:var(--red)}.section{margin:28px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:14px}.section-title{font:900 1.9rem 'Frank Ruhl Libre',serif;margin:0;border-right:5px solid var(--red);padding-right:10px}.section-sub{color:var(--muted);font-size:.84rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.news-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:pointer;transition:.2s;box-shadow:0 8px 25px rgba(25,30,35,.04)}.news-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.news-img{aspect-ratio:16/9;background:#dfe3e8;overflow:hidden}.news-img img{width:100%;height:100%;object-fit:cover;transition:.3s}.news-card:hover .news-img img{transform:scale(1.025)}.news-body{padding:15px}.news-card h3{font:800 1.25rem/1.35 'Frank Ruhl Libre',serif;margin:4px 0 8px}.news-card p{color:#565d67;font-size:.9rem;margin:0}.news-meta{display:flex;justify-content:space-between;gap:8px;margin-top:12px;color:var(--muted);font-size:.74rem}.two-col{display:grid;grid-template-columns:1fr 320px;gap:22px}.stream{display:grid;gap:12px}.stream-item{display:grid;grid-template-columns:180px 1fr;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer}.stream-item img{width:100%;height:100%;object-fit:cover;min-height:120px}.stream-copy{padding:14px}.stream-copy h3{font:800 1.2rem/1.35 'Frank Ruhl Libre',serif;margin:4px 0}.sources-box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;height:max-content;position:sticky;top:145px}.sources-box h3{margin:0 0 12px;font:900 1.35rem 'Frank Ruhl Libre',serif}.source-list{display:flex;flex-wrap:wrap;gap:8px}.source-chip{padding:7px 10px;background:#f2f4f6;border-radius:999px;font-size:.78rem;font-weight:800}.empty-state{padding:50px 20px;text-align:center;color:var(--muted);background:#fff;border:1px dashed #ccd1d7;border-radius:18px}.footer{margin-top:40px;background:#0d1117;color:#fff;padding:34px 0}.footer p{color:#b9c0c8;font-size:.84rem}.article-modal{position:fixed;inset:0;background:#0009;z-index:100;display:none;place-items:center;padding:20px}.article-modal.open{display:grid}.article-panel{background:#fff;width:min(760px,100%);max-height:90vh;overflow:auto;border-radius:22px}.article-panel img{width:100%;aspect-ratio:16/8;object-fit:cover}.article-content{padding:24px}.article-content h2{font:900 clamp(1.8rem,4vw,2.7rem)/1.15 'Frank Ruhl Libre',serif;margin:5px 0 12px}.article-content p{font-size:1rem;color:#3d444d}.modal-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}.close{border:0;background:#111;color:#fff;border-radius:50%;width:36px;height:36px;font-size:1.3rem;cursor:pointer}.read-original{display:inline-flex;margin-top:14px;background:var(--red);color:#fff;padding:10px 15px;border-radius:10px;font-weight:800}.skeleton{background:linear-gradient(90deg,#eceff2 25%,#f7f8fa 37%,#eceff2 63%);background-size:400% 100%;animation:shimmer 1.2s infinite}@keyframes shimmer{0%{background-position:100%}100%{background-position:0}}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr}.side-stack{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}.sources-box{position:static}.head{grid-template-columns:auto 1fr}.head .date{display:none}.logo{text-align:right}.head-actions{justify-content:flex-end}}
+@media(max-width:640px){.wrap{width:min(100% - 20px,1240px)}.topbar .wrap{font-size:.73rem}.head{padding:10px 0}.logo{font-size:2rem}.btn span{display:none}.hero-grid{gap:12px}.lead{min-height:420px;border-radius:17px}.lead-content{right:18px;left:18px;bottom:20px}.lead h1{font-size:2.15rem}.lead p{font-size:.94rem}.side-stack{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.stream-item{grid-template-columns:115px 1fr}.stream-copy{padding:10px}.stream-copy h3{font-size:1rem}.section-title{font-size:1.55rem}.ticker-label{padding:0 10px}.status-row{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
 <body>
-    <!-- Mobile Menu Toggle -->
-    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </button>
+<div class="topbar"><div class="wrap"><div><span class="live-dot"></span>מערכת חדשות חיה</div><div id="clock">--:--</div></div></div>
+<header><div class="wrap head"><div class="date" id="today"></div><div class="logo">חדשות עכשיו</div><div class="head-actions"><button class="btn btn-light refresh" id="refreshBtn" title="רענון"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6v6h-6"/><path d="M4 18v-6h6"/><path d="M6.5 8a7 7 0 0 1 11.5-2l2 2M4 16l2 2a7 7 0 0 0 11.5-2"/></svg><span>רענון</span></button></div></div><nav><div class="wrap nav-scroll" id="categoryNav"></div></nav></header>
+<div class="ticker"><div class="wrap ticker-inner"><div class="ticker-label">מבזקים</div><div class="ticker-window"><div class="ticker-track" id="tickerTrack"></div></div></div></div>
+<main class="wrap">
+<div class="status-row"><div class="status-badge" id="apiStatus">בודק עדכונים…</div><div>רענון אוטומטי כל 5 דקות · עדכון אחרון: <b id="lastUpdate">—</b></div></div>
+<section class="hero-grid"><article class="lead" id="lead"></article><div class="side-stack" id="sideStack"></div></section>
+<section class="section"><div class="section-head"><h2 class="section-title">החדשות המרכזיות</h2><div class="section-sub" id="resultInfo"></div></div><div class="cards" id="topCards"></div></section>
+<section class="section two-col"><div><div class="section-head"><h2 class="section-title">כל העדכונים</h2><div class="section-sub">מהחדש לישן</div></div><div class="stream" id="newsStream"></div></div><aside class="sources-box"><h3>מקורות במערכת</h3><div class="source-list" id="sourceList"></div><p style="color:var(--muted);font-size:.8rem;margin-bottom:0">המערכת מיועדת לרכז כותרות, תקצירים וקישורים למקור. התוכן המלא נשאר באתרי החדשות המקוריים.</p></aside></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="logo" style="font-size:2rem">חדשות עכשיו</div><p>מרכז חדשות אוטומטי. יש לאמת מידע חשוב במקור הראשוני. זמני פרסום ותקצירים תלויים בנתונים שמוחזרים מה־API.</p></div></footer>
+<div class="article-modal" id="articleModal"><div class="article-panel" id="articlePanel"></div></div>
+<script>
+/*
+  API CONTRACT
+  -----------
+  This static frontend intentionally does NOT contain an OpenAI API key.
+  Configure a secure server-side endpoint at /api/news that uses OPENAI_API_KEY
+  from an environment variable and returns JSON in this shape:
 
-    <!-- Sidebar Overlay -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  {
+    "updatedAt": "2026-08-23T00:40:00+03:00",
+    "articles": [{
+      "id":"...", "title":"...", "subtitle":"...", "summary":"...",
+      "source":"וואלה", "url":"https://...", "image":"https://...",
+      "category":"בארץ", "publishedAt":"...", "breaking":true
+    }]
+  }
 
-    <div class="dashboard">
-        <!-- Sidebar -->
-        <aside class="sidebar" id="sidebar">
-            <div class="logo">
-                <div class="logo-icon">CV</div>
-                <span class="logo-text">CryptoVault</span>
-            </div>
-
-            <nav class="nav-section">
-                <div class="nav-label">Main Menu</div>
-                <a href="index.html" class="nav-item active">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="7" height="7" rx="1"/>
-                        <rect x="14" y="3" width="7" height="7" rx="1"/>
-                        <rect x="3" y="14" width="7" height="7" rx="1"/>
-                        <rect x="14" y="14" width="7" height="7" rx="1"/>
-                    </svg>
-                    Dashboard
-                </a>
-                <a href="markets.html" class="nav-item">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                    </svg>
-                    Markets
-                </a>
-                <a href="wallet.html" class="nav-item">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-                        <line x1="1" y1="10" x2="23" y2="10"/>
-                    </svg>
-                    Wallet
-                </a>
-            </nav>
-
-            <nav class="nav-section">
-                <div class="nav-label">Account</div>
-                <a href="settings.html" class="nav-item">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"/>
-                        <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
-                    </svg>
-                    Settings
-                </a>
-            </nav>
-
-            <div class="sidebar-footer">
-                <div class="theme-toggle">
-                    <div class="theme-toggle-label">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="5"/>
-                            <line x1="12" y1="1" x2="12" y2="3"/>
-                            <line x1="12" y1="21" x2="12" y2="23"/>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                            <line x1="1" y1="12" x2="3" y2="12"/>
-                            <line x1="21" y1="12" x2="23" y2="12"/>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                        </svg>
-                        Light Mode
-                    </div>
-                    <div class="theme-switch" id="themeSwitch"></div>
-                </div>
-                <button class="logout-btn" onclick="window.location.href='login.html'">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
-                        <polyline points="16 17 21 12 16 7"/>
-                        <line x1="21" y1="12" x2="9" y2="12"/>
-                    </svg>
-                    Logout
-                </button>
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Header -->
-            <div class="header">
-                <div class="header-left">
-                    <h1>Dashboard</h1>
-                    <p class="header-subtitle">Welcome back! Here's your portfolio overview.</p>
-                </div>
-                <div class="header-right">
-                    <div class="header-search">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"/>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                        </svg>
-                        <input type="text" placeholder="Search...">
-                    </div>
-                    <button class="notification-btn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-                            <path d="M13.73 21a2 2 0 01-3.46 0"/>
-                        </svg>
-                        <span class="notification-badge">3</span>
-                    </button>
-                    <div class="user-menu">
-                        <div class="user-avatar">AM</div>
-                        <div class="user-info">
-                            <span class="user-name">Alex Morgan</span>
-                            <span class="user-role">Pro Trader</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Content Wrapper -->
-            <div class="content-wrapper">
-                <!-- Left Column -->
-                <div class="content-left">
-                    <!-- Charts Grid -->
-                    <div class="charts-grid">
-                        <!-- Portfolio Overview -->
-                        <div class="card chart-card">
-                            <div class="card-header">
-                                <h2 class="card-title">Portfolio Overview</h2>
-                                <div class="chart-tabs">
-                                    <button class="chart-tab active">1D</button>
-                                    <button class="chart-tab">1W</button>
-                                    <button class="chart-tab">1M</button>
-                                    <button class="chart-tab">1Y</button>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <svg class="line-chart" viewBox="0 0 700 200" preserveAspectRatio="xMidYMid meet">
-                                    <defs>
-                                        <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#b87333"/>
-                                            <stop offset="50%" style="stop-color:#c9845a"/>
-                                            <stop offset="100%" style="stop-color:#daa57a"/>
-                                        </linearGradient>
-                                        <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#b87333;stop-opacity:0.4"/>
-                                            <stop offset="50%" style="stop-color:#b87333;stop-opacity:0.15"/>
-                                            <stop offset="100%" style="stop-color:#b87333;stop-opacity:0"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Grid Lines -->
-                                    <line x1="0" y1="40" x2="700" y2="40" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    <line x1="0" y1="80" x2="700" y2="80" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    <line x1="0" y1="120" x2="700" y2="120" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    <line x1="0" y1="160" x2="700" y2="160" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    
-                                    <!-- Area Fill -->
-                                    <polygon points="50,140 150,120 250,85 350,95 450,60 550,70 650,35 650,200 50,200" fill="url(#areaGradient)"/>
-                                    
-                                    <!-- Line -->
-                                    <polyline points="50,140 150,120 250,85 350,95 450,60 550,70 650,35" fill="none" stroke="url(#lineGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    
-                                    <!-- Dots -->
-                                    <circle cx="50" cy="140" r="5" fill="#b87333"/>
-                                    <circle cx="150" cy="120" r="5" fill="#b87333"/>
-                                    <circle cx="250" cy="85" r="5" fill="#b87333"/>
-                                    <circle cx="350" cy="95" r="5" fill="#b87333"/>
-                                    <circle cx="450" cy="60" r="5" fill="#b87333"/>
-                                    <circle cx="550" cy="70" r="5" fill="#b87333"/>
-                                    <circle cx="650" cy="35" r="5" fill="#b87333"/>
-                                </svg>
-                                <div class="chart-labels">
-                                    <span>Mon</span>
-                                    <span>Tue</span>
-                                    <span>Wed</span>
-                                    <span>Thu</span>
-                                    <span>Fri</span>
-                                    <span>Sat</span>
-                                    <span>Sun</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Asset Performance -->
-                        <div class="card chart-card">
-                            <div class="card-header">
-                                <h2 class="card-title">Asset Performance</h2>
-                                <div class="chart-tabs">
-                                    <button class="chart-tab active">Week</button>
-                                    <button class="chart-tab">Month</button>
-                                    <button class="chart-tab">Year</button>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <svg class="bar-chart" viewBox="0 0 700 200" preserveAspectRatio="xMidYMid meet">
-                                    <defs>
-                                        <linearGradient id="barGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#6b8e6b"/>
-                                            <stop offset="100%" style="stop-color:#5a7a5a"/>
-                                        </linearGradient>
-                                        <linearGradient id="barGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#b87333"/>
-                                            <stop offset="100%" style="stop-color:#9a5f2a"/>
-                                        </linearGradient>
-                                        <linearGradient id="barGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#c27878"/>
-                                            <stop offset="100%" style="stop-color:#a85f5f"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Grid Lines -->
-                                    <line x1="0" y1="40" x2="700" y2="40" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    <line x1="0" y1="80" x2="700" y2="80" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    <line x1="0" y1="120" x2="700" y2="120" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    <line x1="0" y1="160" x2="700" y2="160" stroke="var(--chart-grid)" stroke-width="1"/>
-                                    
-                                    <!-- Bars - BTC -->
-                                    <rect x="40" y="70" width="60" height="130" rx="4" fill="url(#barGradient1)"/>
-                                    <text x="70" y="190" text-anchor="middle" fill="var(--text-secondary)" font-size="12">BTC</text>
-                                    <text x="70" y="60" text-anchor="middle" fill="var(--gain)" font-size="13" font-weight="600">+8.2%</text>
-                                    
-                                    <!-- Bars - ETH -->
-                                    <rect x="130" y="90" width="60" height="110" rx="4" fill="url(#barGradient1)"/>
-                                    <text x="160" y="190" text-anchor="middle" fill="var(--text-secondary)" font-size="12">ETH</text>
-                                    <text x="160" y="80" text-anchor="middle" fill="var(--gain)" font-size="13" font-weight="600">+6.5%</text>
-                                    
-                                    <!-- Bars - USDT -->
-                                    <rect x="220" y="170" width="60" height="30" rx="4" fill="url(#barGradient2)"/>
-                                    <text x="250" y="190" text-anchor="middle" fill="var(--text-secondary)" font-size="12">USDT</text>
-                                    <text x="250" y="160" text-anchor="middle" fill="var(--text-secondary)" font-size="13" font-weight="600">+0.1%</text>
-                                    
-                                    <!-- Bars - SOL -->
-                                    <rect x="310" y="50" width="60" height="150" rx="4" fill="url(#barGradient1)"/>
-                                    <text x="340" y="190" text-anchor="middle" fill="var(--text-secondary)" font-size="12">SOL</text>
-                                    <text x="340" y="40" text-anchor="middle" fill="var(--gain)" font-size="13" font-weight="600">+12.4%</text>
-                                    
-                                    <!-- Bars - BNB -->
-                                    <rect x="400" y="130" width="60" height="70" rx="4" fill="url(#barGradient2)"/>
-                                    <text x="430" y="190" text-anchor="middle" fill="var(--text-secondary)" font-size="12">BNB</text>
-                                    <text x="430" y="120" text-anchor="middle" fill="var(--text-secondary)" font-size="13" font-weight="600">+2.8%</text>
-                                    
-                                    <!-- Bars - ADA -->
-                                    <rect x="490" y="140" width="60" height="60" rx="4" fill="url(#barGradient2)"/>
-                                    <text x="520" y="190" text-anchor="middle" fill="var(--text-secondary)" font-size="12">ADA</text>
-                                    <text x="520" y="130" text-anchor="middle" fill="var(--text-secondary)" font-size="13" font-weight="600">+1.9%</text>
-                                    
-                                    <!-- Bars - XRP -->
-                                    <rect x="580" y="150" width="60" height="50" rx="4" fill="url(#barGradient3)"/>
-                                    <text x="610" y="190" text-anchor="middle" fill="var(--text-secondary)" font-size="12">XRP</text>
-                                    <text x="610" y="140" text-anchor="middle" fill="var(--loss)" font-size="13" font-weight="600">-1.2%</text>
-                                    
-                                    <!-- Baseline -->
-                                    <line x1="0" y1="200" x2="700" y2="200" stroke="var(--border)" stroke-width="2"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- BTC/USD Trading -->
-                        <div class="card chart-card">
-                            <div class="card-header">
-                                <h2 class="card-title">BTC/USD</h2>
-                                <div class="trading-pair">
-                                    <span class="pair-price">$43,256.00</span>
-                                    <span class="pair-change positive">+2.34%</span>
-                                </div>
-                            </div>
-                            <div class="candlestick-chart">
-                                <svg viewBox="0 0 400 150" preserveAspectRatio="none">
-                                    <line x1="20" y1="30" x2="20" y2="70" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="15" y="40" width="10" height="20" fill="#6b8e6b"/>
-                                    <line x1="50" y1="25" x2="50" y2="75" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="45" y="35" width="10" height="30" fill="#c27878"/>
-                                    <line x1="80" y1="35" x2="80" y2="85" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="75" y="45" width="10" height="25" fill="#6b8e6b"/>
-                                    <line x1="110" y1="20" x2="110" y2="60" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="105" y="30" width="10" height="20" fill="#6b8e6b"/>
-                                    <line x1="140" y1="30" x2="140" y2="80" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="135" y="40" width="10" height="30" fill="#c27878"/>
-                                    <line x1="170" y1="40" x2="170" y2="90" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="165" y="50" width="10" height="25" fill="#c27878"/>
-                                    <line x1="200" y1="35" x2="200" y2="75" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="195" y="45" width="10" height="20" fill="#6b8e6b"/>
-                                    <line x1="230" y1="25" x2="230" y2="65" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="225" y="35" width="10" height="20" fill="#6b8e6b"/>
-                                    <line x1="260" y1="30" x2="260" y2="70" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="255" y="40" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="290" y1="20" x2="290" y2="55" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="285" y="30" width="10" height="15" fill="#c27878"/>
-                                    <line x1="320" y1="15" x2="320" y2="50" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="315" y="25" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="350" y1="10" x2="350" y2="45" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="345" y="20" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="380" y1="15" x2="380" y2="55" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="375" y="25" width="10" height="20" fill="#c27878"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- ETH/USD Trading -->
-                        <div class="card chart-card">
-                            <div class="card-header">
-                                <h2 class="card-title">ETH/USD</h2>
-                                <div class="trading-pair">
-                                    <span class="pair-price">$2,284.50</span>
-                                    <span class="pair-change positive">+1.87%</span>
-                                </div>
-                            </div>
-                            <div class="candlestick-chart">
-                                <svg viewBox="0 0 400 150" preserveAspectRatio="none">
-                                    <line x1="20" y1="40" x2="20" y2="80" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="15" y="50" width="10" height="20" fill="#6b8e6b"/>
-                                    <line x1="50" y1="35" x2="50" y2="75" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="45" y="45" width="10" height="20" fill="#6b8e6b"/>
-                                    <line x1="80" y1="30" x2="80" y2="70" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="75" y="40" width="10" height="20" fill="#c27878"/>
-                                    <line x1="110" y1="45" x2="110" y2="90" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="105" y="55" width="10" height="25" fill="#c27878"/>
-                                    <line x1="140" y1="40" x2="140" y2="75" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="135" y="50" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="170" y1="35" x2="170" y2="70" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="165" y="45" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="200" y1="30" x2="200" y2="65" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="195" y="40" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="230" y1="25" x2="230" y2="60" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="225" y="35" width="10" height="15" fill="#c27878"/>
-                                    <line x1="260" y1="35" x2="260" y2="75" stroke="#c27878" stroke-width="1"/>
-                                    <rect x="255" y="45" width="10" height="20" fill="#c27878"/>
-                                    <line x1="290" y1="30" x2="290" y2="65" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="285" y="40" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="320" y1="20" x2="320" y2="55" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="315" y="30" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="350" y1="15" x2="350" y2="50" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="345" y="25" width="10" height="15" fill="#6b8e6b"/>
-                                    <line x1="380" y1="25" x2="380" y2="60" stroke="#6b8e6b" stroke-width="1"/>
-                                    <rect x="375" y="35" width="10" height="15" fill="#6b8e6b"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bottom Row -->
-                    <div class="bottom-row">
-                        <!-- Asset Allocation -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h2 class="card-title">Asset Allocation</h2>
-                            </div>
-                            <div class="donut-chart-container">
-                                <svg class="donut-chart" viewBox="0 0 120 120">
-                                    <circle cx="60" cy="60" r="45" fill="none" stroke="#f7931a" stroke-width="18" stroke-dasharray="113 170" stroke-dashoffset="-42" stroke-linecap="round"/>
-                                    <circle cx="60" cy="60" r="45" fill="none" stroke="#627eea" stroke-width="18" stroke-dasharray="71 212" stroke-dashoffset="-155" stroke-linecap="round"/>
-                                    <circle cx="60" cy="60" r="45" fill="none" stroke="#26a17b" stroke-width="18" stroke-dasharray="57 226" stroke-dashoffset="-226" stroke-linecap="round"/>
-                                    <circle cx="60" cy="60" r="45" fill="none" stroke="#b87333" stroke-width="18" stroke-dasharray="42 241" stroke-dashoffset="-283" stroke-linecap="round"/>
-                                </svg>
-                                <div class="donut-legend">
-                                    <div class="legend-item"><span class="legend-dot btc"></span>BTC 40%</div>
-                                    <div class="legend-item"><span class="legend-dot eth"></span>ETH 25%</div>
-                                    <div class="legend-item"><span class="legend-dot usdt"></span>USDT 20%</div>
-                                    <div class="legend-item"><span class="legend-dot other"></span>Other 15%</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio Health -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h2 class="card-title">Portfolio Health</h2>
-                            </div>
-                            <div class="gauge-container">
-                                <svg class="gauge" viewBox="0 0 120 80">
-                                    <defs>
-                                        <linearGradient id="gaugeGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#c27878"/>
-                                            <stop offset="50%" style="stop-color:#c9a878"/>
-                                            <stop offset="100%" style="stop-color:#6b8e6b"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M15,70 A45,45 0 0,1 105,70" fill="none" stroke="var(--border)" stroke-width="10" stroke-linecap="round"/>
-                                    <path d="M15,70 A45,45 0 0,1 105,70" fill="none" stroke="url(#gaugeGradient1)" stroke-width="10" stroke-linecap="round" stroke-dasharray="120 141"/>
-                                    <circle cx="89" cy="45" r="6" fill="#6b8e6b"/>
-                                </svg>
-                                <div class="gauge-value">85%</div>
-                                <div class="gauge-label">Excellent</div>
-                            </div>
-                        </div>
-
-                        <!-- Risk Level -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h2 class="card-title">Risk Level</h2>
-                            </div>
-                            <div class="gauge-container">
-                                <svg class="gauge" viewBox="0 0 120 80">
-                                    <defs>
-                                        <linearGradient id="gaugeGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#6b8e6b"/>
-                                            <stop offset="50%" style="stop-color:#c9a878"/>
-                                            <stop offset="100%" style="stop-color:#c27878"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M15,70 A45,45 0 0,1 105,70" fill="none" stroke="var(--border)" stroke-width="10" stroke-linecap="round"/>
-                                    <path d="M15,70 A45,45 0 0,1 105,70" fill="none" stroke="url(#gaugeGradient2)" stroke-width="10" stroke-linecap="round" stroke-dasharray="50 141"/>
-                                    <circle cx="52" cy="30" r="6" fill="#c9a878"/>
-                                </svg>
-                                <div class="gauge-value">35%</div>
-                                <div class="gauge-label">Moderate</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column - Stats -->
-                <div class="content-right">
-                    <div class="stat-card primary">
-                        <div class="stat-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="1" x2="12" y2="23"/>
-                                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-                            </svg>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-label">Total Balance</div>
-                            <div class="stat-value">$84,254.32</div>
-                            <div class="stat-change positive">+12.5% this month</div>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-                                <polyline points="17 6 23 6 23 12"/>
-                            </svg>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-label">Total Profit</div>
-                            <div class="stat-value">$12,847.00</div>
-                            <div class="stat-change positive">+8.2% vs last week</div>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
-                            </svg>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-label">Pending Orders</div>
-                            <div class="stat-value">7</div>
-                            <div class="stat-change">3 buy, 4 sell</div>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
-                            </svg>
-                        </div>
-                        <div class="stat-content">
-                            <div class="stat-label">Active Assets</div>
-                            <div class="stat-value">12</div>
-                            <div class="stat-change">Across 4 wallets</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Transactions Row -->
-            <div class="transactions-row">
-                <!-- Recent Transactions -->
-                <div class="card transactions-card">
-                    <div class="card-header">
-                        <h2 class="card-title">Recent Transactions</h2>
-                        <a href="#" class="view-all">View All</a>
-                    </div>
-                    <div class="transactions-list">
-                        <div class="transaction-item">
-                            <div class="transaction-icon buy">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-                                </svg>
-                            </div>
-                            <div class="transaction-details">
-                                <span class="transaction-title">Buy BTC</span>
-                                <span class="transaction-date">Today, 2:45 PM</span>
-                            </div>
-                            <div class="transaction-amount positive">+0.0234 BTC</div>
-                        </div>
-                        <div class="transaction-item">
-                            <div class="transaction-icon sell">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/>
-                                </svg>
-                            </div>
-                            <div class="transaction-details">
-                                <span class="transaction-title">Sell ETH</span>
-                                <span class="transaction-date">Today, 11:20 AM</span>
-                            </div>
-                            <div class="transaction-amount negative">-0.805 ETH</div>
-                        </div>
-                        <div class="transaction-item">
-                            <div class="transaction-icon transfer">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="17 1 21 5 17 9"/>
-                                    <path d="M3 11V9a4 4 0 014-4h14"/>
-                                    <polyline points="7 23 3 19 7 15"/>
-                                    <path d="M21 13v2a4 4 0 01-4 4H3"/>
-                                </svg>
-                            </div>
-                            <div class="transaction-details">
-                                <span class="transaction-title">Transfer USDT</span>
-                                <span class="transaction-date">Yesterday</span>
-                            </div>
-                            <div class="transaction-amount">500 USDT</div>
-                        </div>
-                        <div class="transaction-item">
-                            <div class="transaction-icon buy">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-                                </svg>
-                            </div>
-                            <div class="transaction-details">
-                                <span class="transaction-title">Buy SOL</span>
-                                <span class="transaction-date">Dec 28, 2025</span>
-                            </div>
-                            <div class="transaction-amount positive">+15.5 SOL</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Top Movers -->
-                <div class="card movers-card">
-                    <div class="card-header">
-                        <h2 class="card-title">Top Movers</h2>
-                        <div class="movers-tabs">
-                            <button class="movers-tab active">Gainers</button>
-                            <button class="movers-tab">Losers</button>
-                        </div>
-                    </div>
-                    <div class="movers-list">
-                        <div class="mover-item">
-                            <div class="mover-rank">1</div>
-                            <div class="mover-coin">
-                                <div class="coin-icon sol">◎</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Solana</span>
-                                    <span class="coin-symbol">SOL</span>
-                                </div>
-                            </div>
-                            <div class="mover-data">
-                                <span class="mover-price">$98.42</span>
-                                <span class="mover-change positive">+12.4%</span>
-                            </div>
-                        </div>
-                        <div class="mover-item">
-                            <div class="mover-rank">2</div>
-                            <div class="mover-coin">
-                                <div class="coin-icon doge">Ð</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Dogecoin</span>
-                                    <span class="coin-symbol">DOGE</span>
-                                </div>
-                            </div>
-                            <div class="mover-data">
-                                <span class="mover-price">$0.082</span>
-                                <span class="mover-change positive">+8.5%</span>
-                            </div>
-                        </div>
-                        <div class="mover-item">
-                            <div class="mover-rank">3</div>
-                            <div class="mover-coin">
-                                <div class="coin-icon btc">₿</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Bitcoin</span>
-                                    <span class="coin-symbol">BTC</span>
-                                </div>
-                            </div>
-                            <div class="mover-data">
-                                <span class="mover-price">$43,256</span>
-                                <span class="mover-change positive">+8.2%</span>
-                            </div>
-                        </div>
-                        <div class="mover-item">
-                            <div class="mover-rank">4</div>
-                            <div class="mover-coin">
-                                <div class="coin-icon eth">Ξ</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Ethereum</span>
-                                    <span class="coin-symbol">ETH</span>
-                                </div>
-                            </div>
-                            <div class="mover-data">
-                                <span class="mover-price">$2,284</span>
-                                <span class="mover-change positive">+6.5%</span>
-                            </div>
-                        </div>
-                        <div class="mover-item">
-                            <div class="mover-rank">5</div>
-                            <div class="mover-coin">
-                                <div class="coin-icon ada">₳</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Cardano</span>
-                                    <span class="coin-symbol">ADA</span>
-                                </div>
-                            </div>
-                            <div class="mover-data">
-                                <span class="mover-price">$0.52</span>
-                                <span class="mover-change positive">+5.1%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Watchlist -->
-                <div class="card watchlist-card">
-                    <div class="card-header">
-                        <h2 class="card-title">Watchlist</h2>
-                        <button class="add-btn">+ Add</button>
-                    </div>
-                    <div class="watchlist">
-                        <div class="watchlist-item">
-                            <div class="watchlist-coin">
-                                <div class="coin-icon btc">₿</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Bitcoin</span>
-                                    <span class="coin-symbol">BTC</span>
-                                </div>
-                            </div>
-                            <div class="watchlist-data">
-                                <span class="coin-price">$43,256</span>
-                                <span class="coin-change positive">+2.34%</span>
-                            </div>
-                            <svg class="sparkline" viewBox="0 0 50 20">
-                                <polyline points="0,15 8,12 16,14 24,8 32,10 40,5 50,7" fill="none" stroke="#6b8e6b" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <div class="watchlist-item">
-                            <div class="watchlist-coin">
-                                <div class="coin-icon eth">Ξ</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Ethereum</span>
-                                    <span class="coin-symbol">ETH</span>
-                                </div>
-                            </div>
-                            <div class="watchlist-data">
-                                <span class="coin-price">$2,284</span>
-                                <span class="coin-change positive">+1.87%</span>
-                            </div>
-                            <svg class="sparkline" viewBox="0 0 50 20">
-                                <polyline points="0,12 8,10 16,13 24,9 32,11 40,6 50,8" fill="none" stroke="#6b8e6b" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <div class="watchlist-item">
-                            <div class="watchlist-coin">
-                                <div class="coin-icon xrp">✕</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">XRP</span>
-                                    <span class="coin-symbol">XRP</span>
-                                </div>
-                            </div>
-                            <div class="watchlist-data">
-                                <span class="coin-price">$0.62</span>
-                                <span class="coin-change negative">-1.24%</span>
-                            </div>
-                            <svg class="sparkline" viewBox="0 0 50 20">
-                                <polyline points="0,8 8,10 16,7 24,12 32,9 40,14 50,12" fill="none" stroke="#c27878" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <div class="watchlist-item">
-                            <div class="watchlist-coin">
-                                <div class="coin-icon doge">Ð</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Dogecoin</span>
-                                    <span class="coin-symbol">DOGE</span>
-                                </div>
-                            </div>
-                            <div class="watchlist-data">
-                                <span class="coin-price">$0.082</span>
-                                <span class="coin-change positive">+5.67%</span>
-                            </div>
-                            <svg class="sparkline" viewBox="0 0 50 20">
-                                <polyline points="0,16 8,14 16,12 24,10 32,8 40,5 50,3" fill="none" stroke="#6b8e6b" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <div class="watchlist-item">
-                            <div class="watchlist-coin">
-                                <div class="coin-icon dot">●</div>
-                                <div class="coin-info">
-                                    <span class="coin-name">Polkadot</span>
-                                    <span class="coin-symbol">DOT</span>
-                                </div>
-                            </div>
-                            <div class="watchlist-data">
-                                <span class="coin-price">$7.45</span>
-                                <span class="coin-change positive">+3.21%</span>
-                            </div>
-                            <svg class="sparkline" viewBox="0 0 50 20">
-                                <polyline points="0,14 8,12 16,15 24,10 32,8 40,6 50,9" fill="none" stroke="#6b8e6b" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <footer class="copyright">
-                Copyright &copy; 2026 CryptoVault. Designed by <a href="https://templatemo.com" target="_blank" rel="nofollow">TemplateMo</a>
-            </footer>
-        </main>
-    </div>
-
-    <script src="js/templatemo-crypto-script.js"></script>
+  Recommended server instruction: gather the newest Israeli news from reliable
+  public sources, including major general outlets and Haredi outlets; avoid
+  inventing facts; preserve source URLs; deduplicate the same story; return JSON only.
+*/
+const API_ENDPOINT='/api/news';
+const REFRESH_MS=5*60*1000;
+const CACHE_KEY='israelNewsCacheV1';
+const categories=['הכל','בארץ','חרדים','פוליטי','ביטחוני','כלכלה','עולם','טכנולוגיה','ספורט'];
+let activeCategory='הכל', articles=[];
+const $=id=>document.getElementById(id);
+const fallbackImages=[
+'https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80',
+'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80',
+'https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&w=1200&q=80',
+'https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80',
+'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80'
+];
+const demoArticles=[
+{title:'כותרת ראשית לדוגמה: מערכת החדשות מוכנה לחיבור ל־API החי',subtitle:'ברגע שנקודת השרת תחובר, הכותרות כאן יתחלפו אוטומטית בכל חמש דקות.',summary:'האתר בנוי לקבל אוסף כתבות ממקורות שונים, להסיר כפילויות ולהציג אותן במבנה חדשותי ברור ונוח.',source:'מערכת',category:'בארץ',publishedAt:new Date().toISOString(),breaking:true,image:fallbackImages[0],url:'#'},
+{title:'מדור חדשות חרדיות ירכז כותרות ממספר מקורות',summary:'העיצוב כולל קטגוריה ייעודית לחדשות חרדיות לצד חדשות כלליות.',source:'כיכר השבת',category:'חרדים',publishedAt:new Date(Date.now()-7e5).toISOString(),image:fallbackImages[1],url:'#'},
+{title:'מבזקים רצים מוצגים בראש האתר בזמן אמת',summary:'כל כתבה שסומנה כחדשה או דחופה יכולה להופיע אוטומטית בפס המבזקים.',source:'וואלה',category:'בארץ',publishedAt:new Date(Date.now()-14e5).toISOString(),breaking:true,image:fallbackImages[2],url:'#'},
+{title:'אפשר לשלב מקורות כלליים וחרדיים באותה תמונת מצב',summary:'המערכת מוכנה לשדות מקור, קטגוריה, תמונה, תקציר, זמן וקישור.',source:'בחדרי חרדים',category:'חרדים',publishedAt:new Date(Date.now()-20e5).toISOString(),image:fallbackImages[3],url:'#'},
+{title:'תצוגת מובייל מלאה לכותרות, תמונות וכרטיסי חדשות',summary:'הגריד משתנה אוטומטית למסך צר ומציג את הכתבות בצורה קריאה.',source:'ערוץ 7',category:'פוליטי',publishedAt:new Date(Date.now()-27e5).toISOString(),image:fallbackImages[4],url:'#'},
+{title:'מנגנון מטמון מציג את העדכון האחרון גם במקרה של תקלה זמנית',summary:'העדכון האחרון נשמר בדפדפן, כך שהאתר לא נשאר ריק.',source:'מערכת',category:'טכנולוגיה',publishedAt:new Date(Date.now()-33e5).toISOString(),image:fallbackImages[0],url:'#'},
+{title:'כל כתבה יכולה להיפתח בחלון קריאה עם קישור למקור',summary:'הממשק שומר על מבנה נקי ומכוון את הקורא לאתר המקורי להמשך.',source:'JDN',category:'חרדים',publishedAt:new Date(Date.now()-40e5).toISOString(),image:fallbackImages[1],url:'#'},
+{title:'המערכת מסננת לפי קטגוריה בלחיצה אחת',summary:'חדשות בארץ, חרדים, פוליטי, ביטחוני, כלכלה, עולם, טכנולוגיה וספורט.',source:'מערכת',category:'כלכלה',publishedAt:new Date(Date.now()-48e5).toISOString(),image:fallbackImages[2],url:'#'}
+];
+function safeArticle(a,i){return {id:a.id||String(i),title:a.title||'ללא כותרת',subtitle:a.subtitle||'',summary:a.summary||a.description||'',source:a.source||'מקור חדשות',url:a.url||'#',image:a.image||fallbackImages[i%fallbackImages.length],category:a.category||'בארץ',publishedAt:a.publishedAt||new Date().toISOString(),breaking:!!a.breaking}}
+function timeAgo(v){const d=new Date(v),m=Math.max(0,Math.floor((Date.now()-d)/60000));if(m<1)return'עכשיו';if(m<60)return`לפני ${m} דק׳`;const h=Math.floor(m/60);if(h<24)return`לפני ${h} שע׳`;return d.toLocaleDateString('he-IL')}
+function filteredArticles(){return activeCategory==='הכל'?articles:articles.filter(a=>a.category===activeCategory)}
+function setStatus(text,type=''){const el=$('apiStatus');el.textContent=text;el.className='status-badge '+type}
+function renderNav(){ $('categoryNav').innerHTML=categories.map(c=>`<button class="nav-chip ${c===activeCategory?'active':''}" data-cat="${c}">${c}</button>`).join('');document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderNav();renderAll()}) }
+function renderTicker(){const list=articles.filter(a=>a.breaking).slice(0,8);const use=list.length?list:articles.slice(0,6);$('tickerTrack').innerHTML=[...use,...use].map(a=>`<span class="ticker-item">${escapeHtml(a.title)}</span>`).join('')}
+function renderLead(list){const a=list[0]||articles[0];if(!a){$('lead').innerHTML='<div class="empty-state">אין כתבות להצגה</div>';return}$('lead').innerHTML=`<img src="${escapeAttr(a.image)}" alt=""><div class="lead-content"><span class="tag">${escapeHtml(a.category)}</span><h1>${escapeHtml(a.title)}</h1><p>${escapeHtml(a.subtitle||a.summary)}</p><div class="meta"><span>${escapeHtml(a.source)}</span><span>${timeAgo(a.publishedAt)}</span></div></div>`;$('lead').onclick=()=>openArticle(a)}
+function renderSides(list){$('sideStack').innerHTML=list.slice(1,4).map((a,i)=>`<article class="side-card" data-side="${i}"><img src="${escapeAttr(a.image)}" alt=""><div class="side-card-content"><div class="source">${escapeHtml(a.source)}</div><h3>${escapeHtml(a.title)}</h3><div class="muted">${timeAgo(a.publishedAt)}</div></div></article>`).join('');$('sideStack').querySelectorAll('[data-side]').forEach((el,i)=>el.onclick=()=>openArticle(list[i+1]))}
+function renderCards(list){const chosen=list.slice(4,10);$('topCards').innerHTML=chosen.length?chosen.map((a,i)=>`<article class="news-card" data-card="${i}"><div class="news-img"><img src="${escapeAttr(a.image)}" alt=""></div><div class="news-body"><div class="source">${escapeHtml(a.source)} · ${escapeHtml(a.category)}</div><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.summary)}</p><div class="news-meta"><span>${timeAgo(a.publishedAt)}</span><span>לכתבה ←</span></div></div></article>`).join(''):'<div class="empty-state">אין מספיק כתבות בקטגוריה זו.</div>';$('topCards').querySelectorAll('[data-card]').forEach((el,i)=>el.onclick=()=>openArticle(chosen[i]))}
+function renderStream(list){const chosen=list.slice(10);$('newsStream').innerHTML=(chosen.length?chosen:list.slice(1)).map((a,i)=>`<article class="stream-item" data-stream="${i}"><img src="${escapeAttr(a.image)}" alt=""><div class="stream-copy"><div class="source">${escapeHtml(a.source)} · ${escapeHtml(a.category)}</div><h3>${escapeHtml(a.title)}</h3><div class="muted">${escapeHtml(a.summary||'')} · ${timeAgo(a.publishedAt)}</div></div></article>`).join('');const arr=chosen.length?chosen:list.slice(1);$('newsStream').querySelectorAll('[data-stream]').forEach((el,i)=>el.onclick=()=>openArticle(arr[i]))}
+function renderSources(){const src=[...new Set(articles.map(a=>a.source).filter(Boolean))];$('sourceList').innerHTML=src.map(s=>`<span class="source-chip">${escapeHtml(s)}</span>`).join('')}
+function renderAll(){const list=filteredArticles();$('resultInfo').textContent=`${list.length} כתבות`;renderLead(list);renderSides(list);renderCards(list);renderStream(list);renderSources();renderTicker()}
+function openArticle(a){$('articlePanel').innerHTML=`${a.image?`<img src="${escapeAttr(a.image)}" alt="">`:''}<div class="article-content"><div class="modal-top"><span class="tag">${escapeHtml(a.category)}</span><button class="close" id="closeModal">×</button></div><div class="source">${escapeHtml(a.source)} · ${timeAgo(a.publishedAt)}</div><h2>${escapeHtml(a.title)}</h2>${a.subtitle?`<p><b>${escapeHtml(a.subtitle)}</b></p>`:''}<p>${escapeHtml(a.summary)}</p>${a.url&&a.url!=='#'?`<a class="read-original" href="${escapeAttr(a.url)}" target="_blank" rel="noopener">לכתבה המקורית</a>`:''}</div>`;$('articleModal').classList.add('open');$('closeModal').onclick=closeModal}
+function closeModal(){$('articleModal').classList.remove('open')}
+$('articleModal').addEventListener('click',e=>{if(e.target===$('articleModal'))closeModal()});addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function escapeAttr(v){return escapeHtml(v)}
+async function loadNews(manual=false){const btn=$('refreshBtn');btn.classList.add('spin');setStatus('מעדכן חדשות…');try{const res=await fetch(API_ENDPOINT,{headers:{'Accept':'application/json'},cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);const data=await res.json();if(!Array.isArray(data.articles)||!data.articles.length)throw new Error('Empty feed');articles=data.articles.map(safeArticle).sort((a,b)=>new Date(b.publishedAt)-new Date(a.publishedAt));const stamp=data.updatedAt||new Date().toISOString();localStorage.setItem(CACHE_KEY,JSON.stringify({articles,updatedAt:stamp}));$('lastUpdate').textContent=new Date(stamp).toLocaleTimeString('he-IL',{hour:'2-digit',minute:'2-digit'});setStatus('מחובר ל־API','ok');renderAll()}catch(err){let cache=null;try{cache=JSON.parse(localStorage.getItem(CACHE_KEY)||'null')}catch{}if(cache?.articles?.length){articles=cache.articles.map(safeArticle);$('lastUpdate').textContent=new Date(cache.updatedAt).toLocaleTimeString('he-IL',{hour:'2-digit',minute:'2-digit'});setStatus('מציג עדכון שמור','warn')}else{articles=demoArticles.map(safeArticle);$('lastUpdate').textContent='מצב הדגמה';setStatus('API עדיין לא מחובר — מצב הדגמה','warn')}renderAll()}finally{btn.classList.remove('spin')}}
+$('refreshBtn').onclick=()=>loadNews(true);
+function updateClock(){const n=new Date();$('clock').textContent=n.toLocaleTimeString('he-IL',{hour:'2-digit',minute:'2-digit',second:'2-digit'});$('today').textContent=n.toLocaleDateString('he-IL',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}updateClock();setInterval(updateClock,1000);renderNav();loadNews();setInterval(loadNews,REFRESH_MS);
+</script>
 </body>
 </html>
