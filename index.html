@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#07111f">
   <meta name="description" content="הדופק — מהדורת חדשות אישית בעברית: ישראל, העולם החרדי, עולם, ספורט, כלכלה, טכנולוגיה ושווקים.">
-  <title>הדופק | מהדורת החדשות האישית</title>
+  <title>הדופק | חדשות, עומק ונתונים</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e02b3b'/%3E%3Cpath d='M16 15h27a7 7 0 0 1 7 7v28H23a7 7 0 0 1-7-7V15Zm34 12h3v16a7 7 0 0 1-7 7' fill='none' stroke='white' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M23 25h19M23 33h19M23 41h12' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Noto+Serif+Hebrew:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -576,12 +577,122 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
     }
+    /* 2026 editorial redesign */
+    :root {
+      --accent: #e02b3b;
+      --accent-deep: #a91020;
+      --blue: #0b1d36;
+      --blue-soft: #173458;
+      --cream: #fbfaf7;
+      --card-shadow: 0 16px 44px rgba(9, 28, 52, .09);
+      --card-shadow-hover: 0 26px 64px rgba(9, 28, 52, .16);
+    }
+    body { background: linear-gradient(180deg, var(--cream) 0, var(--canvas) 35rem); }
+    [data-theme="dark"] body { background: var(--canvas); }
+    .utility { background: #06101f; }
+    .site-header { top: 0; box-shadow: 0 8px 30px rgba(5, 16, 31, .05); }
+    .masthead { min-height: 78px; }
+    .brand { display: inline-flex; align-items: center; justify-content: center; gap: 12px; }
+    .brand-symbol { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 14px; color: #fff; background: linear-gradient(145deg, var(--accent), var(--accent-deep)); box-shadow: 0 9px 24px rgba(224, 43, 59, .24); }
+    .brand-symbol svg { width: 25px; height: 25px; }
+    .brand-lockup { text-align: right; }
+    .brand-name { font: 900 clamp(1.75rem, 3vw, 2.45rem)/1 "Noto Serif Hebrew", serif; letter-spacing: -.06em; }
+    .brand-sub { margin-top: 5px; letter-spacing: .08em; font-size: .63rem; }
+    .nav-scroll { justify-content: flex-start; gap: 5px; }
+    .nav-item { padding: 8px 15px; }
+    .nav-item:hover, .nav-item.active { background: var(--accent); }
+    .market-ribbon { background: linear-gradient(90deg, #08182c, #102b4b); }
+    .update-strip { padding-top: 20px; }
+    .lead-story { min-height: 520px; border-radius: 26px; }
+    .lead-story::after { background: linear-gradient(180deg, rgba(2,8,16,.05) 10%, rgba(2,8,16,.25) 45%, rgba(2,8,16,.96)); }
+    .lead-title { font-size: clamp(2.25rem, 5vw, 4.25rem); }
+    .hero-rail { gap: 14px; }
+    .rail-card, .story-card, .compact-card, .dashboard-card { box-shadow: var(--card-shadow); border-color: color-mix(in srgb, var(--line) 75%, transparent); }
+    .rail-card:hover, .story-card:hover, .compact-card:hover { box-shadow: var(--card-shadow-hover); }
+    .section { scroll-margin-top: 165px; }
+    .section-head { padding-bottom: 11px; border-bottom: 1px solid var(--line); }
+    .section-heading::before { background: linear-gradient(var(--accent), #f05d68); }
+    .story-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .story-card { border-radius: 20px; }
+    .story-card h3 { font-size: 1.18rem; }
+    .read-arrow { display: inline-flex; align-items: center; gap: 5px; color: var(--accent); }
+    .category-block { scroll-margin-top: 165px; margin: 48px 0; }
+    .category-layout { grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: 18px; }
+    .category-feature { min-height: 430px; box-shadow: var(--card-shadow); }
+    .deep-section { scroll-margin-top: 165px; }
+    .content-layout { display: block; }
+    .content-layout > div { width: 100%; }
+    .video-section { margin: 46px 0 12px; }
+    .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .video-card { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--paper); box-shadow: var(--card-shadow); }
+    .video-frame { position: relative; aspect-ratio: 16/9; background: #07111f; }
+    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .video-copy { padding: 15px 17px 18px; }
+    .video-copy h3 { margin: 5px 0 4px; font: 800 1.08rem/1.35 "Noto Serif Hebrew", serif; }
+    .video-copy p { margin: 0; color: var(--muted); font-size: .78rem; }
+    .breaking-fab { position: fixed; right: max(14px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); z-index: 140; display: flex; align-items: center; gap: 10px; border: 0; border-radius: 999px; padding: 12px 15px; background: var(--accent); color: #fff; box-shadow: 0 18px 45px rgba(169, 16, 32, .34); cursor: pointer; font-weight: 900; transition: transform .2s, box-shadow .2s; }
+    .breaking-fab:hover { transform: translateY(-3px); box-shadow: 0 23px 55px rgba(169, 16, 32, .42); }
+    .breaking-fab .live-dot { width: 9px; height: 9px; background: #fff; }
+    .breaking-count { min-width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: rgba(0,0,0,.2); font-size: .72rem; }
+    .drawer-shade { position: fixed; inset: 0; z-index: 160; background: rgba(3, 10, 20, .56); backdrop-filter: blur(4px); opacity: 0; visibility: hidden; transition: .25s; }
+    .drawer-shade.open { opacity: 1; visibility: visible; }
+    .breaking-drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 170; width: min(420px, 92vw); display: flex; flex-direction: column; background: var(--paper); box-shadow: -28px 0 80px rgba(3, 10, 20, .25); transform: translateX(105%); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+    .breaking-drawer.open { transform: translateX(0); }
+    .drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 22px 20px; color: #fff; background: linear-gradient(145deg, #a91020, #e02b3b); }
+    .drawer-head h2 { margin: 0; font: 900 1.7rem "Noto Serif Hebrew", serif; }
+    .drawer-head small { display: block; margin-top: 3px; color: #ffd8dc; }
+    .drawer-head .close-btn { color: #fff; border-color: rgba(255,255,255,.35); background: rgba(255,255,255,.12); }
+    .drawer-list { overflow: auto; padding: 8px 0 30px; }
+    .drawer-item { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 17px 20px; border-bottom: 1px solid var(--line); cursor: pointer; }
+    .drawer-item:hover { background: color-mix(in srgb, var(--accent) 5%, var(--paper)); }
+    .drawer-item.urgent::after { content: ""; position: absolute; right: 8px; top: 20px; bottom: 20px; width: 3px; border-radius: 99px; background: var(--accent); }
+    .drawer-time { direction: ltr; color: var(--accent); font-weight: 900; }
+    .drawer-copy { font-size: .9rem; font-weight: 800; line-height: 1.45; }
+    .drawer-source { display: block; margin-top: 5px; color: var(--muted); font-size: .7rem; font-weight: 600; }
+    .article-layer { align-items: flex-start; overflow: auto; padding: 22px; }
+    .article-panel { width: min(980px, 100%); max-height: none; overflow: visible; margin: 18px auto; border-radius: 26px; }
+    .article-hero { position: relative; min-height: 390px; overflow: hidden; color: #fff; background: var(--blue); }
+    .article-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(3,10,20,.12), rgba(3,10,20,.92)); }
+    .article-hero .modal-image { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; }
+    .article-hero-copy { position: absolute; z-index: 2; right: clamp(20px, 5vw, 48px); left: clamp(20px, 5vw, 48px); bottom: 32px; }
+    .article-hero h2 { margin: 12px 0 9px; font: 900 clamp(2.1rem, 5vw, 3.8rem)/1.08 "Noto Serif Hebrew", serif; letter-spacing: -.04em; }
+    .article-close { position: absolute; z-index: 3; top: 16px; left: 16px; color: #fff; background: rgba(3,10,20,.46); border-color: rgba(255,255,255,.35); }
+    .article-reading { max-width: 760px; margin: 0 auto; padding: clamp(28px, 6vw, 58px); font-size: 1.02rem; line-height: 1.9; }
+    .article-reading .standfirst { margin: 0 0 28px; color: var(--ink-soft); font: 700 1.23rem/1.65 "Noto Serif Hebrew", serif; }
+    .article-reading h3 { margin: 35px 0 12px; font: 900 1.55rem "Noto Serif Hebrew", serif; }
+    .article-reading p { margin: 0 0 18px; }
+    .article-reading .key-box { margin: 30px 0; padding: 20px 22px; border-right: 4px solid var(--accent); border-radius: 14px; background: var(--canvas); }
+    .article-reading .key-box h3 { margin-top: 0; }
+    .article-reading li { margin: 9px 0; }
+    .article-attribution { margin-top: 38px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; }
+    .fade-up { animation: fadeUp .52s both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+    @media (max-width: 900px) { .video-grid { grid-template-columns: 1fr 1fr; } .video-card:last-child { grid-column: 1/-1; } }
+    @media (max-width: 590px) {
+      .masthead { grid-template-columns: 1fr auto; }
+      .brand { justify-content: flex-start; }
+      .brand-symbol { width: 38px; height: 38px; border-radius: 12px; }
+      .brand-name { font-size: 1.75rem; }
+      .header-actions .icon-btn:nth-child(3) { display: none; }
+      .lead-story { min-height: 450px; }
+      .lead-title { font-size: 2.15rem; }
+      .video-grid { grid-template-columns: 1fr; }
+      .video-card:last-child { grid-column: auto; }
+      .breaking-fab .fab-label { display: none; }
+      .breaking-fab { width: 51px; height: 51px; justify-content: center; padding: 0; }
+      .breaking-count { position: absolute; top: -5px; left: -4px; }
+      .article-layer { padding: 0; }
+      .article-panel { margin: 0; min-height: 100vh; border-radius: 0; }
+      .article-hero { min-height: 360px; }
+      .article-reading { padding: 28px 20px 52px; }
+    }
+
   </style>
 </head>
 <body>
   <div class="utility">
     <div class="wrap utility-inner">
-      <div class="utility-live"><span class="live-dot"></span>מערכת חיה · מהדורה אישית</div>
+      <div class="utility-live"><span class="live-dot"></span>מהדורה אישית מתעדכנת</div>
       <div id="utilityDate">—</div>
       <div id="clock">--:--:--</div>
     </div>
@@ -589,114 +700,54 @@
 
   <header class="site-header">
     <div class="wrap masthead">
-      <div class="edition"><strong>מהדורת לילה</strong><span id="editionDate">—</span></div>
+      <div class="edition"><strong id="editionName">מהדורת החדשות</strong><span id="editionDate">—</span></div>
       <a class="brand" href="#top" aria-label="הדופק — דף הבית">
-        <div class="brand-name"><span class="brand-mark"></span><span>הדופק</span></div>
-        <div class="brand-sub">החדשות שחשוב לדעת</div>
+        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12H6.8A2.8 2.8 0 0 1 4 16.2V5.5a1 1 0 0 1 1-1Z"/><path d="M19 8h1a1 1 0 0 1 1 1v7.5A2.5 2.5 0 0 1 18.5 19H18"/><path d="M7.5 8h8M7.5 11h8M7.5 14h5"/></svg></span>
+        <span class="brand-lockup"><span class="brand-name">הדופק</span><span class="brand-sub">חדשות · עומק · נתונים</span></span>
       </a>
       <div class="header-actions">
-        <button class="icon-btn" id="searchBtn" aria-label="חיפוש בחדשות" title="חיפוש">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg>
-        </button>
-        <button class="icon-btn" id="themeBtn" aria-label="החלפת מצב תצוגה" title="מצב כהה">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path></svg>
-        </button>
-        <button class="icon-btn" id="reloadBtn" aria-label="רענון הדף" title="בדיקת עדכון חדש">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6v6h-6"></path><path d="M4 18v-6h6"></path><path d="M6.5 8a7 7 0 0 1 11.5-2L20 8M4 16l2.5 2A7 7 0 0 0 18 16"></path></svg>
-        </button>
+        <button class="icon-btn" id="searchBtn" aria-label="חיפוש בחדשות"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg></button>
+        <button class="icon-btn" id="themeBtn" aria-label="החלפת מצב תצוגה"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path></svg></button>
+        <button class="icon-btn" id="reloadBtn" aria-label="בדיקת עדכון חדש"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6v6h-6"></path><path d="M4 18v-6h6"></path><path d="M6.5 8a7 7 0 0 1 11.5-2L20 8M4 16l2.5 2A7 7 0 0 0 18 16"></path></svg></button>
       </div>
     </div>
-    <nav class="primary-nav" aria-label="מדורי חדשות">
-      <div class="wrap nav-scroll" id="categoryNav"></div>
-    </nav>
+    <nav class="primary-nav" aria-label="מדורי חדשות"><div class="wrap nav-scroll" id="categoryNav"></div></nav>
   </header>
 
-  <section class="breaking-bar" aria-label="חדשות מתפרצות">
-    <div class="wrap breaking-inner">
-      <div class="breaking-label"><span class="live-dot"></span>מבזקים</div>
-      <div class="ticker-window"><div class="ticker-track" id="tickerTrack"></div></div>
-    </div>
-  </section>
-
-  <section class="market-ribbon" aria-label="מדדי שוק">
-    <div class="wrap market-scroll" id="marketRibbon"></div>
-  </section>
+  <section class="market-ribbon" aria-label="מדדי שוק"><div class="wrap market-scroll" id="marketRibbon"></div></section>
 
   <main class="wrap" id="top">
     <div class="update-strip">
-      <div class="freshness"><span class="freshness-badge">עדכון שוטף</span><span>עודכן <strong id="updatedAt">—</strong></span></div>
-      <div>הכותרות הן תקצירים מקוריים · הפרטים המלאים והקרדיט אצל המקורות</div>
+      <div class="freshness"><span class="freshness-badge">מהדורה חיה</span><span>עודכן <strong id="updatedAt">—</strong></span></div>
+      <div>כתיבה מערכתית מקורית · מקורות מאומתים · עדכון מלא בכל שעתיים</div>
     </div>
 
-    <section class="hero-layout" aria-label="כותרות ראשיות">
-      <article class="lead-story" id="leadStory"></article>
-      <div class="hero-rail" id="heroRail"></div>
-    </section>
+    <section class="hero-layout" aria-label="כותרות ראשיות"><article class="lead-story" id="leadStory"></article><div class="hero-rail" id="heroRail"></div></section>
 
-    <div class="content-layout">
-      <div>
-        <section class="section" id="latestSection">
-          <div class="section-head">
-            <h2 class="section-heading">החדשות המרכזיות</h2>
-            <div class="section-note" id="resultCount"></div>
-          </div>
-          <div class="story-grid" id="mainGrid"></div>
-        </section>
-        <div id="categorySections"></div>
-      </div>
+    <div class="content-layout"><div>
+      <section class="section" id="latestSection"><div class="section-head"><h2 class="section-heading">חדשות</h2><div class="section-note" id="resultCount"></div></div><div class="story-grid" id="mainGrid"></div></section>
+      <div id="categorySections"></div>
+    </div></div>
 
-      <aside class="live-panel" aria-label="חדשות לפי דקות">
-        <div class="live-panel-head"><h2>רץ עכשיו</h2><span class="eyebrow">חי</span></div>
-        <div class="live-list" id="liveList"></div>
-      </aside>
-    </div>
+    <section class="deep-section" id="deepSection"><div class="deep-head"><div><span class="eyebrow" style="color:#d7a43a">פרשנות וסיכום</span><h2>כתבות עומק</h2></div><p>כתיבה מקורית שמצליבה מקורות, מפרידה בין עובדות לניתוח ומסבירה את התמונה המלאה.</p></div><div class="deep-grid" id="deepGrid"></div></section>
 
-    <section class="deep-section" id="deepSection">
-      <div class="deep-head">
-        <div><span class="eyebrow" style="color:#d7a43a">פרשנות וסיכום</span><h2>להבין את התמונה</h2></div>
-        <p>ניתוחים מקוריים שמצליבים כמה מקורות, מפרידים בין עובדות להערכות ומסבירים למה הסיפור חשוב.</p>
-      </div>
-      <div class="deep-grid" id="deepGrid"></div>
-    </section>
+    <section class="dashboard-grid"><div class="dashboard-card"><div class="dashboard-head"><h2>תוצאות ספורט</h2><span class="section-note">ישראל · אנגליה · ספרד</span></div><div id="scoresTable"></div></div><div class="dashboard-card"><div class="dashboard-head"><h2>כלכלה ושווקים</h2><span class="section-note">נתוני מסחר אחרונים</span></div><div id="marketTable"></div></div></section>
 
-    <section class="dashboard-grid">
-      <div class="dashboard-card">
-        <div class="dashboard-head"><h2>תוצאות ספורט</h2><span class="section-note">ישראל · אנגליה · ספרד</span></div>
-        <div id="scoresTable"></div>
-      </div>
-      <div class="dashboard-card">
-        <div class="dashboard-head"><h2>תמונת שוק</h2><span class="section-note">נתוני סגירה/מסחר אחרונים</span></div>
-        <div id="marketTable"></div>
-      </div>
-    </section>
+    <section class="video-section" id="videoSection"><div class="section-head"><div><span class="eyebrow">צופים באתר</span><h2 class="section-heading">וידאו ברשת</h2></div><span class="section-note">ספורט, רגעים מעניינים וסרטונים קלילים</span></div><div class="video-grid" id="videoGrid"></div></section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-top">
-      <div class="footer-about">
-        <div class="footer-brand">הדופק</div>
-        <p>לוח חדשות אישי שמרכז כותרות, תקצירים, ניתוחים וקישורים למקור. האתר אינו מחליף את המקור הראשוני, ובמידע רגיש או מתפתח יש לבדוק את העדכון האחרון אצל הגוף המדווח.</p>
-      </div>
-      <div><h3>מדורים</h3><div class="footer-links"><a href="#latestSection">חדשות מרכזיות</a><a href="#deepSection">כתבות עומק</a><button id="footerSearch" style="all:unset;cursor:pointer">חיפוש באתר</button></div></div>
-      <div><h3>שקיפות</h3><div class="footer-links"><span>סיכומים מקוריים בלבד</span><span>קישור לכל מקור</span><span>עדכון מתוזמן מדי שעה</span></div></div>
-    </div>
-    <div class="wrap footer-bottom">© 2026 הדופק · מהדורת חדשות אישית</div>
-  </footer>
+  <footer class="footer"><div class="wrap footer-top"><div class="footer-about"><div class="footer-brand">הדופק</div><p>מהדורת חדשות אישית עם קריאה מלאה בתוך האתר, כתבות עומק, ספורט, שווקים וטכנולוגיה.</p></div><div><h3>מדורים</h3><div class="footer-links"><a href="#latestSection">חדשות</a><a href="#deepSection">כתבות עומק</a><a href="#videoSection">וידאו</a></div></div><div><h3>עדכונים</h3><div class="footer-links"><span>מהדורה מלאה בכל שעתיים</span><span>מבזקים במגירה הצדדית</span><button id="footerSearch" style="all:unset;cursor:pointer">חיפוש באתר</button></div></div></div><div class="wrap footer-bottom">© 2026 הדופק · מהדורת חדשות אישית</div></footer>
 
-  <div class="search-layer" id="searchLayer" role="dialog" aria-modal="true" aria-label="חיפוש">
-    <div class="search-panel">
-      <div class="panel-top"><h2>חיפוש במהדורה</h2><button class="close-btn" data-close="search" aria-label="סגירה">×</button></div>
-      <input class="search-input" id="searchInput" type="search" placeholder="לדוגמה: איראן, ליגת העל, ביטקוין…" autocomplete="off">
-      <div class="search-results" id="searchResults"></div>
-    </div>
-  </div>
+  <button class="breaking-fab" id="breakingFab" aria-label="פתיחת מבזקים"><span class="live-dot"></span><span class="fab-label">מבזקים</span><span class="breaking-count" id="breakingCount">0</span></button>
+  <div class="drawer-shade" id="drawerShade"></div>
+  <aside class="breaking-drawer" id="breakingDrawer" aria-label="מבזקי חדשות"><div class="drawer-head"><div><h2>רץ עכשיו</h2><small>העדכונים האחרונים לפי שעה</small></div><button class="close-btn" id="drawerClose" aria-label="סגירה">×</button></div><div class="drawer-list" id="liveList"></div></aside>
 
-  <div class="article-layer" id="articleLayer" role="dialog" aria-modal="true" aria-label="תקציר כתבה">
-    <article class="article-panel" id="articlePanel"></article>
-  </div>
+  <div class="search-layer" id="searchLayer" role="dialog" aria-modal="true" aria-label="חיפוש"><div class="search-panel"><div class="panel-top"><h2>חיפוש במהדורה</h2><button class="close-btn" data-close="search" aria-label="סגירה">×</button></div><input class="search-input" id="searchInput" type="search" placeholder="חיפוש לפי נושא, מדור או מקור…" autocomplete="off"><div class="search-results" id="searchResults"></div></div></div>
+  <div class="article-layer" id="articleLayer" role="dialog" aria-modal="true" aria-label="קריאת כתבה"><article class="article-panel" id="articlePanel"></article></div>
   <div class="toast" id="toast">בודק אם פורסם עדכון חדש…</div>
 
   <script>
+
     /* NEWS_DATA_START — the hourly task replaces only NEWS_FEED */
     const NEWS_FEED = {
       meta: {
@@ -1061,240 +1112,107 @@
       ]
     };
     /* NEWS_DATA_END */
-
-    const CATEGORIES = ["הכל", "בארץ", "חרדים", "עולם", "ספורט", "כלכלה", "טכנולוגיה", "עומק"];
+    const CATEGORIES = ["הכל", "בארץ", "חרדים", "עולם", "כלכלה", "ספורט", "טכנולוגיה", "עומק"];
+    const EDITORIAL_VIDEOS = [
+      { id: "qvNrmj_uNhE", category: "ספורט", title: "תקציר הפרמייר ליג האחרון", note: "תקציר רשמי של NBC Sports" },
+      { id: "SxiMucn6hTc", category: "ספורט", title: "כל שערי מחזור הפתיחה", note: "ריכוז שערים ועדכונים מהליגה האנגלית" },
+      { id: "--iAXUZF52k", category: "קליל", title: "רגעי חיות מצחיקים מהרשת", note: "אוסף קליל לצפייה בתוך האתר" }
+    ];
     let activeCategory = "הכל";
     const $ = id => document.getElementById(id);
     const allStories = () => [...NEWS_FEED.articles, ...NEWS_FEED.deepDives];
 
-    function escapeHtml(value) {
-      return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-    }
-    function safeUrl(value) {
-      try { const u = new URL(value, location.href); return ["http:", "https:"].includes(u.protocol) ? u.href : "#"; }
-      catch { return "#"; }
-    }
-    function imgTag(article, className = "") {
-      const src = safeUrl(article.image);
-      return `<img class="${className}" src="${escapeHtml(src)}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">`;
-    }
-    function timeAgo(value) {
-      const date = new Date(value);
-      const minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60000));
-      if (!Number.isFinite(minutes)) return "";
-      if (minutes < 2) return "עכשיו";
-      if (minutes < 60) return `לפני ${minutes} דקות`;
-      const hours = Math.floor(minutes / 60);
-      if (hours < 24) return `לפני ${hours} שעות`;
-      return date.toLocaleDateString("he-IL", { day: "numeric", month: "short" });
-    }
+    function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+    function safeUrl(value) { try { const u = new URL(value, location.href); return ["http:", "https:"].includes(u.protocol) ? u.href : "#"; } catch { return "#"; } }
+    function imgTag(article, className = "") { const src = safeUrl(article.image); return `<img class="${className}" src="${escapeHtml(src)}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">`; }
+    function timeAgo(value) { const date = new Date(value), minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60000)); if (!Number.isFinite(minutes)) return ""; if (minutes < 2) return "עכשיו"; if (minutes < 60) return `לפני ${minutes} דקות`; const hours = Math.floor(minutes / 60); if (hours < 24) return `לפני ${hours} שעות`; return date.toLocaleDateString("he-IL", { day: "numeric", month: "short" }); }
     function articleById(id) { return allStories().find(item => item.id === id); }
 
     function renderNav() {
-      $("categoryNav").innerHTML = CATEGORIES.map(category =>
-        `<button class="nav-item ${activeCategory === category ? "active" : ""}" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`
-      ).join("");
-      document.querySelectorAll("[data-category]").forEach(button => {
-        button.addEventListener("click", () => {
-          activeCategory = button.dataset.category;
-          renderNav();
-          if (activeCategory === "עומק") {
-            document.getElementById("deepSection").scrollIntoView({behavior:"smooth", block:"start"});
-            return;
-          }
-          renderMainGrid();
-          document.getElementById("latestSection").scrollIntoView({behavior:"smooth", block:"start"});
-        });
+      $("categoryNav").innerHTML = CATEGORIES.map(category => `<button class="nav-item ${activeCategory === category ? "active" : ""}" data-category="${escapeHtml(category)}">${category === "הכל" ? "ראשי" : escapeHtml(category)}</button>`).join("");
+      document.querySelectorAll("[data-category]").forEach(button => button.onclick = () => {
+        activeCategory = button.dataset.category; renderNav();
+        if (activeCategory === "עומק") return $("deepSection").scrollIntoView({behavior:"smooth"});
+        if (activeCategory === "הכל") { renderMainGrid(); return $("top").scrollIntoView({behavior:"smooth"}); }
+        const target = document.getElementById(`cat-${activeCategory}`);
+        if (target) target.scrollIntoView({behavior:"smooth", block:"start"}); else { renderMainGrid(); $("latestSection").scrollIntoView({behavior:"smooth"}); }
       });
     }
 
-    function renderTicker() {
-      const entries = NEWS_FEED.breaking.map(item => `<span class="ticker-entry"><span class="ticker-time">${escapeHtml(item.time)}</span>${escapeHtml(item.title)}</span>`).join("");
-      $("tickerTrack").innerHTML = entries + entries;
-    }
-
     function renderMarkets() {
-      $("marketRibbon").innerHTML = NEWS_FEED.markets.map(item => `
-        <div class="market-cell" title="${escapeHtml(item.note)}">
-          <span class="market-name">${escapeHtml(item.name)} · ${escapeHtml(item.symbol)}</span>
-          <strong class="market-value">${escapeHtml(item.value)}</strong>
-          <span class="market-change ${escapeHtml(item.direction)}">${escapeHtml(item.change)}</span>
-        </div>`).join("");
-
-      $("marketTable").innerHTML = NEWS_FEED.markets.map(item => `
-        <div class="market-table-row">
-          <div><div class="market-table-name">${escapeHtml(item.name)}</div><div class="section-note">${escapeHtml(item.note)}</div></div>
-          <div class="market-table-value">${escapeHtml(item.value)}</div>
-          <div class="market-table-change ${escapeHtml(item.direction)}">${escapeHtml(item.change)}</div>
-        </div>`).join("");
+      $("marketRibbon").innerHTML = NEWS_FEED.markets.map(item => `<div class="market-cell" title="${escapeHtml(item.note)}"><span class="market-name">${escapeHtml(item.name)} · ${escapeHtml(item.symbol)}</span><strong class="market-value">${escapeHtml(item.value)}</strong><span class="market-change ${escapeHtml(item.direction)}">${escapeHtml(item.change)}</span></div>`).join("");
+      $("marketTable").innerHTML = NEWS_FEED.markets.map(item => `<div class="market-table-row"><div><div class="market-table-name">${escapeHtml(item.name)}</div><div class="section-note">${escapeHtml(item.note)}</div></div><div class="market-table-value">${escapeHtml(item.value)}</div><div class="market-table-change ${escapeHtml(item.direction)}">${escapeHtml(item.change)}</div></div>`).join("");
     }
 
     function renderHero() {
       const lead = NEWS_FEED.articles.find(article => article.featured) || NEWS_FEED.articles[0];
       const rail = NEWS_FEED.articles.filter(article => article.id !== lead.id).slice(0, 3);
-      $("leadStory").innerHTML = `${imgTag(lead, "lead-img")}
-        <div class="lead-content">
-          <span class="category-pill">${escapeHtml(lead.category)}</span>
-          <h1 class="lead-title">${escapeHtml(lead.title)}</h1>
-          <p class="lead-summary">${escapeHtml(lead.subtitle || lead.summary)}</p>
-          <div class="article-meta"><span class="source-name">${escapeHtml(lead.source)}</span><span>${timeAgo(lead.publishedAt)}</span><span>${escapeHtml(lead.readTime)}</span></div>
-        </div>`;
+      $("leadStory").innerHTML = `${imgTag(lead, "lead-img")}<div class="lead-content"><span class="category-pill">${escapeHtml(lead.category)}</span><h1 class="lead-title">${escapeHtml(lead.title)}</h1><p class="lead-summary">${escapeHtml(lead.subtitle || lead.summary)}</p><div class="article-meta"><span class="source-name">${escapeHtml(lead.source)}</span><span>${timeAgo(lead.publishedAt)}</span><span>${escapeHtml(lead.readTime)}</span></div></div>`;
       $("leadStory").onclick = () => openArticle(lead.id);
-
-      $("heroRail").innerHTML = rail.map(article => `
-        <article class="rail-card" data-open="${escapeHtml(article.id)}">
-          ${imgTag(article)}
-          <div class="rail-copy"><span class="story-source">${escapeHtml(article.category)} · ${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><div class="rail-meta">${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</div></div>
-        </article>`).join("");
-      bindOpeners($("heroRail"));
+      $("heroRail").innerHTML = rail.map(article => `<article class="rail-card fade-up" data-open="${escapeHtml(article.id)}">${imgTag(article)}<div class="rail-copy"><span class="story-source">${escapeHtml(article.category)} · ${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><div class="rail-meta">${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</div></div></article>`).join(""); bindOpeners($("heroRail"));
     }
 
-    function cardTemplate(article) {
-      return `<article class="story-card" data-open="${escapeHtml(article.id)}">
-        <div class="story-visual">${imgTag(article)}<span class="category-pill">${escapeHtml(article.category)}</span></div>
-        <div class="story-copy"><span class="story-source">${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><p>${escapeHtml(article.summary)}</p><div class="card-foot"><span>${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</span><span class="read-arrow">לסיכום ←</span></div></div>
-      </article>`;
-    }
-
-    function renderMainGrid() {
-      let list = NEWS_FEED.articles.filter(article => !article.featured);
-      if (activeCategory !== "הכל") list = list.filter(article => article.category === activeCategory);
-      const visible = list.slice(0, activeCategory === "הכל" ? 9 : 12);
-      $("resultCount").textContent = activeCategory === "הכל" ? `${NEWS_FEED.articles.length} כותרות במהדורה` : `${list.length} כתבות במדור`;
-      $("mainGrid").innerHTML = visible.length ? visible.map(cardTemplate).join("") : `<div style="grid-column:1/-1;padding:40px;text-align:center;border:1px dashed var(--line);border-radius:18px;color:var(--muted)">אין כרגע כתבות במדור זה.</div>`;
-      bindOpeners($("mainGrid"));
-    }
-
-    function renderLive() {
-      $("liveList").innerHTML = NEWS_FEED.breaking.map(item => `
-        <div class="live-item ${item.urgent ? "urgent" : ""}" data-open="${escapeHtml(item.articleId || "")}">
-          <div class="live-time">${escapeHtml(item.time)}</div>
-          <div class="live-copy">${escapeHtml(item.title)}<span class="live-source">${escapeHtml(item.source)}</span></div>
-        </div>`).join("");
-      bindOpeners($("liveList"));
-    }
+    function cardTemplate(article) { return `<article class="story-card fade-up" data-open="${escapeHtml(article.id)}"><div class="story-visual">${imgTag(article)}<span class="category-pill">${escapeHtml(article.category)}</span></div><div class="story-copy"><span class="story-source">${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><p>${escapeHtml(article.summary)}</p><div class="card-foot"><span>${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</span><span class="read-arrow">לקריאה מלאה ←</span></div></div></article>`; }
+    function renderMainGrid() { let list = NEWS_FEED.articles.filter(a => !a.featured); if (activeCategory !== "הכל") list = list.filter(a => a.category === activeCategory); $("resultCount").textContent = `${list.length} כתבות במהדורה`; $("mainGrid").innerHTML = list.slice(0, 9).map(cardTemplate).join(""); bindOpeners($("mainGrid")); }
 
     function renderCategorySections() {
-      const categories = ["חרדים", "ספורט", "כלכלה", "טכנולוגיה", "עולם"];
+      const categories = ["בארץ", "עולם", "כלכלה", "ספורט", "טכנולוגיה", "חרדים"];
       $("categorySections").innerHTML = categories.map(category => {
-        const items = NEWS_FEED.articles.filter(article => article.category === category).slice(0, 4);
-        if (!items.length) return "";
+        const items = NEWS_FEED.articles.filter(a => a.category === category).slice(0, 5); if (!items.length) return "";
         const [feature, ...rest] = items;
-        return `<section class="category-block" id="cat-${encodeURIComponent(category)}">
-          <div class="section-head"><h2 class="section-heading">${escapeHtml(category)}</h2><button class="nav-item" data-jump-category="${escapeHtml(category)}">כל הכתבות</button></div>
-          <div class="category-layout">
-            <article class="category-feature" data-open="${escapeHtml(feature.id)}">${imgTag(feature)}<div class="category-feature-copy"><span class="category-pill">${escapeHtml(feature.source)}</span><h3>${escapeHtml(feature.title)}</h3><div class="article-meta"><span>${timeAgo(feature.publishedAt)}</span><span>${escapeHtml(feature.readTime)}</span></div></div></article>
-            <div class="category-stack">${rest.map(article => `<article class="compact-card" data-open="${escapeHtml(article.id)}">${imgTag(article)}<div class="compact-copy"><span class="story-source">${escapeHtml(article.source)}</span><h4>${escapeHtml(article.title)}</h4><div class="rail-meta">${timeAgo(article.publishedAt)}</div></div></article>`).join("")}</div>
-          </div>
-        </section>`;
+        return `<section class="category-block" id="cat-${escapeHtml(category)}"><div class="section-head"><div><span class="eyebrow">מדור</span><h2 class="section-heading">${escapeHtml(category)}</h2></div><button class="nav-item" data-show-category="${escapeHtml(category)}">לכל כתבות המדור</button></div><div class="category-layout"><article class="category-feature" data-open="${escapeHtml(feature.id)}">${imgTag(feature)}<div class="category-feature-copy"><span class="category-pill">${escapeHtml(feature.source)}</span><h3>${escapeHtml(feature.title)}</h3><div class="article-meta"><span>${timeAgo(feature.publishedAt)}</span><span>${escapeHtml(feature.readTime)}</span></div></div></article><div class="category-stack">${rest.map(a => `<article class="compact-card" data-open="${escapeHtml(a.id)}">${imgTag(a)}<div class="compact-copy"><span class="story-source">${escapeHtml(a.source)}</span><h4>${escapeHtml(a.title)}</h4><div class="rail-meta">${timeAgo(a.publishedAt)}</div></div></article>`).join("")}</div></div></section>`;
       }).join("");
       bindOpeners($("categorySections"));
-      document.querySelectorAll("[data-jump-category]").forEach(button => button.onclick = () => {
-        activeCategory = button.dataset.jumpCategory;
-        renderNav(); renderMainGrid();
-        $("latestSection").scrollIntoView({behavior:"smooth"});
-      });
+      document.querySelectorAll("[data-show-category]").forEach(b => b.onclick = () => { activeCategory = b.dataset.showCategory; renderNav(); renderMainGrid(); $("latestSection").scrollIntoView({behavior:"smooth"}); });
     }
 
-    function renderDeep() {
-      $("deepGrid").innerHTML = NEWS_FEED.deepDives.map((article, index) => `
-        <article class="deep-card" data-open="${escapeHtml(article.id)}">
-          <div><span class="deep-index">ניתוח ${String(index + 1).padStart(2, "0")}</span><h3>${escapeHtml(article.title)}</h3><p>${escapeHtml(article.summary)}</p></div>
-          <div class="deep-sources">${escapeHtml(article.source)} · ${escapeHtml(article.readTime)} ←</div>
-        </article>`).join("");
-      bindOpeners($("deepGrid"));
-    }
+    function renderDeep() { $("deepGrid").innerHTML = NEWS_FEED.deepDives.map((a,i) => `<article class="deep-card" data-open="${escapeHtml(a.id)}"><div><span class="deep-index">כתבת עומק ${String(i+1).padStart(2,"0")}</span><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.summary)}</p></div><div class="deep-sources">${escapeHtml(a.readTime)} · לקריאה מלאה ←</div></article>`).join(""); bindOpeners($("deepGrid")); }
+    function renderScores() { $("scoresTable").innerHTML = NEWS_FEED.scores.map(item => `<div class="score-row"><div><div class="score-league">${escapeHtml(item.league)}</div><div class="section-note">${escapeHtml(item.status)}</div></div><div class="score-teams">${escapeHtml(item.teams)}</div><div class="score-result">${escapeHtml(item.score)}</div></div>`).join(""); }
+    function renderVideos() { const videos = Array.isArray(NEWS_FEED.videos) && NEWS_FEED.videos.length ? NEWS_FEED.videos : EDITORIAL_VIDEOS; $("videoGrid").innerHTML = videos.slice(0,3).map(v => `<article class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}" title="${escapeHtml(v.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-copy"><span class="story-source">${escapeHtml(v.category || "וידאו")}</span><h3>${escapeHtml(v.title)}</h3><p>${escapeHtml(v.note || "צפייה בתוך האתר")}</p></div></article>`).join(""); }
 
-    function renderScores() {
-      $("scoresTable").innerHTML = NEWS_FEED.scores.map(item => `
-        <div class="score-row"><div><div class="score-league">${escapeHtml(item.league)}</div><div class="section-note">${escapeHtml(item.status)}</div></div><div class="score-teams">${escapeHtml(item.teams)}</div><div class="score-result">${escapeHtml(item.score)}</div></div>`).join("");
-    }
+    function renderLive() { $("breakingCount").textContent = NEWS_FEED.breaking.length; $("liveList").innerHTML = NEWS_FEED.breaking.map(item => `<div class="drawer-item ${item.urgent ? "urgent" : ""}" data-open="${escapeHtml(item.articleId || "")}"><div class="drawer-time">${escapeHtml(item.time)}</div><div class="drawer-copy">${escapeHtml(item.title)}<span class="drawer-source">${escapeHtml(item.source)}</span></div></div>`).join(""); bindOpeners($("liveList")); }
+    function toggleDrawer(open) { $("breakingDrawer").classList.toggle("open", open); $("drawerShade").classList.toggle("open", open); document.body.classList.toggle("modal-open", open); }
+    function bindOpeners(root = document) { root.querySelectorAll("[data-open]").forEach(el => el.onclick = () => { if (el.dataset.open) { toggleDrawer(false); openArticle(el.dataset.open); } }); }
 
-    function bindOpeners(root = document) {
-      root.querySelectorAll("[data-open]").forEach(element => {
-        element.onclick = () => { if (element.dataset.open) openArticle(element.dataset.open); };
-      });
+    function categoryContext(article) {
+      const map = { "בארץ":"המשמעות המקומית של ההתפתחות תלויה כעת ביישום ובהודעות הרשמיות הבאות.", "עולם":"האירוע משתלב בתמונה בינלאומית רחבה יותר, ולכן חשוב לעקוב גם אחר תגובת המדינות והגופים המעורבים.", "כלכלה":"ההשפעה המעשית תימדד בנתוני המסחר, במחירים ובהודעות החברות או הרשויות בהמשך.", "ספורט":"מעבר לתוצאה או לדיווח המיידי, המשמעות תתבהר במחזור הבא ובהחלטות המקצועיות שיגיעו בעקבותיו.", "טכנולוגיה":"הכותרת חשובה בעיקר בגלל ההשפעה האפשרית על משתמשים, חברות ותחרות בשוק.", "חרדים":"המשך הסיפור ייקבע לפי ההודעות הרשמיות וההתפתחויות בתוך הציבור ועולם התורה.", "עומק":"הניתוח מפריד בין הנתונים המאומתים לבין ההערכה, ומסמן מה כדאי לבדוק בעדכון הבא." };
+      return map[article.category] || "המערכת תמשיך לעקוב אחר ההתפתחויות ותעדכן כאשר יתקבל מידע מאומת נוסף.";
     }
-
-    function openArticle(id) {
-      const article = articleById(id);
-      if (!article) return;
-      const secondary = article.secondarySources || [];
+    function normalizedBody(article) {
+      if (Array.isArray(article.body) && article.body.length) return article.body;
       const facts = article.facts || [];
-      $("articlePanel").innerHTML = `${imgTag(article, "modal-image")}
-        <div class="modal-body">
-          <div class="panel-top"><span class="category-pill">${escapeHtml(article.category)}</span><button class="close-btn" data-close="article" aria-label="סגירה">×</button></div>
-          <div class="story-source">${escapeHtml(article.source)} · ${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</div>
-          <h2>${escapeHtml(article.title)}</h2>
-          <p class="modal-lead">${escapeHtml(article.subtitle || article.summary)}</p>
-          <p>${escapeHtml(article.summary)}</p>
-          ${facts.length ? `<ul class="modal-facts">${facts.map(fact => `<li>${escapeHtml(fact)}</li>`).join("")}</ul>` : ""}
-          <div class="source-links"><a class="source-link" href="${escapeHtml(safeUrl(article.sourceUrl))}" target="_blank" rel="noopener noreferrer">לכתבה ב־${escapeHtml(article.source)} ↗</a>${secondary.map(source => `<a class="source-link secondary" href="${escapeHtml(safeUrl(source.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.name)} ↗</a>`).join("")}</div>
-        </div>`;
-      $("articleLayer").classList.add("open");
-      document.body.classList.add("modal-open");
-      $("articlePanel").querySelector("[data-close='article']").onclick = closeLayers;
+      return [
+        { heading:"מה קרה", paragraphs:[article.summary] },
+        { heading:"התמונה המלאה", paragraphs:[article.subtitle || article.summary, facts.slice(0,2).join(" ")] },
+        { heading:"למה זה חשוב", paragraphs:[categoryContext(article), facts.slice(2).join(" ")] },
+        { heading:"מה צפוי בהמשך", paragraphs:["הפרטים עשויים להשתנות ככל שיתפרסמו הודעות ומסמכים נוספים. במהדורה הבאה יוצגו רק התפתחויות שניתן לאמת מול המקורות."] }
+      ];
+    }
+    function openArticle(id) {
+      const article = articleById(id); if (!article) return;
+      const facts = article.facts || [], sections = normalizedBody(article);
+      $("articlePanel").innerHTML = `<div class="article-hero">${imgTag(article, "modal-image")}<button class="close-btn article-close" data-close="article" aria-label="סגירה">×</button><div class="article-hero-copy"><span class="category-pill">${escapeHtml(article.category)}</span><h2>${escapeHtml(article.title)}</h2><div class="article-meta"><span class="source-name">מקורות: ${escapeHtml(article.source)}</span><span>${timeAgo(article.publishedAt)}</span><span>${escapeHtml(article.readTime)}</span></div></div></div><div class="article-reading"><p class="standfirst">${escapeHtml(article.subtitle || article.summary)}</p>${sections.map(s => `<section><h3>${escapeHtml(s.heading)}</h3>${(s.paragraphs||[]).filter(Boolean).map(p => `<p>${escapeHtml(p)}</p>`).join("")}</section>`).join("")}${facts.length ? `<div class="key-box"><h3>הנקודות המרכזיות</h3><ul>${facts.map(f => `<li>${escapeHtml(f)}</li>`).join("")}</ul></div>` : ""}<div class="article-attribution">הכתבה נוסחה וסוכמה באופן מקורי על בסיס ${escapeHtml(article.source)}${article.secondarySources?.length ? ` ומקורות נוספים שנבדקו על ידי המערכת` : ""}. אין צורך לצאת מהאתר כדי לקרוא את הסיכום המלא.</div></div>`;
+      $("articleLayer").classList.add("open"); document.body.classList.add("modal-open"); $("articlePanel").querySelector("[data-close='article']").onclick = closeLayers; $("articleLayer").scrollTop = 0;
     }
 
-    function openSearch() {
-      $("searchLayer").classList.add("open");
-      document.body.classList.add("modal-open");
-      $("searchInput").value = "";
-      renderSearchResults("");
-      setTimeout(() => $("searchInput").focus(), 50);
-    }
-    function renderSearchResults(query) {
-      const q = query.trim().toLocaleLowerCase("he");
-      const results = allStories().filter(article => !q || [article.title, article.summary, article.category, article.source].join(" ").toLocaleLowerCase("he").includes(q)).slice(0, 12);
-      $("searchResults").innerHTML = results.length ? results.map(article => `<div class="search-result" data-search-open="${escapeHtml(article.id)}"><span class="story-source">${escapeHtml(article.category)} · ${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><div class="rail-meta">${escapeHtml(article.summary.slice(0, 120))}${article.summary.length > 120 ? "…" : ""}</div></div>`).join("") : `<div class="muted" style="padding:18px;text-align:center">לא נמצאו תוצאות.</div>`;
-      document.querySelectorAll("[data-search-open]").forEach(item => item.onclick = () => { closeLayers(); openArticle(item.dataset.searchOpen); });
-    }
-
-    function closeLayers() {
-      $("searchLayer").classList.remove("open");
-      $("articleLayer").classList.remove("open");
-      document.body.classList.remove("modal-open");
-    }
-
-    function setTheme(theme) {
-      document.documentElement.dataset.theme = theme;
-      localStorage.setItem("hadophek-theme", theme);
-      $("themeBtn").title = theme === "dark" ? "מצב בהיר" : "מצב כהה";
-    }
-    function toggleTheme() { setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"); }
-
-    function updateClock() {
-      const now = new Date();
-      $("clock").textContent = now.toLocaleTimeString("he-IL", {hour:"2-digit", minute:"2-digit", second:"2-digit"});
-      const dateText = now.toLocaleDateString("he-IL", {weekday:"long", day:"numeric", month:"long", year:"numeric"});
-      $("utilityDate").textContent = dateText;
-      $("editionDate").textContent = dateText;
-    }
-
-    function showToast(message) {
-      $("toast").textContent = message;
-      $("toast").classList.add("show");
-      setTimeout(() => $("toast").classList.remove("show"), 2300);
-    }
+    function openSearch() { $("searchLayer").classList.add("open"); document.body.classList.add("modal-open"); $("searchInput").value=""; renderSearchResults(""); setTimeout(() => $("searchInput").focus(),50); }
+    function renderSearchResults(query) { const q=query.trim().toLocaleLowerCase("he"), results=allStories().filter(a => !q || [a.title,a.summary,a.category,a.source].join(" ").toLocaleLowerCase("he").includes(q)).slice(0,16); $("searchResults").innerHTML=results.length?results.map(a=>`<div class="search-result" data-search-open="${escapeHtml(a.id)}"><span class="story-source">${escapeHtml(a.category)} · ${escapeHtml(a.source)}</span><h3>${escapeHtml(a.title)}</h3><div class="rail-meta">${escapeHtml(a.summary.slice(0,150))}${a.summary.length>150?"…":""}</div></div>`).join(""):`<div class="muted" style="padding:18px;text-align:center">לא נמצאו תוצאות.</div>`; document.querySelectorAll("[data-search-open]").forEach(el=>el.onclick=()=>{closeLayers();openArticle(el.dataset.searchOpen);}); }
+    function closeLayers() { $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); toggleDrawer(false); document.body.classList.remove("modal-open"); }
+    function setTheme(theme) { document.documentElement.dataset.theme=theme; localStorage.setItem("hadophek-theme",theme); }
+    function toggleTheme() { setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"); }
+    function updateClock() { const now=new Date(), dateText=now.toLocaleDateString("he-IL",{weekday:"long",day:"numeric",month:"long",year:"numeric"}); $("clock").textContent=now.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit",second:"2-digit"}); $("utilityDate").textContent=dateText; $("editionDate").textContent=dateText; }
+    function showToast(message) { $("toast").textContent=message; $("toast").classList.add("show"); setTimeout(()=>$("toast").classList.remove("show"),2300); }
 
     function init() {
-      const storedTheme = localStorage.getItem("hadophek-theme");
-      const preferredDark = window.matchMedia?.("(prefers-color-scheme: dark)").matches;
-      setTheme(storedTheme || (preferredDark ? "dark" : "light"));
-      renderNav(); renderTicker(); renderMarkets(); renderHero(); renderMainGrid(); renderLive(); renderCategorySections(); renderDeep(); renderScores();
-      const updateDate = new Date(NEWS_FEED.meta.updatedAt);
-      $("updatedAt").textContent = `${updateDate.toLocaleDateString("he-IL", {day:"numeric", month:"short"})}, ${updateDate.toLocaleTimeString("he-IL", {hour:"2-digit", minute:"2-digit"})}`;
-      updateClock(); setInterval(updateClock, 1000);
-
-      $("searchBtn").onclick = openSearch;
-      $("footerSearch").onclick = openSearch;
-      $("themeBtn").onclick = toggleTheme;
-      $("reloadBtn").onclick = () => { showToast("בודק אם פורסם עדכון חדש…"); setTimeout(() => location.reload(), 550); };
-      $("searchInput").addEventListener("input", event => renderSearchResults(event.target.value));
-      document.querySelector("[data-close='search']").onclick = closeLayers;
-      $("searchLayer").onclick = event => { if (event.target === $("searchLayer")) closeLayers(); };
-      $("articleLayer").onclick = event => { if (event.target === $("articleLayer")) closeLayers(); };
-      addEventListener("keydown", event => { if (event.key === "Escape") closeLayers(); if (event.key === "/" && !document.body.classList.contains("modal-open")) { event.preventDefault(); openSearch(); } });
+      setTheme(localStorage.getItem("hadophek-theme") || (matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+      renderNav(); renderMarkets(); renderHero(); renderMainGrid(); renderCategorySections(); renderDeep(); renderScores(); renderVideos(); renderLive();
+      const updateDate=new Date(NEWS_FEED.meta.updatedAt); $("updatedAt").textContent=`${updateDate.toLocaleDateString("he-IL",{day:"numeric",month:"short"})}, ${updateDate.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit"})}`; $("editionName").textContent=NEWS_FEED.meta.edition || "מהדורת החדשות";
+      updateClock(); setInterval(updateClock,1000);
+      $("searchBtn").onclick=openSearch; $("footerSearch").onclick=openSearch; $("themeBtn").onclick=toggleTheme; $("reloadBtn").onclick=()=>{showToast("בודק אם פורסם עדכון חדש…");setTimeout(()=>location.reload(),550);};
+      $("breakingFab").onclick=()=>toggleDrawer(true); $("drawerClose").onclick=()=>toggleDrawer(false); $("drawerShade").onclick=()=>toggleDrawer(false);
+      $("searchInput").addEventListener("input",e=>renderSearchResults(e.target.value)); document.querySelector("[data-close='search']").onclick=closeLayers;
+      $("searchLayer").onclick=e=>{if(e.target===$("searchLayer"))closeLayers();}; $("articleLayer").onclick=e=>{if(e.target===$("articleLayer"))closeLayers();};
+      addEventListener("keydown",e=>{if(e.key==="Escape")closeLayers();if(e.key==="/"&&!document.body.classList.contains("modal-open")){e.preventDefault();openSearch();}});
     }
     init();
   </script>
