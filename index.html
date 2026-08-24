@@ -687,6 +687,123 @@
       .article-reading { padding: 28px 20px 52px; }
     }
 
+    /* Election 2026 dashboard */
+    .election-strip {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(73, 141, 255, .3), transparent 25rem),
+        linear-gradient(115deg, #071426 0%, #0c294a 58%, #123a64 100%);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .election-strip::after { content: ""; position: absolute; inset: auto -8% -70px auto; width: 330px; height: 180px; border: 1px solid rgba(255,255,255,.1); border-radius: 50%; transform: rotate(-12deg); }
+    .election-inner { position: relative; z-index: 1; min-height: 126px; display: grid; grid-template-columns: minmax(230px, .85fr) minmax(440px, 1.35fr) auto; align-items: center; gap: clamp(18px, 3vw, 42px); padding-block: 19px; }
+    .election-kicker { display: flex; align-items: center; gap: 9px; color: #aecdff; font-size: .72rem; font-weight: 900; letter-spacing: .04em; }
+    .election-kicker::before { content: ""; width: 26px; height: 2px; border-radius: 99px; background: #f1c35b; }
+    .election-copy h2 { margin: 5px 0 2px; font: 900 clamp(1.45rem, 2.6vw, 2.2rem)/1.08 "Noto Serif Hebrew", serif; letter-spacing: -.035em; }
+    .election-copy p { margin: 0; color: #b8c9dc; font-size: .78rem; }
+    .election-countdown { direction: ltr; display: grid; grid-template-columns: repeat(4, minmax(82px, 1fr)); gap: 9px; }
+    .countdown-cell { min-height: 76px; display: grid; place-items: center; align-content: center; border: 1px solid rgba(255,255,255,.13); border-radius: 15px; background: rgba(255,255,255,.07); box-shadow: inset 0 1px rgba(255,255,255,.08); backdrop-filter: blur(8px); }
+    .countdown-cell strong { font: 900 clamp(1.4rem, 3vw, 2rem)/1 "Heebo", sans-serif; font-variant-numeric: tabular-nums; }
+    .countdown-cell span { margin-top: 5px; color: #aebfd2; font-size: .64rem; font-weight: 800; }
+    .polls-trigger { min-width: 160px; min-height: 54px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid rgba(255,255,255,.22); border-radius: 15px; padding: 11px 17px; color: #071426; background: linear-gradient(145deg, #f5d47f, #e8ad36); box-shadow: 0 14px 35px rgba(0,0,0,.2); cursor: pointer; font-weight: 900; transition: transform .2s, box-shadow .2s; }
+    .polls-trigger:hover { transform: translateY(-2px); box-shadow: 0 19px 42px rgba(0,0,0,.27); }
+    .polls-trigger svg { width: 22px; height: 22px; }
+    .polls-trigger-copy { text-align: right; line-height: 1.15; }
+    .polls-trigger-copy small { display: block; margin-top: 3px; color: #5b4317; font-size: .62rem; font-weight: 800; }
+
+    .polls-layer { position: fixed; inset: 0; z-index: 230; display: none; overflow: auto; padding: 14px; background: rgba(2, 8, 16, .82); backdrop-filter: blur(12px); }
+    .polls-layer.open { display: block; animation: pollLayerIn .24s ease-out both; }
+    @keyframes pollLayerIn { from { opacity: 0; } to { opacity: 1; } }
+    .polls-shell { width: min(1420px, 100%); min-height: calc(100vh - 28px); margin: 0 auto; overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 28px; color: var(--ink); background: var(--canvas); box-shadow: 0 40px 110px rgba(0,0,0,.42); }
+    .polls-head { position: relative; overflow: hidden; display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; padding: clamp(24px, 5vw, 52px); color: #fff; background: linear-gradient(125deg, #071426, #123a64); }
+    .polls-head::after { content: "120"; position: absolute; left: 5%; top: -42px; color: rgba(255,255,255,.045); font: 900 13rem/1 "Heebo", sans-serif; }
+    .polls-head-copy { position: relative; z-index: 1; max-width: 800px; }
+    .polls-head .eyebrow { color: #efc664; }
+    .polls-head h2 { margin: 8px 0 9px; font: 900 clamp(2.15rem, 5vw, 4.25rem)/1 "Noto Serif Hebrew", serif; letter-spacing: -.055em; }
+    .polls-head p { max-width: 720px; margin: 0; color: #c0d0e1; font-size: .9rem; }
+    .polls-close { position: relative; z-index: 2; flex: 0 0 auto; width: 46px; height: 46px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; color: #fff; background: rgba(255,255,255,.09); cursor: pointer; font-size: 1.55rem; }
+    .poll-source-tabs { position: sticky; top: 0; z-index: 4; display: flex; gap: 8px; overflow-x: auto; padding: 13px clamp(18px, 4vw, 44px); border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 95%, transparent); backdrop-filter: blur(14px); scrollbar-width: thin; }
+    .poll-source-tab { flex: 0 0 auto; border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; color: var(--ink-soft); background: var(--paper); cursor: pointer; font-size: .76rem; font-weight: 900; transition: .2s; }
+    .poll-source-tab:hover { border-color: #2d6fb4; color: #2d6fb4; }
+    .poll-source-tab.active { border-color: #1e65ab; color: #fff; background: #1e65ab; box-shadow: 0 8px 20px rgba(30,101,171,.25); }
+    .poll-source-tab.average { border-color: #d4a23b; }
+    .poll-source-tab.average.active { border-color: #d4a23b; color: #14233a; background: #f0c65f; }
+    .polls-content { padding: clamp(20px, 4vw, 46px); }
+    .poll-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+    .poll-meta-main h3 { margin: 0 0 5px; font: 900 clamp(1.6rem, 3vw, 2.45rem)/1.1 "Noto Serif Hebrew", serif; }
+    .poll-meta-line { display: flex; flex-wrap: wrap; gap: 7px 15px; color: var(--muted); font-size: .78rem; }
+    .poll-status { display: inline-flex; align-items: center; gap: 8px; border: 1px solid color-mix(in srgb, var(--green) 27%, var(--line)); border-radius: 999px; padding: 8px 12px; color: var(--green); background: color-mix(in srgb, var(--green) 7%, var(--paper)); font-size: .72rem; font-weight: 900; }
+    .poll-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+    .polls-grid { display: grid; grid-template-columns: minmax(340px, .78fr) minmax(520px, 1.22fr); gap: 22px; align-items: start; }
+    .poll-panel { overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); box-shadow: var(--card-shadow); }
+    .poll-panel-head { display: flex; justify-content: space-between; gap: 16px; padding: 20px 22px; border-bottom: 1px solid var(--line); }
+    .poll-panel-head h4 { margin: 0; font: 900 1.15rem "Noto Serif Hebrew", serif; }
+    .poll-panel-head span { color: var(--muted); font-size: .7rem; }
+    .bloc-body { padding: 22px; }
+    .bloc-map { direction: ltr; position: relative; display: flex; height: 96px; overflow: hidden; border-radius: 16px; background: var(--canvas-deep); box-shadow: inset 0 0 0 1px rgba(0,0,0,.05); }
+    .bloc-map::after { content: "61"; position: absolute; z-index: 2; left: calc(50.833% - 1px); top: -7px; bottom: -7px; width: 2px; background: #071426; box-shadow: 0 0 0 1px rgba(255,255,255,.6); }
+    .bloc-segment { min-width: 0; display: grid; place-items: center; align-content: center; color: #fff; text-align: center; transition: width .65s cubic-bezier(.2,.8,.2,1); }
+    .bloc-segment strong { font: 900 clamp(1.55rem, 4vw, 2.35rem)/1 "Heebo", sans-serif; }
+    .bloc-segment span { margin-top: 4px; font-size: .64rem; font-weight: 800; opacity: .86; }
+    .bloc-netanyahu { background: linear-gradient(135deg, #1857a1, #2b78c8); }
+    .bloc-opposition { background: linear-gradient(135deg, #bd2846, #eb526a); }
+    .bloc-arab { background: linear-gradient(135deg, #18744e, #35a36f); }
+    .majority-note { display: flex; justify-content: center; margin-top: 9px; color: var(--muted); font-size: .65rem; font-weight: 800; }
+    .bloc-legend { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 18px; }
+    .bloc-card { padding: 12px; border: 1px solid var(--line); border-radius: 13px; background: var(--canvas); }
+    .bloc-card .swatch { width: 9px; height: 9px; display: inline-block; margin-left: 6px; border-radius: 50%; }
+    .bloc-card span { display: block; color: var(--muted); font-size: .66rem; font-weight: 800; }
+    .bloc-card strong { display: block; margin-top: 2px; font-size: 1.45rem; }
+    .poll-validation { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; padding: 13px 15px; border-radius: 13px; color: #126042; background: #eaf8f1; font-size: .72rem; font-weight: 900; }
+    [data-theme="dark"] .poll-validation { color: #88e1ba; background: #123829; }
+    .poll-validation strong { direction: ltr; font-size: 1rem; }
+    .party-chart { padding: 13px 22px 22px; }
+    .party-row { direction: rtl; display: grid; grid-template-columns: minmax(108px, 150px) minmax(150px, 1fr) 38px; align-items: center; gap: 12px; min-height: 45px; border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent); }
+    .party-row:last-child { border-bottom: 0; }
+    .party-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .76rem; font-weight: 900; }
+    .party-track { direction: ltr; height: 15px; overflow: hidden; border-radius: 999px; background: var(--canvas-deep); }
+    .party-fill { width: var(--poll-width); height: 100%; border-radius: inherit; background: var(--party-color); transform-origin: left; animation: pollBar .72s cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes pollBar { from { transform: scaleX(0); opacity: .3; } to { transform: scaleX(1); opacity: 1; } }
+    .party-seats { direction: ltr; text-align: left; font: 900 1.05rem "Heebo", sans-serif; }
+    .poll-methodology { margin-top: 22px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 17px; color: var(--muted); background: var(--paper); font-size: .76rem; }
+    .poll-methodology strong { color: var(--ink); }
+
+    @media (max-width: 1000px) {
+      .election-inner { grid-template-columns: 1fr auto; }
+      .election-copy { grid-column: 1/-1; }
+      .election-countdown { grid-column: 1; grid-row: 2; }
+      .polls-trigger { grid-column: 2; grid-row: 2; }
+      .polls-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .election-inner { min-height: 0; grid-template-columns: 1fr; gap: 13px; padding-block: 17px; }
+      .election-copy, .election-countdown, .polls-trigger { grid-column: 1; grid-row: auto; }
+      .election-countdown { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+      .countdown-cell { min-height: 62px; border-radius: 12px; }
+      .countdown-cell strong { font-size: 1.38rem; }
+      .polls-trigger { width: 100%; min-height: 49px; }
+      .polls-layer { padding: 0; }
+      .polls-shell { min-height: 100vh; border: 0; border-radius: 0; }
+      .polls-head { padding: 23px 18px 27px; }
+      .polls-head h2 { font-size: 2.2rem; }
+      .polls-head p { font-size: .78rem; }
+      .polls-close { width: 40px; height: 40px; }
+      .poll-source-tabs { padding-inline: 14px; }
+      .polls-content { padding: 18px 12px 38px; }
+      .poll-meta { align-items: flex-start; }
+      .polls-grid { gap: 14px; }
+      .bloc-body, .party-chart { padding: 15px; }
+      .bloc-map { height: 82px; }
+      .bloc-segment span { display: none; }
+      .bloc-legend { gap: 6px; }
+      .bloc-card { padding: 9px; }
+      .bloc-card strong { font-size: 1.2rem; }
+      .party-row { grid-template-columns: minmax(86px, 116px) minmax(100px, 1fr) 30px; gap: 8px; }
+      .party-name { font-size: .7rem; }
+    }
+
   </style>
 </head>
 <body>
@@ -713,6 +830,26 @@
     </div>
     <nav class="primary-nav" aria-label="מדורי חדשות"><div class="wrap nav-scroll" id="categoryNav"></div></nav>
   </header>
+
+  <section class="election-strip" aria-label="בחירות 2026">
+    <div class="wrap election-inner">
+      <div class="election-copy">
+        <div class="election-kicker">בחירות לכנסת ה־26 · 27 באוקטובר 2026</div>
+        <h2>הספירה לאחור לקלפי</h2>
+        <p>עד לפתיחת הקלפיות בשעה 07:00 · שעון ישראל</p>
+      </div>
+      <div class="election-countdown" id="electionCountdown" aria-live="polite">
+        <div class="countdown-cell"><strong id="cdDays">--</strong><span>ימים</span></div>
+        <div class="countdown-cell"><strong id="cdHours">--</strong><span>שעות</span></div>
+        <div class="countdown-cell"><strong id="cdMinutes">--</strong><span>דקות</span></div>
+        <div class="countdown-cell"><strong id="cdSeconds">--</strong><span>שניות</span></div>
+      </div>
+      <button class="polls-trigger" id="openPolls" aria-haspopup="dialog" aria-controls="pollsLayer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 19h16M6 16V9m4 7V5m4 11v-4m4 4V7"/><path d="M4 4h16v16H4z" opacity=".22"/></svg>
+        <span class="polls-trigger-copy">סקרים ומפת גושים<small id="pollsTriggerNote">הפרסום המאומת האחרון</small></span>
+      </button>
+    </div>
+  </section>
 
   <section class="market-ribbon" aria-label="מדדי שוק"><div class="wrap market-scroll" id="marketRibbon"></div></section>
 
@@ -744,6 +881,29 @@
 
   <div class="search-layer" id="searchLayer" role="dialog" aria-modal="true" aria-label="חיפוש"><div class="search-panel"><div class="panel-top"><h2>חיפוש במהדורה</h2><button class="close-btn" data-close="search" aria-label="סגירה">×</button></div><input class="search-input" id="searchInput" type="search" placeholder="חיפוש לפי נושא, מדור או מקור…" autocomplete="off"><div class="search-results" id="searchResults"></div></div></div>
   <div class="article-layer" id="articleLayer" role="dialog" aria-modal="true" aria-label="קריאת כתבה"><article class="article-panel" id="articlePanel"></article></div>
+  <div class="polls-layer" id="pollsLayer" role="dialog" aria-modal="true" aria-labelledby="pollsTitle">
+    <div class="polls-shell">
+      <header class="polls-head">
+        <div class="polls-head-copy"><span class="eyebrow">בחירות 2026</span><h2 id="pollsTitle">מרכז הסקרים</h2><p>כל הסקרים האחרונים שנמצאו ואומתו, בחירה לפי גוף מפרסם, מפת גושים ו״סקר הסקרים״ המחושב תמיד ל־120 מנדטים שלמים.</p></div>
+        <button class="polls-close" id="pollsClose" aria-label="סגירת מרכז הסקרים">×</button>
+      </header>
+      <div class="poll-source-tabs" id="pollSourceTabs" aria-label="בחירת סקר"></div>
+      <div class="polls-content">
+        <div class="poll-meta" id="pollMeta"></div>
+        <div class="polls-grid">
+          <section class="poll-panel" aria-label="מפת הגושים">
+            <div class="poll-panel-head"><h4>מפת הגושים</h4><span>קו הרוב: 61</span></div>
+            <div class="bloc-body"><div class="bloc-map" id="blocMap"></div><div class="majority-note">קו 61 מסמן רוב בכנסת</div><div class="bloc-legend" id="blocLegend"></div><div class="poll-validation" id="pollValidation"></div></div>
+          </section>
+          <section class="poll-panel" aria-label="מנדטים לפי מפלגה">
+            <div class="poll-panel-head"><h4>מנדטים לפי מפלגה</h4><span>העמודות מונפשות במעבר בין מקורות</span></div>
+            <div class="party-chart" id="partyChart"></div>
+          </section>
+        </div>
+        <div class="poll-methodology" id="pollMethodology"></div>
+      </div>
+    </div>
+  </div>
   <div class="toast" id="toast">בודק אם פורסם עדכון חדש…</div>
 
   <script>
@@ -782,6 +942,44 @@
         { time: "19:48", title: "צה״ל ושב״כ: מחסני נשק שהוסתרו בשני מסגדים ברצועה הושמדו", source: "ישראל היום", articleId: "idf-weapons", urgent: true },
         { time: "17:11", title: "דיווח: לצ׳ה הציעה שני מיליון אירו על טוריאל, הפועל סירבה", source: "ערוץ הספורט", articleId: "turiel-offer", urgent: false },
         { time: "13:15", title: "צה״ל תקף מספר יעדים במחוז נבטיה שבדרום לבנון", source: "כיכר השבת", articleId: "idf-lebanon", urgent: true }
+      ],
+      polls: [
+        {
+          id: "channel-12-2026-08-24", source: "חדשות 12", shortSource: "12", date: "2026-08-24", pollster: "מנו גבע", sourceUrl: "https://www.skarim.org/polls/channel-12-2026-08-24",
+          parties: { "ישר!":24, "הליכוד":22, "ביחד":15, "הדמוקרטים":11, "ישראל ביתנו":9, "עוצמה יהודית":9, "יהדות התורה":8, "חד״ש–תע״ל / המשותפת":7, "ש״ס":7, "רע״ם":4, "הציונות הדתית":4 }
+        },
+        {
+          id: "channel-14-2026-08-24", source: "עכשיו 14", shortSource: "14", date: "2026-08-24", pollster: "שלמה פילבר", sourceUrl: "https://www.skarim.org/polls/channel-14-2026-08-24",
+          parties: { "הליכוד":32, "ישר!":24, "ש״ס":10, "הדמוקרטים":9, "עוצמה יהודית":8, "יהדות התורה":8, "ביחד":7, "ישראל ביתנו":7, "רע״ם":5, "חד״ש–תע״ל / המשותפת":5, "הציונות הדתית":5 }
+        },
+        {
+          id: "kan-11-2026-08-23", source: "כאן 11", shortSource: "11", date: "2026-08-23", pollster: "", sourceUrl: "https://www.skarim.org/polls/11-2026-08-23",
+          parties: { "ישר!":24, "הליכוד":22, "ביחד":14, "הדמוקרטים":10, "ישראל ביתנו":9, "עוצמה יהודית":9, "יהדות התורה":8, "חד״ש–תע״ל / המשותפת":7, "ש״ס":7, "רע״ם":5, "הציונות הדתית":5 }
+        },
+        {
+          id: "maariv-2026-08-21", source: "מעריב", shortSource: "מעריב", date: "2026-08-21", pollster: "מנחם לזר", sourceUrl: "https://www.skarim.org/polls/maariv-2026-08-21",
+          parties: { "ישר!":26, "הליכוד":20, "ביחד":14, "הדמוקרטים":10, "ישראל ביתנו":10, "עוצמה יהודית":9, "יהדות התורה":8, "ש״ס":7, "חד״ש–תע״ל / המשותפת":6, "רע״ם":5, "הציונות הדתית":5 }
+        },
+        {
+          id: "zman-israel-2026-08-20", source: "זמן ישראל", shortSource: "זמן ישראל", date: "2026-08-20", pollster: "", sourceUrl: "https://www.skarim.org/polls",
+          parties: { "ישר!":23, "הליכוד":21, "ביחד":15, "ישראל ביתנו":11, "ש״ס":9, "הדמוקרטים":8, "יהדות התורה":8, "עוצמה יהודית":7, "חד״ש–תע״ל / המשותפת":7, "הציונות הדתית":6, "רע״ם":5 }
+        },
+        {
+          id: "israel-hayom-2026-08-20", source: "ישראל היום", shortSource: "ישראל היום", date: "2026-08-20", pollster: "", sourceUrl: "https://www.skarim.org/polls",
+          parties: { "ישר!":23, "הליכוד":22, "ביחד":13, "הדמוקרטים":10, "ישראל ביתנו":10, "עוצמה יהודית":9, "חד״ש–תע״ל / המשותפת":8, "יהדות התורה":8, "ש״ס":7, "רע״ם":5, "הציונות הדתית":5 }
+        },
+        {
+          id: "channel-13-2026-08-19", source: "חדשות 13", shortSource: "13", date: "2026-08-19", pollster: "", sourceUrl: "https://www.skarim.org/polls",
+          parties: { "ישר!":26, "הליכוד":23, "ביחד":13, "הדמוקרטים":11, "ישראל ביתנו":9, "עוצמה יהודית":8, "יהדות התורה":8, "ש״ס":7, "חד״ש–תע״ל / המשותפת":5, "רע״ם":5, "הציונות הדתית":5 }
+        },
+        {
+          id: "channel-16-2026-08-19", source: "ערוץ 16", shortSource: "16", date: "2026-08-19", pollster: "", sourceUrl: "https://www.skarim.org/polls",
+          parties: { "ישר!":25, "הליכוד":22, "ביחד":16, "הדמוקרטים":10, "ישראל ביתנו":9, "עוצמה יהודית":9, "ש״ס":9, "יהדות התורה":7, "חד״ש–תע״ל / המשותפת":5, "רע״ם":4, "הציונות הדתית":4 }
+        },
+        {
+          id: "i24news-2026-08-18", source: "i24NEWS · ערוץ 15", shortSource: "15", date: "2026-08-18", pollster: "", sourceUrl: "https://www.i24news.tv/he/tags/%D7%A1%D7%A7%D7%A8-%D7%9E%D7%A0%D7%93%D7%98%D7%99%D7%9D",
+          parties: { "הליכוד":31, "ישר!":24, "הדמוקרטים":11, "ביחד":9, "ישראל ביתנו":8, "ש״ס":8, "יהדות התורה":8, "עוצמה יהודית":6, "חד״ש–תע״ל / המשותפת":5, "רע״ם":5, "הציונות הדתית":5 }
+        }
       ],
       articles: [
         {
@@ -1118,6 +1316,20 @@
       { id: "SxiMucn6hTc", category: "ספורט", title: "כל שערי מחזור הפתיחה", note: "ריכוז שערים ועדכונים מהליגה האנגלית" },
       { id: "--iAXUZF52k", category: "קליל", title: "רגעי חיות מצחיקים מהרשת", note: "אוסף קליל לצפייה בתוך האתר" }
     ];
+    const PARTY_BLOCS = {
+      "הליכוד":"netanyahu", "ש״ס":"netanyahu", "יהדות התורה":"netanyahu", "עוצמה יהודית":"netanyahu", "הציונות הדתית":"netanyahu",
+      "ישר!":"opposition", "ביחד":"opposition", "הדמוקרטים":"opposition", "ישראל ביתנו":"opposition",
+      "רע״ם":"arab", "חד״ש–תע״ל / המשותפת":"arab"
+    };
+    const PARTY_COLORS = {
+      "ישר!":"#00a2cc", "הליכוד":"#215ca3", "ביחד":"#7853c6", "הדמוקרטים":"#d84c68", "ישראל ביתנו":"#657789",
+      "עוצמה יהודית":"#ca721b", "יהדות התורה":"#303c76", "ש״ס":"#4665ae", "הציונות הדתית":"#34708b", "רע״ם":"#2d9869", "חד״ש–תע״ל / המשותפת":"#4e8a5b"
+    };
+    const BLOC_DEFS = [
+      { id:"netanyahu", label:"גוש נתניהו", className:"bloc-netanyahu", color:"#246bb8" },
+      { id:"opposition", label:"גוש מתנגדי נתניהו", className:"bloc-opposition", color:"#d9435d" },
+      { id:"arab", label:"מפלגות ערביות", className:"bloc-arab", color:"#2b9465" }
+    ];
     let activeCategory = "הכל";
     const $ = id => document.getElementById(id);
     const allStories = () => [...NEWS_FEED.articles, ...NEWS_FEED.deepDives];
@@ -1168,6 +1380,77 @@
 
     function renderDeep() { $("deepGrid").innerHTML = NEWS_FEED.deepDives.map((a,i) => `<article class="deep-card" data-open="${escapeHtml(a.id)}"><div><span class="deep-index">כתבת עומק ${String(i+1).padStart(2,"0")}</span><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.summary)}</p></div><div class="deep-sources">${escapeHtml(a.readTime)} · לקריאה מלאה ←</div></article>`).join(""); bindOpeners($("deepGrid")); }
     function renderScores() { $("scoresTable").innerHTML = NEWS_FEED.scores.map(item => `<div class="score-row"><div><div class="score-league">${escapeHtml(item.league)}</div><div class="section-note">${escapeHtml(item.status)}</div></div><div class="score-teams">${escapeHtml(item.teams)}</div><div class="score-result">${escapeHtml(item.score)}</div></div>`).join(""); }
+
+    function pollTotal(poll) { return Object.values(poll.parties || {}).reduce((sum, seats) => sum + (Number(seats) || 0), 0); }
+    function validPolls() { return (NEWS_FEED.polls || []).filter(poll => poll && poll.parties && pollTotal(poll) === 120); }
+    function pollDateText(value) { const date = new Date(`${value}T12:00:00+03:00`); return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString("he-IL", { day:"numeric", month:"long", year:"numeric" }); }
+    function pollFreshness(poll) {
+      if (poll.isAverage) return `ממוצע ${poll.pollCount} סקרים תקינים`;
+      const published = new Date(`${poll.date}T12:00:00+03:00`).getTime();
+      const ageHours = (Date.now() - published) / 36e5;
+      if (ageHours >= 0 && ageHours <= 36) return "פורסם ביממה האחרונה";
+      return "הסקר האחרון של המקור";
+    }
+    function buildPollAverage() {
+      const polls = validPolls();
+      if (!polls.length) return null;
+      const partyNames = [...new Set(polls.flatMap(poll => Object.keys(poll.parties)))];
+      const allocation = partyNames.map((party, index) => {
+        const raw = polls.reduce((sum, poll) => sum + (Number(poll.parties[party]) || 0), 0) / polls.length;
+        return { party, raw, seats: Math.floor(raw), fraction: raw - Math.floor(raw), index };
+      });
+      let remaining = 120 - allocation.reduce((sum, row) => sum + row.seats, 0);
+      const remainders = [...allocation].sort((a,b) => b.fraction - a.fraction || b.raw - a.raw || a.index - b.index);
+      for (let index = 0; index < remaining; index++) remainders[index % remainders.length].seats += 1;
+      const parties = Object.fromEntries(allocation.filter(row => row.seats > 0).map(row => [row.party, row.seats]));
+      return { id:"average", source:"סקר הסקרים", shortSource:"ממוצע", date:[...polls].sort((a,b) => b.date.localeCompare(a.date))[0].date, pollster:"חישוב המערכת", parties, isAverage:true, pollCount:polls.length };
+    }
+    function blocksForParties(parties) {
+      const blocks = { netanyahu:0, opposition:0, arab:0 };
+      Object.entries(parties || {}).forEach(([party, seats]) => { blocks[PARTY_BLOCS[party] || "opposition"] += Number(seats) || 0; });
+      return blocks;
+    }
+    function renderPollTabs(activeId) {
+      const average = buildPollAverage(), polls = validPolls();
+      const tabs = [average, ...polls].filter(Boolean);
+      $("pollSourceTabs").innerHTML = tabs.map(poll => `<button class="poll-source-tab ${poll.isAverage ? "average" : ""} ${poll.id === activeId ? "active" : ""}" data-poll-id="${escapeHtml(poll.id)}">${escapeHtml(poll.shortSource || poll.source)}</button>`).join("");
+      $("pollSourceTabs").querySelectorAll("[data-poll-id]").forEach(button => button.onclick = () => renderPoll(button.dataset.pollId));
+    }
+    function renderPoll(id = "average") {
+      const average = buildPollAverage(), polls = validPolls();
+      const poll = id === "average" ? average : polls.find(item => item.id === id) || average;
+      if (!poll) {
+        $("pollMeta").innerHTML = `<div class="poll-meta-main"><h3>אין כעת סקר מאומת</h3><div class="poll-meta-line">הנתונים יוצגו לאחר אימות פרסום שסכומו 120 מנדטים.</div></div>`;
+        return;
+      }
+      renderPollTabs(poll.id);
+      const total = pollTotal(poll), blocks = blocksForParties(poll.parties);
+      $("pollMeta").innerHTML = `<div class="poll-meta-main"><h3>${escapeHtml(poll.source)}</h3><div class="poll-meta-line"><span>${poll.isAverage ? `עדכני לסקר האחרון מ־${pollDateText(poll.date)}` : `פורסם ב־${pollDateText(poll.date)}`}</span>${poll.pollster ? `<span>עורך הסקר: ${escapeHtml(poll.pollster)}</span>` : ""}${poll.isAverage ? `<span>${poll.pollCount} גופי תקשורת ופרסומים אחרונים</span>` : ""}</div></div><div class="poll-status">${escapeHtml(pollFreshness(poll))}</div>`;
+      $("blocMap").innerHTML = BLOC_DEFS.map(block => `<div class="bloc-segment ${block.className}" style="width:${(blocks[block.id] / 120 * 100).toFixed(4)}%"><strong>${blocks[block.id]}</strong><span>${escapeHtml(block.label)}</span></div>`).join("");
+      $("blocLegend").innerHTML = BLOC_DEFS.map(block => `<div class="bloc-card"><span><i class="swatch" style="background:${block.color}"></i>${escapeHtml(block.label)}</span><strong>${blocks[block.id]}</strong></div>`).join("");
+      $("pollValidation").innerHTML = `<span>${total === 120 ? "✓ החישוב תקין ומאוזן" : "⚠ נדרשת בדיקת נתונים"}</span><strong>${total} / 120</strong>`;
+      const parties = Object.entries(poll.parties).sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0], "he"));
+      const chartMax = Math.max(40, ...parties.map(([,seats]) => Number(seats) || 0));
+      $("partyChart").innerHTML = parties.map(([party,seats], index) => `<div class="party-row"><div class="party-name" title="${escapeHtml(party)}">${escapeHtml(party)}</div><div class="party-track"><div class="party-fill" style="--poll-width:${Math.max(2, seats / chartMax * 100).toFixed(2)}%;--party-color:${PARTY_COLORS[party] || "#64748b"};animation-delay:${Math.min(index * 28, 220)}ms"></div></div><div class="party-seats">${seats}</div></div>`).join("");
+      $("pollMethodology").innerHTML = poll.isAverage
+        ? `<strong>איך חושב סקר הסקרים?</strong> לכל מפלגה חושב ממוצע חשבוני בכל ${poll.pollCount} הסקרים התקינים. מפלגה שלא הופיעה בסקר מסוים נספרה בו כ־0. תחילה הוקצו המספרים השלמים כלפי מטה, ולאחר מכן חולקו המנדטים שנותרו לפי השאריות העשרוניות הגדולות ביותר. כך התוצאה נשארת במספרים שלמים וסכומה תמיד 120.`
+        : `<strong>שקיפות נתונים:</strong> מוצג הפרסום האחרון שאומת עבור ${escapeHtml(poll.source)}. המספרים הועתקו מטבלת הסקר שפורסמה ונבדקו חישובית לסכום של 120. כאשר מתפרסם סקר חדש ומאומת, הוא מחליף את הסקר הקודם של אותו מקור.`;
+    }
+    function updateElectionCountdown() {
+      const target = new Date("2026-10-27T07:00:00+02:00").getTime();
+      const distance = Math.max(0, target - Date.now());
+      const days = Math.floor(distance / 864e5), hours = Math.floor(distance / 36e5) % 24, minutes = Math.floor(distance / 6e4) % 60, seconds = Math.floor(distance / 1000) % 60;
+      $("cdDays").textContent = String(days).padStart(2,"0"); $("cdHours").textContent = String(hours).padStart(2,"0"); $("cdMinutes").textContent = String(minutes).padStart(2,"0"); $("cdSeconds").textContent = String(seconds).padStart(2,"0");
+    }
+    function renderElectionHub() {
+      const polls = validPolls(), latest = [...polls].sort((a,b) => b.date.localeCompare(a.date))[0];
+      $("pollsTriggerNote").textContent = latest ? `עודכן: ${pollDateText(latest.date)}` : "ממתין לפרסום מאומת";
+      updateElectionCountdown();
+    }
+    function openPolls() {
+      $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); toggleDrawer(false); renderPoll("average");
+      $("pollsLayer").classList.add("open"); document.body.classList.add("modal-open"); setTimeout(() => $("pollsClose").focus(), 30);
+    }
     function renderVideos() { const videos = Array.isArray(NEWS_FEED.videos) && NEWS_FEED.videos.length ? NEWS_FEED.videos : EDITORIAL_VIDEOS; $("videoGrid").innerHTML = videos.slice(0,3).map(v => `<article class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}" title="${escapeHtml(v.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-copy"><span class="story-source">${escapeHtml(v.category || "וידאו")}</span><h3>${escapeHtml(v.title)}</h3><p>${escapeHtml(v.note || "צפייה בתוך האתר")}</p></div></article>`).join(""); }
 
     function renderLive() { $("breakingCount").textContent = NEWS_FEED.breaking.length; $("liveList").innerHTML = NEWS_FEED.breaking.map(item => `<div class="drawer-item ${item.urgent ? "urgent" : ""}" data-open="${escapeHtml(item.articleId || "")}"><div class="drawer-time">${escapeHtml(item.time)}</div><div class="drawer-copy">${escapeHtml(item.title)}<span class="drawer-source">${escapeHtml(item.source)}</span></div></div>`).join(""); bindOpeners($("liveList")); }
@@ -1197,19 +1480,20 @@
 
     function openSearch() { $("searchLayer").classList.add("open"); document.body.classList.add("modal-open"); $("searchInput").value=""; renderSearchResults(""); setTimeout(() => $("searchInput").focus(),50); }
     function renderSearchResults(query) { const q=query.trim().toLocaleLowerCase("he"), results=allStories().filter(a => !q || [a.title,a.summary,a.category,a.source].join(" ").toLocaleLowerCase("he").includes(q)).slice(0,16); $("searchResults").innerHTML=results.length?results.map(a=>`<div class="search-result" data-search-open="${escapeHtml(a.id)}"><span class="story-source">${escapeHtml(a.category)} · ${escapeHtml(a.source)}</span><h3>${escapeHtml(a.title)}</h3><div class="rail-meta">${escapeHtml(a.summary.slice(0,150))}${a.summary.length>150?"…":""}</div></div>`).join(""):`<div class="muted" style="padding:18px;text-align:center">לא נמצאו תוצאות.</div>`; document.querySelectorAll("[data-search-open]").forEach(el=>el.onclick=()=>{closeLayers();openArticle(el.dataset.searchOpen);}); }
-    function closeLayers() { $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); toggleDrawer(false); document.body.classList.remove("modal-open"); }
+    function closeLayers() { $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); $("pollsLayer").classList.remove("open"); toggleDrawer(false); document.body.classList.remove("modal-open"); }
     function setTheme(theme) { document.documentElement.dataset.theme=theme; localStorage.setItem("hadophek-theme",theme); }
     function toggleTheme() { setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"); }
-    function updateClock() { const now=new Date(), dateText=now.toLocaleDateString("he-IL",{weekday:"long",day:"numeric",month:"long",year:"numeric"}); $("clock").textContent=now.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit",second:"2-digit"}); $("utilityDate").textContent=dateText; $("editionDate").textContent=dateText; }
+    function updateClock() { const now=new Date(), dateText=now.toLocaleDateString("he-IL",{weekday:"long",day:"numeric",month:"long",year:"numeric"}); $("clock").textContent=now.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit",second:"2-digit"}); $("utilityDate").textContent=dateText; $("editionDate").textContent=dateText; updateElectionCountdown(); }
     function showToast(message) { $("toast").textContent=message; $("toast").classList.add("show"); setTimeout(()=>$("toast").classList.remove("show"),2300); }
 
     function init() {
       setTheme(localStorage.getItem("hadophek-theme") || (matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
-      renderNav(); renderMarkets(); renderHero(); renderMainGrid(); renderCategorySections(); renderDeep(); renderScores(); renderVideos(); renderLive();
+      renderNav(); renderMarkets(); renderHero(); renderMainGrid(); renderCategorySections(); renderDeep(); renderScores(); renderVideos(); renderLive(); renderElectionHub();
       const updateDate=new Date(NEWS_FEED.meta.updatedAt); $("updatedAt").textContent=`${updateDate.toLocaleDateString("he-IL",{day:"numeric",month:"short"})}, ${updateDate.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit"})}`; $("editionName").textContent=NEWS_FEED.meta.edition || "מהדורת החדשות";
       updateClock(); setInterval(updateClock,1000);
       $("searchBtn").onclick=openSearch; $("footerSearch").onclick=openSearch; $("themeBtn").onclick=toggleTheme; $("reloadBtn").onclick=()=>{showToast("בודק אם פורסם עדכון חדש…");setTimeout(()=>location.reload(),550);};
       $("breakingFab").onclick=()=>toggleDrawer(true); $("drawerClose").onclick=()=>toggleDrawer(false); $("drawerShade").onclick=()=>toggleDrawer(false);
+      $("openPolls").onclick=openPolls; $("pollsClose").onclick=closeLayers; $("pollsLayer").onclick=e=>{if(e.target===$("pollsLayer"))closeLayers();};
       $("searchInput").addEventListener("input",e=>renderSearchResults(e.target.value)); document.querySelector("[data-close='search']").onclick=closeLayers;
       $("searchLayer").onclick=e=>{if(e.target===$("searchLayer"))closeLayers();}; $("articleLayer").onclick=e=>{if(e.target===$("articleLayer"))closeLayers();};
       addEventListener("keydown",e=>{if(e.key==="Escape")closeLayers();if(e.key==="/"&&!document.body.classList.contains("modal-open")){e.preventDefault();openSearch();}});
