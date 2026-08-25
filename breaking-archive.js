@@ -360,5 +360,59 @@ window.BREAKING_ARCHIVE = [
     "source": "כיכר השבת",
     "articleId": "idf-lebanon",
     "urgent": true
+  },
+  {
+    "id": "flash-20260825-2248-likud-recount",
+    "publishedAt": "2026-08-25T22:48:00+03:00",
+    "time": "22:48",
+    "title": "הליכוד הורה על ספירה חוזרת של הקלפיות בבאר יעקב",
+    "source": "חדשות 13",
+    "articleId": "likud-baar-yaakov-recount",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260825-2222-hbs-out",
+    "publishedAt": "2026-08-25T22:22:00+03:00",
+    "time": "22:22",
+    "title": "הפועל באר שבע הפסידה 5:2 לסבאח אחרי הארכה והודחה מליגת האלופות",
+    "source": "חדשות 13 · UEFA",
+    "articleId": "hbs-sabah-elimination",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260825-2042-kaplan-report",
+    "publishedAt": "2026-08-25T20:42:00+03:00",
+    "time": "20:42",
+    "title": "ועדת בדיקה מצאה ליקויים חריגים בהכשרת מתמחים בקרדיולוגיה בקפלן",
+    "source": "חדשות 13",
+    "articleId": "kaplan-training-report",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2040-cabinet-absence",
+    "publishedAt": "2026-08-25T20:40:00+03:00",
+    "time": "20:40",
+    "title": "ארבעה שרים נעדרו מישיבת הקבינט; נתניהו מתח ביקורת",
+    "source": "חדשות 13",
+    "articleId": "cabinet-ministers-absence",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2021-utj-shift",
+    "publishedAt": "2026-08-25T20:21:00+03:00",
+    "time": "20:21",
+    "title": "ביהדות התורה נשמעים קולות נגד המלצה על נתניהו",
+    "source": "חדשות 13",
+    "articleId": "utj-coalition-shift",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1924-winter-launch",
+    "publishedAt": "2026-08-25T19:24:00+03:00",
+    "time": "19:24",
+    "title": "עופר וינטר השיק את מפלגת ״עמך ישראל״; בתרחיש חדשות 12 היא מקבלת 4 מנדטים",
+    "source": "חדשות 12",
+    "articleId": "ofer-winter-party-poll",
+    "urgent": false
   }
 ];
