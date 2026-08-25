@@ -1,6 +1,56 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-2334-41",
+    "publishedAt": "2026-08-25T23:34:00+03:00",
+    "time": "23:34",
+    "title": "סקר Citi/YouGov: ציפיות האינפלציה לשנה בבריטניה עלו באוגוסט ל־3.9%",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2321-40",
+    "publishedAt": "2026-08-25T23:21:00+03:00",
+    "time": "23:21",
+    "title": "ה־FCC הרחיבה תעריפי פרסום מוזלים בטלוויזיה גם לוועדות מפלגתיות וגיוס משותף",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2303-39",
+    "publishedAt": "2026-08-25T23:03:00+03:00",
+    "time": "23:03",
+    "title": "תחזית ההכנסות והרווח של Intuit לשנת 2027 הייתה נמוכה מציפיות האנליסטים",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2245-38",
+    "publishedAt": "2026-08-25T22:45:00+03:00",
+    "time": "22:45",
+    "title": "השירות החשאי בארה״ב בודק סרטון איראני שדן באיום נגד בארון טראמפ",
+    "source": "Reuters",
+    "articleId": "iran-video-barron-threat",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260825-2222-37",
+    "publishedAt": "2026-08-25T22:22:00+03:00",
+    "time": "22:22",
+    "title": "מקורות: בכירי ה־ECB מוכנים להעלאת ריבית ל־2.50% בספטמבר",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2213-36",
+    "publishedAt": "2026-08-25T22:13:00+03:00",
+    "time": "22:13",
+    "title": "ה־SDF הודיע על פירוקו ככוח עצמאי והשלמת ההשתלבות במערכת הביטחון הסורית",
+    "source": "Reuters",
+    "articleId": "sdf-dissolves-damascus",
+    "urgent": true
+  },
+  {
     "id": "flash-20260825-2133-35",
     "publishedAt": "2026-08-25T21:33:00+03:00",
     "time": "21:33",
