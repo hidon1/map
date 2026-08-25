@@ -129,7 +129,12 @@ window.NEWS_FEED = {
         "ש״ס": 7,
         "רע״ם": 4,
         "הציונות הדתית": 4
-      }
+      },
+      "belowThreshold": [
+        { "party": "בית ציוני–המילואימניקים", "percent": 2.9 },
+        { "party": "האחדות", "percent": 0.8 },
+        { "party": "כחול לבן", "percent": 0.4 }
+      ]
     },
     {
       "id": "channel-14-2026-08-24",
@@ -150,7 +155,14 @@ window.NEWS_FEED = {
         "רע״ם": 5,
         "חד״ש–תע״ל / המשותפת": 5,
         "הציונות הדתית": 5
-      }
+      },
+      "belowThreshold": [
+        { "party": "מפלגת עופר וינטר", "percent": 2.1 },
+        { "party": "זהות", "percent": 1.7 },
+        { "party": "בית ציוני–המילואימניקים", "percent": 1.4 },
+        { "party": "כחול לבן", "percent": 1.0 },
+        { "party": "האחדות", "percent": 0.2 }
+      ]
     },
     {
       "id": "kan-11-2026-08-23",
@@ -171,7 +183,13 @@ window.NEWS_FEED = {
         "ש״ס": 7,
         "רע״ם": 5,
         "הציונות הדתית": 5
-      }
+      },
+      "belowThreshold": [
+        { "party": "מפלגת עופר וינטר", "percent": 2.5 },
+        { "party": "בית ציוני–המילואימניקים", "percent": null },
+        { "party": "האחדות", "percent": null },
+        { "party": "כחול לבן", "percent": null }
+      ]
     },
     {
       "id": "maariv-2026-08-21",
@@ -192,7 +210,15 @@ window.NEWS_FEED = {
         "חד״ש–תע״ל / המשותפת": 6,
         "רע״ם": 5,
         "הציונות הדתית": 5
-      }
+      },
+      "belowThreshold": [
+        { "party": "בית ציוני–המילואימניקים", "percent": null },
+        { "party": "האחדות", "percent": null },
+        { "party": "בל״ד", "percent": null },
+        { "party": "הכלכלית", "percent": null },
+        { "party": "כחול לבן", "percent": null },
+        { "party": "מפלגת עופר וינטר", "percent": null }
+      ]
     },
     {
       "id": "zman-israel-2026-08-20",
@@ -213,7 +239,12 @@ window.NEWS_FEED = {
         "חד״ש–תע״ל / המשותפת": 7,
         "הציונות הדתית": 6,
         "רע״ם": 5
-      }
+      },
+      "belowThreshold": [
+        { "party": "בית ציוני–המילואימניקים", "percent": null },
+        { "party": "האחדות", "percent": null },
+        { "party": "כחול לבן", "percent": 0.9 }
+      ]
     },
     {
       "id": "israel-hayom-2026-08-20",
@@ -234,7 +265,12 @@ window.NEWS_FEED = {
         "ש״ס": 7,
         "רע״ם": 5,
         "הציונות הדתית": 5
-      }
+      },
+      "belowThreshold": [
+        { "party": "בית ציוני–המילואימניקים", "percent": null },
+        { "party": "האחדות", "percent": null },
+        { "party": "כחול לבן", "percent": null }
+      ]
     },
     {
       "id": "channel-13-2026-08-19",
@@ -255,7 +291,13 @@ window.NEWS_FEED = {
         "חד״ש–תע״ל / המשותפת": 5,
         "רע״ם": 5,
         "הציונות הדתית": 5
-      }
+      },
+      "belowThreshold": [
+        { "party": "בית ציוני–המילואימניקים", "percent": null },
+        { "party": "האחדות", "percent": null },
+        { "party": "בל״ד", "percent": null },
+        { "party": "כחול לבן", "percent": null }
+      ]
     },
     {
       "id": "channel-16-2026-08-19",
@@ -276,7 +318,15 @@ window.NEWS_FEED = {
         "חד״ש–תע״ל / המשותפת": 5,
         "רע״ם": 4,
         "הציונות הדתית": 4
-      }
+      },
+      "belowThreshold": [
+        { "party": "בית ציוני–המילואימניקים", "percent": null },
+        { "party": "האחדות", "percent": null },
+        { "party": "בל״ד", "percent": null },
+        { "party": "הכלכלית", "percent": null },
+        { "party": "כחול לבן", "percent": null },
+        { "party": "זהות", "percent": null }
+      ]
     },
     {
       "id": "i24news-2026-08-18",
@@ -297,7 +347,14 @@ window.NEWS_FEED = {
         "חד״ש–תע״ל / המשותפת": 5,
         "רע״ם": 5,
         "הציונות הדתית": 5
-      }
+      },
+      "belowThreshold": [
+        { "party": "בית ציוני–המילואימניקים", "percent": null },
+        { "party": "האחדות", "percent": null },
+        { "party": "בל״ד", "percent": null },
+        { "party": "כחול לבן", "percent": null },
+        { "party": "זהות", "percent": null }
+      ]
     }
   ],
   "articles": [
@@ -803,4 +860,3 @@ window.NEWS_FEED = {
     }
   ]
 };
-
