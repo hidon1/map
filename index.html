@@ -1261,9 +1261,9 @@
 
     <section class="deep-section" id="deepSection"><div class="deep-head"><div><span class="eyebrow" style="color:#d7a43a">פרשנות וסיכום</span><h2>כתבות עומק</h2></div><p>כתיבה מקורית שמצליבה מקורות, מפרידה בין עובדות לניתוח ומסבירה את התמונה המלאה.</p></div><div class="deep-grid" id="deepGrid"></div></section>
 
-    <section class="dashboard-grid"><div class="dashboard-card sports-card"><div class="dashboard-head"><h2>תוצאות ספורט <span class="scores-live-pill"><i></i>מתעדכן עם המהדורה</span></h2><span class="section-note">ישראל · אנגליה · ספרד</span></div><div class="scores-shell" id="scoresTable"></div></div><div class="dashboard-card"><div class="dashboard-head"><h2>כלכלה ושווקים</h2><span class="section-note">נתוני מסחר אחרונים</span></div><div id="marketTable"></div></div></section>
+    <section class="dashboard-grid"><div class="dashboard-card sports-card"><div class="dashboard-head"><h2>תוצאות ספורט <span class="scores-live-pill"><i></i>מתעדכן עם המהדורה</span></h2><span class="section-note">ישראל · אירופה · אנגליה · משחקים אחרונים</span></div><div class="scores-shell" id="scoresTable"></div></div><div class="dashboard-card"><div class="dashboard-head"><h2>כלכלה ושווקים</h2><span class="section-note">נתוני מסחר אחרונים</span></div><div id="marketTable"></div></div></section>
 
-    <section class="social-section" id="socialPulseSection"><div class="section-head"><div><span class="eyebrow">רשת ופוליטיקה</span><h2 class="section-heading">הפיד הקליל</h2></div><span class="section-note">קריצות מערכתיות ופוסטים מאומתים כאשר קיים קישור למקור</span></div><div class="social-stage"><div class="social-grid" id="socialPulse"></div><p class="social-note">פריטים המסומנים ״קריצה מערכתית״ הם הומור מקורי של האתר ואינם ציטוט של אדם אמיתי.</p></div></section>
+    <section class="social-section" id="socialPulseSection"><div class="section-head"><div><span class="eyebrow">רשת ופוליטיקה</span><h2 class="section-heading">הפיד הקליל</h2></div><span class="section-note">רק פוסטים אמיתיים עם קישור ישיר ומדדי הצלחה מאומתים</span></div><div class="social-stage"><div class="social-grid" id="socialPulse"></div><p class="social-note">אין כאן טקסט מומצא: כל ציטוט מקושר לפוסט המקורי ומוצג עם נתוני צפיות או לייקים שנבדקו.</p></div></section>
 
     <section class="video-section" id="videoSection"><div class="section-head"><div><span class="eyebrow">צופים באתר</span><h2 class="section-heading">וידאו ברשת</h2></div><span class="section-note">ספורט, רגעים מעניינים וסרטונים קלילים</span></div><div class="video-grid" id="videoGrid"></div></section>
   </main>
@@ -1316,17 +1316,8 @@
     const NEWS_FEED = window.NEWS_FEED || { meta:{ updatedAt:new Date().toISOString(), edition:"מהדורה לא זמינה" }, markets:[], scores:[], polls:[], articles:[], deepDives:[], videos:[] };
     NEWS_FEED.breaking = Array.isArray(window.BREAKING_ARCHIVE) ? window.BREAKING_ARCHIVE : [];
     const CATEGORIES = ["הכל", "בארץ", "חרדים", "עולם", "כלכלה", "ספורט", "טכנולוגיה", "עומק", "סקרים", "הרשת"];
-    const EDITORIAL_VIDEOS = [
-      { id: "qvNrmj_uNhE", category: "ספורט", title: "תקציר הפרמייר ליג האחרון", note: "תקציר רשמי של NBC Sports" },
-      { id: "SxiMucn6hTc", category: "ספורט", title: "כל שערי מחזור הפתיחה", note: "ריכוז שערים ועדכונים מהליגה האנגלית" },
-      { id: "--iAXUZF52k", category: "קליל", title: "רגעי חיות מצחיקים מהרשת", note: "אוסף קליל לצפייה בתוך האתר" }
-    ];
-    const EDITORIAL_SOCIAL = [
-      { id:"poll-math", badge:"פוליטיקה", source:"קריצה מערכתית", handle:"@החדשות", text:"הסקר מבטיח 120 מנדטים. הרשת כבר חילקה 240 והשאירה עודף למשא ומתן.", color:"#1d9bf0", time:"פיד קליל", editorial:true },
-      { id:"coalition-speed", badge:"קואליציה", source:"קריצה מערכתית", handle:"@החדשות", text:"הפרשנים ביקשו להמתין לנתונים. קבוצת הוואטסאפ כבר הקימה שלוש ממשלות.", color:"#ef3b58", time:"פיד קליל", editorial:true },
-      { id:"breaking-default", badge:"אקטואליה", source:"קריצה מערכתית", handle:"@החדשות", text:"בישראל ״דרמה פוליטית״ היא פחות כותרת ויותר הגדרת ברירת מחדל.", color:"#8b5cf6", time:"פיד קליל", editorial:true },
-      { id:"market-family", badge:"כלכלה", source:"קריצה מערכתית", handle:"@החדשות", text:"השוק ביקש שקט לפני הפתיחה. קבוצת המשפחה בחרה דווקא לשלוח תחזית.", color:"#20b486", time:"פיד קליל", editorial:true }
-    ];
+    const EDITORIAL_VIDEOS = [];
+    const EDITORIAL_SOCIAL = [];
     const TEAM_META = {
       "מכבי תל אביב": { color:"#e8c400", abbr:"מכבי" },
       "הפועל ירושלים": { color:"#d71920", abbr:"הפ׳" },
@@ -1415,21 +1406,21 @@
       $("newsroomPulse").innerHTML = cards.map((card,index) => `<div class="pulse-card" style="--pulse-color:${card.color};--pulse-delay:${index * 55}ms"><span class="pulse-icon">${escapeHtml(card.icon)}</span><span class="pulse-copy"><span>${escapeHtml(card.label)}</span><strong>${escapeHtml(card.value)}</strong></span></div>`).join("");
     }
     function socialItems() {
-      const incoming = Array.isArray(NEWS_FEED.socialPulse) ? NEWS_FEED.socialPulse.filter(item => item && item.text && (item.editorial || safeUrl(item.url) !== "#")) : [];
-      return incoming.length ? incoming.slice(0,8) : EDITORIAL_SOCIAL;
-    }
+  const incoming = Array.isArray(NEWS_FEED.socialPulse) ? NEWS_FEED.socialPulse.filter(item => item && item.text && item.source && item.handle && item.engagement && safeUrl(item.url) !== "#") : [];
+  return incoming.slice(0,8);
+}
     function renderSocialPulse() {
-      $("socialPulse").innerHTML = socialItems().map((item,index) => {
-        const color = item.color || ["#1d9bf0","#ef3b58","#8b5cf6","#20b486"][index % 4];
-        const source = item.source || (item.editorial ? "קריצה מערכתית" : "מהרשת");
-        const handle = item.handle || "@החדשות";
-        const badge = item.badge || "מדברים עכשיו";
-        const footer = item.editorial ? "הומור מקורי" : "קישור למקור";
-        const content = `<div class="social-head"><span class="social-avatar">${escapeHtml(initials(source) || "#")}</span><span class="social-source"><strong>${escapeHtml(source)}</strong><small>${escapeHtml(handle)}</small></span><span class="social-badge">${escapeHtml(badge)}</span></div><p class="social-text">${escapeHtml(item.text)}</p><div class="social-foot"><span class="spark">✦ ${escapeHtml(footer)}</span><span>${escapeHtml(item.time || "עכשיו ברשת")}</span></div>`;
-        const href = safeUrl(item.url);
-        return href !== "#" ? `<a class="social-card" style="--social-color:${color}" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${content}</a>` : `<article class="social-card" style="--social-color:${color}">${content}</article>`;
-      }).join("");
-    }
+  const items = socialItems();
+  if (!items.length) {
+    $("socialPulse").innerHTML = `<article class="social-card" style="grid-column:1/-1;--social-color:#64748b;text-align:center"><div class="social-head"><span class="social-avatar">✓</span><span class="social-source"><strong>אין כרגע פוסט מאומת</strong><small>המדור לא ממלא מקום בהמצאות</small></span></div><p class="social-text">נוסיף כאן רק פוסט אמיתי עם מחבר, קישור ישיר ומדדי הצלחה שנבדקו.</p></article>`;
+    return;
+  }
+  $("socialPulse").innerHTML = items.map((item,index) => {
+    const color = item.color || ["#1d9bf0","#ef3b58","#8b5cf6","#20b486"][index % 4];
+    const content = `<div class="social-head"><span class="social-avatar">${escapeHtml(initials(item.source) || "#")}</span><span class="social-source"><strong>${escapeHtml(item.source)}</strong><small>${escapeHtml(item.handle)}</small></span><span class="social-badge">${escapeHtml(item.badge || "מדברים עכשיו")}</span></div><p class="social-text">${escapeHtml(item.text)}</p><div class="social-foot"><span class="spark">✦ ${escapeHtml(item.engagement)}</span><span>${escapeHtml(item.time || "עכשיו ברשת")}</span></div>`;
+    return `<a class="social-card" style="--social-color:${color}" href="${escapeHtml(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${content}</a>`;
+  }).join("");
+}
     function resolvedTeamMeta(name,item,side) {
       const base = TEAM_META[name] || {};
       const explicitLogo = item?.[`${side}Logo`] || "";
@@ -1456,7 +1447,7 @@
     function pollDateText(value) { const date = new Date(`${value}T12:00:00+03:00`); return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString("he-IL", { day:"numeric", month:"long", year:"numeric" }); }
     function pollFreshness(poll) {
       if (poll.isAverage) return `ממוצע ${poll.pollCount} סקרים תקינים`;
-      const published = new Date(`${poll.date}T12:00:00+03:00`).getTime();
+      const published = new Date(`${poll.publishedDate || poll.date}T12:00:00+03:00`).getTime();
       const ageHours = (Date.now() - published) / 36e5;
       if (ageHours >= 0 && ageHours <= 36) return "פורסם ביממה האחרונה";
       return "הסקר האחרון של המקור";
@@ -1538,6 +1529,19 @@
       }).join("") : `<div class="below-empty">בסקר הזה לא פורסמו במקור נתונים על רשימות מתחת לאחוז החסימה.</div>`;
       bindPartyInsights($("belowThresholdGrid"));
     }
+    function pollMetadataHtml(poll) {
+  const publicationDate = poll.publishedDate || poll.date;
+  const fieldworkDate = poll.fieldworkDate || "";
+  const verifiedAt = poll.verifiedAt ? new Date(poll.verifiedAt) : null;
+  const parts = [
+    `<span>${poll.isAverage ? `עדכני לסקר האחרון מ־${pollDateText(poll.date)}` : `פורסם ב־${pollDateText(publicationDate)}`}</span>`,
+    !poll.isAverage && fieldworkDate ? `<span>עבודת שדה: ${pollDateText(fieldworkDate)}</span>` : "",
+    poll.pollster ? `<span>עורך הסקר: ${escapeHtml(poll.pollster)}</span>` : "",
+    poll.isAverage ? `<span>${poll.pollCount} גופי תקשורת ופרסומים אחרונים</span>` : "",
+    !poll.isAverage && verifiedAt && Number.isFinite(verifiedAt.getTime()) ? `<span>נבדק מחדש: ${verifiedAt.toLocaleDateString("he-IL",{day:"numeric",month:"numeric",year:"numeric"})}</span>` : ""
+  ];
+  return `<div class="poll-meta-main"><h3>${escapeHtml(poll.source)}</h3><div class="poll-meta-line">${parts.join("")}</div></div><div class="poll-status">${escapeHtml(pollFreshness(poll))}</div>`;
+}
     function renderPoll(id = "average") {
       const polls = validPolls(), average = buildPollAverage(polls), selected = polls.filter(item => customPollIds.has(item.id));
       const custom = buildPollAverage(selected, { id:"custom-average", source:"ממוצע לפי בחירה", shortSource:"בחירה", isCustom:true });
@@ -1550,7 +1554,7 @@
       renderPollTabs(poll.id);
       const total = pollTotal(poll), blocks = blocksForParties(poll.parties);
       const visibleBlocDefs = BLOC_DEFS.filter(block => block.id !== "other" || blocks[block.id] > 0);
-      $("pollMeta").innerHTML = `<div class="poll-meta-main"><h3>${escapeHtml(poll.source)}</h3><div class="poll-meta-line"><span>${poll.isAverage ? `עדכני לסקר האחרון מ־${pollDateText(poll.date)}` : `פורסם ב־${pollDateText(poll.date)}`}</span>${poll.pollster ? `<span>עורך הסקר: ${escapeHtml(poll.pollster)}</span>` : ""}${poll.isAverage ? `<span>${poll.pollCount} גופי תקשורת ופרסומים אחרונים</span>` : ""}</div></div><div class="poll-status">${escapeHtml(pollFreshness(poll))}</div>`;
+      $("pollMeta").innerHTML = pollMetadataHtml(poll);
       const donutGradient = pollDonutGradient(poll.parties, total);
       const donut = $("blocDonut"); donut.style.setProperty("--donut-gradient", donutGradient); donut.dataset.total = String(total); donut.setAttribute("aria-label", visibleBlocDefs.map(block => `${block.label}: ${blocks[block.id]} מנדטים`).join(", ")); donut.style.animation = "none"; void donut.offsetWidth; donut.style.animation = "";
       $("donutSource").textContent = poll.source;
@@ -1605,7 +1609,12 @@
       $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); toggleDrawer(false); renderPoll("average");
       $("pollsLayer").classList.add("open"); document.body.classList.add("modal-open"); setTimeout(() => $("pollsClose").focus(), 30);
     }
-    function renderVideos() { const videos = Array.isArray(NEWS_FEED.videos) && NEWS_FEED.videos.length ? NEWS_FEED.videos : EDITORIAL_VIDEOS; $("videoGrid").innerHTML = videos.slice(0,3).map(v => `<article class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}" title="${escapeHtml(v.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-copy"><span class="story-source">${escapeHtml(v.category || "וידאו")}</span><h3>${escapeHtml(v.title)}</h3><p>${escapeHtml(v.note || "צפייה בתוך האתר")}</p></div></article>`).join(""); }
+    function renderVideos() {
+  const videos = Array.isArray(NEWS_FEED.videos) ? NEWS_FEED.videos.filter(item => item && item.id && item.title) : [];
+  const section = $("videoSection");
+  section.hidden = !videos.length;
+  $("videoGrid").innerHTML = videos.slice(0,3).map(v => `<article class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}" title="${escapeHtml(v.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-copy"><span class="story-source">${escapeHtml(v.category || "וידאו")}</span><h3>${escapeHtml(v.title)}</h3><p>${escapeHtml(v.note || "צפייה בתוך האתר")}</p></div></article>`).join("");
+}
 
     function renderLive(query = "") {
       const all = [...(NEWS_FEED.breaking || [])].sort((a,b) => (Date.parse(b.publishedAt || "") || 0) - (Date.parse(a.publishedAt || "") || 0));
