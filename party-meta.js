@@ -15,7 +15,7 @@ window.PARTY_PROFILES = {
     monogram: "מחל",
     color: "#215ca3",
     bloc: "netanyahu",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Likud_Logo.svg/512px-Likud_Logo.svg.png",
+    logo: "https://www.marefa.org/w/images/thumb/b/b6/Flag_of_the_Likud.svg/1200px-Flag_of_the_Likud.svg.png",
     leaderImage: "https://upload.wikimedia.org/wikipedia/commons/7/74/Benjamin_Netanyahu%2C_February_2023.jpg"
   },
   "ביחד": {
@@ -31,7 +31,7 @@ window.PARTY_PROFILES = {
     monogram: "דמ",
     color: "#d84c68",
     bloc: "opposition",
-    logo: "https://pbs.twimg.com/profile_images/1940647288554029056/rz8xvIgJ.jpg",
+    logo: "https://pbs.twimg.com/profile_images/1940647288554029056/rz8xvIgJ_400x400.jpg",
     leaderImage: "https://ict.org.il/wp-content/uploads/2022/08/MK-Yair-Golan_ICT-Website-Photo.png"
   },
   "ישראל ביתנו": {
@@ -48,7 +48,7 @@ window.PARTY_PROFILES = {
     color: "#ca721b",
     bloc: "netanyahu",
     logo: "https://crwflags.com/FOTW/images/i/il%7Doy-l.jpg",
-    leaderImage: "https://www.c-live.co.il/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-05-at-19.36.59-e1688575285549.jpeg"
+    leaderImage: "https://pbs.twimg.com/media/F0ngpgVWwAAm1_i.jpg"
   },
   "יהדות התורה": {
     leader: "יצחק גולדקנופף",
@@ -63,7 +63,7 @@ window.PARTY_PROFILES = {
     monogram: "שס",
     color: "#4665ae",
     bloc: "netanyahu",
-    logo: "https://images.kikar.co.il/cdn-cgi/image/format%3Djpeg%2Cfit%3Dcontain%2Cwidth%3D900/2024/11/26/c74979f0-ac05-11ef-a142-d9c93479d225__h1156_w1200.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Shas_logo.png",
     leaderImage: "https://www.israelhayom.co.il/wp-content/uploads/2021/01/15686112822275_b-960x640.jpg"
   },
   "הציונות הדתית": {
@@ -71,8 +71,7 @@ window.PARTY_PROFILES = {
     monogram: "ט",
     color: "#34708b",
     bloc: "netanyahu",
-    logo: "https://pbs.twimg.com/profile_images/1621096278334574594/nOA2cnIy_400x400.jpg",
-    leaderImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bezalel_Smotrich.jpg/640px-Bezalel_Smotrich.jpg"
+    leaderImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bezalel_Smotrich.jpg/1200px-Bezalel_Smotrich.jpg"
   },
   "רע״ם": {
     leader: "מנסור עבאס",
