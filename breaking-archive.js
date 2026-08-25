@@ -1,6 +1,75 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-2133-35",
+    "publishedAt": "2026-08-25T21:33:00+03:00",
+    "time": "21:33",
+    "title": "קצין אמריקני שקרא להדחת טראמפ ו־ואנס הועמד לדין בשלושה סעיפים צבאיים",
+    "source": "Reuters",
+    "articleId": "us-officer-impeachment-charges",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2129-34",
+    "publishedAt": "2026-08-25T21:29:00+03:00",
+    "time": "21:29",
+    "title": "התובע הכללי של קליפורניה: לא נקבעו שיחות פשרה עם Paramount בעסקת Warner Bros",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2115-33",
+    "publishedAt": "2026-08-25T21:15:00+03:00",
+    "time": "21:15",
+    "title": "ה־FAA הזיז אנטנה ושינה נוהל אחרי תקרית בטיחות שבה Marine One התקרב למטוס נוסעים",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2103-32",
+    "publishedAt": "2026-08-25T21:03:00+03:00",
+    "time": "21:03",
+    "title": "ארבעה דירקטוריונים אזוריים בפד ביקשו להעלות ברבע נקודה את ריבית החירום",
+    "source": "Reuters",
+    "articleId": "fed-bank-boards-hike",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2101-31",
+    "publishedAt": "2026-08-25T21:01:00+03:00",
+    "time": "21:01",
+    "title": "קרן המטבע: הכלכלה העולמית עמדה בזעזוע האנרגיה טוב מהחשש, אך הסיכון הפיסקלי גדל",
+    "source": "Reuters",
+    "articleId": "imf-energy-shock-economy",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2100-30",
+    "publishedAt": "2026-08-25T21:00:00+03:00",
+    "time": "21:00",
+    "title": "קנדה הטילה מכסים נגדיים על יבוא אמריקני שנתי בהיקף של כ־20 מיליארד דולר",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-2058-29",
+    "publishedAt": "2026-08-25T20:58:00+03:00",
+    "time": "20:58",
+    "title": "דולי פרטון, מאגדות מוזיקת הקאנטרי האמריקנית, מתה בגיל 80",
+    "source": "Reuters",
+    "articleId": "dolly-parton-dies-80",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1956-28",
+    "publishedAt": "2026-08-25T19:56:00+03:00",
+    "time": "19:56",
+    "title": "דיווח: Anthropic תציג למשקיעים שוק AI פוטנציאלי של יותר מ־30 טריליון דולר",
+    "source": "Reuters",
+    "articleId": "anthropic-30-trillion-tam",
+    "urgent": false
+  },
+  {
     "id": "flash-20260825-1929-27",
     "publishedAt": "2026-08-25T19:29:00+03:00",
     "time": "19:29",
