@@ -1,6 +1,33 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-1236-17",
+    "publishedAt": "2026-08-25T12:36:05+03:00",
+    "time": "12:36",
+    "title": "משטרת ביהאר השתמשה בתותחי מים ועיכבה עשרות במחאה על חשדות להדלפת בחינה",
+    "source": "Reuters",
+    "articleId": "india-exam-protest",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1217-16",
+    "publishedAt": "2026-08-25T12:17:16+03:00",
+    "time": "12:17",
+    "title": "זלנסקי הציג חלון לתיווך אמריקני עד קיץ 2027 ודף עקרונות לשיחות",
+    "source": "Reuters",
+    "articleId": "ukraine-mediation-window",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1212-15",
+    "publishedAt": "2026-08-25T12:12:32+03:00",
+    "time": "12:12",
+    "title": "תצלומי לוויין חשפו מתקנים חדשים באי יאגונג שבאיי פאראסל",
+    "source": "Reuters",
+    "articleId": "china-paracels-build-up",
+    "urgent": false
+  },
+  {
     "id": "flash-20260825-1149-14",
     "publishedAt": "2026-08-25T11:49:17+03:00",
     "time": "11:49",
