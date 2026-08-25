@@ -1,6 +1,24 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-1149-14",
+    "publishedAt": "2026-08-25T11:49:17+03:00",
+    "time": "11:49",
+    "title": "Finnair השעתה את טיסות החורף בין הלסינקי לדובאי בשל חוסר היציבות באזור",
+    "source": "Reuters",
+    "articleId": "finnair-dubai-winter-suspension",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1134-13",
+    "publishedAt": "2026-08-25T11:34:53+03:00",
+    "time": "11:34",
+    "title": "האו״ם והצלב האדום קראו לפתוח מיד במשא ומתן על הגבלות לנשק אוטונומי",
+    "source": "Reuters",
+    "articleId": "un-autonomous-weapons-rules",
+    "urgent": false
+  },
+  {
     "id": "flash-20260825-0639-12",
     "publishedAt": "2026-08-25T06:39:53+03:00",
     "time": "06:39",
