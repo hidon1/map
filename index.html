@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#07111f">
-  <meta name="description" content="הדופק — מהדורת חדשות אישית בעברית: ישראל, העולם החרדי, עולם, ספורט, כלכלה, טכנולוגיה ושווקים.">
-  <title>הדופק | חדשות, עומק ונתונים</title>
+  <meta name="description" content="החדשות — מהדורת חדשות אישית בעברית: ישראל, העולם החרדי, עולם, ספורט, כלכלה, טכנולוגיה ושווקים.">
+  <title>החדשות | חדשות, עומק ונתונים</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e02b3b'/%3E%3Cpath d='M16 15h27a7 7 0 0 1 7 7v28H23a7 7 0 0 1-7-7V15Zm34 12h3v16a7 7 0 0 1-7 7' fill='none' stroke='white' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M23 25h19M23 33h19M23 41h12' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -451,11 +451,15 @@
     .dashboard-card { overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); box-shadow: var(--shadow-sm); }
     .dashboard-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; border-bottom: 1px solid var(--line); }
     .dashboard-head h2 { margin: 0; font: 900 1.55rem "Noto Serif Hebrew", serif; }
-    .score-row { display: grid; grid-template-columns: 83px 1fr auto; gap: 12px; align-items: center; padding: 14px 20px; border-bottom: 1px solid var(--line); }
+    .score-row { display: grid; grid-template-columns: 92px 1fr; gap: 16px; align-items: center; padding: 15px 20px; border-bottom: 1px solid var(--line); }
     .score-row:last-child { border-bottom: 0; }
+    .score-meta { min-width: 0; }
     .score-league { color: var(--muted); font-size: .68rem; font-weight: 800; }
-    .score-teams { font-size: .86rem; font-weight: 800; }
-    .score-result { min-width: 55px; text-align: center; direction: ltr; padding: 5px 8px; border-radius: 8px; background: var(--navy); color: #fff; font-weight: 900; }
+    .score-match { direction: rtl; display: grid; grid-template-columns: minmax(90px,1fr) 37px 12px 37px minmax(90px,1fr); align-items: center; gap: 7px; }
+    .score-team { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .82rem; font-weight: 850; }
+    .score-team.away { text-align: left; }
+    .score-goal { width: 37px; height: 37px; display: grid; place-items: center; border-radius: 11px; color: #fff; background: linear-gradient(145deg, var(--navy), #1f466f); box-shadow: inset 0 1px rgba(255,255,255,.16), 0 6px 15px rgba(7,25,43,.14); font: 900 1rem "Heebo", sans-serif; }
+    .score-divider { direction: ltr; color: var(--muted); text-align: center; font-weight: 900; }
     .market-table-row { display: grid; grid-template-columns: 1fr auto auto; gap: 14px; align-items: center; padding: 14px 20px; border-bottom: 1px solid var(--line); }
     .market-table-row:last-child { border-bottom: 0; }
     .market-table-name { font-size: .84rem; font-weight: 800; }
@@ -593,7 +597,8 @@
     .site-header { top: 0; box-shadow: 0 8px 30px rgba(5, 16, 31, .05); }
     .masthead { min-height: 78px; }
     .brand { display: inline-flex; align-items: center; justify-content: center; gap: 12px; }
-    .brand-symbol { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 14px; color: #fff; background: linear-gradient(145deg, var(--accent), var(--accent-deep)); box-shadow: 0 9px 24px rgba(224, 43, 59, .24); }
+    .brand-symbol { position: relative; width: 45px; height: 45px; display: grid; place-items: center; overflow: hidden; border-radius: 15px; color: #fff; background: linear-gradient(145deg, #07172b 0 56%, var(--accent) 56% 100%); box-shadow: 0 11px 28px rgba(7, 23, 43, .22), inset 0 1px rgba(255,255,255,.18); }
+    .brand-symbol::after { content: ""; position: absolute; top: 7px; left: 7px; width: 6px; height: 6px; border-radius: 50%; background: #ff4051; box-shadow: 0 0 0 4px rgba(255,64,81,.14); animation: pulse 1.7s infinite; }
     .brand-symbol svg { width: 25px; height: 25px; }
     .brand-lockup { text-align: right; }
     .brand-name { font: 900 clamp(1.75rem, 3vw, 2.45rem)/1 "Noto Serif Hebrew", serif; letter-spacing: -.06em; }
@@ -760,15 +765,15 @@
     .poll-panel-head h4 { margin: 0; font: 900 1.15rem "Noto Serif Hebrew", serif; }
     .poll-panel-head span { color: var(--muted); font-size: .7rem; }
     .bloc-body { padding: 18px 22px 22px; }
-    .bloc-donut-stage { position: relative; min-height: 330px; display: grid; place-items: center; overflow: hidden; perspective: 900px; }
-    .bloc-donut-stage::before { content: ""; position: absolute; width: 270px; height: 60px; bottom: 36px; border-radius: 50%; background: rgba(4,16,30,.23); filter: blur(16px); transform: rotate(-8deg); }
-    .bloc-donut { position: relative; width: min(278px, 77vw); aspect-ratio: 1; border-radius: 50%; background: var(--donut-gradient); transform: rotateX(58deg) rotateZ(-24deg); box-shadow: inset 0 0 0 2px rgba(255,255,255,.14), inset 0 -22px 24px rgba(3,10,20,.28), 0 8px 0 rgba(7,25,43,.5), 0 18px 30px rgba(7,25,43,.28); animation: donutEnter .75s cubic-bezier(.2,.8,.2,1) both; }
-    .bloc-donut::before { content: ""; position: absolute; inset: 27%; border-radius: 50%; background: linear-gradient(145deg, var(--paper), var(--canvas-deep)); box-shadow: inset 0 8px 14px rgba(5,20,38,.18), 0 0 0 2px rgba(255,255,255,.35); }
+    .bloc-donut-stage { position: relative; min-height: 330px; display: grid; place-items: center; overflow: hidden; }
+    .bloc-donut-stage::before { content: ""; position: absolute; width: 245px; height: 34px; bottom: 28px; border-radius: 50%; background: rgba(4,16,30,.22); filter: blur(15px); }
+    .bloc-donut { position: relative; width: min(278px, 77vw); aspect-ratio: 1; border-radius: 50%; background: var(--donut-gradient); transform: none; box-shadow: inset 0 0 0 2px rgba(255,255,255,.18), inset 0 -15px 22px rgba(3,10,20,.2), 0 5px 0 #102b46, 0 9px 0 #0a2138, 0 18px 32px rgba(7,25,43,.3); animation: donutEnter .72s cubic-bezier(.2,.8,.2,1) both; }
+    .bloc-donut::before { content: ""; position: absolute; z-index: 1; inset: 27%; border-radius: 50%; background: linear-gradient(145deg, var(--paper), var(--canvas-deep)); box-shadow: inset 0 7px 13px rgba(5,20,38,.16), 0 4px 0 rgba(8,29,50,.22), 0 0 0 2px rgba(255,255,255,.38); }
     .bloc-donut::after { content: ""; position: absolute; inset: 4%; border-radius: 50%; background: linear-gradient(135deg, rgba(255,255,255,.28), transparent 32%, transparent 70%, rgba(0,0,0,.12)); mix-blend-mode: soft-light; }
     .bloc-donut-core { position: absolute; z-index: 2; display: grid; place-items: center; text-align: center; pointer-events: none; transform: translateY(2px); }
     .bloc-donut-core strong { font: 900 1.25rem "Noto Serif Hebrew", serif; }
     .bloc-donut-core span { margin-top: 4px; color: var(--muted); font-size: .64rem; font-weight: 800; }
-    @keyframes donutEnter { from { opacity: 0; transform: rotateX(58deg) rotateZ(-60deg) scale(.75); } to { opacity: 1; transform: rotateX(58deg) rotateZ(-24deg) scale(1); } }
+    @keyframes donutEnter { from { opacity: 0; transform: rotate(-32deg) scale(.76); } to { opacity: 1; transform: rotate(0) scale(1); } }
     .bloc-legend { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-top: 18px; }
     .bloc-card { position: relative; overflow: hidden; padding: 13px; border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(145deg, var(--paper), var(--canvas)); }
     .bloc-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--bloc-color); }
@@ -777,8 +782,9 @@
     .bloc-card strong { display: block; margin-top: 2px; font-size: 1.45rem; }
     .bloc-share { display: inline-block; margin-right: 5px; direction: ltr; color: var(--muted); font-size: .64rem; font-weight: 700; }
     .party-chart { padding: 9px 20px 19px; }
-    .party-row { direction: rtl; display: grid; grid-template-columns: minmax(190px, 235px) minmax(150px, 1fr) 54px; align-items: center; gap: 14px; min-height: 66px; border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent); }
+    .party-row { direction: rtl; width: 100%; display: grid; grid-template-columns: minmax(190px, 235px) minmax(150px, 1fr) 54px; align-items: center; gap: 14px; min-height: 66px; border: 0; border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent); color: inherit; background: transparent; cursor: pointer; font: inherit; text-align: right; transition: background .18s, transform .18s; }
     .party-row:last-child { border-bottom: 0; }
+    .party-row:hover, .party-row:focus-visible { z-index: 1; outline: 0; background: color-mix(in srgb, var(--party-color) 7%, var(--paper)); transform: translateX(-3px); }
     .party-identity { min-width: 0; display: flex; align-items: center; gap: 11px; }
     .party-visuals { direction: ltr; position: relative; flex: 0 0 69px; height: 47px; }
     .party-logo, .party-leader { position: absolute; display: grid; place-items: center; overflow: hidden; border-radius: 50%; background: #fff; }
@@ -792,13 +798,65 @@
     .party-labels { min-width: 0; line-height: 1.18; }
     .party-name { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .78rem; font-weight: 900; }
     .party-leader-name { display: block; margin-top: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); font-size: .62rem; font-weight: 700; }
-    .party-track { direction: ltr; position: relative; height: 22px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--line) 70%, transparent); border-radius: 999px; background: linear-gradient(180deg, var(--canvas-deep), color-mix(in srgb, var(--canvas-deep) 65%, var(--paper))); box-shadow: inset 0 2px 5px rgba(7,20,36,.08); }
-    .party-fill { position: relative; width: var(--poll-width); height: 100%; overflow: hidden; border-radius: inherit; background: linear-gradient(90deg, color-mix(in srgb, var(--party-color) 82%, #071426), var(--party-color)); box-shadow: inset 0 1px rgba(255,255,255,.35), 0 4px 12px color-mix(in srgb, var(--party-color) 28%, transparent); transform-origin: left; animation: pollBar .72s cubic-bezier(.2,.8,.2,1) both; }
+    .party-track { direction: ltr; position: relative; display: block; height: 22px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--line) 70%, transparent); border-radius: 999px; background: linear-gradient(180deg, var(--canvas-deep), color-mix(in srgb, var(--canvas-deep) 65%, var(--paper))); box-shadow: inset 0 2px 5px rgba(7,20,36,.08); }
+    .party-fill { position: relative; display: block; width: var(--poll-width); height: 100%; overflow: hidden; border-radius: inherit; background: linear-gradient(90deg, color-mix(in srgb, var(--party-color) 82%, #071426), var(--party-color)); box-shadow: inset 0 1px rgba(255,255,255,.35), 0 4px 12px color-mix(in srgb, var(--party-color) 28%, transparent); transform-origin: left; animation: pollBar .72s cubic-bezier(.2,.8,.2,1) both; }
     .party-fill::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(125deg, rgba(255,255,255,.18) 0 7px, transparent 7px 15px), linear-gradient(180deg, rgba(255,255,255,.23), transparent 55%); }
     @keyframes pollBar { from { transform: scaleX(0); opacity: .3; } to { transform: scaleX(1); opacity: 1; } }
     .party-seats { direction: ltr; width: 48px; height: 43px; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--party-color) 42%, var(--line)); border-radius: 13px; color: var(--party-color); background: color-mix(in srgb, var(--party-color) 7%, var(--paper)); box-shadow: inset 0 1px rgba(255,255,255,.5); font: 900 1.13rem "Heebo", sans-serif; }
     .poll-methodology { margin-top: 22px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 17px; color: var(--muted); background: var(--paper); font-size: .76rem; }
     .poll-methodology strong { color: var(--ink); }
+
+    .custom-average-builder { display: none; margin-top: 14px; padding: 16px; border: 1px solid color-mix(in srgb, #d4a23b 50%, var(--line)); border-radius: 17px; background: color-mix(in srgb, #fff4cf 45%, var(--paper)); }
+    .custom-average-builder.open { display: block; animation: fadeUp .25s both; }
+    .custom-builder-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 11px; }
+    .custom-builder-head strong { font: 900 1rem "Noto Serif Hebrew", serif; }
+    .custom-builder-head span { color: var(--muted); font-size: .68rem; }
+    .custom-poll-choices { display: flex; flex-wrap: wrap; gap: 7px; }
+    .custom-poll-choice { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 11px; color: var(--ink-soft); background: var(--paper); cursor: pointer; font-size: .7rem; font-weight: 800; }
+    .custom-poll-choice:has(input:checked) { border-color: #d4a23b; color: #5b4212; background: #fff2c8; box-shadow: 0 5px 14px rgba(145,102,17,.1); }
+    .custom-poll-choice input { accent-color: #c69025; }
+    .custom-builder-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 13px; }
+    .custom-action { border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; color: var(--ink); background: var(--paper); cursor: pointer; font-size: .7rem; font-weight: 900; }
+    .custom-action.primary { border-color: #bf8a1e; color: #172435; background: linear-gradient(145deg, #f7da83, #e8ac35); }
+
+    .below-threshold-section { margin-top: 24px; padding: 22px; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); box-shadow: var(--card-shadow); }
+    .below-threshold-head { display: flex; align-items: end; justify-content: space-between; gap: 14px; margin-bottom: 15px; }
+    .below-threshold-head h4 { margin: 0; font: 900 1.25rem "Noto Serif Hebrew", serif; }
+    .below-threshold-head span { color: var(--muted); font-size: .7rem; }
+    .below-threshold-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; }
+    .below-card { position: relative; min-width: 0; display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 15px; padding: 11px; color: inherit; background: linear-gradient(145deg, var(--paper), var(--canvas)); cursor: pointer; text-align: right; transition: transform .18s, border-color .18s, box-shadow .18s; }
+    .below-card:hover { transform: translateY(-3px); border-color: var(--party-color); box-shadow: 0 12px 25px rgba(8,27,50,.1); }
+    .below-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; color: var(--party-color); background: color-mix(in srgb, var(--party-color) 9%, var(--paper)); border: 2px solid color-mix(in srgb, var(--party-color) 65%, var(--line)); font-size: .64rem; font-weight: 900; }
+    .below-copy { min-width: 0; }
+    .below-copy strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .75rem; }
+    .below-copy small { display: block; margin-top: 3px; color: var(--muted); font-size: .59rem; }
+    .below-value { direction: ltr; color: var(--party-color); font: 900 1.03rem "Heebo", sans-serif; }
+    .below-value.unreported { max-width: 66px; color: var(--muted); font-size: .58rem; text-align: center; }
+    .below-empty { grid-column: 1/-1; padding: 18px; border: 1px dashed var(--line); border-radius: 13px; color: var(--muted); text-align: center; font-size: .75rem; }
+
+    .party-insight-layer { position: fixed; inset: 0; z-index: 260; display: none; place-items: center; overflow: auto; padding: 20px; background: rgba(2,8,16,.72); backdrop-filter: blur(11px); }
+    .party-insight-layer.open { display: grid; animation: pollLayerIn .2s both; }
+    .party-insight-panel { width: min(820px,100%); max-height: min(850px,calc(100vh - 40px)); overflow: auto; border: 1px solid rgba(255,255,255,.13); border-radius: 25px; color: var(--ink); background: var(--paper); box-shadow: 0 36px 100px rgba(0,0,0,.4); }
+    .party-insight-head { position: sticky; top: 0; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 24px; color: #fff; background: linear-gradient(135deg, #07172b, color-mix(in srgb, var(--party-color) 58%, #07172b)); }
+    .party-insight-title { display: flex; align-items: center; gap: 13px; }
+    .party-insight-emblem { width: 48px; height: 48px; display: grid; place-items: center; overflow: hidden; border: 2px solid rgba(255,255,255,.72); border-radius: 50%; background: #fff; color: var(--party-color); font-weight: 900; }
+    .party-insight-emblem img { width: 86%; height: 86%; object-fit: contain; }
+    .party-insight-head h3 { margin: 0; font: 900 1.55rem "Noto Serif Hebrew", serif; }
+    .party-insight-head small { display: block; margin-top: 4px; color: #c8d6e5; }
+    .party-insight-close { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; color: #fff; background: rgba(255,255,255,.1); cursor: pointer; font-size: 1.35rem; }
+    .party-insight-body { padding: 22px 24px 28px; }
+    .party-insight-summary { display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; margin-bottom: 18px; }
+    .insight-stat { padding: 13px; border: 1px solid var(--line); border-radius: 14px; background: var(--canvas); }
+    .insight-stat span { display: block; color: var(--muted); font-size: .62rem; font-weight: 800; }
+    .insight-stat strong { display: block; margin-top: 3px; font-size: 1.18rem; }
+    .insight-poll-row { display: grid; grid-template-columns: minmax(120px,180px) 1fr 56px; align-items: center; gap: 12px; min-height: 55px; border-bottom: 1px solid var(--line); }
+    .insight-poll-row:last-child { border-bottom: 0; }
+    .insight-source strong { display: block; font-size: .76rem; }
+    .insight-source small { color: var(--muted); font-size: .6rem; }
+    .insight-track { direction: ltr; height: 15px; overflow: hidden; border-radius: 99px; background: var(--canvas-deep); box-shadow: inset 0 2px 5px rgba(7,20,36,.08); }
+    .insight-fill { width: var(--insight-width); height: 100%; border-radius: inherit; background: linear-gradient(90deg, color-mix(in srgb, var(--party-color) 75%, #071426), var(--party-color)); animation: pollBar .55s both; }
+    .insight-value { direction: ltr; text-align: center; color: var(--party-color); font-weight: 900; }
+    .insight-value.missing { color: var(--muted); font-size: .6rem; }
 
     /* Premium finish */
     body::before { content: ""; position: fixed; z-index: -1; inset: 0; pointer-events: none; background: radial-gradient(circle at 8% 14%, rgba(42,112,178,.06), transparent 25rem), radial-gradient(circle at 92% 55%, rgba(224,43,59,.045), transparent 24rem); }
@@ -817,6 +875,7 @@
       .polls-trigger { grid-column: 2; grid-row: 2; }
       .polls-grid { grid-template-columns: 1fr; }
       .poll-tab-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+      .below-threshold-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
     }
     @media (max-width: 640px) {
       .election-inner { min-height: 0; grid-template-columns: 1fr; gap: 13px; padding-block: 17px; }
@@ -853,6 +912,18 @@
       .party-leader-name { font-size: .57rem; }
       .party-seats { width: 40px; height: 38px; border-radius: 11px; }
       .party-track { height: 18px; }
+      .below-threshold-section { padding: 16px 12px; }
+      .below-threshold-head { align-items: flex-start; flex-direction: column; gap: 3px; }
+      .below-threshold-grid { grid-template-columns: 1fr; }
+      .party-insight-layer { padding: 0; }
+      .party-insight-panel { min-height: 100vh; max-height: 100vh; border: 0; border-radius: 0; }
+      .party-insight-head, .party-insight-body { padding-inline: 16px; }
+      .party-insight-summary { grid-template-columns: 1fr; }
+      .insight-poll-row { grid-template-columns: minmax(100px,135px) 1fr 48px; gap: 8px; }
+      .score-row { grid-template-columns: 1fr; gap: 9px; }
+      .score-meta { display: flex; align-items: center; justify-content: space-between; }
+      .score-match { grid-template-columns: minmax(72px,1fr) 34px 9px 34px minmax(72px,1fr); gap: 5px; }
+      .score-goal { width: 34px; height: 34px; }
     }
 
   </style>
@@ -869,9 +940,9 @@
   <header class="site-header">
     <div class="wrap masthead">
       <div class="edition"><strong id="editionName">מהדורת החדשות</strong><span id="editionDate">—</span></div>
-      <a class="brand" href="#top" aria-label="הדופק — דף הבית">
-        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12H6.8A2.8 2.8 0 0 1 4 16.2V5.5a1 1 0 0 1 1-1Z"/><path d="M19 8h1a1 1 0 0 1 1 1v7.5A2.5 2.5 0 0 1 18.5 19H18"/><path d="M7.5 8h8M7.5 11h8M7.5 14h5"/></svg></span>
-        <span class="brand-lockup"><span class="brand-name">הדופק</span><span class="brand-sub">חדשות · עומק · נתונים</span></span>
+      <a class="brand" href="#top" aria-label="החדשות — דף הבית">
+        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4.5 5.5h11.8a2.2 2.2 0 0 1 2.2 2.2v10.8H7.3a2.8 2.8 0 0 1-2.8-2.8V5.5Z"/><path d="M18.5 9h1.2a1.3 1.3 0 0 1 1.3 1.3v5.6a2.6 2.6 0 0 1-2.6 2.6"/><path d="M8 9h7M8 12h7M8 15h4.5"/><path d="M4.5 5.5 8 9"/></svg></span>
+        <span class="brand-lockup"><span class="brand-name">החדשות</span><span class="brand-sub">חדשות · עומק · נתונים</span></span>
       </a>
       <div class="header-actions">
         <button class="icon-btn" id="searchBtn" aria-label="חיפוש בחדשות"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg></button>
@@ -924,7 +995,7 @@
     <section class="video-section" id="videoSection"><div class="section-head"><div><span class="eyebrow">צופים באתר</span><h2 class="section-heading">וידאו ברשת</h2></div><span class="section-note">ספורט, רגעים מעניינים וסרטונים קלילים</span></div><div class="video-grid" id="videoGrid"></div></section>
   </main>
 
-  <footer class="footer"><div class="wrap footer-top"><div class="footer-about"><div class="footer-brand">הדופק</div><p>מהדורת חדשות אישית עם קריאה מלאה בתוך האתר, כתבות עומק, ספורט, שווקים וטכנולוגיה.</p></div><div><h3>מדורים</h3><div class="footer-links"><a href="#latestSection">חדשות</a><a href="#deepSection">כתבות עומק</a><a href="#videoSection">וידאו</a></div></div><div><h3>עדכונים</h3><div class="footer-links"><span>מהדורה מלאה בכל שעתיים</span><span>מבזקים במגירה הצדדית</span><button id="footerSearch" style="all:unset;cursor:pointer">חיפוש באתר</button></div></div></div><div class="wrap footer-bottom">© 2026 הדופק · מהדורת חדשות אישית</div></footer>
+  <footer class="footer"><div class="wrap footer-top"><div class="footer-about"><div class="footer-brand">החדשות</div><p>מהדורת חדשות אישית עם קריאה מלאה בתוך האתר, כתבות עומק, ספורט, שווקים וטכנולוגיה.</p></div><div><h3>מדורים</h3><div class="footer-links"><a href="#latestSection">חדשות</a><a href="#deepSection">כתבות עומק</a><a href="#videoSection">וידאו</a></div></div><div><h3>עדכונים</h3><div class="footer-links"><span>מהדורה מלאה בכל שעתיים</span><span>מבזקים במגירה הצדדית</span><button id="footerSearch" style="all:unset;cursor:pointer">חיפוש באתר</button></div></div></div><div class="wrap footer-bottom">© 2026 החדשות · מהדורת חדשות אישית</div></footer>
 
   <button class="breaking-fab" id="breakingFab" aria-label="פתיחת מבזקים"><span class="live-dot"></span><span class="fab-label">מבזקים</span><span class="breaking-count" id="breakingCount">0</span></button>
   <div class="drawer-shade" id="drawerShade"></div>
@@ -951,9 +1022,16 @@
             <div class="party-chart" id="partyChart"></div>
           </section>
         </div>
+        <section class="below-threshold-section" aria-labelledby="belowThresholdTitle">
+          <div class="below-threshold-head"><div><h4 id="belowThresholdTitle">מתחת לאחוז החסימה</h4><span>כל הרשימות שדווחו בסקר הנבחר; לחצו על מפלגה להשוואה מלאה</span></div><span>אחוז החסימה: 3.25%</span></div>
+          <div class="below-threshold-grid" id="belowThresholdGrid"></div>
+        </section>
         <div class="poll-methodology" id="pollMethodology"></div>
       </div>
     </div>
+  </div>
+  <div class="party-insight-layer" id="partyInsightLayer" role="dialog" aria-modal="true" aria-label="השוואת מפלגה בין סקרים">
+    <article class="party-insight-panel" id="partyInsightPanel"></article>
   </div>
   <div class="toast" id="toast">בודק אם פורסם עדכון חדש…</div>
 
@@ -979,6 +1057,8 @@
       { id:"arab", label:"מפלגות ערביות", className:"bloc-arab", color:"#2b9465" }
     ];
     let activeCategory = "הכל";
+    let customPollIds = new Set();
+    let customPollSelectionReady = false;
     const $ = id => document.getElementById(id);
     const allStories = () => [...NEWS_FEED.articles, ...NEWS_FEED.deepDives];
 
@@ -1028,7 +1108,13 @@
     }
 
     function renderDeep() { $("deepGrid").innerHTML = NEWS_FEED.deepDives.map((a,i) => `<article class="deep-card" data-open="${escapeHtml(a.id)}"><div><span class="deep-index">כתבת עומק ${String(i+1).padStart(2,"0")}</span><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.summary)}</p></div><div class="deep-sources">${escapeHtml(a.readTime)} · לקריאה מלאה ←</div></article>`).join(""); bindOpeners($("deepGrid")); }
-    function renderScores() { $("scoresTable").innerHTML = NEWS_FEED.scores.map(item => `<div class="score-row"><div><div class="score-league">${escapeHtml(item.league)}</div><div class="section-note">${escapeHtml(item.status)}</div></div><div class="score-teams">${escapeHtml(item.teams)}</div><div class="score-result">${escapeHtml(item.score)}</div></div>`).join(""); }
+    function renderScores() {
+      $("scoresTable").innerHTML = NEWS_FEED.scores.map(item => {
+        const teams = String(item.teams || "").split(/\s+[—–]\s+/), score = String(item.score || "").split(/\s*:\s*/);
+        const home = teams[0] || item.teams || "—", away = teams[1] || "—", homeScore = score[0] || "—", awayScore = score[1] || "—";
+        return `<div class="score-row"><div class="score-meta"><div><div class="score-league">${escapeHtml(item.league)}</div><div class="section-note">${escapeHtml(item.status)}</div></div></div><div class="score-match" aria-label="${escapeHtml(home)} ${escapeHtml(homeScore)}, ${escapeHtml(away)} ${escapeHtml(awayScore)}"><span class="score-team home">${escapeHtml(home)}</span><span class="score-goal">${escapeHtml(homeScore)}</span><span class="score-divider">:</span><span class="score-goal">${escapeHtml(awayScore)}</span><span class="score-team away">${escapeHtml(away)}</span></div></div>`;
+      }).join("");
+    }
 
     function pollTotal(poll) { return Object.values(poll.parties || {}).reduce((sum, seats) => sum + (Number(seats) || 0), 0); }
     function validPolls() { return (NEWS_FEED.polls || []).filter(poll => poll && poll.parties && pollTotal(poll) === 120); }
@@ -1040,8 +1126,19 @@
       if (ageHours >= 0 && ageHours <= 36) return "פורסם ביממה האחרונה";
       return "הסקר האחרון של המקור";
     }
-    function buildPollAverage() {
-      const polls = validPolls();
+    function belowThresholdAverage(polls) {
+      const rows = new Map();
+      polls.forEach(poll => (Array.isArray(poll.belowThreshold) ? poll.belowThreshold : []).forEach(entry => {
+        if (!entry?.party) return;
+        const row = rows.get(entry.party) || { party:entry.party, sum:0, reportedIn:0, mentionedIn:0 };
+        row.mentionedIn += 1;
+        if (entry.percent !== null && entry.percent !== "" && Number.isFinite(Number(entry.percent))) { row.sum += Number(entry.percent); row.reportedIn += 1; }
+        rows.set(entry.party, row);
+      }));
+      return [...rows.values()].map(row => ({ party:row.party, percent:row.reportedIn ? Number((row.sum / row.reportedIn).toFixed(1)) : null, reportedIn:row.reportedIn, mentionedIn:row.mentionedIn })).sort((a,b) => (Number(b.percent) || -1) - (Number(a.percent) || -1) || a.party.localeCompare(b.party,"he"));
+    }
+    function buildPollAverage(sourcePolls = validPolls(), options = {}) {
+      const polls = sourcePolls;
       if (!polls.length) return null;
       const partyNames = [...new Set(polls.flatMap(poll => Object.keys(poll.parties)))];
       const allocation = partyNames.map((party, index) => {
@@ -1052,7 +1149,7 @@
       const remainders = [...allocation].sort((a,b) => b.fraction - a.fraction || b.raw - a.raw || a.index - b.index);
       for (let index = 0; index < remaining; index++) remainders[index % remainders.length].seats += 1;
       const parties = Object.fromEntries(allocation.filter(row => row.seats > 0).map(row => [row.party, row.seats]));
-      return { id:"average", source:"סקר הסקרים", shortSource:"ממוצע", date:[...polls].sort((a,b) => b.date.localeCompare(a.date))[0].date, pollster:"חישוב המערכת", parties, isAverage:true, pollCount:polls.length };
+      return { id:options.id || "average", source:options.source || "סקר הסקרים", shortSource:options.shortSource || "ממוצע", date:[...polls].sort((a,b) => b.date.localeCompare(a.date))[0].date, pollster:"חישוב המערכת", parties, belowThreshold:belowThresholdAverage(polls), isAverage:true, isCustom:Boolean(options.isCustom), pollCount:polls.length, selectedPollIds:polls.map(poll => poll.id) };
     }
     function blocksForParties(parties) {
       const blocks = { netanyahu:0, opposition:0, arab:0 };
@@ -1060,16 +1157,36 @@
       return blocks;
     }
     function renderPollTabs(activeId) {
-      const average = buildPollAverage(), polls = validPolls();
-      const tabs = [average, ...polls].filter(Boolean);
-      $("pollSourceTabs").innerHTML = `<div class="poll-tabs-intro"><strong>כל הסקרים במקום אחד</strong><span>${polls.length} סקרים אחרונים · לחצו על כל מקור כדי להחליף את התרשים</span></div><div class="poll-tab-grid">${tabs.map(poll => `<button class="poll-source-tab ${poll.isAverage ? "average" : ""} ${poll.id === activeId ? "active" : ""}" data-poll-id="${escapeHtml(poll.id)}"><span class="poll-source-icon">${poll.isAverage ? "∑" : escapeHtml(String(poll.shortSource || "•").length <= 3 ? poll.shortSource : initials(poll.shortSource))}</span><span class="poll-source-copy"><strong>${escapeHtml(poll.source)}</strong><small>${poll.isAverage ? `${poll.pollCount} סקרים בחישוב` : pollDateText(poll.date)}</small></span></button>`).join("")}</div>`;
+      const polls = validPolls();
+      if (!customPollSelectionReady) { polls.forEach(poll => customPollIds.add(poll.id)); customPollSelectionReady = true; }
+      const average = buildPollAverage(polls), selected = polls.filter(poll => customPollIds.has(poll.id));
+      const custom = buildPollAverage(selected, { id:"custom-average", source:"ממוצע לפי בחירה", shortSource:"בחירה", isCustom:true }) || { id:"custom-average", source:"ממוצע לפי בחירה", shortSource:"בחירה", isAverage:true, isCustom:true, pollCount:0 };
+      const tabs = [average, custom, ...polls].filter(Boolean);
+      $("pollSourceTabs").innerHTML = `<div class="poll-tabs-intro"><strong>כל הסקרים במקום אחד</strong><span>${polls.length} סקרים אחרונים · אפשר לבחור מקור בודד או לבנות ממוצע אישי</span></div><div class="poll-tab-grid">${tabs.map(poll => `<button class="poll-source-tab ${poll.isAverage ? "average" : ""} ${poll.isCustom ? "custom" : ""} ${poll.id === activeId ? "active" : ""}" data-poll-id="${escapeHtml(poll.id)}"><span class="poll-source-icon">${poll.isCustom ? "✓" : poll.isAverage ? "∑" : escapeHtml(String(poll.shortSource || "•").length <= 3 ? poll.shortSource : initials(poll.shortSource))}</span><span class="poll-source-copy"><strong>${escapeHtml(poll.source)}</strong><small>${poll.isAverage ? `${poll.pollCount} סקרים בחישוב` : pollDateText(poll.date)}</small></span></button>`).join("")}</div><div class="custom-average-builder ${activeId === "custom-average" ? "open" : ""}" id="customAverageBuilder"><div class="custom-builder-head"><strong>בחרו אילו סקרים ייכנסו לממוצע</strong><span>המנדטים יעוגלו אוטומטית לסכום מדויק של 120</span></div><div class="custom-poll-choices">${polls.map(poll => `<label class="custom-poll-choice"><input type="checkbox" data-custom-poll="${escapeHtml(poll.id)}" ${customPollIds.has(poll.id) ? "checked" : ""}><span>${escapeHtml(poll.source)}</span></label>`).join("")}</div><div class="custom-builder-actions"><button class="custom-action primary" id="applyCustomAverage">חשב ממוצע מהנבחרים</button><button class="custom-action" id="selectAllPolls">בחר הכול</button><button class="custom-action" id="clearPollSelection">נקה בחירה</button></div></div>`;
       $("pollSourceTabs").querySelectorAll("[data-poll-id]").forEach(button => button.onclick = () => renderPoll(button.dataset.pollId));
+      $("pollSourceTabs").querySelectorAll("[data-custom-poll]").forEach(input => input.onchange = () => input.checked ? customPollIds.add(input.dataset.customPoll) : customPollIds.delete(input.dataset.customPoll));
+      $("selectAllPolls").onclick = () => { customPollIds = new Set(polls.map(poll => poll.id)); renderPoll("custom-average"); };
+      $("clearPollSelection").onclick = () => { customPollIds.clear(); renderPollTabs("custom-average"); };
+      $("applyCustomAverage").onclick = () => { if (customPollIds.size < 2) return showToast("יש לבחור לפחות שני סקרים לממוצע"); renderPoll("custom-average"); };
+    }
+    function partyColor(party) { return PARTY_PROFILES[party]?.color || PARTY_COLORS[party] || `hsl(${[...String(party)].reduce((sum,char) => sum + char.charCodeAt(0),0) % 360} 48% 43%)`; }
+    function bindPartyInsights(root) { root.querySelectorAll("[data-party-insight]").forEach(button => button.onclick = () => openPartyInsight(button.dataset.partyInsight)); }
+    function renderBelowThreshold(poll) {
+      const entries = Array.isArray(poll.belowThreshold) ? poll.belowThreshold : [];
+      $("belowThresholdGrid").innerHTML = entries.length ? entries.map(entry => {
+        const color = partyColor(entry.party), profile = PARTY_PROFILES[entry.party] || {}, note = poll.isAverage ? (entry.reportedIn ? `ממוצע של ${entry.reportedIn} סקרים שפרסמו שיעור` : `צוינה ב־${entry.mentionedIn || 1} סקרים ללא שיעור`) : "לפי פרסום הסקר";
+        const value = entry.percent !== null && entry.percent !== "" && Number.isFinite(Number(entry.percent)) ? `<span class="below-value">${Number(entry.percent).toFixed(1)}%</span>` : `<span class="below-value unreported">השיעור לא פורסם</span>`;
+        return `<button class="below-card" type="button" style="--party-color:${color}" data-party-insight="${escapeHtml(entry.party)}"><span class="below-mark">${escapeHtml(profile.monogram || initials(entry.party))}</span><span class="below-copy"><strong>${escapeHtml(entry.party)}</strong><small>${escapeHtml(note)}</small></span>${value}</button>`;
+      }).join("") : `<div class="below-empty">בסקר הזה לא פורסמו במקור נתונים על רשימות מתחת לאחוז החסימה.</div>`;
+      bindPartyInsights($("belowThresholdGrid"));
     }
     function renderPoll(id = "average") {
-      const average = buildPollAverage(), polls = validPolls();
-      const poll = id === "average" ? average : polls.find(item => item.id === id) || average;
+      const polls = validPolls(), average = buildPollAverage(polls), selected = polls.filter(item => customPollIds.has(item.id));
+      const custom = buildPollAverage(selected, { id:"custom-average", source:"ממוצע לפי בחירה", shortSource:"בחירה", isCustom:true });
+      const poll = id === "average" ? average : id === "custom-average" ? custom : polls.find(item => item.id === id) || average;
       if (!poll) {
         $("pollMeta").innerHTML = `<div class="poll-meta-main"><h3>אין כעת סקר מאומת</h3><div class="poll-meta-line">הנתונים יוצגו לאחר אימות פרסום שסכומו 120 מנדטים.</div></div>`;
+        if (id === "custom-average") { renderPollTabs("custom-average"); showToast("יש לבחור לפחות שני סקרים לממוצע"); }
         return;
       }
       renderPollTabs(poll.id);
@@ -1078,7 +1195,7 @@
       const netanyahuPct = blocks.netanyahu / total * 100, oppositionPct = blocks.opposition / total * 100, oppositionEnd = netanyahuPct + oppositionPct;
       const donutGradient = `conic-gradient(from -90deg, ${BLOC_DEFS[0].color} 0 ${netanyahuPct.toFixed(4)}%, ${BLOC_DEFS[1].color} ${netanyahuPct.toFixed(4)}% ${oppositionEnd.toFixed(4)}%, ${BLOC_DEFS[2].color} ${oppositionEnd.toFixed(4)}% 100%)`;
       const donut = $("blocDonut"); donut.style.setProperty("--donut-gradient", donutGradient); donut.dataset.total = String(total); donut.setAttribute("aria-label", BLOC_DEFS.map(block => `${block.label}: ${blocks[block.id]} מנדטים`).join(", ")); donut.style.animation = "none"; void donut.offsetWidth; donut.style.animation = "";
-      $("donutSource").textContent = poll.isAverage ? "סקר הסקרים" : poll.source;
+      $("donutSource").textContent = poll.source;
       $("blocLegend").innerHTML = BLOC_DEFS.map(block => `<div class="bloc-card" style="--bloc-color:${block.color}"><span><i class="swatch" style="background:${block.color}"></i>${escapeHtml(block.label)}</span><strong>${blocks[block.id]}<small class="bloc-share">${(blocks[block.id] / total * 100).toFixed(1)}%</small></strong></div>`).join("");
       const parties = Object.entries(poll.parties).sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0], "he"));
       const chartMax = Math.max(40, ...parties.map(([,seats]) => Number(seats) || 0));
@@ -1086,12 +1203,34 @@
         const profile = PARTY_PROFILES[party] || {}, partyColor = profile.color || PARTY_COLORS[party] || "#64748b", monogram = profile.monogram || initials(party), leader = profile.leader || "ראש המפלגה";
         const logo = profile.logo ? `<img src="${escapeHtml(safeUrl(profile.logo))}" alt="סמל ${escapeHtml(party)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">` : "";
         const portrait = profile.leaderImage ? `<img src="${escapeHtml(safeUrl(profile.leaderImage))}" alt="${escapeHtml(leader)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">` : "";
-        return `<div class="party-row" style="--party-color:${partyColor}"><div class="party-identity"><div class="party-visuals"><span class="party-logo">${logo}<span class="party-monogram" style="${profile.logo ? "" : "display:grid"}">${escapeHtml(monogram)}</span></span><span class="party-leader">${portrait}<span class="leader-fallback" style="${profile.leaderImage ? "" : "display:grid"}">${escapeHtml(initials(leader))}</span></span></div><span class="party-labels"><span class="party-name" title="${escapeHtml(party)}">${escapeHtml(party)}</span><span class="party-leader-name">${escapeHtml(leader)}</span></span></div><div class="party-track"><div class="party-fill" style="--poll-width:${Math.max(2, seats / chartMax * 100).toFixed(2)}%;animation-delay:${Math.min(index * 28, 220)}ms"></div></div><div class="party-seats">${seats}</div></div>`;
+        return `<button class="party-row" type="button" style="--party-color:${partyColor}" data-party-insight="${escapeHtml(party)}" aria-label="השוואת ${escapeHtml(party)} בכל הסקרים"><span class="party-identity"><span class="party-visuals"><span class="party-logo">${logo}<span class="party-monogram" style="${profile.logo ? "" : "display:grid"}">${escapeHtml(monogram)}</span></span><span class="party-leader">${portrait}<span class="leader-fallback" style="${profile.leaderImage ? "" : "display:grid"}">${escapeHtml(initials(leader))}</span></span></span><span class="party-labels"><span class="party-name" title="${escapeHtml(party)}">${escapeHtml(party)}</span><span class="party-leader-name">${escapeHtml(leader)} · לחצו להשוואה</span></span></span><span class="party-track"><span class="party-fill" style="--poll-width:${Math.max(2, seats / chartMax * 100).toFixed(2)}%;animation-delay:${Math.min(index * 28, 220)}ms"></span></span><span class="party-seats">${seats}</span></button>`;
       }).join("");
+      bindPartyInsights($("partyChart"));
+      renderBelowThreshold(poll);
       $("pollMethodology").innerHTML = poll.isAverage
-        ? `<strong>איך חושב סקר הסקרים?</strong> לכל מפלגה חושב ממוצע חשבוני בכל ${poll.pollCount} הסקרים התקינים. מפלגה שלא הופיעה בסקר מסוים נספרה בו כ־0. תחילה הוקצו המספרים השלמים כלפי מטה, ולאחר מכן חולקו המנדטים שנותרו לפי השאריות העשרוניות הגדולות ביותר. כך התוצאה נשארת במספרים שלמים וסכומה תמיד 120.`
+        ? `<strong>${poll.isCustom ? "איך חושב הממוצע שבחרתם?" : "איך חושב סקר הסקרים?"}</strong> לכל מפלגה חושב ממוצע חשבוני בכל ${poll.pollCount} הסקרים ${poll.isCustom ? "שנבחרו" : "התקינים"}. מפלגה שלא הופיעה בסקר מסוים נספרה בו כ־0. תחילה הוקצו המספרים השלמים כלפי מטה, ולאחר מכן חולקו המנדטים שנותרו לפי השאריות העשרוניות הגדולות ביותר. כך התוצאה נשארת במספרים שלמים וסכומה תמיד 120.`
         : `<strong>שקיפות נתונים:</strong> מוצג הפרסום האחרון שאומת עבור ${escapeHtml(poll.source)}. המספרים הועתקו מטבלת הסקר שפורסמה ונבדקו חישובית לסכום של 120. כאשר מתפרסם סקר חדש ומאומת, הוא מחליף את הסקר הקודם של אותו מקור.`;
     }
+    function openPartyInsight(party) {
+      const polls = [...validPolls()].sort((a,b) => b.date.localeCompare(a.date)), profile = PARTY_PROFILES[party] || {}, color = partyColor(party);
+      const records = polls.map(poll => {
+        if (Object.prototype.hasOwnProperty.call(poll.parties || {}, party)) return { poll, kind:"seats", value:Number(poll.parties[party]) || 0, label:`${Number(poll.parties[party]) || 0} מנדטים` };
+        const below = (poll.belowThreshold || []).find(entry => entry.party === party);
+        if (below && below.percent !== null && below.percent !== "" && Number.isFinite(Number(below.percent))) return { poll, kind:"percent", value:Number(below.percent), label:`${Number(below.percent).toFixed(1)}%` };
+        if (below) return { poll, kind:"unreported", value:null, label:"מתחת לחסימה" };
+        return { poll, kind:"missing", value:null, label:"לא דווח" };
+      });
+      const available = records.filter(row => row.value !== null), seatValues = records.filter(row => row.kind === "seats").map(row => row.value), percentValues = records.filter(row => row.kind === "percent").map(row => row.value), latest = available[0];
+      const averageText = seatValues.length ? `${(seatValues.reduce((a,b)=>a+b,0)/seatValues.length).toFixed(1)} מנדטים` : percentValues.length ? `${(percentValues.reduce((a,b)=>a+b,0)/percentValues.length).toFixed(1)}%` : "אין נתון מספרי";
+      const rangeValues = seatValues.length ? seatValues : percentValues, rangeText = rangeValues.length ? `${Math.min(...rangeValues).toFixed(seatValues.length ? 0 : 1)}–${Math.max(...rangeValues).toFixed(seatValues.length ? 0 : 1)}${seatValues.length ? " מנדטים" : "%"}` : "—";
+      const emblem = profile.logo ? `<img src="${escapeHtml(safeUrl(profile.logo))}" alt="סמל ${escapeHtml(party)}" onerror="this.remove()">` : escapeHtml(profile.monogram || initials(party));
+      $("partyInsightPanel").style.setProperty("--party-color", color);
+      $("partyInsightPanel").innerHTML = `<header class="party-insight-head"><div class="party-insight-title"><span class="party-insight-emblem">${emblem}</span><div><h3>${escapeHtml(party)}</h3><small>${profile.leader ? `בראשות ${escapeHtml(profile.leader)} · ` : ""}השוואה בכל הסקרים</small></div></div><button class="party-insight-close" id="partyInsightClose" aria-label="סגירה">×</button></header><div class="party-insight-body"><div class="party-insight-summary"><div class="insight-stat"><span>הנתון האחרון</span><strong>${latest ? escapeHtml(latest.label) : "—"}</strong></div><div class="insight-stat"><span>ממוצע הנתונים המספריים</span><strong>${escapeHtml(averageText)}</strong></div><div class="insight-stat"><span>טווח בסקרים</span><strong>${escapeHtml(rangeText)}</strong></div></div><div>${records.map((row,index) => { const width = row.kind === "seats" ? Math.min(100,row.value/40*100) : row.kind === "percent" ? Math.min(100,row.value/3.25*100) : 0; return `<div class="insight-poll-row"><div class="insight-source"><strong>${escapeHtml(row.poll.source)}</strong><small>${pollDateText(row.poll.date)}</small></div><div class="insight-track"><div class="insight-fill" style="--insight-width:${width.toFixed(2)}%;animation-delay:${Math.min(index*35,220)}ms"></div></div><div class="insight-value ${row.value === null ? "missing" : ""}">${escapeHtml(row.label)}</div></div>`; }).join("")}</div></div>`;
+      $("partyInsightLayer").classList.add("open");
+      $("partyInsightClose").onclick = closePartyInsight;
+      setTimeout(() => $("partyInsightClose").focus(), 20);
+    }
+    function closePartyInsight() { $("partyInsightLayer").classList.remove("open"); }
     function updateElectionCountdown() {
       const target = new Date("2026-10-27T07:00:00+02:00").getTime();
       const distance = Math.max(0, target - Date.now());
@@ -1150,7 +1289,7 @@
 
     function openSearch() { $("searchLayer").classList.add("open"); document.body.classList.add("modal-open"); $("searchInput").value=""; renderSearchResults(""); setTimeout(() => $("searchInput").focus(),50); }
     function renderSearchResults(query) { const q=query.trim().toLocaleLowerCase("he"), results=allStories().filter(a => !q || [a.title,a.summary,a.category,a.source].join(" ").toLocaleLowerCase("he").includes(q)).slice(0,16); $("searchResults").innerHTML=results.length?results.map(a=>`<div class="search-result" data-search-open="${escapeHtml(a.id)}"><span class="story-source">${escapeHtml(a.category)} · ${escapeHtml(a.source)}</span><h3>${escapeHtml(a.title)}</h3><div class="rail-meta">${escapeHtml(a.summary.slice(0,150))}${a.summary.length>150?"…":""}</div></div>`).join(""):`<div class="muted" style="padding:18px;text-align:center">לא נמצאו תוצאות.</div>`; document.querySelectorAll("[data-search-open]").forEach(el=>el.onclick=()=>{closeLayers();openArticle(el.dataset.searchOpen);}); }
-    function closeLayers() { $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); $("pollsLayer").classList.remove("open"); toggleDrawer(false); document.body.classList.remove("modal-open"); }
+    function closeLayers() { closePartyInsight(); $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); $("pollsLayer").classList.remove("open"); toggleDrawer(false); document.body.classList.remove("modal-open"); }
     function setTheme(theme) { document.documentElement.dataset.theme=theme; localStorage.setItem("hadophek-theme",theme); }
     function toggleTheme() { setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"); }
     function updateClock() { const now=new Date(), dateText=now.toLocaleDateString("he-IL",{weekday:"long",day:"numeric",month:"long",year:"numeric"}); $("clock").textContent=now.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit",second:"2-digit"}); $("utilityDate").textContent=dateText; $("editionDate").textContent=dateText; updateElectionCountdown(); }
@@ -1165,9 +1304,10 @@
       $("breakingFab").onclick=()=>toggleDrawer(true); $("drawerClose").onclick=()=>toggleDrawer(false); $("drawerShade").onclick=()=>toggleDrawer(false);
       $("breakingSearch").addEventListener("input", e => renderLive(e.target.value));
       $("openPolls").onclick=openPolls; $("pollsClose").onclick=closeLayers; $("pollsLayer").onclick=e=>{if(e.target===$("pollsLayer"))closeLayers();};
+      $("partyInsightLayer").onclick=e=>{if(e.target===$("partyInsightLayer"))closePartyInsight();};
       $("searchInput").addEventListener("input",e=>renderSearchResults(e.target.value)); document.querySelector("[data-close='search']").onclick=closeLayers;
       $("searchLayer").onclick=e=>{if(e.target===$("searchLayer"))closeLayers();}; $("articleLayer").onclick=e=>{if(e.target===$("articleLayer"))closeLayers();};
-      addEventListener("keydown",e=>{if(e.key==="Escape")closeLayers();if(e.key==="/"&&!document.body.classList.contains("modal-open")){e.preventDefault();openSearch();}});
+      addEventListener("keydown",e=>{if(e.key==="Escape") $("partyInsightLayer").classList.contains("open") ? closePartyInsight() : closeLayers();if(e.key==="/"&&!document.body.classList.contains("modal-open")){e.preventDefault();openSearch();}});
     }
     init();
   </script>
