@@ -1149,6 +1149,7 @@
     .bloc-donut::after { background: radial-gradient(circle at 34% 24%, rgba(255,255,255,.4), transparent 17%), linear-gradient(135deg, rgba(255,255,255,.24), transparent 35%, transparent 68%, rgba(0,0,0,.22)); }
     @keyframes donutEnter { from { opacity: 0; transform: translateY(-7px) rotate(-30deg) scale(.72); } to { opacity: 1; transform: translateY(-7px) rotate(0) scale(1); } }
     @keyframes studioHalo { 50% { transform: scale(1.04); opacity: .65; } }
+    .bloc-legend { grid-template-columns: repeat(auto-fit,minmax(105px,1fr)); }
     .bloc-card { box-shadow: inset 0 1px rgba(255,255,255,.08), 0 3px 0 rgba(0,0,0,.2), 0 10px 20px rgba(0,0,0,.2); transition: transform .2s, border-color .2s; }
     .bloc-card:hover { transform: translateY(-3px); border-color: var(--bloc-color); }
     .party-row { margin: 4px 0; padding: 5px 7px; border: 1px solid transparent; border-radius: 14px; }
@@ -1321,7 +1322,7 @@
       { id: "--iAXUZF52k", category: "קליל", title: "רגעי חיות מצחיקים מהרשת", note: "אוסף קליל לצפייה בתוך האתר" }
     ];
     const EDITORIAL_SOCIAL = [
-      { id:"poll-math", badge:"פוליטיקה", source:"קריצה מערכתית", handle:"@החדשות", text:"הסקר מבטיח 120 מנדטים. הרשת כבר חילקה 240 והשאירו עודף למשא ומתן.", color:"#1d9bf0", time:"פיד קליל", editorial:true },
+      { id:"poll-math", badge:"פוליטיקה", source:"קריצה מערכתית", handle:"@החדשות", text:"הסקר מבטיח 120 מנדטים. הרשת כבר חילקה 240 והשאירה עודף למשא ומתן.", color:"#1d9bf0", time:"פיד קליל", editorial:true },
       { id:"coalition-speed", badge:"קואליציה", source:"קריצה מערכתית", handle:"@החדשות", text:"הפרשנים ביקשו להמתין לנתונים. קבוצת הוואטסאפ כבר הקימה שלוש ממשלות.", color:"#ef3b58", time:"פיד קליל", editorial:true },
       { id:"breaking-default", badge:"אקטואליה", source:"קריצה מערכתית", handle:"@החדשות", text:"בישראל ״דרמה פוליטית״ היא פחות כותרת ויותר הגדרת ברירת מחדל.", color:"#8b5cf6", time:"פיד קליל", editorial:true },
       { id:"market-family", badge:"כלכלה", source:"קריצה מערכתית", handle:"@החדשות", text:"השוק ביקש שקט לפני הפתיחה. קבוצת המשפחה בחרה דווקא לשלוח תחזית.", color:"#20b486", time:"פיד קליל", editorial:true }
@@ -1435,8 +1436,8 @@
       return { ...base, color:item?.[`${side}Color`] || base.color || "#315a86", logo:explicitLogo || base.logo || "", abbr:base.abbr || initials(name) };
     }
     function teamCrest(name,meta) {
-      const logo = meta.logo ? `<img src="${escapeHtml(safeUrl(meta.logo))}" alt="" loading="lazy" onerror="this.style.display='none'">` : "";
-      return `<span class="team-crest" style="--team-color:${escapeHtml(meta.color)}">${logo}<span class="team-crest-fallback">${escapeHtml(meta.abbr)}</span></span>`;
+      const logo = meta.logo ? `<img src="${escapeHtml(safeUrl(meta.logo))}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">` : "";
+      return `<span class="team-crest" style="--team-color:${escapeHtml(meta.color)}">${logo}<span class="team-crest-fallback" style="${meta.logo ? "display:none" : ""}">${escapeHtml(meta.abbr)}</span></span>`;
     }
 
     function renderDeep() { $("deepGrid").innerHTML = NEWS_FEED.deepDives.map((a,i) => `<article class="deep-card" data-open="${escapeHtml(a.id)}"><div><span class="deep-index">כתבת עומק ${String(i+1).padStart(2,"0")}</span><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.summary)}</p></div><div class="deep-sources">${escapeHtml(a.readTime)} · לקריאה מלאה ←</div></article>`).join(""); bindOpeners($("deepGrid")); }
