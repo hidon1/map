@@ -1,6 +1,51 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-1538-22",
+    "publishedAt": "2026-08-25T15:38:56+03:00",
+    "time": "15:38",
+    "title": "הרובוט הסיני Tiangong Ultra השלים ריצת 100 מטר ב־8.86 שניות",
+    "source": "Reuters",
+    "articleId": "tiangong-robot-100m",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1536-21",
+    "publishedAt": "2026-08-25T15:36:22+03:00",
+    "time": "15:36",
+    "title": "ברזיל קנסה את בעלת טיקטוק בכ־29.8 מיליון דולר בגלל עיבוד נתוני בני נוער",
+    "source": "Reuters",
+    "articleId": "brazil-tiktok-teen-data-fine",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1536-20",
+    "publishedAt": "2026-08-25T15:36:09+03:00",
+    "time": "15:36",
+    "title": "Air India ביקשה מבעלותיה הזרמת הון של כ־1.5 מיליארד דולר, לפי מקורות",
+    "source": "Reuters",
+    "articleId": "air-india-capital-request",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1518-19",
+    "publishedAt": "2026-08-25T15:18:15+03:00",
+    "time": "15:18",
+    "title": "בכיר הוותיקן נפגש עם לברוב במוסקבה וקרא לסיום דחוף של המלחמה באוקראינה",
+    "source": "Reuters",
+    "articleId": "vatican-moscow-ukraine-talks",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1503-18",
+    "publishedAt": "2026-08-25T15:03:48+03:00",
+    "time": "15:03",
+    "title": "גוגל הרחיבה את Gemini Enterprise בכלים ייעודיים למשרדי עורכי דין",
+    "source": "Reuters",
+    "articleId": "google-gemini-legal",
+    "urgent": false
+  },
+  {
     "id": "flash-20260825-1236-17",
     "publishedAt": "2026-08-25T12:36:05+03:00",
     "time": "12:36",
