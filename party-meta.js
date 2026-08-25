@@ -86,5 +86,47 @@ window.PARTY_PROFILES = {
     color: "#4e8a5b",
     bloc: "arab",
     leaderImage: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ayman_Odeh_2021.png"
+  },
+  "בית ציוני–המילואימניקים": {
+    leader: "חילי טרופר ויועז הנדל",
+    monogram: "בצ",
+    color: "#3977a9",
+    bloc: "opposition"
+  },
+  "האחדות": {
+    leader: "גלעד ארדן",
+    monogram: "אח",
+    color: "#1f6f9d",
+    bloc: "netanyahu"
+  },
+  "כחול לבן": {
+    leader: "בני גנץ",
+    monogram: "כן",
+    color: "#3485b8",
+    bloc: "opposition"
+  },
+  "מפלגת עופר וינטר": {
+    leader: "עופר וינטר",
+    monogram: "עו",
+    color: "#856b31",
+    bloc: "netanyahu"
+  },
+  "זהות": {
+    leader: "משה פייגלין",
+    monogram: "ז",
+    color: "#7a5eb5",
+    bloc: "netanyahu"
+  },
+  "בל״ד": {
+    leader: "סמי אבו שחאדה",
+    monogram: "ד",
+    color: "#d57832",
+    bloc: "arab"
+  },
+  "הכלכלית": {
+    leader: "ירון זליכה",
+    monogram: "כל",
+    color: "#387a72",
+    bloc: "opposition"
   }
 };
