@@ -1,6 +1,50 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-1929-27",
+    "publishedAt": "2026-08-25T19:29:00+03:00",
+    "time": "19:29",
+    "title": "מנצ׳סטר יונייטד החתימה את קרלוס באלבה עד 2031 עם אופציה לעונה נוספת",
+    "source": "Reuters",
+    "articleId": "man-united-baleba-signing",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1927-26",
+    "publishedAt": "2026-08-25T19:27:00+03:00",
+    "time": "19:27",
+    "title": "בית המשפט העליון בארה״ב הסיר מכשול אחד מהגבלות טראמפ על הצבעה בדואר",
+    "source": "Reuters",
+    "articleId": "us-mail-ballot-court",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1926-25",
+    "publishedAt": "2026-08-25T19:26:00+03:00",
+    "time": "19:26",
+    "title": "SpaceX הודיעה על הקמת מתחם Starship חדש ורחב־היקף בלואיזיאנה",
+    "source": "Reuters",
+    "articleId": "spacex-louisiana-starship",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1914-24",
+    "publishedAt": "2026-08-25T19:14:00+03:00",
+    "time": "19:14",
+    "title": "סטן ואוורינקה נפרד מאליפות ארה״ב לאחר שלא קיבל כרטיס חופשי",
+    "source": "Reuters",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-1907-23",
+    "publishedAt": "2026-08-25T19:07:52+03:00",
+    "time": "19:07",
+    "title": "פוגאצ׳אר ניצח בקטע 4 בוולטה אחרי בריחת סולו של כמעט 50 ק״מ",
+    "source": "Reuters",
+    "articleId": "pogacar-vuelta-stage-four",
+    "urgent": false
+  },
+  {
     "id": "flash-20260825-1538-22",
     "publishedAt": "2026-08-25T15:38:56+03:00",
     "time": "15:38",
