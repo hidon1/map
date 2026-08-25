@@ -1,6 +1,15 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-0639-12",
+    "publishedAt": "2026-08-25T06:39:53+03:00",
+    "time": "06:39",
+    "title": "פקיסטן ואיראן דיווחו על התקדמות במגעים למניעת הסלמה ולפתיחת מצר הורמוז",
+    "source": "Reuters",
+    "articleId": "pakistan-iran-talks",
+    "urgent": false
+  },
+  {
     "id": "flash-20260825-0514-11",
     "publishedAt": "2026-08-25T05:14:00+03:00",
     "time": "05:14",
@@ -100,4 +109,3 @@ window.BREAKING_ARCHIVE = [
     "urgent": true
   }
 ];
-
