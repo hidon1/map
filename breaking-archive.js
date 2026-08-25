@@ -1,6 +1,24 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260825-0514-11",
+    "publishedAt": "2026-08-25T05:14:00+03:00",
+    "time": "05:14",
+    "title": "מניית Unitree איבדה 45% משיא ההנפקה בתוך שלושה ימי מסחר",
+    "source": "Reuters",
+    "articleId": "unitree-ipo-slump",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260825-0416-10",
+    "publishedAt": "2026-08-25T04:16:00+03:00",
+    "time": "04:16",
+    "title": "מכלית נפט נפגעה והושבתה סמוך לעומאן; מחירי הנפט התייצבו",
+    "source": "Reuters",
+    "articleId": "gold-oil",
+    "urgent": true
+  },
+  {
     "id": "flash-20260825-0357-9",
     "publishedAt": "2026-08-25T03:57:00+03:00",
     "time": "03:57",
@@ -82,5 +100,4 @@ window.BREAKING_ARCHIVE = [
     "urgent": true
   }
 ];
-
 
