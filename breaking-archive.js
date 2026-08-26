@@ -1,6 +1,51 @@
 /* Permanent breaking-news history — append only, newest first. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260826-1131-tibet-mudslide",
+    "publishedAt": "2026-08-26T11:31:00+03:00",
+    "time": "11:31",
+    "title": "מפולת בוץ במעבר טיבט–נפאל: חשש לנפגעים רבים ונעדרים",
+    "source": "Reuters",
+    "articleId": "tibet-gyirong-mudslide",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260826-1114-uganda-2031",
+    "publishedAt": "2026-08-26T11:14:00+03:00",
+    "time": "11:14",
+    "title": "בנו של נשיא אוגנדה הודיע שיתמודד לנשיאות ב־2031",
+    "source": "Reuters",
+    "articleId": "uganda-muhoozi-2031",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1102-eu-paper-jv",
+    "publishedAt": "2026-08-26T11:02:00+03:00",
+    "time": "11:02",
+    "title": "האיחוד האירופי מזהיר שמיזם UPM–Sappi עלול לפגוע בתחרות",
+    "source": "Reuters",
+    "articleId": "eu-upm-sappi-paper-jv",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1053-moonshot-cloud",
+    "publishedAt": "2026-08-26T10:53:00+03:00",
+    "time": "10:53",
+    "title": "דיווח: Moonshot במגעים עם מיקרוסופט, אמזון וגוגל על Kimi K3",
+    "source": "Reuters",
+    "articleId": "moonshot-kimi-k3-cloud-talks",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1019-china-workers-eu",
+    "publishedAt": "2026-08-26T10:19:00+03:00",
+    "time": "10:19",
+    "title": "עובדים בסין מאמצים את ביקורת האיחוד על שעות עבודה מופרזות",
+    "source": "Reuters",
+    "articleId": "china-workers-eu-forced-labour",
+    "urgent": false
+  },
+  {
     "id": "flash-20260826-0944-mlb-roundup",
     "publishedAt": "2026-08-26T09:44:55+03:00",
     "time": "09:44",
