@@ -1,6 +1,76 @@
 /* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260826-0548-china-storms",
+    "publishedAt": "2026-08-26T05:48:00+03:00",
+    "time": "05:48",
+    "title": "סין נערכת לימים של גשם כבד מארבע מערכות טרופיות; עשרות אלפים פונו",
+    "source": "Reuters",
+    "articleId": "china-storms-four-cyclones",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260826-0542-china-ev-recall",
+    "publishedAt": "2026-08-26T05:42:00+03:00",
+    "time": "05:42",
+    "title": "סין הכריזה על ריקול ל־4.3 מיליון כלי רכב של תשעה יצרנים",
+    "source": "Reuters",
+    "articleId": "china-ev-recall-43m",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0531-red-sox",
+    "publishedAt": "2026-08-26T05:31:00+03:00",
+    "time": "05:31",
+    "title": "בוסטון ניצחה 7:3 במיאמי לאחר גראנד סלאם של דוראן באינינג ה־11",
+    "source": "Reuters",
+    "articleId": "red-sox-duran-slam",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0521-graham-primary",
+    "publishedAt": "2026-08-26T05:21:00+03:00",
+    "time": "05:21",
+    "title": "דרלין גרהאם זכתה בפריימריז הרפובליקניים לסנאט בדרום קרוליינה",
+    "source": "Reuters",
+    "articleId": "south-carolina-graham-primary",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0517-asia-markets",
+    "publishedAt": "2026-08-26T05:17:00+03:00",
+    "time": "05:17",
+    "title": "שוקי אסיה מעורבים לפני דוחות אנבידיה; הזהב סביב 4,652 דולר",
+    "source": "Reuters",
+    "articleId": "markets-tech-pressure",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0437-meta-settlement",
+    "publishedAt": "2026-08-26T04:37:00+03:00",
+    "time": "04:37",
+    "title": "דיווח: מטא ומדינות בארה״ב דנו בפשרה במשפט על נזקי רשתות לבני נוער",
+    "source": "Reuters · Bloomberg",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0351-caribbean-strike",
+    "publishedAt": "2026-08-26T03:51:00+03:00",
+    "time": "03:51",
+    "title": "צבא ארה״ב הודיע שתקף כלי שיט בקריביים והרג ארבעה בני אדם",
+    "source": "Reuters",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260826-0121-hormuz-corridor",
+    "publishedAt": "2026-08-26T01:21:00+03:00",
+    "time": "01:21",
+    "title": "איראן ועומאן דנות במסדרון ניווט זמני ובפינוי מוקשים במצר הורמוז",
+    "source": "Reuters",
+    "articleId": "iran-oman-hormuz-corridor",
+    "urgent": true
+  },
+  {
     "id": "flash-20260825-2334-41",
     "publishedAt": "2026-08-25T23:34:00+03:00",
     "time": "23:34",
