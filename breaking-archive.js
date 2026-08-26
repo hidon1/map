@@ -1,6 +1,60 @@
 /* Permanent breaking-news history — append only, newest first. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260826-1340-ukraine-musk",
+    "publishedAt": "2026-08-26T13:40:00+03:00",
+    "time": "13:40",
+    "title": "אוקראינה העניקה לאילון מאסק עיטור בכיר ומבקשת להרחיב את Starlink",
+    "source": "Reuters",
+    "articleId": "ukraine-musk-starlink-honour",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1334-man-city-bouaddi",
+    "publishedAt": "2026-08-26T13:34:24+03:00",
+    "time": "13:34",
+    "title": "מנצ׳סטר סיטי החתימה את איוב בואדי מליל לחמש שנים",
+    "source": "Reuters",
+    "articleId": "man-city-sign-bouaddi",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1319-cia-moscow",
+    "publishedAt": "2026-08-26T13:19:00+03:00",
+    "time": "13:19",
+    "title": "הקרמלין: ראש ה־CIA נועד עם בכירי מודיעין רוסים במוסקבה",
+    "source": "Reuters",
+    "articleId": "cia-ratcliffe-moscow-talks",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260826-1317-medicover-india",
+    "publishedAt": "2026-08-26T13:17:00+03:00",
+    "time": "13:17",
+    "title": "Medicover: כל 25 בתי החולים בהודו צפויים להיות רווחיים בתוך 18 חודשים",
+    "source": "Reuters",
+    "articleId": "medicover-india-hospitals-kkr",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1305-warsh-jackson-hole",
+    "publishedAt": "2026-08-26T13:05:00+03:00",
+    "time": "13:05",
+    "title": "השווקים מחכים למפת הדרכים של יו״ר הפד בנאום ג׳קסון הול",
+    "source": "Reuters",
+    "articleId": "fed-warsh-jackson-hole-plan",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1303-senate-west-bank",
+    "publishedAt": "2026-08-26T13:03:00+03:00",
+    "time": "13:03",
+    "title": "42 סנאטורים דמוקרטים קראו לישראל לפעול נגד אלימות ביהודה ושומרון",
+    "source": "Reuters",
+    "articleId": "us-senate-democrats-west-bank-letter",
+    "urgent": false
+  },
+  {
     "id": "flash-20260826-1131-tibet-mudslide",
     "publishedAt": "2026-08-26T11:31:00+03:00",
     "time": "11:31",
