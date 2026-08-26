@@ -1,6 +1,69 @@
 /* Permanent breaking-news history — append only, newest first. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260826-1557-intesa-mps",
+    "publishedAt": "2026-08-26T15:57:00+03:00",
+    "time": "15:57",
+    "title": "אינטסה פנתה לרגולטור האיטלקי נגד צעדי ההגנה של MPS",
+    "source": "Reuters",
+    "articleId": "intesa-mps-regulator",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1554-merz-growth",
+    "publishedAt": "2026-08-26T15:54:00+03:00",
+    "time": "15:54",
+    "title": "מרץ מכוון לצמיחה של לפחות 1% בגרמניה בשנה הבאה",
+    "source": "Reuters",
+    "articleId": "germany-merz-growth-target",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1547-us-pce",
+    "publishedAt": "2026-08-26T15:47:00+03:00",
+    "time": "15:47",
+    "title": "האינפלציה בארה״ב נשארה 3.7%; צמיחת הרבעון השני 1.5%",
+    "source": "Reuters",
+    "articleId": "us-pce-inflation-july",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260826-1546-software-volatility",
+    "publishedAt": "2026-08-26T15:46:00+03:00",
+    "time": "15:46",
+    "title": "AI ומסחר ממונף מגדילים את התנודתיות במניות התוכנה",
+    "source": "Reuters",
+    "articleId": "software-stocks-volatility",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1541-uefa-fifa",
+    "publishedAt": "2026-08-26T15:41:00+03:00",
+    "time": "15:41",
+    "title": "דיווח: אופ״א צפויה להסיר את איום החרם על טורנירי פיפ״א",
+    "source": "Reuters",
+    "articleId": "uefa-fifa-boycott-threat",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1534-turkey-sdf",
+    "publishedAt": "2026-08-26T15:34:00+03:00",
+    "time": "15:34",
+    "title": "טורקיה מברכת על פירוק ה־SDF ורואה בו צעד לאחדות סוריה",
+    "source": "Reuters",
+    "articleId": "turkey-sdf-unity-response",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-1527-nepal-live",
+    "publishedAt": "2026-08-26T15:27:00+03:00",
+    "time": "15:27",
+    "title": "עדכון: תשעה נהרגו ומאות תיירים נעדרים באסון בגבול נפאל–טיבט",
+    "source": "Reuters",
+    "articleId": "tibet-gyirong-mudslide",
+    "urgent": true
+  },
+  {
     "id": "flash-20260826-1340-ukraine-musk",
     "publishedAt": "2026-08-26T13:40:00+03:00",
     "time": "13:40",
