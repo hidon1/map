@@ -1,6 +1,60 @@
 /* Permanent breaking-news history — append only, newest first. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260826-0944-mlb-roundup",
+    "publishedAt": "2026-08-26T09:44:55+03:00",
+    "time": "09:44",
+    "title": "אריזונה מחקה פיגור 4:0 וניצחה את הקאבס 5:4 בווק־אוף",
+    "source": "Reuters",
+    "articleId": "mlb-roundup-late-games",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0941-hyundai-plan",
+    "publishedAt": "2026-08-26T09:41:00+03:00",
+    "time": "09:41",
+    "title": "יונדאי תוסיף כושר ייצור של 1.27 מיליון כלי רכב עד 2030",
+    "source": "Reuters",
+    "articleId": "hyundai-2030-hybrid-robotics",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0912-nepal-flood",
+    "publishedAt": "2026-08-26T09:12:00+03:00",
+    "time": "09:12",
+    "title": "שיטפון בזק בנפאל שטף כפרים ופגע בגשרים ובתחנות כוח",
+    "source": "Reuters",
+    "articleId": "nepal-bhote-koshi-flash-flood",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260826-0844-ecb-schnabel",
+    "publishedAt": "2026-08-26T08:44:00+03:00",
+    "time": "08:44",
+    "title": "שנאבל מה־ECB: נדרשת העלאת ריבית נוספת בשל סיכוני האינפלציה",
+    "source": "Reuters · Bloomberg",
+    "articleId": "ecb-schnabel-rates",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0840-hcmc-vehicles",
+    "publishedAt": "2026-08-26T08:40:00+03:00",
+    "time": "08:40",
+    "title": "הו צ׳י מין סיטי מציעה להגביל רכבי בנזין ודיזל מ־2027",
+    "source": "Reuters · Thanh Nien",
+    "articleId": "hcmc-low-emission-zone",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0753-markets-wait",
+    "publishedAt": "2026-08-26T07:53:21+03:00",
+    "time": "07:53",
+    "title": "השווקים ממתינים לאנבידיה ול־PCE; ברנט ירד ל־86.22 דולר",
+    "source": "Reuters",
+    "articleId": "markets-tech-pressure",
+    "urgent": false
+  },
+  {
     "id": "flash-20260826-0734-alaska-sullivan",
     "publishedAt": "2026-08-26T07:34:00+03:00",
     "time": "07:34",
