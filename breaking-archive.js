@@ -1,5 +1,68 @@
-/* Permanent breaking-news history — append only, newest first. */
+/* Permanent breaking-news history — append-only. Never delete or reorder existing items. */
 window.BREAKING_ARCHIVE = [
+  {
+    "id": "flash-20260826-1740-us-palestine-action",
+    "publishedAt": "2026-08-26T17:40:00+03:00",
+    "time": "17:40",
+    "title": "ארה״ב הטילה סנקציות על Palestine Action והגדירה אותה ארגון טרור עולמי",
+    "source": "Reuters",
+    "urgent": true,
+    "articleId": "us-palestine-action-sanctions"
+  },
+  {
+    "id": "flash-20260826-1733-sodexo-cuts",
+    "publishedAt": "2026-08-26T17:33:00+03:00",
+    "time": "17:33",
+    "title": "סודקסו מתכננת לקצץ יותר מאלף משרות בצרפת",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "sodexo-france-job-cuts"
+  },
+  {
+    "id": "flash-20260826-1732-china-hacker-platforms",
+    "publishedAt": "2026-08-26T17:32:00+03:00",
+    "time": "17:32",
+    "title": "ארה״ב תפסה פלטפורמות ששימשו האקרים בחסות סין נגד גופים ממשלתיים",
+    "source": "Reuters",
+    "urgent": true,
+    "articleId": "us-seizes-china-hacker-platforms"
+  },
+  {
+    "id": "flash-20260826-1718-luhansk-bus",
+    "publishedAt": "2026-08-26T17:18:00+03:00",
+    "time": "17:18",
+    "title": "רוסיה טוענת: תשעה נהרגו בפגיעה אוקראינית באוטובוס בלוהנסק; הדיווח לא אומת",
+    "source": "Reuters",
+    "urgent": true,
+    "articleId": "luhansk-bus-strike-claim"
+  },
+  {
+    "id": "flash-20260826-1704-africa-rating-agency",
+    "publishedAt": "2026-08-26T17:04:00+03:00",
+    "time": "17:04",
+    "title": "האיחוד האפריקני ישיק סוכנות דירוג אשראי יבשתית ב־5 באוקטובר",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "african-union-rating-agency"
+  },
+  {
+    "id": "flash-20260826-1643-lidl-datacentre",
+    "publishedAt": "2026-08-26T16:43:00+03:00",
+    "time": "16:43",
+    "title": "בעלת Lidl מתכננת מרכז נתונים במיליארדי אירו בצפון גרמניה",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "schwarz-lidl-germany-data-centre"
+  },
+  {
+    "id": "flash-20260826-1603-meta-settlement",
+    "publishedAt": "2026-08-26T16:03:00+03:00",
+    "time": "16:03",
+    "title": "מטא הסכימה להסדר של עד 16.68 מיליארד דולר בתביעות על פגיעה בילדים",
+    "source": "Reuters",
+    "urgent": true,
+    "articleId": "meta-youth-harms-settlement"
+  },
   {
     "id": "flash-20260826-1557-intesa-mps",
     "publishedAt": "2026-08-26T15:57:00+03:00",
