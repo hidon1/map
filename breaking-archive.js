@@ -1,5 +1,41 @@
-/* Permanent breaking-news archive. New entries are appended; existing entries are never removed by the scheduled task. */
+/* Permanent breaking-news history — append only, newest first. */
 window.BREAKING_ARCHIVE = [
+  {
+    "id": "flash-20260826-0734-alaska-sullivan",
+    "publishedAt": "2026-08-26T07:34:00+03:00",
+    "time": "07:34",
+    "title": "אלסקה: שני מועמדים בשם דן סאליבן העפילו לאותו מרוץ לסנאט",
+    "source": "Reuters",
+    "articleId": "alaska-sullivan-names",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0708-china-graft-law",
+    "publishedAt": "2026-08-26T07:08:00+03:00",
+    "time": "07:08",
+    "title": "סין החלה לבחון חוק למרדף אחר חשודי שחיתות ונכסים מעבר לים",
+    "source": "Reuters",
+    "articleId": "china-cross-border-graft-law",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260826-0643-islamabad-fire",
+    "publishedAt": "2026-08-26T06:43:00+03:00",
+    "time": "06:43",
+    "title": "לפחות 15 תינוקות נהרגו בשריפה בבית חולים ממשלתי באסלאמאבאד",
+    "source": "Reuters · Geo TV",
+    "articleId": "islamabad-hospital-fire",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260826-0606-orioles-cardinals",
+    "publishedAt": "2026-08-26T06:06:00+03:00",
+    "time": "06:06",
+    "title": "בולטימור הביסה 13:1 את סנט לואיס; פיט אלונסו סיים 4 מ־4",
+    "source": "Reuters",
+    "articleId": "orioles-alonso-cardinals",
+    "urgent": false
+  },
   {
     "id": "flash-20260826-0548-china-storms",
     "publishedAt": "2026-08-26T05:48:00+03:00",
