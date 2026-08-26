@@ -1,6 +1,60 @@
 /* Permanent breaking-news history — append-only. Never delete or reorder existing items. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260826-1920-apple-event",
+    "publishedAt": "2026-08-26T19:20:00+03:00",
+    "time": "19:20",
+    "title": "אפל קבעה את אירוע השקת האייפון הבא ל־9 בספטמבר",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "apple-september-9-event"
+  },
+  {
+    "id": "flash-20260826-1918-snb-ubs-capital",
+    "publishedAt": "2026-08-26T19:18:00+03:00",
+    "time": "19:18",
+    "title": "הבנק המרכזי השווייצרי תומך בהחמרת דרישות ההון ל־UBS",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "snb-ubs-capital-rules"
+  },
+  {
+    "id": "flash-20260826-1917-canada-dollar",
+    "publishedAt": "2026-08-26T19:17:00+03:00",
+    "time": "19:17",
+    "title": "הדולר הקנדי ירד לשפל שבועי על רקע החרפת מלחמת המכסים",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "canadian-dollar-trade-dispute"
+  },
+  {
+    "id": "flash-20260826-1902-trump-beef-rules",
+    "publishedAt": "2026-08-26T19:02:00+03:00",
+    "time": "19:02",
+    "title": "טראמפ הודיע שיבחן הקלות ברגולציה על עיבוד בשר לחקלאים קטנים",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "trump-beef-processing-rules"
+  },
+  {
+    "id": "flash-20260826-1858-correction-meta",
+    "publishedAt": "2026-08-26T18:58:00+03:00",
+    "time": "18:58",
+    "title": "תיקון: תקרת הסדר מטא היא עד 18 מיליארד דולר; 12.7 מיליארד מובטחים",
+    "source": "Reuters",
+    "urgent": true,
+    "articleId": "meta-youth-harms-settlement"
+  },
+  {
+    "id": "flash-20260826-1813-robot-olympics",
+    "publishedAt": "2026-08-26T18:13:00+03:00",
+    "time": "18:13",
+    "title": "רובוט סיני קבע 8.64 שניות בריצת 100 מטר במשחקי הרובוטים",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "robot-olympics-864"
+  },
+  {
     "id": "flash-20260826-1740-us-palestine-action",
     "publishedAt": "2026-08-26T17:40:00+03:00",
     "time": "17:40",
