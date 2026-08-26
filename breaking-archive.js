@@ -1,6 +1,60 @@
 /* Permanent breaking-news history — append-only. Never delete or reorder existing items. */
 window.BREAKING_ARCHIVE = [
   {
+    "id": "flash-20260826-2115-ivory-coast-cocoa",
+    "publishedAt": "2026-08-26T21:15:00+03:00",
+    "time": "21:15",
+    "title": "עיכוב ביבול הקקאו בחוף השנהב מעורר חשש לעומס בנמלים לפני כללי האיחוד האירופי",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "ivory-coast-cocoa-delay"
+  },
+  {
+    "id": "flash-20260826-2106-us-airline-privacy",
+    "publishedAt": "2026-08-26T21:06:00+03:00",
+    "time": "21:06",
+    "title": "מחוקקים בארה״ב ביקשו בדיקה של אכיפת פרטיות נוסעי התעופה",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "us-airline-passenger-privacy-probe"
+  },
+  {
+    "id": "flash-20260826-2021-anthropic-nscale",
+    "publishedAt": "2026-08-26T20:21:00+03:00",
+    "time": "20:21",
+    "title": "Anthropic תשכור מ־Nscale כוח מחשוב ב־45 מיליארד דולר",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "anthropic-nscale-45b-compute"
+  },
+  {
+    "id": "flash-20260826-1953-channel13-winter-poll",
+    "publishedAt": "2026-08-26T19:53:00+03:00",
+    "time": "19:53",
+    "title": "סקר חדשות 13: מפלגת עופר וינטר מתחת לאחוז החסימה; ישר! עם 24 והליכוד עם 19",
+    "source": "חדשות 13",
+    "urgent": false,
+    "articleId": "ofer-winter-party-poll"
+  },
+  {
+    "id": "flash-20260826-1935-china-india-border",
+    "publishedAt": "2026-08-26T19:35:00+03:00",
+    "time": "19:35",
+    "title": "סין והודו סיכמו להרחיב קווי קשר צבאיים ולשמור על שקט בגבול",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "china-india-border-hotlines"
+  },
+  {
+    "id": "flash-20260826-1849-vuelta-brennan",
+    "publishedAt": "2026-08-26T18:49:00+03:00",
+    "time": "18:49",
+    "title": "מתיו ברנן ניצח בקטע החמישי בוולטה; פוגאצ׳אר שמר על ההובלה",
+    "source": "Reuters",
+    "urgent": false,
+    "articleId": "vuelta-stage-five-brennan"
+  },
+  {
     "id": "flash-20260826-1920-apple-event",
     "publishedAt": "2026-08-26T19:20:00+03:00",
     "time": "19:20",
