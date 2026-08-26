@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#07111f">
-  <meta name="description" content="החדשות — מהדורת חדשות אישית בעברית: ישראל, העולם החרדי, עולם, ספורט, כלכלה, טכנולוגיה ושווקים.">
-  <title>החדשות | חדשות, עומק ונתונים</title>
+  <meta name="description" content="החדשות — אתר חדשות ישראלי עם דסק בחירות 2026, פריימריז, סקרים, כתבות עומק, חדשות, ספורט, כלכלה וטכנולוגיה.">
+  <title>החדשות | בחירות 2026, פוליטיקה וכתבות עומק</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e02b3b'/%3E%3Cpath d='M16 15h27a7 7 0 0 1 7 7v28H23a7 7 0 0 1-7-7V15Zm34 12h3v16a7 7 0 0 1-7 7' fill='none' stroke='white' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M23 25h19M23 33h19M23 41h12' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1195,9 +1195,286 @@
       .bloc-donut-stage { min-height: 250px; }
       .bloc-donut { width: min(214px,68vw); }
     }
+
+    /* Newsroom 3.0 — election-first, editorial and deliberately restrained */
+    .newsroom-v3 {
+      --editorial-navy: #07182c;
+      --editorial-blue: #123f70;
+      --editorial-red: #cf2135;
+      --editorial-gold: #d7a943;
+      --editorial-rule: color-mix(in srgb, var(--line) 82%, transparent);
+      background:
+        linear-gradient(90deg, transparent 0 50%, rgba(8, 34, 64, .018) 50% 100%),
+        linear-gradient(180deg, #fbfcfd 0, var(--canvas) 34rem);
+      background-size: 26px 26px, auto;
+    }
+    [data-theme="dark"] .newsroom-v3 { background: var(--canvas); }
+    .newsroom-v3 .wrap { width: min(1390px, calc(100% - 40px)); }
+    .newsroom-v3 .utility { border-bottom: 1px solid rgba(255,255,255,.08); }
+    .newsroom-v3 .site-header { box-shadow: 0 7px 25px rgba(5,20,39,.07); }
+    .newsroom-v3 .masthead { min-height: 72px; }
+    .newsroom-v3 .brand-symbol { border-radius: 10px; box-shadow: 0 8px 22px rgba(7,23,43,.19); }
+    .newsroom-v3 .brand-name { letter-spacing: -.045em; }
+    .newsroom-v3 .nav-item { border-radius: 7px; }
+    .newsroom-v3 .nav-item:hover,
+    .newsroom-v3 .nav-item.active { background: var(--editorial-red); }
+    .newsroom-v3 .election-strip {
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(118deg, #07182c, #0d3157 64%, #174d7f);
+      background-size: 44px 100%, auto;
+      box-shadow: none;
+    }
+    .newsroom-v3 .election-inner { min-height: 76px; }
+    .newsroom-v3 .countdown-cell,
+    .newsroom-v3 .polls-trigger { border-radius: 8px; box-shadow: none; }
+    .newsroom-v3 .market-ribbon { background: #07182c; }
+    .newsroom-v3 .update-strip { border-bottom: 1px solid var(--editorial-rule); }
+
+    .newsroom-v3 .hero-layout {
+      grid-template-columns: minmax(0, 1.68fr) minmax(330px, .72fr);
+      gap: 18px;
+      margin-top: 16px;
+      perspective: none;
+    }
+    .newsroom-v3 .lead-story {
+      min-height: 570px;
+      border: 0;
+      border-radius: 16px;
+      transform: none;
+      box-shadow: 0 24px 70px rgba(5,22,42,.22);
+    }
+    .newsroom-v3 .lead-story::before { display: none; }
+    .newsroom-v3 .lead-story::after {
+      background: linear-gradient(180deg, rgba(2,8,16,.05) 8%, rgba(2,8,16,.2) 42%, rgba(2,8,16,.95) 100%);
+    }
+    .newsroom-v3 .lead-story:hover { transform: translateY(-2px); box-shadow: 0 29px 78px rgba(5,22,42,.27); }
+    .newsroom-v3 .lead-content { bottom: 38px; transform: none; }
+    .newsroom-v3 .lead-title { max-width: 900px; font-size: clamp(2.5rem, 5.35vw, 4.75rem); line-height: 1.02; }
+    .newsroom-v3 .lead-summary { max-width: 800px; font-size: 1.05rem; }
+    .newsroom-v3 .hero-rail { grid-template-rows: repeat(3, minmax(0,1fr)); gap: 12px; }
+    .newsroom-v3 .rail-card {
+      grid-template-columns: 42% minmax(0,1fr);
+      border-radius: 12px;
+      box-shadow: 0 11px 30px rgba(8,27,50,.08);
+      transform: none;
+    }
+    .newsroom-v3 .rail-card:hover { transform: translateY(-3px); box-shadow: 0 16px 38px rgba(8,27,50,.14); }
+    .newsroom-v3 .rail-copy { padding: 16px 15px; }
+    .newsroom-v3 .rail-copy h3 { font-size: 1.08rem; line-height: 1.3; }
+
+    .story-fallback {
+      --visual-color: #214d76;
+      position: relative;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 7px;
+      overflow: hidden;
+      padding: 18px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 18% 18%, color-mix(in srgb, var(--visual-color) 72%, white), transparent 0 17%, transparent 18%),
+        linear-gradient(145deg, #07182c, var(--visual-color));
+    }
+    .story-fallback::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .17;
+      background: repeating-linear-gradient(118deg, transparent 0 18px, rgba(255,255,255,.14) 18px 19px);
+    }
+    .story-fallback > * { position: relative; z-index: 1; }
+    .story-fallback span { font-size: .66rem; font-weight: 900; letter-spacing: .04em; }
+    .story-fallback strong { max-width: 17ch; font: 900 1.12rem/1.25 "Noto Serif Hebrew", serif; }
+    .lead-img.story-fallback { position: absolute; inset: 0; z-index: -2; justify-content: flex-start; padding: 35px; }
+    .lead-img.story-fallback strong { max-width: 12ch; font-size: 2.4rem; opacity: .24; }
+    .rail-card > .story-fallback,
+    .compact-card > .story-fallback { width: 100%; height: 100%; }
+    .category-feature > .story-fallback { position: absolute; inset: 0; z-index: -2; }
+    .modal-image.story-fallback { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; }
+
+    .election-room {
+      margin: 30px 0 26px;
+      overflow: hidden;
+      border: 1px solid var(--editorial-rule);
+      border-radius: 16px;
+      background: var(--paper);
+      box-shadow: 0 18px 50px rgba(8,27,50,.08);
+    }
+    .election-room-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 24px 18px;
+      border-bottom: 1px solid var(--editorial-rule);
+      background: linear-gradient(90deg, color-mix(in srgb, var(--paper) 92%, #dcecff), var(--paper));
+    }
+    .election-room-head h2 { margin: 2px 0 0; font: 900 clamp(1.7rem,3vw,2.35rem)/1.05 "Noto Serif Hebrew",serif; }
+    .election-room-head p { max-width: 560px; margin: 0; color: var(--muted); font-size: .77rem; }
+    .election-room-grid { display: grid; grid-template-columns: minmax(0,1.04fr) minmax(390px,.96fr); }
+    .politics-wire { padding: 8px 22px 12px; border-left: 1px solid var(--editorial-rule); }
+    .wire-kicker { display: flex; align-items: center; justify-content: space-between; padding: 12px 0 8px; color: var(--muted); font-size: .67rem; font-weight: 800; }
+    .wire-item {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 74px minmax(0,1fr) auto;
+      align-items: center;
+      gap: 13px;
+      padding: 14px 0;
+      border: 0;
+      border-bottom: 1px solid var(--editorial-rule);
+      color: inherit;
+      background: transparent;
+      cursor: pointer;
+      text-align: right;
+    }
+    .wire-item:last-child { border-bottom: 0; }
+    .wire-item:hover .wire-title { color: var(--editorial-red); }
+    .wire-meta { color: var(--editorial-red); font-size: .65rem; font-weight: 900; }
+    .wire-title { font: 800 1rem/1.35 "Noto Serif Hebrew",serif; transition: color .18s; }
+    .wire-arrow { color: var(--muted); font-size: 1.15rem; }
+    .poll-snapshot { padding: 20px 22px 22px; background: linear-gradient(145deg, #06172b, #0d345c); color: #fff; }
+    .poll-snapshot-top { display: flex; align-items: start; justify-content: space-between; gap: 14px; }
+    .poll-snapshot h3 { margin: 2px 0 3px; font: 900 1.55rem "Noto Serif Hebrew",serif; }
+    .poll-snapshot small { color: #aebfd1; }
+    .snapshot-total { min-width: 66px; padding: 8px 10px; border: 1px solid rgba(255,255,255,.17); border-radius: 9px; text-align: center; }
+    .snapshot-total strong { display: block; font-size: 1.25rem; }
+    .snapshot-total span { color: #9eb1c6; font-size: .56rem; }
+    .bloc-meter { direction: ltr; height: 24px; display: flex; overflow: hidden; margin: 18px 0 10px; border: 2px solid rgba(255,255,255,.18); border-radius: 6px; background: rgba(255,255,255,.08); }
+    .bloc-meter span { min-width: 2px; height: 100%; border-left: 1px solid rgba(255,255,255,.7); }
+    .bloc-meter span:first-child { border-left: 0; }
+    .snapshot-blocs { display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; margin-bottom: 18px; }
+    .snapshot-bloc { padding: 8px; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; background: rgba(255,255,255,.055); }
+    .snapshot-bloc span { display: block; color: #aebfd1; font-size: .56rem; }
+    .snapshot-bloc strong { display: block; margin-top: 2px; font-size: 1.12rem; }
+    .snapshot-party-list { border-top: 1px solid rgba(255,255,255,.13); }
+    .snapshot-party { display: grid; grid-template-columns: minmax(100px,1fr) minmax(100px,1.35fr) 30px; align-items: center; gap: 9px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.09); font-size: .68rem; }
+    .snapshot-party-track { direction: ltr; height: 8px; overflow: hidden; border-radius: 99px; background: rgba(255,255,255,.1); }
+    .snapshot-party-fill { display: block; height: 100%; border-radius: inherit; background: var(--party-color); }
+    .snapshot-party strong { direction: ltr; text-align: left; }
+    .snapshot-action { width: 100%; margin-top: 14px; border: 1px solid rgba(255,255,255,.25); border-radius: 9px; padding: 10px 12px; color: #07182c; background: linear-gradient(145deg,#f4d47f,#daa43b); cursor: pointer; font-weight: 900; }
+
+    .newsroom-v3 .newsroom-pulse { margin-bottom: 34px; }
+    .newsroom-v3 .pulse-card { border-radius: 10px; box-shadow: 0 8px 22px rgba(8,27,50,.07); }
+    .newsroom-v3 .pulse-icon { border-radius: 8px; }
+    .newsroom-v3 .section-head { border-bottom: 2px solid var(--ink); }
+    .newsroom-v3 .story-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; }
+    .newsroom-v3 .story-card { border-radius: 11px; box-shadow: 0 9px 26px rgba(8,27,50,.07); }
+    .newsroom-v3 .story-card:hover { transform: translateY(-4px); box-shadow: 0 15px 34px rgba(8,27,50,.13); }
+    .newsroom-v3 .story-card h3 { font-size: 1.1rem; }
+    .newsroom-v3 .category-feature,
+    .newsroom-v3 .compact-card,
+    .newsroom-v3 .dashboard-card,
+    .newsroom-v3 .deep-section { border-radius: 14px; }
+    .newsroom-v3 .deep-section { background: linear-gradient(135deg,#06172b,#102f50); }
+    .newsroom-v3 .deep-card { border-radius: 10px; }
+
+    .newsroom-v3 .polls-shell { border-radius: 16px; }
+    .newsroom-v3 .polls-head { min-height: 108px; }
+    .newsroom-v3 .polls-grid {
+      padding: 12px;
+      border: 0;
+      border-radius: 12px;
+      background: #07182c;
+      box-shadow: none;
+      transform: none;
+    }
+    .newsroom-v3 .polls-grid::before { display: none; }
+    .newsroom-v3 .poll-panel { border-radius: 10px; box-shadow: none; transform: none; }
+    .newsroom-v3 .bloc-donut-stage::after { display: none; }
+    .newsroom-v3 .bloc-donut {
+      transform: none;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.25), 0 18px 34px rgba(0,0,0,.32);
+    }
+    .newsroom-v3 .bloc-donut::before { box-shadow: inset 0 5px 14px rgba(0,0,0,.38), 0 0 0 1px rgba(255,255,255,.18); }
+    .newsroom-v3 .bloc-card,
+    .newsroom-v3 .party-seats { box-shadow: none; }
+    .newsroom-v3 .party-track { height: 15px; box-shadow: inset 0 1px 3px rgba(7,20,36,.14); }
+    .newsroom-v3 .party-fill { box-shadow: none; }
+
+    .newsroom-v3 .article-layer { background: rgba(2,8,16,.88); }
+    .newsroom-v3 .article-panel { width: min(1120px,100%); border-radius: 14px; }
+    .newsroom-v3 .article-hero { min-height: 470px; }
+    .newsroom-v3 .article-hero-copy { bottom: 36px; }
+    .article-image-credit { position: absolute; z-index: 3; right: 18px; top: 18px; max-width: min(72%,520px); padding: 5px 8px; border-radius: 5px; color: #d8e1eb; background: rgba(3,10,20,.58); font-size: .58rem; }
+    .article-layout { display: grid; grid-template-columns: 250px minmax(0,1fr); align-items: start; max-width: 970px; margin: 0 auto; }
+    .article-aside { position: sticky; top: 24px; padding: 46px 0 40px 28px; }
+    .article-aside-box { border-top: 4px solid var(--editorial-red); padding: 17px 0; }
+    .article-aside h3 { margin: 0 0 10px; font: 900 1.05rem "Noto Serif Hebrew",serif; }
+    .article-aside ul { margin: 0; padding: 0 18px 0 0; color: var(--ink-soft); font-size: .76rem; }
+    .article-aside li { margin: 0 0 10px; }
+    .article-byline { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 22px; padding-bottom: 16px; border-bottom: 1px solid var(--editorial-rule); color: var(--muted); font-size: .72rem; }
+    .article-byline strong { color: var(--ink); }
+    .newsroom-v3 .article-reading { max-width: none; padding: 46px 28px 64px 0; font-size: 1.03rem; line-height: 1.95; }
+    .newsroom-v3 .article-reading .standfirst { font-size: 1.32rem; line-height: 1.6; }
+    .article-reading section:first-of-type > p:first-of-type::first-letter { float: right; margin: .08em 0 .03em .08em; color: var(--editorial-red); font: 900 3.7rem/.82 "Noto Serif Hebrew",serif; }
+    .article-source-box { margin-top: 40px; padding: 22px; border: 1px solid var(--editorial-rule); border-radius: 10px; background: var(--canvas); }
+    .article-source-box h3 { margin-top: 0; }
+    .related-reading { margin-top: 42px; padding-top: 25px; border-top: 2px solid var(--ink); }
+    .related-reading h3 { margin-top: 0; }
+    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .related-card { border: 1px solid var(--editorial-rule); border-radius: 9px; padding: 13px; background: var(--paper); cursor: pointer; }
+    .related-card:hover { border-color: var(--editorial-red); }
+    .related-card span { color: var(--editorial-red); font-size: .62rem; font-weight: 900; }
+    .related-card strong { display: block; margin-top: 5px; font: 800 .82rem/1.35 "Noto Serif Hebrew",serif; }
+    .social-section.is-empty .social-stage { padding: 16px; border-color: var(--line); color: var(--ink); background: var(--paper); box-shadow: none; }
+    .social-section.is-empty .social-card { min-height: 0; color: var(--ink); background: var(--canvas); box-shadow: none; }
+    .social-section.is-empty .social-text { margin: 9px 0 0; font: 700 .8rem/1.5 "Heebo",sans-serif; }
+
+    @media (max-width: 1120px) {
+      .newsroom-v3 .story-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+      .election-room-grid { grid-template-columns: 1fr; }
+      .politics-wire { border-left: 0; border-bottom: 1px solid var(--editorial-rule); }
+    }
+    @media (max-width: 900px) {
+      .newsroom-v3 .wrap { width: min(100% - 24px,1390px); }
+      .newsroom-v3 .hero-layout { grid-template-columns: 1fr; }
+      .newsroom-v3 .hero-rail { grid-template-columns: repeat(3,1fr); grid-template-rows: auto; }
+      .newsroom-v3 .rail-card { grid-template-columns: 1fr; }
+      .newsroom-v3 .rail-card > img,
+      .newsroom-v3 .rail-card > .story-fallback { height: 170px; }
+      .article-layout { grid-template-columns: 1fr; }
+      .article-aside { position: static; padding: 28px 28px 0; }
+      .newsroom-v3 .article-reading { padding: 26px 28px 54px; }
+    }
+    @media (max-width: 700px) {
+      .newsroom-v3 .story-grid { grid-template-columns: 1fr 1fr; }
+      .newsroom-v3 .lead-story { min-height: 470px; }
+      .newsroom-v3 .lead-title { font-size: 2.35rem; }
+      .newsroom-v3 .hero-rail { grid-template-columns: 1fr; }
+      .newsroom-v3 .rail-card { grid-template-columns: 118px minmax(0,1fr); }
+      .newsroom-v3 .rail-card > img,
+      .newsroom-v3 .rail-card > .story-fallback { width: 118px; height: 100%; min-height: 132px; }
+      .election-room { border-radius: 12px; }
+      .election-room-head { align-items: start; flex-direction: column; padding: 18px; }
+      .politics-wire { padding-inline: 16px; }
+      .wire-item { grid-template-columns: 58px minmax(0,1fr) auto; gap: 9px; }
+      .wire-title { font-size: .88rem; }
+      .poll-snapshot { padding: 18px 16px; }
+      .related-grid { grid-template-columns: 1fr; }
+      .newsroom-v3 .article-hero { min-height: 410px; }
+      .article-image-credit { top: auto; bottom: 8px; right: 8px; }
+    }
+    @media (max-width: 480px) {
+      .newsroom-v3 .story-grid { grid-template-columns: 1fr; }
+      .newsroom-v3 .lead-story { min-height: 430px; }
+      .newsroom-v3 .lead-content { right: 20px; left: 20px; bottom: 28px; }
+      .newsroom-v3 .lead-title { font-size: 2.05rem; }
+      .newsroom-v3 .lead-summary { font-size: .86rem; }
+      .newsroom-v3 .newsroom-pulse { grid-template-columns: 1fr 1fr; }
+      .snapshot-blocs { grid-template-columns: 1fr; }
+      .newsroom-v3 .article-hero { min-height: 375px; }
+      .newsroom-v3 .article-hero h2 { font-size: 2rem; }
+      .article-aside { padding: 22px 18px 0; }
+      .newsroom-v3 .article-reading { padding: 22px 18px 48px; }
+      .newsroom-v3 .article-reading .standfirst { font-size: 1.12rem; }
+    }
   </style>
 </head>
-<body>
+<body class="newsroom-v3">
   <div class="utility">
     <div class="wrap utility-inner">
       <div class="utility-live"><span class="live-dot"></span>מהדורה אישית מתעדכנת</div>
@@ -1252,10 +1529,21 @@
 
     <section class="hero-layout" aria-label="כותרות ראשיות"><article class="lead-story" id="leadStory"></article><div class="hero-rail" id="heroRail"></div></section>
 
+    <section class="election-room" id="electionRoom" aria-labelledby="electionRoomTitle">
+      <header class="election-room-head">
+        <div><span class="eyebrow">בחירות 2026 · הדסק הפוליטי</span><h2 id="electionRoomTitle">הקרב על הכנסת ה־26</h2></div>
+        <p>פריימריז, חיבורים, פרשנות ומפת גושים — עם הבחנה ברורה בין עובדות, דיווחים והערכות.</p>
+      </header>
+      <div class="election-room-grid">
+        <div class="politics-wire" id="politicsWire"></div>
+        <aside class="poll-snapshot" id="pollSnapshot" aria-label="תמונת מצב מסקר הסקרים"></aside>
+      </div>
+    </section>
+
     <section class="newsroom-pulse" id="newsroomPulse" aria-label="תמונת מצב של המהדורה"></section>
 
     <div class="content-layout"><div>
-      <section class="section" id="latestSection"><div class="section-head"><h2 class="section-heading">חדשות</h2><div class="section-note" id="resultCount"></div></div><div class="story-grid" id="mainGrid"></div></section>
+      <section class="section" id="latestSection"><div class="section-head"><h2 class="section-heading">עוד חדשות במהדורה</h2><div class="section-note" id="resultCount"></div></div><div class="story-grid" id="mainGrid"></div></section>
       <div id="categorySections"></div>
     </div></div>
 
@@ -1308,14 +1596,16 @@
   </div>
   <div class="toast" id="toast">בודק אם פורסם עדכון חדש…</div>
 
+  <script src="politics-desk.js"></script>
   <script src="party-meta.js"></script>
   <script src="breaking-archive.js"></script>
   <script src="news-feed.js"></script>
   <script>
 
     const NEWS_FEED = window.NEWS_FEED || { meta:{ updatedAt:new Date().toISOString(), edition:"מהדורה לא זמינה" }, markets:[], scores:[], polls:[], articles:[], deepDives:[], videos:[] };
+    const POLITICS_DESK = window.POLITICS_DESK || { meta:{}, articles:[] };
     NEWS_FEED.breaking = Array.isArray(window.BREAKING_ARCHIVE) ? window.BREAKING_ARCHIVE : [];
-    const CATEGORIES = ["הכל", "בארץ", "חרדים", "עולם", "כלכלה", "ספורט", "טכנולוגיה", "עומק", "סקרים", "הרשת"];
+    const CATEGORIES = ["הכל", "בחירות", "בארץ", "חרדים", "עולם", "כלכלה", "ספורט", "טכנולוגיה", "עומק", "סקרים", "הרשת"];
     const EDITORIAL_VIDEOS = [];
     const EDITORIAL_SOCIAL = [];
     const TEAM_META = {
@@ -1346,12 +1636,29 @@
     let customPollIds = new Set();
     let customPollSelectionReady = false;
     const $ = id => document.getElementById(id);
-    const allStories = () => [...NEWS_FEED.articles, ...NEWS_FEED.deepDives];
+    function uniqueStories(items) { const ids = new Set(); return items.filter(item => item?.id && !ids.has(item.id) && ids.add(item.id)); }
+    const deskStories = () => Array.isArray(POLITICS_DESK.articles) ? POLITICS_DESK.articles : [];
+    const allStories = () => uniqueStories([...deskStories(), ...(NEWS_FEED.articles || []), ...(NEWS_FEED.deepDives || [])]);
+    const POLITICAL_TERMS = ["בחירות", "פריימריז", "מנדט", "ליכוד", "קואליצ", "מפלג", "נתניהו", "וינטר", "גנץ", "איזנקוט", "סמוטריץ", "בן גביר", "ש״ס", "יהדות התורה", "אחוז החסימה", "כנסת"];
 
     function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
-    function safeUrl(value) { try { const u = new URL(value, location.href); return ["http:", "https:"].includes(u.protocol) ? u.href : "#"; } catch { return "#"; } }
+    function safeUrl(value) { if (!value || typeof value !== "string") return "#"; try { const u = new URL(value, location.href); return ["http:", "https:"].includes(u.protocol) ? u.href : "#"; } catch { return "#"; } }
     function initials(value) { return String(value || "").trim().split(/\s+/).slice(0,2).map(word => word[0] || "").join(""); }
-    function imgTag(article, className = "") { const src = safeUrl(article.image); return `<img class="${className}" src="${escapeHtml(src)}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'">`; }
+    function isElectionStory(article) { const haystack = [article?.deskLabel, article?.category, article?.title, article?.summary, article?.subtitle].join(" "); return POLITICAL_TERMS.some(term => haystack.includes(term)); }
+    function politicalScore(article) { const haystack = [article?.deskLabel, article?.category, article?.title, article?.summary, article?.subtitle].join(" "); return POLITICAL_TERMS.reduce((score, term) => score + (haystack.includes(term) ? 1 : 0), 0) + (article?.featured ? 2 : 0); }
+    function electionStories() { return allStories().filter(isElectionStory).sort((a,b) => politicalScore(b) - politicalScore(a) || (Date.parse(b.publishedAt) || 0) - (Date.parse(a.publishedAt) || 0)); }
+    const CATEGORY_COLORS = { "בארץ":"#194d7a", "חרדים":"#5b3c78", "עולם":"#286678", "כלכלה":"#17614c", "ספורט":"#257044", "טכנולוגיה":"#315c9d", "עומק":"#703344" };
+    function replaceBrokenImage(image) {
+      const fallback = document.createElement("div"), label = document.createElement("span"), title = document.createElement("strong");
+      fallback.className = `${image.className} story-fallback`; fallback.style.setProperty("--visual-color", image.dataset.color || "#214d76"); fallback.setAttribute("role", "img"); fallback.setAttribute("aria-label", image.alt || "חדשות");
+      label.textContent = image.dataset.label || "החדשות"; title.textContent = image.alt || "חדשות"; fallback.append(label, title); image.replaceWith(fallback);
+    }
+    function imgTag(article, className = "") {
+      const src = safeUrl(article?.image), title = article?.title || "חדשות", label = article?.deskLabel || article?.category || article?.source || "החדשות";
+      const color = CATEGORY_COLORS[article?.category] || "#214d76";
+      if (src !== "#") return `<img class="${escapeHtml(className)}" src="${escapeHtml(src)}" alt="${escapeHtml(title)}" data-label="${escapeHtml(label)}" data-color="${color}" loading="lazy" decoding="async" onerror="replaceBrokenImage(this)">`;
+      return `<div class="${escapeHtml(className)} story-fallback" style="--visual-color:${color}" role="img" aria-label="${escapeHtml(title)}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(title)}</strong></div>`;
+    }
     function timeAgo(value) { const date = new Date(value), minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60000)); if (!Number.isFinite(minutes)) return ""; if (minutes < 2) return "עכשיו"; if (minutes < 60) return `לפני ${minutes} דקות`; const hours = Math.floor(minutes / 60); if (hours < 24) return `לפני ${hours} שעות`; return date.toLocaleDateString("he-IL", { day: "numeric", month: "short" }); }
     function articleById(id) { return allStories().find(item => item.id === id); }
 
@@ -1359,6 +1666,7 @@
       $("categoryNav").innerHTML = CATEGORIES.map(category => `<button class="nav-item ${activeCategory === category ? "active" : ""}" data-category="${escapeHtml(category)}">${category === "הכל" ? "ראשי" : escapeHtml(category)}</button>`).join("");
       document.querySelectorAll("[data-category]").forEach(button => button.onclick = () => {
         activeCategory = button.dataset.category; renderNav();
+        if (activeCategory === "בחירות") return $("electionRoom").scrollIntoView({behavior:"smooth", block:"start"});
         if (activeCategory === "סקרים") return openPolls();
         if (activeCategory === "הרשת") return $("socialPulseSection").scrollIntoView({behavior:"smooth", block:"start"});
         if (activeCategory === "עומק") return $("deepSection").scrollIntoView({behavior:"smooth"});
@@ -1374,20 +1682,36 @@
     }
 
     function renderHero() {
-      const lead = NEWS_FEED.articles.find(article => article.featured) || NEWS_FEED.articles[0];
-      const rail = NEWS_FEED.articles.filter(article => article.id !== lead.id).slice(0, 3);
-      $("leadStory").innerHTML = `${imgTag(lead, "lead-img")}<div class="lead-content"><span class="category-pill">${escapeHtml(lead.category)}</span><h1 class="lead-title">${escapeHtml(lead.title)}</h1><p class="lead-summary">${escapeHtml(lead.subtitle || lead.summary)}</p><div class="article-meta"><span class="source-name">${escapeHtml(lead.source)}</span><span>${timeAgo(lead.publishedAt)}</span><span>${escapeHtml(lead.readTime)}</span></div></div>`;
+      const deskLead = deskStories().find(article => article.id === POLITICS_DESK.leadId) || deskStories()[0];
+      const lead = deskLead || electionStories()[0] || NEWS_FEED.articles?.find(article => article.featured) || NEWS_FEED.articles?.[0];
+      if (!lead) { $("leadStory").hidden = true; $("heroRail").innerHTML = ""; return; }
+      const rail = uniqueStories([...deskStories().filter(article => article.id !== lead.id), ...electionStories().filter(article => article.id !== lead.id), ...(NEWS_FEED.articles || []).filter(article => article.id !== lead.id)]).slice(0, 3);
+      $("leadStory").innerHTML = `${imgTag(lead, "lead-img")}<div class="lead-content"><span class="category-pill">${escapeHtml(lead.deskLabel || lead.category)}</span><h1 class="lead-title">${escapeHtml(lead.title)}</h1><p class="lead-summary">${escapeHtml(lead.subtitle || lead.summary)}</p><div class="article-meta"><span class="source-name">${escapeHtml(lead.source)}</span><span>${timeAgo(lead.publishedAt)}</span><span>${escapeHtml(lead.readTime)}</span></div></div>`;
       $("leadStory").onclick = () => openArticle(lead.id);
-      $("heroRail").innerHTML = rail.map(article => `<article class="rail-card fade-up" data-open="${escapeHtml(article.id)}">${imgTag(article)}<div class="rail-copy"><span class="story-source">${escapeHtml(article.category)} · ${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><div class="rail-meta">${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</div></div></article>`).join(""); bindOpeners($("heroRail"));
+      $("heroRail").innerHTML = rail.map(article => `<article class="rail-card fade-up" data-open="${escapeHtml(article.id)}">${imgTag(article)}<div class="rail-copy"><span class="story-source">${escapeHtml(article.deskLabel || article.category)} · ${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><div class="rail-meta">${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</div></div></article>`).join(""); bindOpeners($("heroRail"));
+    }
+
+    function renderElectionRoom() {
+      const stories = electionStories();
+      const wireItems = uniqueStories([...stories.filter(article => article.id !== POLITICS_DESK.leadId), ...deskStories()]).slice(0, 5);
+      $("politicsWire").innerHTML = `<div class="wire-kicker"><span>התפתחויות וניתוחים</span><span>${wireItems.length} כתבות מלאות</span></div>${wireItems.map(article => `<button class="wire-item" type="button" data-open="${escapeHtml(article.id)}"><span class="wire-meta">${timeAgo(article.publishedAt)}</span><span class="wire-title">${escapeHtml(article.title)}</span><span class="wire-arrow" aria-hidden="true">←</span></button>`).join("")}`;
+      bindOpeners($("politicsWire"));
+
+      const polls = validPolls(), average = buildPollAverage(polls), latest = [...polls].sort((a,b) => String(b.date).localeCompare(String(a.date)))[0];
+      if (!average) { $("pollSnapshot").innerHTML = `<div class="poll-snapshot-top"><div><small>סקר הסקרים</small><h3>ממתינים לנתון מאומת</h3></div></div><button class="snapshot-action" id="snapshotOpenPolls" type="button">למרכז הסקרים המלא</button>`; $("snapshotOpenPolls").onclick = openPolls; return; }
+      const blocks = blocksForParties(average.parties), parties = Object.entries(average.parties).sort((a,b) => b[1] - a[1]).slice(0, 5), chartMax = Math.max(...parties.map(([,seats]) => Number(seats) || 0), 1);
+      const meters = BLOC_DEFS.filter(block => blocks[block.id] > 0).map(block => `<span style="width:${(blocks[block.id] / 120 * 100).toFixed(2)}%;background:${block.color}" title="${escapeHtml(block.label)}: ${blocks[block.id]}"></span>`).join("");
+      $("pollSnapshot").innerHTML = `<div class="poll-snapshot-top"><div><small>סקר הסקרים · ${polls.length} פרסומים</small><h3>מפת הגושים עכשיו</h3><small>${latest ? `עדכני לסקר מ־${pollDateText(latest.date)}` : "ממוצע מחושב"}</small></div><span class="snapshot-total"><strong>120</strong><span>מנדטים</span></span></div><div class="bloc-meter" aria-label="חלוקת המנדטים לגושים">${meters}</div><div class="snapshot-blocs"><div class="snapshot-bloc"><span>גוש נתניהו</span><strong>${blocks.netanyahu}</strong></div><div class="snapshot-bloc"><span>מתנגדי נתניהו</span><strong>${blocks.opposition}</strong></div><div class="snapshot-bloc"><span>מפלגות ערביות</span><strong>${blocks.arab}</strong></div></div><div class="snapshot-party-list">${parties.map(([party,seats]) => `<div class="snapshot-party"><span>${escapeHtml(party)}</span><span class="snapshot-party-track"><i class="snapshot-party-fill" style="--party-color:${partyColor(party)};width:${(seats / chartMax * 100).toFixed(1)}%"></i></span><strong>${seats}</strong></div>`).join("")}</div><button class="snapshot-action" id="snapshotOpenPolls" type="button">לכל הסקרים, המפלגות והמגמות</button>`;
+      $("snapshotOpenPolls").onclick = openPolls;
     }
 
     function cardTemplate(article) { return `<article class="story-card fade-up" data-open="${escapeHtml(article.id)}"><div class="story-visual">${imgTag(article)}<span class="category-pill">${escapeHtml(article.category)}</span></div><div class="story-copy"><span class="story-source">${escapeHtml(article.source)}</span><h3>${escapeHtml(article.title)}</h3><p>${escapeHtml(article.summary)}</p><div class="card-foot"><span>${timeAgo(article.publishedAt)} · ${escapeHtml(article.readTime)}</span><span class="read-arrow">לקריאה מלאה ←</span></div></div></article>`; }
-    function renderMainGrid() { let list = NEWS_FEED.articles.filter(a => !a.featured); if (activeCategory !== "הכל") list = list.filter(a => a.category === activeCategory); $("resultCount").textContent = `${list.length} כתבות במהדורה`; $("mainGrid").innerHTML = list.slice(0, 9).map(cardTemplate).join(""); bindOpeners($("mainGrid")); }
+    function renderMainGrid() { let list = (NEWS_FEED.articles || []).filter(a => !a.featured); if (activeCategory !== "הכל" && activeCategory !== "בחירות") list = list.filter(a => a.category === activeCategory); $("resultCount").textContent = `${list.length} כתבות במהדורה`; $("mainGrid").innerHTML = list.slice(0, 12).map(cardTemplate).join(""); bindOpeners($("mainGrid")); }
 
     function renderCategorySections() {
       const categories = ["בארץ", "עולם", "כלכלה", "ספורט", "טכנולוגיה", "חרדים"];
       $("categorySections").innerHTML = categories.map(category => {
-        const items = NEWS_FEED.articles.filter(a => a.category === category).slice(0, 5); if (!items.length) return "";
+        const items = uniqueStories([...(category === "בארץ" || category === "חרדים" ? deskStories() : []), ...(NEWS_FEED.articles || [])]).filter(a => a.category === category).slice(0, 5); if (!items.length) return "";
         const [feature, ...rest] = items;
         return `<section class="category-block" id="cat-${escapeHtml(category)}"><div class="section-head"><div><span class="eyebrow">מדור</span><h2 class="section-heading">${escapeHtml(category)}</h2></div><button class="nav-item" data-show-category="${escapeHtml(category)}">לכל כתבות המדור</button></div><div class="category-layout"><article class="category-feature" data-open="${escapeHtml(feature.id)}">${imgTag(feature)}<div class="category-feature-copy"><span class="category-pill">${escapeHtml(feature.source)}</span><h3>${escapeHtml(feature.title)}</h3><div class="article-meta"><span>${timeAgo(feature.publishedAt)}</span><span>${escapeHtml(feature.readTime)}</span></div></div></article><div class="category-stack">${rest.map(a => `<article class="compact-card" data-open="${escapeHtml(a.id)}">${imgTag(a)}<div class="compact-copy"><span class="story-source">${escapeHtml(a.source)}</span><h4>${escapeHtml(a.title)}</h4><div class="rail-meta">${timeAgo(a.publishedAt)}</div></div></article>`).join("")}</div></div></section>`;
       }).join("");
@@ -1398,10 +1722,10 @@
     function renderNewsroomPulse() {
       const polls = validPolls();
       const cards = [
-        { icon:"LIVE", label:"מבזקים בארכיון", value:(NEWS_FEED.breaking || []).length, color:"#e02b3b" },
-        { icon:"24/7", label:"כתבות וניתוחים", value:allStories().length, color:"#1580d8" },
-        { icon:"120", label:"סקרים מאומתים", value:polls.length, color:"#d7a43a" },
-        { icon:"GO", label:"משחקים בלוח", value:(NEWS_FEED.scores || []).length, color:"#20a873" }
+        { icon:"●", label:"כתבות חדשות עכשיו", value:(NEWS_FEED.articles || []).length, color:"#e02b3b" },
+        { icon:"¶", label:"ניתוחים וכתבות עומק", value:(NEWS_FEED.deepDives || []).length + deskStories().length, color:"#1580d8" },
+        { icon:"Σ", label:"סקרים מלאים שאומתו", value:polls.length, color:"#d7a43a" },
+        { icon:"↺", label:"מבזקים שנשמרו", value:(NEWS_FEED.breaking || []).length, color:"#20a873" }
       ];
       $("newsroomPulse").innerHTML = cards.map((card,index) => `<div class="pulse-card" style="--pulse-color:${card.color};--pulse-delay:${index * 55}ms"><span class="pulse-icon">${escapeHtml(card.icon)}</span><span class="pulse-copy"><span>${escapeHtml(card.label)}</span><strong>${escapeHtml(card.value)}</strong></span></div>`).join("");
     }
@@ -1411,6 +1735,7 @@
 }
     function renderSocialPulse() {
   const items = socialItems();
+  $("socialPulseSection").classList.toggle("is-empty", !items.length);
   if (!items.length) {
     $("socialPulse").innerHTML = `<article class="social-card" style="grid-column:1/-1;--social-color:#64748b;text-align:center"><div class="social-head"><span class="social-avatar">✓</span><span class="social-source"><strong>אין כרגע פוסט מאומת</strong><small>המדור לא ממלא מקום בהמצאות</small></span></div><p class="social-text">נוסיף כאן רק פוסט אמיתי עם מחבר, קישור ישיר ומדדי הצלחה שנבדקו.</p></article>`;
     return;
@@ -1431,10 +1756,10 @@
       return `<span class="team-crest" style="--team-color:${escapeHtml(meta.color)}">${logo}<span class="team-crest-fallback" style="${meta.logo ? "display:none" : ""}">${escapeHtml(meta.abbr)}</span></span>`;
     }
 
-    function renderDeep() { $("deepGrid").innerHTML = NEWS_FEED.deepDives.map((a,i) => `<article class="deep-card" data-open="${escapeHtml(a.id)}"><div><span class="deep-index">כתבת עומק ${String(i+1).padStart(2,"0")}</span><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.summary)}</p></div><div class="deep-sources">${escapeHtml(a.readTime)} · לקריאה מלאה ←</div></article>`).join(""); bindOpeners($("deepGrid")); }
+    function renderDeep() { const items = [...(NEWS_FEED.deepDives || [])].sort((a,b) => Number(isElectionStory(b)) - Number(isElectionStory(a))); $("deepGrid").innerHTML = items.map((a,i) => `<article class="deep-card" data-open="${escapeHtml(a.id)}"><div><span class="deep-index">כתבת עומק ${String(i+1).padStart(2,"0")}</span><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.summary)}</p></div><div class="deep-sources">${escapeHtml(a.readTime)} · לקריאה מלאה ←</div></article>`).join(""); bindOpeners($("deepGrid")); }
     function renderScores() {
       $("scoresTable").innerHTML = (NEWS_FEED.scores || []).map((item,index) => {
-        const teams = String(item.teams || "").split(/\s+[—–]\s+/), score = String(item.score || "").split(new RegExp("\\s*:\\s*"));
+        const teams = Array.isArray(item.teams) ? item.teams : String(item.teams || "").split(/\s+[—–-]\s+/), score = Array.isArray(item.score) ? item.score : String(item.score || "").split(/\s*[:—–-]\s*/);
         const home = teams[0] || item.teams || "—", away = teams[1] || "—", homeScore = score[0] || "—", awayScore = score[1] || "—";
         const homeMeta = resolvedTeamMeta(home,item,"home"), awayMeta = resolvedTeamMeta(away,item,"away");
         const isLive = /חי|דקה|מחצית|live/i.test(String(item.status || ""));
@@ -1650,8 +1975,15 @@
     function openArticle(id) {
       const article = articleById(id); if (!article) return;
       const facts = article.facts || [], sections = normalizedBody(article);
-      $("articlePanel").innerHTML = `<div class="article-hero">${imgTag(article, "modal-image")}<button class="close-btn article-close" data-close="article" aria-label="סגירה">×</button><div class="article-hero-copy"><span class="category-pill">${escapeHtml(article.category)}</span><h2>${escapeHtml(article.title)}</h2><div class="article-meta"><span class="source-name">מקורות: ${escapeHtml(article.source)}</span><span>${timeAgo(article.publishedAt)}</span><span>${escapeHtml(article.readTime)}</span></div></div></div><div class="article-reading"><p class="standfirst">${escapeHtml(article.subtitle || article.summary)}</p>${sections.map(s => `<section><h3>${escapeHtml(s.heading)}</h3>${(s.paragraphs||[]).filter(Boolean).map(p => `<p>${escapeHtml(p)}</p>`).join("")}</section>`).join("")}${facts.length ? `<div class="key-box"><h3>הנקודות המרכזיות</h3><ul>${facts.map(f => `<li>${escapeHtml(f)}</li>`).join("")}</ul></div>` : ""}<div class="article-attribution">הכתבה נוסחה וסוכמה באופן מקורי על בסיס ${escapeHtml(article.source)}${article.secondarySources?.length ? ` ומקורות נוספים שנבדקו על ידי המערכת` : ""}. אין צורך לצאת מהאתר כדי לקרוא את הסיכום המלא.</div></div>`;
-      $("articleLayer").classList.add("open"); document.body.classList.add("modal-open"); $("articlePanel").querySelector("[data-close='article']").onclick = closeLayers; $("articleLayer").scrollTop = 0;
+      const sourceItems = [
+        safeUrl(article.sourceUrl) !== "#" ? { name:article.source || "המקור הראשי", url:article.sourceUrl } : null,
+        ...(Array.isArray(article.secondarySources) ? article.secondarySources : [])
+      ].filter(item => item && safeUrl(item.url) !== "#");
+      const related = allStories().filter(item => item.id !== article.id).sort((a,b) => Number(b.category === article.category) - Number(a.category === article.category) || Number(isElectionStory(b)) - Number(isElectionStory(a))).slice(0,3);
+      const published = new Date(article.publishedAt), publishedText = Number.isFinite(published.getTime()) ? published.toLocaleDateString("he-IL", { day:"numeric", month:"long", year:"numeric", hour:"2-digit", minute:"2-digit" }) : "";
+      const sourceLinks = sourceItems.length ? `<div class="source-links">${sourceItems.map((item,index) => `<a class="source-link ${index ? "secondary" : ""}" href="${escapeHtml(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.name)} ↗</a>`).join("")}</div>` : "";
+      $("articlePanel").innerHTML = `<div class="article-hero">${imgTag(article, "modal-image")}<button class="close-btn article-close" data-close="article" aria-label="סגירה">×</button>${article.imageCredit ? `<span class="article-image-credit">${escapeHtml(article.imageCredit)}</span>` : ""}<div class="article-hero-copy"><span class="category-pill">${escapeHtml(article.deskLabel || article.category)}</span><h2>${escapeHtml(article.title)}</h2><div class="article-meta"><span class="source-name">${escapeHtml(article.source)}</span><span>${timeAgo(article.publishedAt)}</span><span>${escapeHtml(article.readTime)}</span></div></div></div><div class="article-layout"><aside class="article-aside"><div class="article-aside-box"><h3>עיקרי הדברים</h3>${facts.length ? `<ul>${facts.slice(0,5).map(f => `<li>${escapeHtml(f)}</li>`).join("")}</ul>` : `<p class="section-note">כתבה מלאה עם הקשר, משמעות והמשך מעקב.</p>`}</div></aside><div class="article-reading"><div class="article-byline"><strong>${escapeHtml(article.author || "מערכת החדשות")}</strong>${publishedText ? `<span>${escapeHtml(publishedText)}</span>` : ""}<span>${escapeHtml(article.readTime || "")}</span></div><p class="standfirst">${escapeHtml(article.subtitle || article.summary)}</p>${sections.map(s => `<section><h3>${escapeHtml(s.heading)}</h3>${(s.paragraphs||[]).filter(Boolean).map(p => `<p>${escapeHtml(p)}</p>`).join("")}</section>`).join("")}<div class="article-source-box"><h3>מקורות ושקיפות</h3><p>הכתבה נוסחה באופן מקורי על בסיס ${escapeHtml(article.source)}${article.secondarySources?.length ? " ומקורות נוספים שנבדקו והוצלבו" : ""}. דיווח, עובדה ופרשנות מסומנים בניסוח מובחן.</p>${sourceLinks}</div>${related.length ? `<div class="related-reading"><h3>להמשך הקריאה</h3><div class="related-grid">${related.map(item => `<article class="related-card" data-open="${escapeHtml(item.id)}"><span>${escapeHtml(item.deskLabel || item.category)}</span><strong>${escapeHtml(item.title)}</strong></article>`).join("")}</div></div>` : ""}</div></div>`;
+      $("articleLayer").classList.add("open"); document.body.classList.add("modal-open"); $("articlePanel").querySelector("[data-close='article']").onclick = closeLayers; bindOpeners($("articlePanel")); $("articleLayer").scrollTop = 0;
     }
 
     function openSearch() { $("searchLayer").classList.add("open"); document.body.classList.add("modal-open"); $("searchInput").value=""; renderSearchResults(""); setTimeout(() => $("searchInput").focus(),50); }
@@ -1664,7 +1996,7 @@
 
     function init() {
       setTheme(localStorage.getItem("hadophek-theme") || (matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
-      renderNav(); renderMarkets(); renderHero(); renderNewsroomPulse(); renderMainGrid(); renderCategorySections(); renderDeep(); renderScores(); renderSocialPulse(); renderVideos(); renderLive(); renderElectionHub();
+      renderNav(); renderMarkets(); renderHero(); renderElectionRoom(); renderNewsroomPulse(); renderMainGrid(); renderCategorySections(); renderDeep(); renderScores(); renderSocialPulse(); renderVideos(); renderLive(); renderElectionHub();
       const updateDate=new Date(NEWS_FEED.meta.updatedAt); $("updatedAt").textContent=`${updateDate.toLocaleDateString("he-IL",{day:"numeric",month:"short"})}, ${updateDate.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit"})}`; $("editionName").textContent=NEWS_FEED.meta.edition || "מהדורת החדשות";
       updateClock(); setInterval(updateClock,1000);
       $("searchBtn").onclick=openSearch; $("footerSearch").onclick=openSearch; $("themeBtn").onclick=toggleTheme; $("reloadBtn").onclick=()=>{$("reloadBtn").classList.add("is-refreshing");showToast("בודק אם פורסם עדכון חדש…");setTimeout(()=>location.reload(),650);};
