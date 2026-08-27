@@ -1268,5 +1268,77 @@ window.BREAKING_ARCHIVE = [
     "source": "Reuters",
     "articleId": "ozon-ufa-drone-damage",
     "urgent": false
+  },
+  {
+    "id": "flash-20260827-1415-livakovic-barcelona",
+    "publishedAt": "2026-08-27T14:15:00+03:00",
+    "time": "14:15",
+    "title": "ברצלונה החתימה את השוער הקרואטי דומיניק ליבאקוביץ׳ עד 2030",
+    "source": "Reuters",
+    "articleId": "livakovic-joins-barcelona",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1427-sri-lanka-draw",
+    "publishedAt": "2026-08-27T14:27:00+03:00",
+    "time": "14:27",
+    "title": "סרי לנקה חילצה תיקו מול הודו; הודו זכתה בסדרת המבחנים 1–0",
+    "source": "Reuters",
+    "articleId": "sri-lanka-india-test-draw",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1446-amur-fire-15",
+    "publishedAt": "2026-08-27T14:46:00+03:00",
+    "time": "14:46",
+    "title": "מניין ההרוגים בשריפה במתחם הגז באמור עלה ל־15",
+    "source": "Reuters",
+    "articleId": "amur-gas-complex-fire-15",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-1456-china-auto-quality",
+    "publishedAt": "2026-08-27T14:56:17+03:00",
+    "time": "14:56",
+    "title": "סין פתחה מבצע איכות שנתי בענף הרכב ומחייבת תוכניות ריקול",
+    "source": "Reuters",
+    "articleId": "china-auto-quality-drive",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1501-eu-budget-cuts",
+    "publishedAt": "2026-08-27T15:01:00+03:00",
+    "time": "15:01",
+    "title": "שש תורמות נטו דורשות לקצץ מאות מיליארדים מתקציב האיחוד האירופי",
+    "source": "Reuters",
+    "articleId": "eu-budget-contributors-cuts",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1539-mladic-report",
+    "publishedAt": "2026-08-27T15:39:11+03:00",
+    "time": "15:39",
+    "title": "דיווח בטלוויזיה הסרבית: רטקו מלאדיץ׳ מת במעצר בהאג",
+    "source": "Reuters · הטלוויזיה הסרבית",
+    "articleId": "mladic-death-serbian-tv-report",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-1543-us-claims-trade",
+    "publishedAt": "2026-08-27T15:43:53+03:00",
+    "time": "15:43",
+    "title": "ארה״ב: התביעות לדמי אבטלה ירדו ל־203 אלף; גירעון הסחורות זינק",
+    "source": "Reuters",
+    "articleId": "us-jobless-claims-trade-gap",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1548-malaysia-myanmar",
+    "publishedAt": "2026-08-27T15:48:00+03:00",
+    "time": "15:48",
+    "title": "מלזיה: החזרת הפליטים הראשונה למיאנמר תחל ב־29 בספטמבר",
+    "source": "Reuters",
+    "articleId": "malaysia-myanmar-repatriation",
+    "urgent": false
   }
 ];
