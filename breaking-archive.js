@@ -1178,5 +1178,50 @@ window.BREAKING_ARCHIVE = [
     "source": "Reuters",
     "articleId": "meta-youth-protection-global",
     "urgent": false
+  },
+  {
+    "id": "flash-20260827-1115-india-coal",
+    "publishedAt": "2026-08-27T11:15:40+03:00",
+    "time": "11:15",
+    "title": "45 תחנות כוח בהודו ירדו לרמת מלאי פחם קריטית",
+    "source": "Reuters",
+    "articleId": "india-coal-critical-stocks",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-1126-huawei-pharma",
+    "publishedAt": "2026-08-27T11:26:00+03:00",
+    "time": "11:26",
+    "title": "Huawei מתכננת שיתופי פעולה נוספים בין AI לתעשיית התרופות",
+    "source": "Reuters",
+    "articleId": "huawei-ai-pharma-partnerships",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1128-rbi-swaps",
+    "publishedAt": "2026-08-27T11:28:00+03:00",
+    "time": "11:28",
+    "title": "הבנק המרכזי בהודו העניק לבנקים גמישות נוספת בהחלפת פיקדונות דולריים",
+    "source": "Reuters",
+    "articleId": "rbi-dollar-swap-flexibility",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1139-cia-svr",
+    "publishedAt": "2026-08-27T11:39:40+03:00",
+    "time": "11:39",
+    "title": "ראש ביון החוץ הרוסי אישר פגישה עם מנהל ה־CIA במוסקבה",
+    "source": "Reuters",
+    "articleId": "svr-cia-moscow-meeting-confirmed",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-1157-nepal-toll",
+    "publishedAt": "2026-08-27T11:57:00+03:00",
+    "time": "11:57",
+    "title": "ממדי אסון נפאל–טיבט מתרחבים: יותר מ־160 הרוגים וכמעט 1,500 נעדרים",
+    "source": "Reuters",
+    "articleId": "nepal-flood-160-dead-1500-missing",
+    "urgent": true
   }
 ];
