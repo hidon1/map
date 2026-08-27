@@ -1664,7 +1664,7 @@
       if (src !== "#") return `<img class="${escapeHtml(className)}" src="${escapeHtml(src)}" alt="${escapeHtml(title)}" data-label="${escapeHtml(label)}" data-color="${color}" loading="lazy" decoding="async" onerror="replaceBrokenImage(this)">`;
       return `<div class="${escapeHtml(className)} story-fallback" style="--visual-color:${color}" role="img" aria-label="${escapeHtml(title)}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(title)}</strong></div>`;
     }
-    function timeAgo(value) { const date = new Date(value), minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60000)); if (!Number.isFinite(minutes)) return ""; if (minutes < 2) return "עכשיו"; if (minutes < 60) return `לפני ${minutes} דקות`; const hours = Math.floor(minutes / 60); if (hours < 24) return `לפני ${hours} שעות`; return date.toLocaleDateString("he-IL", { day: "numeric", month: "short" }); }
+    function timeAgo(value) { const date = new Date(value), minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60000)); if (!Number.isFinite(minutes)) return ""; if (minutes < 2) return "עכשיו"; if (minutes < 60) return `לפני ${minutes} דקות`; const hours = Math.floor(minutes / 60); if (hours === 1) return "לפני שעה"; if (hours === 2) return "לפני שעתיים"; if (hours < 24) return `לפני ${hours} שעות`; return date.toLocaleDateString("he-IL", { day: "numeric", month: "short" }); }
     function articleById(id) { return allStories().find(item => item.id === id); }
 
     function renderNav() {
@@ -1998,6 +1998,7 @@
     function toggleTheme() { setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"); }
     function updateClock() { const now=new Date(), dateText=now.toLocaleDateString("he-IL",{weekday:"long",day:"numeric",month:"long",year:"numeric"}); $("clock").textContent=now.toLocaleTimeString("he-IL",{hour:"2-digit",minute:"2-digit",second:"2-digit"}); $("utilityDate").textContent=dateText; $("editionDate").textContent=dateText; updateElectionCountdown(); }
     function showToast(message) { $("toast").textContent=message; $("toast").classList.add("show"); setTimeout(()=>$("toast").classList.remove("show"),2300); }
+    function openRequestedView() { const params = new URLSearchParams(location.search), articleId = params.get("article"); if (articleId && articleById(articleId)) return openArticle(articleId); if (params.get("view") === "polls") openPolls(); }
 
     function init() {
       setTheme(localStorage.getItem("hadophek-theme") || (matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
@@ -2012,6 +2013,7 @@
       $("searchInput").addEventListener("input",e=>renderSearchResults(e.target.value)); document.querySelector("[data-close='search']").onclick=closeLayers;
       $("searchLayer").onclick=e=>{if(e.target===$("searchLayer"))closeLayers();}; $("articleLayer").onclick=e=>{if(e.target===$("articleLayer"))closeLayers();};
       addEventListener("keydown",e=>{if(e.key==="Escape") $("partyInsightLayer").classList.contains("open") ? closePartyInsight() : closeLayers();if(e.key==="/"&&!document.body.classList.contains("modal-open")){e.preventDefault();openSearch();}});
+      openRequestedView();
     }
     init();
   </script>
