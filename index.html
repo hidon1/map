@@ -1399,6 +1399,12 @@
     .newsroom-v3 .party-seats { box-shadow: none; }
     .newsroom-v3 .party-track { height: 15px; box-shadow: inset 0 1px 3px rgba(7,20,36,.14); }
     .newsroom-v3 .party-fill { box-shadow: none; }
+    .newsroom-v3 .party-fill::after { display: none; }
+    .newsroom-v3 .party-visuals { flex: 0 0 46px; width: 46px; height: 46px; }
+    .newsroom-v3 .party-logo { left: 0; top: 0; width: 44px; height: 44px; box-shadow: none; }
+    .newsroom-v3 .party-logo img,
+    .newsroom-v3 .party-leader { display: none; }
+    .newsroom-v3 .party-logo .party-monogram { display: grid !important; }
 
     .newsroom-v3 .article-layer { background: rgba(2,8,16,.88); }
     .newsroom-v3 .article-panel { width: min(1120px,100%); border-radius: 14px; }
@@ -1659,9 +1665,9 @@
       label.textContent = image.dataset.label || "החדשות"; title.textContent = image.alt || "חדשות"; fallback.append(label, title); image.replaceWith(fallback);
     }
     function imgTag(article, className = "") {
-      const src = safeUrl(article?.image), title = article?.title || "חדשות", label = article?.deskLabel || article?.category || article?.source || "החדשות";
+      const src = safeUrl(article?.image), title = article?.title || "חדשות", label = article?.deskLabel || article?.category || article?.source || "החדשות", highPriority = /(^|\s)(lead-img|modal-image)(\s|$)/.test(className);
       const color = CATEGORY_COLORS[article?.category] || "#214d76";
-      if (src !== "#") return `<img class="${escapeHtml(className)}" src="${escapeHtml(src)}" alt="${escapeHtml(title)}" data-label="${escapeHtml(label)}" data-color="${color}" loading="lazy" decoding="async" onerror="replaceBrokenImage(this)">`;
+      if (src !== "#") return `<img class="${escapeHtml(className)}" src="${escapeHtml(src)}" alt="${escapeHtml(title)}" data-label="${escapeHtml(label)}" data-color="${color}" loading="${highPriority ? "eager" : "lazy"}" ${highPriority ? 'fetchpriority="high"' : ""} decoding="async" onerror="replaceBrokenImage(this)">`;
       return `<div class="${escapeHtml(className)} story-fallback" style="--visual-color:${color}" role="img" aria-label="${escapeHtml(title)}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(title)}</strong></div>`;
     }
     function timeAgo(value) { const date = new Date(value), minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60000)); if (!Number.isFinite(minutes)) return ""; if (minutes < 2) return "עכשיו"; if (minutes < 60) return `לפני ${minutes} דקות`; const hours = Math.floor(minutes / 60); if (hours === 1) return "לפני שעה"; if (hours === 2) return "לפני שעתיים"; if (hours < 24) return `לפני ${hours} שעות`; return date.toLocaleDateString("he-IL", { day: "numeric", month: "short" }); }
