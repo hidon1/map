@@ -32,7 +32,7 @@ window.POLITICS_DESK = {
       ],
       publishedAt: "2026-08-26T22:20:00+03:00",
       readTime: "8 דקות",
-      image: "https://cdn.i24news.tv/uploads/45/e2/c5/ca/64/67/99/e3/40/8d/50/a2/25/40/44/f0/45e2c5ca646799e3408d50a2254044f0.jpg?width=996",
+      image: "assets/elections/ofer-winter.jpg",
       imageCredit: "עופר וינטר · צילום: פלאש 90, באמצעות i24NEWS",
       author: "מערכת החדשות",
       featured: true,
@@ -92,7 +92,7 @@ window.POLITICS_DESK = {
       secondarySources: [],
       publishedAt: "2026-08-25T06:10:00+03:00",
       readTime: "6 דקות",
-      image: "https://img.mako.co.il/2020/02/09/image002.png",
+      image: "assets/elections/amit-segal.png",
       imageCredit: "עמית סגל · חדשות 12",
       author: "עיבוד מערכתי לניתוח של עמית סגל",
       facts: [
@@ -149,7 +149,7 @@ window.POLITICS_DESK = {
       ],
       publishedAt: "2026-08-26T20:10:00+03:00",
       readTime: "7 דקות",
-      image: "https://img.ice.co.il/giflib/news/141606054.jpeg",
+      image: "assets/elections/eli-cohen.jpg",
       imageCredit: "אלי כהן · צילום רשמי",
       author: "מערכת החדשות",
       facts: [
@@ -213,7 +213,7 @@ window.POLITICS_DESK = {
       ],
       publishedAt: "2026-08-26T20:00:00+03:00",
       readTime: "6 דקות",
-      image: "https://cdn.i24news.tv/uploads/2e/85/95/4a/76/ec/e2/72/6e/63/90/c9/db/44/54/6e/2e85954a76ece2726e6390c9db44546e.jpg?width=996",
+      image: "assets/elections/aryeh-deri.jpg",
       imageCredit: "אריה דרעי במליאת הכנסת · צילום: פלאש 90, באמצעות i24NEWS",
       author: "מערכת החדשות",
       facts: [
