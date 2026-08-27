@@ -1042,5 +1042,95 @@ window.BREAKING_ARCHIVE = [
     "source": "Reuters",
     "articleId": "qatar-iran-mediation",
     "urgent": false
+  },
+  {
+    "id": "flash-20260827-0603-braves-dodgers",
+    "publishedAt": "2026-08-27T06:03:00+03:00",
+    "time": "06:03",
+    "title": "אטלנטה ניצחה 6:5 את הדודג׳רס בחבטת ווק־אוף של הא־סונג קים",
+    "source": "Reuters · MLB",
+    "articleId": "braves-dodgers-walkoff",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0639-hormuz-traffic",
+    "publishedAt": "2026-08-27T06:39:00+03:00",
+    "time": "06:39",
+    "title": "תנועת כלי השיט בהורמוז עלתה ל־10 מעברות, עדיין מתחת לממוצע",
+    "source": "Reuters · Kpler",
+    "articleId": "hormuz-traffic-kpler",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0640-sept11-trial",
+    "publishedAt": "2026-08-27T06:40:00+03:00",
+    "time": "06:40",
+    "title": "משפט חאלד שייח׳ מוחמד ושלושה נאשמים נוספים נקבע ליוני 2028",
+    "source": "Reuters",
+    "articleId": "sept11-trial-june-2028",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0643-orioles-cardinals",
+    "publishedAt": "2026-08-27T06:43:00+03:00",
+    "time": "06:43",
+    "title": "בולטימור ניצחה 8:7 בסנט לואיס אחרי שכמעט איבדה יתרון של שבע ריצות",
+    "source": "Reuters · MLB",
+    "articleId": "orioles-cardinals-8-7",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0647-oral-wegovy-china",
+    "publishedAt": "2026-08-27T06:47:00+03:00",
+    "time": "06:47",
+    "title": "הרגולטור הסיני קיבל לבדיקה את בקשת נובו נורדיסק לגלולת Wegovy",
+    "source": "Reuters",
+    "articleId": "china-oral-wegovy-application",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0716-gaza-centre-europeans",
+    "publishedAt": "2026-08-27T07:16:00+03:00",
+    "time": "07:16",
+    "title": "דיווח: ישראל שוקלת להרחיק נציגים בריטים ואירופים ממרכז התיאום לעזה",
+    "source": "Reuters · Financial Times",
+    "articleId": "israel-gaza-centre-europeans",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-0719-eu-russian-assets",
+    "publishedAt": "2026-08-27T07:19:00+03:00",
+    "time": "07:19",
+    "title": "ארבע מדינות באיחוד מבקשות לחדש את הדיון בשימוש בנכסים רוסיים מוקפאים",
+    "source": "Reuters · Financial Times",
+    "articleId": "eu-frozen-russian-assets",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0734-us-open-mixed",
+    "publishedAt": "2026-08-27T07:34:00+03:00",
+    "time": "07:34",
+    "title": "מוחובה ומנשיק זכו בזוגות המעורבים באליפות ארצות הברית",
+    "source": "Reuters",
+    "articleId": "us-open-mixed-title",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0742-nepal-aid",
+    "publishedAt": "2026-08-27T07:42:00+03:00",
+    "time": "07:42",
+    "title": "מדינות וארגונים מתחילים להזרים כסף וציוד חירום לנפאל",
+    "source": "Reuters",
+    "articleId": "nepal-global-aid",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-0743-cook-islands-election",
+    "publishedAt": "2026-08-27T07:43:00+03:00",
+    "time": "07:43",
+    "title": "מפלגת איי קוק זכתה בכהונה חמישית עם 13 מתוך 24 מושבים",
+    "source": "Reuters",
+    "articleId": "cook-islands-election-result",
+    "urgent": false
   }
 ];
