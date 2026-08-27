@@ -1133,4 +1133,50 @@ window.BREAKING_ARCHIVE = [
     "articleId": "cook-islands-election-result",
     "urgent": false
   }
+,
+  {
+    "id": "flash-20260827-0806-iran-six-months",
+    "publishedAt": "2026-08-27T08:06:00+03:00",
+    "time": "08:06",
+    "title": "שישה חודשים למלחמה באיראן: Reuters מצביע על קיפאון והעמקת המחיר הפוליטי והכלכלי",
+    "source": "Reuters",
+    "articleId": "iran-war-six-months",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-0906-war-market-impact",
+    "publishedAt": "2026-08-27T09:06:00+03:00",
+    "time": "09:06",
+    "title": "ניתוח: המלחמה באיראן זעזעה את האנרגיה והדשנים, אך בום ה־AI תמך במניות",
+    "source": "Reuters",
+    "articleId": "iran-war-market-impact",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0929-poland-meta-fine",
+    "publishedAt": "2026-08-27T09:29:00+03:00",
+    "time": "09:29",
+    "title": "פולין ביקשה מהאיחוד האירופי לקנוס את Meta ב־250 מיליון אירו",
+    "source": "Reuters",
+    "articleId": "poland-meta-eu-fine",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0931-indonesia-protests",
+    "publishedAt": "2026-08-27T09:31:00+03:00",
+    "time": "09:31",
+    "title": "אינדונזיה הגבירה אבטחה עם חזרת הפגנות הסטודנטים בג׳קרטה ובערים נוספות",
+    "source": "Reuters",
+    "articleId": "indonesia-protests-security",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0940-meta-youth-global",
+    "publishedAt": "2026-08-27T09:40:00+03:00",
+    "time": "09:40",
+    "title": "הרגולטור בדרום קוריאה דורש שהגנות הנוער של Meta יחולו בכל העולם",
+    "source": "Reuters",
+    "articleId": "meta-youth-protection-global",
+    "urgent": false
+  }
 ];
