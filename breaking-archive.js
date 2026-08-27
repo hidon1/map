@@ -1340,5 +1340,68 @@ window.BREAKING_ARCHIVE = [
     "source": "Reuters",
     "articleId": "malaysia-myanmar-repatriation",
     "urgent": false
+  },
+  {
+    "id": "flash-20260827-1702-sk-hynix-indiana",
+    "publishedAt": "2026-08-27T17:02:16+03:00",
+    "time": "17:02",
+    "title": "SK Hynix החלה להקים באינדיאנה מתקן שבבי AI בהשקעה של יותר מ־4 מיליארד דולר",
+    "source": "Reuters",
+    "articleId": "sk-hynix-indiana-ai-chip-facility",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1703-openai-nvidia-g20",
+    "publishedAt": "2026-08-27T17:03:25+03:00",
+    "time": "17:03",
+    "title": "מנכ״לי OpenAI ואנבידיה ישתתפו בשבוע הבא במפגש G20 ממוקד טכנולוגיה",
+    "source": "Reuters",
+    "articleId": "openai-nvidia-g20-tech-meeting",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1732-mladic-confirmed",
+    "publishedAt": "2026-08-27T17:32:00+03:00",
+    "time": "17:32",
+    "title": "עדכון ואימות: עורך דינו של רטקו מלאדיץ׳ אישר את מותו",
+    "source": "Reuters",
+    "articleId": "mladic-death-confirmed-reactions",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-1733-fed-jackson-hole",
+    "publishedAt": "2026-08-27T17:33:16+03:00",
+    "time": "17:33",
+    "title": "בכירי הפד בפתח ג׳קסון הול: האינפלציה עדיין עיקשת ומעל היעד",
+    "source": "Reuters",
+    "articleId": "fed-jackson-hole-inflation-warning",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1738-us-mail-voting",
+    "publishedAt": "2026-08-27T17:38:00+03:00",
+    "time": "17:38",
+    "title": "שירות הדואר האמריקני: מגבלות חדשות על הצבעה בדואר נכנסו לתוקף",
+    "source": "Reuters",
+    "articleId": "us-mail-voting-rules-effective",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1746-un-us-dues",
+    "publishedAt": "2026-08-27T17:46:21+03:00",
+    "time": "17:46",
+    "title": "גוטרש: תשלום אמריקני של מאות מיליוני דולרים לתקציב האו״ם צפוי בקרוב",
+    "source": "Reuters",
+    "articleId": "un-us-dues-payment-expected",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1747-correction-nepal-362",
+    "publishedAt": "2026-08-27T17:47:11+03:00",
+    "time": "17:47",
+    "title": "תיקון ועדכון נוסף: לפחות 362 הרוגים באסון נפאל–טיבט; שני אגמים מאיימים להיפרץ",
+    "source": "Reuters",
+    "articleId": "nepal-china-flood-risk-362",
+    "urgent": true
   }
 ];
