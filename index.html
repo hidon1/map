@@ -1488,7 +1488,7 @@
       .newsroom-v3 .article-reading { padding: 22px 18px 48px; }
       .newsroom-v3 .article-reading .standfirst { font-size: 1.12rem; }
     }
-  
+
     /* Newsroom 4.0 — rotating analysis and professional score centre */
     .newsroom-v3 .analysis-rail {
       position: relative;
@@ -1638,6 +1638,18 @@
       box-shadow: inset 0 1px #fff;
     }
     [data-theme="dark"] .newsroom-v3 .score-goal { color: #f8fbff; background: #10263b; box-shadow: none; }
+    .newsroom-v3 .score-kickoff {
+      grid-column: 2 / 5;
+      justify-self: center;
+      min-width: 92px;
+      padding: 8px 13px;
+      border: 1px solid color-mix(in srgb, #52677d 28%, var(--line));
+      border-radius: 999px;
+      color: var(--ink);
+      background: color-mix(in srgb, var(--paper) 88%, #e8eef4);
+      text-align: center;
+      font: 900 .72rem/1.2 "Noto Sans Hebrew", sans-serif;
+    }
     .score-divider { color: var(--muted); font-weight: 950; }
     .score-result-meta { border-right: 1px solid var(--line); padding-right: 12px; }
     .score-aggregate { color: var(--ink); font-size: .62rem; font-weight: 900; }
@@ -1997,9 +2009,17 @@
           const home = teams[0] || "—", away = teams[1] || "—";
           const homeScore = score[0] ?? "—", awayScore = score[1] ?? "—";
           const homeMeta = resolvedTeamMeta(home,item,"home"), awayMeta = resolvedTeamMeta(away,item,"away");
-          const detail = [item.aggregate, item.penalties].filter(Boolean).join(" · ");
+          const penalties = Array.isArray(item.penalties) ? `פנדלים ${item.penalties[0]}–${item.penalties[1]}` : item.penalties;
+          const detail = [item.aggregate, penalties].filter(Boolean).join(" · ");
           const url = safeUrl(item.sourceUrl);
-          return `<a class="score-row state-${group.id}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="--score-delay:${Math.min(item._index * 45,315)}ms"><div class="score-context"><span class="score-league-chip">${escapeHtml(item.league)}</span><span class="score-date">${escapeHtml(item.dateLabel || "")}</span></div><div class="score-match" aria-label="${escapeHtml(home)} ${escapeHtml(homeScore)}, ${escapeHtml(away)} ${escapeHtml(awayScore)}"><span class="score-team home">${teamCrest(home,homeMeta)}<span class="team-name">${escapeHtml(home)}</span></span><span class="score-goal">${escapeHtml(homeScore)}</span><span class="score-divider">:</span><span class="score-goal">${escapeHtml(awayScore)}</span><span class="score-team away">${teamCrest(away,awayMeta)}<span class="team-name">${escapeHtml(away)}</span></span></div><div class="score-result-meta"><span class="score-status ${group.id === "live" ? "live" : ""}"><i></i>${escapeHtml(item.status || group.note)}</span>${detail ? `<span class="score-aggregate">${escapeHtml(detail)}</span>` : ""}<span class="score-source">${escapeHtml(item.source || "")} ↗</span></div></a>`;
+          const scheduled = group.id === "scheduled";
+          const result = scheduled
+            ? `<span class="score-kickoff">${escapeHtml(item.kickoff || item.status || "טרם החל")}</span>`
+            : `<span class="score-goal">${escapeHtml(homeScore)}</span><span class="score-divider">:</span><span class="score-goal">${escapeHtml(awayScore)}</span>`;
+          const ariaLabel = scheduled
+            ? `${home} נגד ${away}, ${item.status || item.kickoff || "טרם החל"}`
+            : `${home} ${homeScore}, ${away} ${awayScore}`;
+          return `<a class="score-row state-${group.id}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="--score-delay:${Math.min(item._index * 45,315)}ms"><div class="score-context"><span class="score-league-chip">${escapeHtml(item.league)}</span><span class="score-date">${escapeHtml(item.dateLabel || "")}</span></div><div class="score-match" aria-label="${escapeHtml(ariaLabel)}"><span class="score-team home">${teamCrest(home,homeMeta)}<span class="team-name">${escapeHtml(home)}</span></span>${result}<span class="score-team away">${teamCrest(away,awayMeta)}<span class="team-name">${escapeHtml(away)}</span></span></div><div class="score-result-meta"><span class="score-status ${group.id === "live" ? "live" : ""}"><i></i>${escapeHtml(item.status || group.note)}</span>${detail ? `<span class="score-aggregate">${escapeHtml(detail)}</span>` : ""}<span class="score-source">${escapeHtml(item.source || "")} ↗</span></div></a>`;
         }).join("");
         return `<section class="score-group score-group-${group.id}"><div class="score-group-head"><div><span class="score-group-icon">${group.icon}</span><strong>${group.label}</strong></div><span>${groupItems.length} משחקים · ${group.note}</span></div><div class="score-group-list">${rows}</div></section>`;
       }).join("");
@@ -2008,6 +2028,13 @@
     function pollTotal(poll) { return Object.values(poll.parties || {}).reduce((sum, seats) => sum + (Number(seats) || 0), 0); }
     function validPolls() { return (NEWS_FEED.polls || []).filter(poll => poll && poll.parties && pollTotal(poll) === 120); }
     function pollDateText(value) { const date = new Date(`${value}T12:00:00+03:00`); return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString("he-IL", { day:"numeric", month:"long", year:"numeric" }); }
+    function pollFieldworkText(poll) {
+      const start = poll.fieldworkDate || "";
+      const end = poll.fieldworkEndDate || "";
+      if (!start) return poll.isAverage ? "" : "לא פורסם במקור";
+      if (!end || end === start) return pollDateText(start);
+      return `${pollDateText(start)}–${pollDateText(end)}`;
+    }
     function pollFreshness(poll) {
       if (poll.isAverage) return `ממוצע ${poll.pollCount} סקרים תקינים`;
       const published = new Date(`${poll.publishedDate || poll.date}T12:00:00+03:00`).getTime();
@@ -2094,11 +2121,11 @@
     }
     function pollMetadataHtml(poll) {
   const publicationDate = poll.publishedDate || poll.date;
-  const fieldworkDate = poll.fieldworkDate || "";
+  const fieldworkText = pollFieldworkText(poll);
   const verifiedAt = poll.verifiedAt ? new Date(poll.verifiedAt) : null;
   const parts = [
     `<span>${poll.isAverage ? `עדכני לסקר האחרון מ־${pollDateText(poll.date)}` : `פורסם ב־${pollDateText(publicationDate)}`}</span>`,
-    !poll.isAverage && fieldworkDate ? `<span>עבודת שדה: ${pollDateText(fieldworkDate)}</span>` : "",
+    !poll.isAverage && fieldworkText ? `<span>עבודת שדה: ${fieldworkText}</span>` : "",
     poll.pollster ? `<span>עורך הסקר: ${escapeHtml(poll.pollster)}</span>` : "",
     poll.isAverage ? `<span>${poll.pollCount} גופי תקשורת ופרסומים אחרונים</span>` : "",
     !poll.isAverage && verifiedAt && Number.isFinite(verifiedAt.getTime()) ? `<span>נבדק מחדש: ${verifiedAt.toLocaleDateString("he-IL",{day:"numeric",month:"numeric",year:"numeric"})}</span>` : ""

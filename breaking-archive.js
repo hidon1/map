@@ -1403,5 +1403,122 @@ window.BREAKING_ARCHIVE = [
     "source": "Reuters",
     "articleId": "nepal-china-flood-risk-362",
     "urgent": true
+  },
+  {
+    "articleId": "idf-eliminates-hostage-captor-barem-20260827",
+    "id": "flash-20260827-1757-idf-barem",
+    "publishedAt": "2026-08-27T17:57:00+03:00",
+    "source": "כיכר השבת · דובר צה״ל",
+    "time": "17:57",
+    "title": "צה״ל חיסל את מפקד חמאס אסמאעיל מוחמד אבראהים בארים, שהחזיק בשלושה חטופים",
+    "urgent": true
+  },
+  {
+    "articleId": "tropical-storm-dolly-atlantic-20260827",
+    "id": "flash-20260827-1800-tropical-storm-dolly",
+    "publishedAt": "2026-08-27T18:00:00+03:00",
+    "source": "Reuters · NHC",
+    "time": "18:00",
+    "title": "המרכז הלאומי להוריקנים: הסופה הטרופית דולי נוצרה במרכז האוקיינוס האטלנטי",
+    "urgent": false
+  },
+  {
+    "articleId": "hero-ather-stake-expansion-20260827",
+    "id": "flash-20260827-1826-hero-ather",
+    "publishedAt": "2026-08-27T18:26:54+03:00",
+    "source": "Reuters",
+    "time": "18:26",
+    "title": "Hero MotoCorp תשקיע עוד כ־184 מיליון דולר ב־Ather Energy",
+    "urgent": false
+  },
+  {
+    "articleId": "quebec-election-october-separatists-20260827",
+    "id": "flash-20260827-1836-quebec-election",
+    "publishedAt": "2026-08-27T18:36:00+03:00",
+    "source": "Reuters",
+    "time": "18:36",
+    "title": "קוויבק תקיים בחירות ב־5 באוקטובר; הבדלנים מובילים בסקרים",
+    "urgent": false
+  },
+  {
+    "articleId": "nvidia-employee-pac-nvpac-20260827",
+    "id": "flash-20260827-1838-nvidia-pac",
+    "publishedAt": "2026-08-27T18:38:35+03:00",
+    "source": "Reuters",
+    "time": "18:38",
+    "title": "Nvidia מקימה בארה״ב ועדת פעולה פוליטית במימון תרומות עובדים",
+    "urgent": false
+  },
+  {
+    "articleId": "chad-sudan-cross-border-strike-alert-20260827",
+    "id": "flash-20260827-1846-chad-sudan",
+    "publishedAt": "2026-08-27T18:46:00+03:00",
+    "source": "Reuters",
+    "time": "18:46",
+    "title": "צ׳אד האשימה את סודאן בתקיפה חוצת גבול והעלתה את רמת הכוננות",
+    "urgent": true
+  },
+  {
+    "articleId": "uman-rosh-hashanah-emergency-preparations-20260827",
+    "id": "flash-20260827-1851-uman-preparations",
+    "publishedAt": "2026-08-27T18:51:00+03:00",
+    "source": "כיכר השבת",
+    "time": "18:51",
+    "title": "באומן הושלמו הכנות חירום לראש השנה בהשתתפות כ־300 מתנדבי איחוד הצלה",
+    "urgent": false
+  },
+  {
+    "articleId": "russia-grain-export-rescue-scepticism-20260827",
+    "id": "flash-20260827-1858-russia-grain",
+    "publishedAt": "2026-08-27T18:58:00+03:00",
+    "source": "Reuters",
+    "time": "18:58",
+    "title": "חקלאים וסוחרים ברוסיה מטילים ספק בצעדי הממשלה להצלת יצוא התבואה",
+    "urgent": false
+  },
+  {
+    "articleId": "google-uk-play-developer-settlement-20260827",
+    "id": "flash-20260827-1911-google-uk-settlement",
+    "publishedAt": "2026-08-27T19:11:38+03:00",
+    "source": "Reuters",
+    "time": "19:11",
+    "title": "Google הסכימה להסדר של 353 מיליון ליש״ט בתביעת מפתחי אפליקציות בבריטניה",
+    "urgent": false
+  },
+  {
+    "articleId": "netanyahu-right-unity-call-20260827",
+    "id": "flash-20260827-1928-right-unity",
+    "publishedAt": "2026-08-27T19:28:00+03:00",
+    "source": "כיכר השבת",
+    "time": "19:28",
+    "title": "נתניהו קרא לסמוטריץ׳ ולבן גביר להתאחד והודיע שיזמן אותם לפגישה",
+    "urgent": true
+  },
+  {
+    "articleId": "eu-frozen-assets-debate-reopens-20260827",
+    "id": "flash-20260827-1948-eu-frozen-assets",
+    "publishedAt": "2026-08-27T19:48:00+03:00",
+    "source": "Reuters",
+    "time": "19:48",
+    "title": "ארבע מדינות באיחוד האירופי ביקשו לפתוח מחדש את הדיון בנכסים הרוסיים המוקפאים",
+    "urgent": false
+  },
+  {
+    "articleId": "canada-current-account-surplus-20260827",
+    "id": "flash-20260827-1950-canada-surplus",
+    "publishedAt": "2026-08-27T19:50:57+03:00",
+    "source": "Reuters",
+    "time": "19:50",
+    "title": "קנדה דיווחה על מעבר מפתיע לעודף בחשבון השוטף; הדולר הקנדי התחזק",
+    "urgent": false
+  },
+  {
+    "articleId": "tech-companies-ai-cyber-defense-letter-20260827",
+    "id": "flash-20260827-2002-ai-cyber-defense",
+    "publishedAt": "2026-08-27T20:02:00+03:00",
+    "source": "Reuters",
+    "time": "20:02",
+    "title": "חברות טכנולוגיה גדולות קראו להאיץ פריסת כלי AI להגנת סייבר",
+    "urgent": false
   }
 ];
