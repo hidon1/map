@@ -2019,7 +2019,7 @@
           const homeScore = score[0] ?? "—", awayScore = score[1] ?? "—";
           const homeMeta = resolvedTeamMeta(home,item,"home"), awayMeta = resolvedTeamMeta(away,item,"away");
           const penalties = Array.isArray(item.penalties) ? `פנדלים ${item.penalties[0]}–${item.penalties[1]}` : item.penalties;
-          const detail = [item.aggregate, penalties].filter(Boolean).join(" · ");
+          const detail = [item.aggregate ? `סיכום: ${item.aggregate}` : "", penalties].filter(Boolean).join(" · ");
           const url = safeUrl(item.sourceUrl);
           const scheduled = group.id === "scheduled";
           const winner = item.winner || (!scheduled && Number.isFinite(Number(homeScore)) && Number.isFinite(Number(awayScore)) && Number(homeScore) !== Number(awayScore) ? (Number(homeScore) > Number(awayScore) ? "home" : "away") : "");

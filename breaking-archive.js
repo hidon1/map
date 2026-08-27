@@ -1,4 +1,3 @@
-/* Permanent breaking-news history. Append only; never remove or rewrite existing entries. */
 window.BREAKING_ARCHIVE = [
   {
     "articleId": "ivory-coast-cocoa-delay",
@@ -1609,5 +1608,113 @@ window.BREAKING_ARCHIVE = [
     "time": "21:55",
     "title": "הנפט זינק לאחר שהבית הלבן הבהיר כי אין כעת שיחות עם איראן",
     "urgent": false
+  },
+  {
+    "articleId": "ronen-bar-direct-hamas-talks-0215-20260828",
+    "id": "flash-20260827-2210-ronen-bar-talks",
+    "publishedAt": "2026-08-27T22:10:00+03:00",
+    "source": "חדשות 12 · The Times of Israel",
+    "time": "22:10",
+    "title": "הצנזורה התירה לפרסם: רונן בר ניהל מגעים ישירים עם חמאס באישור הדרג המדיני",
+    "urgent": false
+  },
+  {
+    "articleId": "idf-hamas-commanders-killed-0215-20260828",
+    "id": "flash-20260827-2217-idf-hamas-commanders",
+    "publishedAt": "2026-08-27T22:17:00+03:00",
+    "source": "דובר צה״ל · The Times of Israel",
+    "time": "22:17",
+    "title": "צה״ל הודיע כי שני מפקדי חמאס נהרגו בתקיפות ברצועת עזה",
+    "urgent": false
+  },
+  {
+    "articleId": "haredi-light-rail-riot-0215-20260828",
+    "id": "flash-20260827-2324-light-rail-riot",
+    "publishedAt": "2026-08-27T23:24:00+03:00",
+    "source": "משטרת ישראל · The Times of Israel",
+    "time": "23:24",
+    "title": "אדם נעצר בחשד להצתה במחאת קיצונים נגד עבודות הרכבת הקלה ברחוב בר־אילן",
+    "urgent": false
+  },
+  {
+    "articleId": "us-bank-unsafe-practices-rules-0215-20260828",
+    "id": "flash-20260827-2354-us-bank-rules",
+    "publishedAt": "2026-08-27T23:54:00+03:00",
+    "source": "Reuters",
+    "time": "23:54",
+    "title": "רגולטורי הבנקים בארה״ב השלימו הגדרה רשמית לנוהג בנקאי לא בטוח ולא תקין",
+    "urgent": false
+  },
+  {
+    "articleId": "us-carrier-middle-east-0215-20260828",
+    "id": "flash-20260827-2358-carrier-deployment",
+    "publishedAt": "2026-08-27T23:58:00+03:00",
+    "source": "USNI News · The Times of Israel",
+    "time": "23:58",
+    "title": "דיווח: נושאת המטוסים תיאודור רוזוולט תצא לפריסה של יותר משבעה חודשים במזרח התיכון",
+    "urgent": true
+  },
+  {
+    "articleId": "syria-beit-jinn-shelling-0215-20260828",
+    "id": "flash-20260828-0010-syria-beit-jinn",
+    "publishedAt": "2026-08-28T00:10:00+03:00",
+    "source": "The Times of Israel · Sham TV",
+    "time": "00:10",
+    "title": "דיווח: שני פגזים ישראליים נורו לעבר גבעה ליד בית ג׳ן בדרום סוריה; אין נפגעים",
+    "urgent": false
+  },
+  {
+    "articleId": "anthropic-matx-deal-abandoned-0215-20260828",
+    "id": "flash-20260828-0022-anthropic-matx",
+    "publishedAt": "2026-08-28T00:22:00+03:00",
+    "source": "Reuters",
+    "time": "00:22",
+    "title": "Anthropic נסוגה מרכישה אפשרית של MatX בכ־7 מיליארד דולר ומנהלת שיחות על שותפות",
+    "urgent": false
+  },
+  {
+    "articleId": "venezuela-oil-access-deal-0215-20260828",
+    "id": "flash-20260828-0053-venezuela-oil",
+    "publishedAt": "2026-08-28T00:53:00+03:00",
+    "source": "Reuters",
+    "time": "00:53",
+    "title": "מקורות: ארה״ב מתקרבת להסכם לגישה ארוכת טווח לעתודות הנפט של ונצואלה",
+    "urgent": true
+  },
+  {
+    "articleId": "un-palestine-action-designation-0215-20260828",
+    "id": "flash-20260828-0058-un-palestine-action",
+    "publishedAt": "2026-08-28T00:58:00+03:00",
+    "source": "Reuters",
+    "time": "00:58",
+    "title": "משרד זכויות האדם של האו״ם תקף את ההגדרה האמריקנית של Palestine Action כארגון טרור",
+    "urgent": false
+  },
+  {
+    "articleId": "air-new-zealand-loss-0215-20260828",
+    "id": "flash-20260828-0105-air-new-zealand-loss",
+    "publishedAt": "2026-08-28T01:05:00+03:00",
+    "source": "Reuters",
+    "time": "01:05",
+    "title": "Air New Zealand רשמה הפסד שנתי של 336 מיליון דולר ניו־זילנדי לפני מס",
+    "urgent": false
+  },
+  {
+    "articleId": "nvidia-pauses-cloud-deals-0215-20260828",
+    "id": "flash-20260828-0131-nvidia-cloud-deals",
+    "publishedAt": "2026-08-28T01:31:00+03:00",
+    "source": "Reuters · Wall Street Journal",
+    "time": "01:31",
+    "title": "דיווח: אנבידיה הקפיאה חלק מעסקאות מימון וחלוקת הכנסות עם חברות ענן AI",
+    "urgent": false
+  },
+  {
+    "articleId": "nepal-australia-aid-0215-20260828",
+    "id": "flash-20260828-0149-australia-nepal-aid",
+    "publishedAt": "2026-08-28T01:49:00+03:00",
+    "source": "Reuters",
+    "time": "01:49",
+    "title": "אוסטרליה הודיעה על 3.6 מיליון דולר סיוע לנפאל; מספר אזרחיה הנעדרים עלה ל־39",
+    "urgent": true
   }
 ];
