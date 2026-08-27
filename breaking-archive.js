@@ -907,5 +907,140 @@ window.BREAKING_ARCHIVE = [
     "source": "חדשות 12",
     "articleId": "ofer-winter-party-poll",
     "urgent": false
+  },
+  {
+    "id": "flash-20260827-0553-thinking-machines-google",
+    "publishedAt": "2026-08-27T05:53:00+03:00",
+    "time": "05:53",
+    "title": "ממייסדי Thinking Machines Lab, בארט זוף, עובר ל־Google DeepMind",
+    "source": "Reuters",
+    "articleId": "thinking-machines-zoph-google",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0528-shein-ipo",
+    "publishedAt": "2026-08-27T05:28:00+03:00",
+    "time": "05:28",
+    "title": "Shein צפויה לגייס 1.73 מיליארד דולר בהנפקה בהונג קונג",
+    "source": "Reuters",
+    "articleId": "shein-hong-kong-ipo",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0526-brewers-mets",
+    "publishedAt": "2026-08-27T05:26:00+03:00",
+    "time": "05:26",
+    "title": "מילווקי הביסה את ניו יורק מטס 8:1; הבולפן כיסה כמעט משחק שלם",
+    "source": "Reuters · MLB",
+    "articleId": "brewers-beat-mets-8-1",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0525-yankees-astros",
+    "publishedAt": "2026-08-27T05:25:00+03:00",
+    "time": "05:25",
+    "title": "היאנקיז ניצחו 9:3 ביוסטון עם ארבע ריצות באינינג השביעי",
+    "source": "Reuters · MLB",
+    "articleId": "yankees-beat-astros-9-3",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0518-qantas-demand",
+    "publishedAt": "2026-08-27T05:18:00+03:00",
+    "time": "05:18",
+    "title": "קוואנטס מדווחת על התאוששות בביקוש לקווים בין אוסטרליה לארה״ב",
+    "source": "Reuters",
+    "articleId": "qantas-us-demand-rebound",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0459-asia-markets",
+    "publishedAt": "2026-08-27T04:59:00+03:00",
+    "time": "04:59",
+    "title": "מניות אסיה עולות אחרי דוחות אנבידיה; הזהב עלה ל־4,624.14 דולר",
+    "source": "Reuters",
+    "articleId": "asia-markets-nvidia-beat",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0451-kyiv-attack",
+    "publishedAt": "2026-08-27T04:51:00+03:00",
+    "time": "04:51",
+    "title": "פיצוצים נשמעו בקייב במהלך מתקפת טילים וכטב״מים רוסית",
+    "source": "Reuters",
+    "articleId": "kyiv-overnight-attack",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-0450-softbank-1x",
+    "publishedAt": "2026-08-27T04:50:00+03:00",
+    "time": "04:50",
+    "title": "דיווח: סופטבנק במגעים לרכישת רוב ב־1X לפי שווי של 6 מיליארד דולר",
+    "source": "Reuters · The Information",
+    "articleId": "softbank-1x-talks",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0444-kkr-settlement",
+    "publishedAt": "2026-08-27T04:44:00+03:00",
+    "time": "04:44",
+    "title": "KKR תשלם 250 מיליון דולר בהסדר על הפרות דיווח מיזוגים",
+    "source": "Reuters",
+    "articleId": "kkr-antitrust-settlement",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0437-china-profits",
+    "publishedAt": "2026-08-27T04:37:00+03:00",
+    "time": "04:37",
+    "title": "צמיחת רווחי התעשייה בסין האטה; ענפים הקשורים ל־AI ממשיכים להוביל",
+    "source": "Reuters",
+    "articleId": "china-industrial-profits-july",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0420-oil-falls",
+    "publishedAt": "2026-08-27T04:20:00+03:00",
+    "time": "04:20",
+    "title": "ברנט ו־WTI ירדו 0.7% על ציפייה להתקדמות בתיווך מול איראן",
+    "source": "Reuters",
+    "articleId": "oil-falls-qatar-iran-talks",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0408-bok-hike",
+    "publishedAt": "2026-08-27T04:08:00+03:00",
+    "time": "04:08",
+    "title": "הבנק המרכזי של דרום קוריאה העלה את הריבית ל־3%",
+    "source": "Reuters",
+    "articleId": "bok-rate-hike-august",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0345-nvidia-huggingface",
+    "publishedAt": "2026-08-27T03:45:00+03:00",
+    "time": "03:45",
+    "title": "דיווח: אנבידיה הסכימה לרכוש את Hugging Face ב־12.9 מיליארד דולר",
+    "source": "Reuters · The Information",
+    "articleId": "nvidia-hugging-face-deal",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0309-dollar-high",
+    "publishedAt": "2026-08-27T03:09:00+03:00",
+    "time": "03:09",
+    "title": "הדולר קרוב לשיא של שמונה ימים לפני נאומי הבנקים המרכזיים",
+    "source": "Reuters",
+    "articleId": "dollar-eight-day-high",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-0215-qatar-iran",
+    "publishedAt": "2026-08-27T02:15:00+03:00",
+    "time": "02:15",
+    "title": "ראש ממשלת קטאר מגיע לטהרן בניסיון להניע מחדש את התיווך",
+    "source": "Reuters",
+    "articleId": "qatar-iran-mediation",
+    "urgent": false
   }
 ];
