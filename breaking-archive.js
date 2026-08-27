@@ -1223,5 +1223,50 @@ window.BREAKING_ARCHIVE = [
     "source": "Reuters",
     "articleId": "nepal-flood-160-dead-1500-missing",
     "urgent": true
+  },
+  {
+    "id": "flash-20260827-1205-russia-uk-targets",
+    "publishedAt": "2026-08-27T12:05:00+03:00",
+    "time": "12:05",
+    "title": "רוסיה איימה לתקוף מטרות בריטיות בתגובה לשימוש אוקראיני בטילים בריטיים",
+    "source": "Reuters",
+    "articleId": "russia-threatens-uk-targets",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-1228-us-chip-tariffs",
+    "publishedAt": "2026-08-27T12:28:00+03:00",
+    "time": "12:28",
+    "title": "דיווח: ממשל טראמפ שוקל מכסים רחבים על שבבים ומוצרים המשתמשים בהם",
+    "source": "Reuters · Politico",
+    "articleId": "us-chip-tariffs-report",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1241-ukraine-talks",
+    "publishedAt": "2026-08-27T12:41:00+03:00",
+    "time": "12:41",
+    "title": "בכיר אוקראיני: שיחות עם רוסיה עשויות להתחדש בספטמבר בהשתתפות ארה״ב",
+    "source": "Reuters",
+    "articleId": "ukraine-russia-talks-september",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260827-1336-correction-nepal-270",
+    "publishedAt": "2026-08-27T13:36:00+03:00",
+    "time": "13:36",
+    "title": "תיקון ועדכון: מניין ההרוגים באסון נפאל–טיבט עלה ללפחות 270; יותר מאלף נעדרים",
+    "source": "Reuters",
+    "articleId": "nepal-flood-270-dead-update",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260827-1338-ozon-ufa",
+    "publishedAt": "2026-08-27T13:38:00+03:00",
+    "time": "13:38",
+    "title": "רחפן גרם נזק קל למרכז הלוגיסטי של Ozon באופה והשבית אותו זמנית",
+    "source": "Reuters",
+    "articleId": "ozon-ufa-drone-damage",
+    "urgent": false
   }
 ];
