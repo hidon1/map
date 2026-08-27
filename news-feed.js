@@ -1,9 +1,9 @@
 window.NEWS_FEED = {
   "meta": {
-    "updatedAt": "2026-08-27T17:59:36+03:00",
-    "edition": "מהדורת ערב מוקדמת",
+    "updatedAt": "2026-08-27T18:27:00+03:00",
+    "edition": "מהדורת ערב · ממשק ספורט ופרשנות",
     "locale": "he-IL",
-    "contentPolicy": "כל המדורים מתחלפים בכל מהדורה; ארכיון המבזקים בלבד נשמר לצמיתות"
+    "contentPolicy": "כל הכתבות מתחלפות בכל מהדורה; רק פריטים חריגים ברלוונטיות נשארים לאחר אימות מחדש. ארכיון המבזקים בלבד נשמר לצמיתות"
   },
   "markets": [
     {
@@ -73,56 +73,190 @@ window.NEWS_FEED = {
   ],
   "scores": [
     {
+      "id": "ucl-sabah-hapoel-bs-20260825",
+      "state": "final",
+      "league": "ליגת האלופות · פלייאוף",
+      "teams": [
+        "סבאח",
+        "הפועל באר שבע"
+      ],
+      "score": [
+        "5",
+        "2"
+      ],
+      "status": "סופי לאחר הארכה",
+      "dateLabel": "25.08",
+      "aggregate": "6–4 לסבאח",
+      "winner": "home",
+      "source": "UEFA",
+      "sourceUrl": "https://www.uefa.com/uefachampionsleague/match/2049219--sabah-vs-h-beer-sheva/",
+      "homeColor": "#154734",
+      "awayColor": "#D71920"
+    },
+    {
+      "id": "ucl-aek-levski-20260826",
+      "state": "final",
+      "league": "ליגת האלופות · פלייאוף",
+      "teams": [
+        "א.א.ק אתונה",
+        "לבסקי סופיה"
+      ],
+      "score": [
+        "4",
+        "0"
+      ],
+      "status": "סופי",
+      "dateLabel": "26.08",
+      "aggregate": "4–0 לא.א.ק",
+      "winner": "home",
+      "source": "UEFA",
+      "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-216f6e7c7e3c-fa74783c353d-1000--champions-league-play-off-second-legs-round-up-fenerbahce/",
+      "homeColor": "#F4D20B",
+      "awayColor": "#1666B1"
+    },
+    {
+      "id": "ucl-viking-dinamo-20260826",
+      "state": "final",
+      "league": "ליגת האלופות · פלייאוף",
+      "teams": [
+        "ויקינג",
+        "דינמו זאגרב"
+      ],
+      "score": [
+        "3",
+        "1"
+      ],
+      "status": "סופי",
+      "dateLabel": "26.08",
+      "aggregate": "5–3 לוויקינג",
+      "winner": "home",
+      "source": "UEFA",
+      "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a6-20e5a8be4e63-ae971c582f8c-1000--champions-league-qualifying-results-how-it-worked/",
+      "homeColor": "#0B4A8B",
+      "awayColor": "#005BAC"
+    },
+    {
+      "id": "ucl-celje-slovan-20260826",
+      "state": "final",
+      "league": "ליגת האלופות · פלייאוף",
+      "teams": [
+        "צליה",
+        "סלובן ברטיסלבה"
+      ],
+      "score": [
+        "1",
+        "2"
+      ],
+      "status": "סופי לאחר הארכה",
+      "dateLabel": "26.08",
+      "aggregate": "2–3 בסיכום · סלובן עלתה",
+      "winner": "away",
+      "source": "UEFA",
+      "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a6-20e5a8be4e63-ae971c582f8c-1000--champions-league-qualifying-results-how-it-worked/",
+      "homeColor": "#F2C600",
+      "awayColor": "#60A7E8"
+    },
+    {
+      "id": "ucl-lyon-fenerbahce-20260826",
+      "state": "final",
+      "league": "ליגת האלופות · פלייאוף",
+      "teams": [
+        "ליון",
+        "פנרבחצ׳ה"
+      ],
+      "score": [
+        "1",
+        "2"
+      ],
+      "status": "סופי",
+      "dateLabel": "26.08",
+      "aggregate": "2–3 בסיכום · פנרבחצ׳ה עלתה",
+      "winner": "away",
+      "source": "UEFA",
+      "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-216f6e7c7e3c-fa74783c353d-1000--champions-league-play-off-second-legs-round-up-fenerbahce/",
+      "homeColor": "#17488B",
+      "awayColor": "#FFED00"
+    },
+    {
+      "id": "uecl-rapid-hearts-20260826",
+      "state": "final",
+      "league": "קונפרנס ליג · פלייאוף",
+      "teams": [
+        "ראפיד וינה",
+        "הארטס"
+      ],
+      "score": [
+        "2",
+        "2"
+      ],
+      "status": "סופי לאחר הארכה ופנדלים",
+      "dateLabel": "26.08",
+      "aggregate": "4–4 בסיכום",
+      "penalties": "3–4 להארטס",
+      "winner": "away",
+      "source": "UEFA",
+      "sourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a6-20e5e911587f-cc10425958b3-1000--conference-league-qualifying-fixtures-results-dates-how-it-/",
+      "homeColor": "#1D9A49",
+      "awayColor": "#7A263A"
+    },
+    {
+      "id": "efl-tottenham-charlton-20260826",
+      "state": "final",
+      "league": "גביע הליגה האנגלי",
+      "teams": [
+        "טוטנהאם",
+        "צ׳רלטון"
+      ],
+      "score": [
+        "5",
+        "1"
+      ],
+      "status": "סופי",
+      "dateLabel": "26.08",
+      "winner": "home",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/soccer/spurs-win-big-then-draw-liverpool-league-cup-2026-08-26/",
+      "homeColor": "#132257",
+      "awayColor": "#D71920"
+    },
+    {
+      "id": "uecl-maccabi-lugano-20260827",
+      "state": "scheduled",
       "league": "קונפרנס ליג · פלייאוף",
       "teams": [
         "מכבי תל אביב",
         "לוגאנו"
       ],
-      "score": "—",
-      "status": "היום 19:00 · מכבי בפיגור 2–1 מהמשחק הראשון",
+      "score": [
+        "—",
+        "—"
+      ],
+      "status": "היום · 19:00",
+      "dateLabel": "27.08",
+      "aggregate": "מכבי בפיגור 2–1 מהמשחק הראשון",
       "source": "UEFA",
       "sourceUrl": "https://www.uefa.com/uefaconferenceleague/match/2049293--m-tel-aviv-vs-lugano/",
       "homeColor": "#F8D319",
       "awayColor": "#111111"
     },
     {
+      "id": "fiba-israel-poland-20260827",
+      "state": "scheduled",
       "league": "מוקדמות גביע העולם בכדורסל",
       "teams": [
         "ישראל",
         "פולין"
       ],
-      "score": "—",
-      "status": "היום 21:00 שעון ישראל",
+      "score": [
+        "—",
+        "—"
+      ],
+      "status": "היום · 21:00",
+      "dateLabel": "27.08",
       "source": "FIBA",
       "sourceUrl": "https://www.fiba.basketball/en/events/fiba-basketball-world-cup-2027-european-qualifiers/games/127118-ISR-POL",
       "homeColor": "#1A76D2",
       "awayColor": "#D4213D"
-    },
-    {
-      "league": "בונדסליגה · מחזור פתיחה",
-      "teams": [
-        "באיירן מינכן",
-        "שטוטגרט"
-      ],
-      "score": "—",
-      "status": "מחר · משחק פתיחת העונה",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/sports/soccer/bayern-primed-bundesliga-title-defence-schalke-back-big-league-2026-08-27/",
-      "homeColor": "#DC052D",
-      "awayColor": "#E32219"
-    },
-    {
-      "league": "אליפות ארה״ב · מוקדמות גברים",
-      "teams": [
-        "אוטו וירטאנן",
-        "גריגור דימיטרוב"
-      ],
-      "score": "—",
-      "status": "היום · סיבוב מוקדמות שלישי",
-      "source": "ATP",
-      "sourceUrl": "https://www.atptour.com/en/scores/current/us-open/560/daily-schedule",
-      "homeColor": "#1F5AA6",
-      "awayColor": "#2B9348"
     }
   ],
   "polls": [
@@ -620,7 +754,9 @@ window.NEWS_FEED = {
             "הנתון החשוב הבא יהיה מפלס האגמים והאם סכרי הפסולת הטבעיים מחזיקים מעמד."
           ]
         }
-      ]
+      ],
+      "image": "https://eoimages.gsfc.nasa.gov/images/imagerecords/43000/43391/himalaya_ali_2009359_lrg.jpg",
+      "imageCredit": "רכס ההימלאיה בצילום לוויין · NASA Earth Observatory"
     },
     {
       "id": "un-us-dues-payment-expected",
@@ -653,7 +789,9 @@ window.NEWS_FEED = {
             "העברה חלקית עשויה להקל על הלחץ המיידי, אך לא לפתור את המחלוקת."
           ]
         }
-      ]
+      ],
+      "image": "https://www.cesr.org/sites/default/files/AdobeStock_576457213.jpeg.917x516_q85_box-360%2C0%2C5656%2C2982_crop_detail.jpg",
+      "imageCredit": "מטה האו״ם בניו יורק · צילום בניין"
     },
     {
       "id": "us-mail-voting-rules-effective",
@@ -686,7 +824,9 @@ window.NEWS_FEED = {
             "גם הנחיות משלימות של רשויות הבחירות יהיו משמעותיות."
           ]
         }
-      ]
+      ],
+      "image": "https://ucnj.org/wp-content/uploads/2022/10/VBM-2022-1-scaled.jpg",
+      "imageCredit": "מעטפת הצבעה בדואר · מחוז יוניון, ניו ג׳רזי"
     },
     {
       "id": "fed-jackson-hole-inflation-warning",
@@ -719,7 +859,9 @@ window.NEWS_FEED = {
             "נתוני אינפלציה ותעסוקה נוספים יקבעו אם הוויכוח ייטה להעלאה או להמתנה."
           ]
         }
-      ]
+      ],
+      "image": "https://www.federalreserve.gov/photogallery/files/DSC_2627-pw.jpg",
+      "imageCredit": "בניין הפדרל ריזרב בוושינגטון · Federal Reserve"
     },
     {
       "id": "mladic-death-confirmed-reactions",
@@ -752,7 +894,9 @@ window.NEWS_FEED = {
             "הוויכוח הציבורי בבלקן צפוי להתמקד בהנצחה, הכחשה ואחריות היסטורית."
           ]
         }
-      ]
+      ],
+      "image": "https://cdnn21.img.ria.ru/images/148305/48/1483054844_0%3A95%3A1886%3A1156_1920x0_80_0_0_fce911d9f04539a1ad7088f0441b85e6.jpg",
+      "imageCredit": "רטקו מלאדיץ׳ · צילום ארכיון"
     },
     {
       "id": "openai-nvidia-g20-tech-meeting",
@@ -785,7 +929,9 @@ window.NEWS_FEED = {
             "יש לעקוב אחר התחייבויות מעשיות בתחום בטיחות AI, שבבים והשקעות."
           ]
         }
-      ]
+      ],
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3275/19fbb6581d30257fd5a661c641276c7d61293779e28c0ddad65a0ec66589.png",
+      "imageCredit": "מאיץ Nvidia H100 · צילום מוצר"
     },
     {
       "id": "sk-hynix-indiana-ai-chip-facility",
@@ -819,7 +965,9 @@ window.NEWS_FEED = {
             "לוח הזמנים הארוך אומר שההשפעה על ההיצע לא תהיה מיידית."
           ]
         }
-      ]
+      ],
+      "image": "https://cdn.wccftech.com/wp-content/uploads/2024/09/2.-HBM3E.jpg",
+      "imageCredit": "זיכרון HBM3E של SK Hynix · צילום מוצר"
     },
     {
       "id": "sp-india-rating-stable",
@@ -853,7 +1001,9 @@ window.NEWS_FEED = {
             "התקדמות פיסקלית תהיה תנאי חשוב לכל שיפור עתידי בדירוג."
           ]
         }
-      ]
+      ],
+      "image": "https://www.oneindia.com/img/1200x80/2019/12/parliament-1575904714.jpg",
+      "imageCredit": "בניין הפרלמנט בהודו · צילום מוסדי"
     },
     {
       "id": "us-jobless-claims-trade-gap",
@@ -1002,7 +1152,9 @@ window.NEWS_FEED = {
             "כל שינוי ישפיע על שרשראות אספקה ועל השקעות מפעלים בארה״ב."
           ]
         }
-      ]
+      ],
+      "image": "https://hips.hearstapps.com/hmg-prod/images/16x9-hdm-nvdia-015-1608242703.jpg",
+      "imageCredit": "כרטיס מסך של Nvidia · צילום מוצר"
     },
     {
       "secondarySources": [],
@@ -1125,7 +1277,9 @@ window.NEWS_FEED = {
             "גם תפוקת המכרות וביקוש השיא יקבעו את חומרת המצב."
           ]
         }
-      ]
+      ],
+      "image": "https://www.oneindia.com/img/1200x80/2019/12/parliament-1575904714.jpg",
+      "imageCredit": "בניין הפרלמנט בהודו · צילום מוסדי"
     },
     {
       "secondarySources": [],
@@ -1167,7 +1321,9 @@ window.NEWS_FEED = {
             "גם מדיניות המכסים האמריקנית עשויה להשפיע על התמחור."
           ]
         }
-      ]
+      ],
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3275/19fbb6581d30257fd5a661c641276c7d61293779e28c0ddad65a0ec66589.png",
+      "imageCredit": "מאיץ Nvidia H100 · צילום מוצר"
     },
     {
       "id": "haredi-draft-protests-edah",
@@ -1200,7 +1356,9 @@ window.NEWS_FEED = {
             "רמת ההיענות ביום ראשון תקבע אם מדובר בהחרפה ארוכת טווח או באירוע נקודתי."
           ]
         }
-      ]
+      ],
+      "image": "https://timeline.cityofdavid.org.il/wp-content/uploads/2019/03/133-1.jpg",
+      "imageCredit": "משכן הכנסת בירושלים · צילום בניין"
     },
     {
       "secondarySources": [],
@@ -1242,7 +1400,9 @@ window.NEWS_FEED = {
             "הנתונים החשובים יהיו מעבר הספינות בהורמוז ומדדי מחירי המזון בחודשים הקרובים."
           ]
         }
-      ]
+      ],
+      "image": "https://img.cnbce.com/2/1280/720/storage/files/images/2026/03/26/1900-gemi-mahsur-190-milyon-varil-petrol-bogaza-takildi-f3qr.png",
+      "imageCredit": "מכליות במפרץ הפרסי · צילום תיעודי, CNBC"
     },
     {
       "secondarySources": [],
@@ -1284,7 +1444,9 @@ window.NEWS_FEED = {
             "הכרטיס לשלב הליגה יוכרע הערב."
           ]
         }
-      ]
+      ],
+      "image": "https://images.jpost.com/image/upload/f_auto%2Cfl_lossy/c_fill%2Cg_faces%3Acenter%2Ch_537%2Cw_822/514980",
+      "imageCredit": "שחקני מכבי תל אביב · צילום ארכיון קבוצתי"
     },
     {
       "secondarySources": [],
@@ -1326,7 +1488,9 @@ window.NEWS_FEED = {
             "אין בשלב זה הסכמה על סיום הלחימה או מנגנון פיקוח גרעיני חדש."
           ]
         }
-      ]
+      ],
+      "image": "https://img.cnbce.com/2/1280/720/storage/files/images/2026/03/26/1900-gemi-mahsur-190-milyon-varil-petrol-bogaza-takildi-f3qr.png",
+      "imageCredit": "מכליות במפרץ הפרסי · צילום תיעודי, CNBC"
     },
     {
       "secondarySources": [],
@@ -1368,7 +1532,9 @@ window.NEWS_FEED = {
             "עד אז מדובר באפשרות שנבחנת, לא בצעד שבוצע."
           ]
         }
-      ]
+      ],
+      "image": "https://timeline.cityofdavid.org.il/wp-content/uploads/2019/03/133-1.jpg",
+      "imageCredit": "משכן הכנסת בירושלים · צילום בניין"
     },
     {
       "secondarySources": [],
@@ -1410,7 +1576,9 @@ window.NEWS_FEED = {
             "המבחן הוא רצף ימים חזק והודעה רשמית על מנגנון מעבר."
           ]
         }
-      ]
+      ],
+      "image": "https://img.cnbce.com/2/1280/720/storage/files/images/2026/03/26/1900-gemi-mahsur-190-milyon-varil-petrol-bogaza-takildi-f3qr.png",
+      "imageCredit": "מכליות במפרץ הפרסי · צילום תיעודי, CNBC"
     },
     {
       "secondarySources": [],
@@ -1452,7 +1620,9 @@ window.NEWS_FEED = {
             "הקישור מוביל לדף ההגרלה הרשמי."
           ]
         }
-      ]
+      ],
+      "image": "https://img.uefa.com/imgml/stadium/uw/63453.jpg",
+      "imageCredit": "אצטדיון כדורגל · UEFA"
     },
     {
       "secondarySources": [],
@@ -1536,7 +1706,9 @@ window.NEWS_FEED = {
             "צריך לעקוב אחר אישור רשמי, תנאי העסקה ומדיניות הפלטפורמה אחרי הרכישה."
           ]
         }
-      ]
+      ],
+      "image": "https://hips.hearstapps.com/hmg-prod/images/16x9-hdm-nvdia-015-1608242703.jpg",
+      "imageCredit": "כרטיס מסך של Nvidia · צילום מוצר"
     },
     {
       "secondarySources": [],
@@ -1578,7 +1750,9 @@ window.NEWS_FEED = {
             "בלי אחד מאלה, השוק צפוי להישאר רגיש לכותרות."
           ]
         }
-      ]
+      ],
+      "image": "https://img.cnbce.com/2/1280/720/storage/files/images/2026/03/26/1900-gemi-mahsur-190-milyon-varil-petrol-bogaza-takildi-f3qr.png",
+      "imageCredit": "מכליות במפרץ הפרסי · צילום תיעודי, CNBC"
     },
     {
       "secondarySources": [],
@@ -1620,7 +1794,9 @@ window.NEWS_FEED = {
             "עד לפרסום נוסף נכון לייחס את הטענה לגורמי המפלגה, כפי שעשה המקור."
           ]
         }
-      ]
+      ],
+      "image": "https://timeline.cityofdavid.org.il/wp-content/uploads/2019/03/133-1.jpg",
+      "imageCredit": "משכן הכנסת בירושלים · צילום בניין"
     },
     {
       "secondarySources": [
@@ -1679,7 +1855,9 @@ window.NEWS_FEED = {
             "עד אז אין בסיס להכריע איזה סקר משקף טוב יותר את יום הבחירות."
           ]
         }
-      ]
+      ],
+      "image": "assets/elections/ofer-winter.jpg",
+      "imageCredit": "עופר וינטר · צילום ארכיון"
     },
     {
       "secondarySources": [],
@@ -1720,10 +1898,78 @@ window.NEWS_FEED = {
             "הסכמה תידרש הן על סדר הרשימה והן על חלוקת התפקידים."
           ]
         }
-      ]
+      ],
+      "image": "https://timeline.cityofdavid.org.il/wp-content/uploads/2019/03/133-1.jpg",
+      "imageCredit": "משכן הכנסת בירושלים · צילום בניין"
     }
   ],
   "deepDives": [
+    {
+      "id": "deep-hormuz-costly-stalemate",
+      "title": "המלחמה שלא נגמרת: הורמוז הפך את הקיפאון באיראן למבחן עולמי",
+      "subtitle": "הספינות חוזרות בטפטוף, המתווכים עוברים בין בירות, והנפט מתייקר: כך נראה עימות שאיש אינו מנצח בו — אבל כולם משלמים עליו.",
+      "summary": "טור המערכת מחבר בין תנועת הספינות, התיווך הקטארי, מחיר הנפט והאינטרסים של ישראל, ארה״ב וסין כדי להבין מה עשוי לשבור את הקיפאון.",
+      "category": "עומק",
+      "source": "טור המערכת · Reuters · Kpler",
+      "sourceUrl": "https://www.reuters.com/world/middle-east/shipping-traffic-through-strait-hormuz-rises-slightly-data-shows-2026-08-27/",
+      "secondarySources": [
+        {
+          "name": "Reuters · מחירי הנפט",
+          "url": "https://www.reuters.com/business/energy/oil-prices-extend-losses-expectations-talks-ease-middle-east-supply-woes-2026-08-27/"
+        },
+        {
+          "name": "Reuters · התיווך הקטארי",
+          "url": "https://www.reuters.com/world/middle-east/qatar-pm-visit-tehran-pursue-mediation-efforts-2026-08-26/"
+        },
+        {
+          "name": "Reuters · השפעת סין על שוק הנפט",
+          "url": "https://www.reuters.com/business/energy/opec-loses-oil-market-sway-iran-war-china-gains-influence-2026-08-27/"
+        }
+      ],
+      "publishedAt": "2026-08-27T18:27:00+03:00",
+      "readTime": "7 דקות",
+      "featured": false,
+      "featuredAnalysis": true,
+      "author": "אריאל שחר · פרשן המערכת (שם עט)",
+      "image": "https://img.cnbce.com/2/1280/720/storage/files/images/2026/03/26/1900-gemi-mahsur-190-milyon-varil-petrol-bogaza-takildi-f3qr.png",
+      "imageCredit": "מכליות במפרץ הפרסי · צילום תיעודי, CNBC",
+      "facts": [
+        "עשר ספינות סחורה עברו במצר ביום רביעי, לעומת ממוצע של 15 בעשרת הימים הקודמים.",
+        "ברנט נסחר סביב 89 דולר ו־WTI סביב 82.75 דולר בעת הדיווח.",
+        "קטאר ועומאן פועלות במסלולי תיווך נפרדים.",
+        "הטור כולל 487 מילים והוא ניתוח מקורי של המערכת."
+      ],
+      "body": [
+        {
+          "heading": "לא מלחמת הכרעה — מערכת של לחץ",
+          "paragraphs": [
+            "אחרי חצי שנה של לחימה, מצר הורמוז הפך למדד המדויק ביותר למצבה של המלחמה באיראן. שום צד אינו מצליח לכפות הכרעה, אבל כל צד מסוגל להעלות את המחיר לאחרים. איראן מפגינה יכולת לשבש נתיב שמרכז חלק עצום מסחר האנרגיה העולמי; ארצות הברית ובעלות בריתה מפעילות כוח צבאי וסנקציות; מדינות המפרץ מנסות להשאיר ערוץ תיווך פתוח. התוצאה איננה הפוגה ואיננה הסלמה כוללת, אלא קיפאון יקר שמחלחל למחירי הדלק, לביטוח הימי ולתכנון של ממשלות וחברות.",
+            "המספרים בים מסבירים מדוע הודעה דיפלומטית אחת אינה מספיקה. לפי נתוני Kpler שצוטטו ב־Reuters, עשר ספינות סחורה עברו במצר ביום רביעי לעומת שמונה ביום שלישי, אך עדיין פחות מהממוצע של חמישה־עשר כלי שיט בעשרת הימים שקדמו לכך. העלייה הקטנה מאותתת שבעלי האוניות בוחנים מחדש את הסיכון, לא שהם חזרו לשגרה. כל תקיפה, יירוט או אזהרה חדשה מסוגלים להפוך את הכיוון בתוך שעות.",
+            "הביקור של ראש ממשלת קטאר בטהרן חשוב משום שהוא מציע מנגנון לבלימת טעויות. קטאר יכולה לדבר עם וושינגטון ועם איראן, ועומאן מכירה היטב את התיווך סביב נתיבי השיט. אבל תיווך איננו הסכם. כל עוד אין מסגרת כתובה הכוללת את ביטחון הספנות, היקף הסנקציות והגבולות לפעילות הצבאית, השוק יתמחר אפשרות שהשיחות ייכשלו."
+          ]
+        },
+        {
+          "heading": "הזווית הישראלית והאמריקנית",
+          "paragraphs": [
+            "מבחינת ישראל, הקיפאון מספק הישג חלקי וסיכון מצטבר. הלחץ על איראן נשמר, והמערכת האזורית נאלצת לעסוק במחיר ההתבססות הצבאית שלה. מנגד, ככל שהעימות מתארך, גדל הסיכוי לאירוע שקשה לשלוט בו: פגיעה במכלית, תגובה נגד יעד מערבי או טעות בזיהוי. אירוע כזה עשוי למשוך משאבים אמריקניים נוספים לאזור ולהרחיב את העימות גם בלי החלטה אסטרטגית מסודרת של אף ממשלה.",
+            "בוושינגטון נדרשת בחירה בין שני מסרים סותרים. מצד אחד, הממשל רוצה להראות שהלחץ עובד ושלאיראן אין זכות וטו על נתיב בינלאומי. מצד אחר, מחיר נפט גבוה פוגע בצרכן האמריקני ומקשה על ניהול האינפלציה. ברנט נסחר סביב 89 דולר לחבית ו־WTI סביב 82.75 דולר בעת הדיווח. אלה אינם מחירי פאניקה, אך הם כוללים פרמיית סיכון שעלולה לגדול במהירות."
+          ]
+        },
+        {
+          "heading": "מי מרוויח מן הקיפאון",
+          "paragraphs": [
+            "סין ניצבת בעמדה מורכבת אך חזקה יותר מבעבר. היא צרכנית אנרגיה עצומה, ולכן שיבוש ממושך פוגע בה. באותה נשימה, היא קונה מרכזית של נפט איראני ומחזיקה מנופי השפעה שאין למדינות אחרות. ניתוח Reuters על OPEC מצביע על כך שהמלחמה החלישה את יכולת הקרטל לכוון לבדו את השוק והגדילה את משקלן של החלטות סיניות. בייג׳ינג אינה שולטת בעימות, אך היא נעשתה שחקן שקשה לבנות הסדר בלעדיו.",
+            "גם רוסיה ויצרניות אנרגיה אחרות נהנות ממחיר גבוה יותר, בעוד מדינות יבואניות משלמות את החשבון דרך תחבורה, חשמל ומזון. לכן הורמוז אינו עוד סעיף במדור החוץ. הוא מחבר בין טהרן, ירושלים, וושינגטון ובייג׳ינג לבין הסל של כל משפחה. מי שמבקש להבין את השלב הבא צריך לעקוב פחות אחר הצהרות ניצחון ויותר אחר מספר הספינות, פרמיות הביטוח וקצב היצוא בפועל."
+          ]
+        },
+        {
+          "heading": "מה יכריע את השבוע הבא",
+          "paragraphs": [
+            "המבחן הקרוב הוא כפול. במישור המדיני, צריך לראות אם קטאר ועומאן מצליחות להפוך שיחות נפרדות למסגרת שיש בה התחייבויות, לוח זמנים ומנגנון בדיקה. במישור הימי, צריך לראות אם התנועה במצר ממשיכה לעלות כמה ימים ברציפות בלי אירוע ביטחוני חדש. אם שני הדברים יקרו יחד, מחיר הסיכון עשוי לרדת. אם אחד מהם יישבר, הקיפאון ימשיך — והעלות שלו תתרחב הרבה מעבר לזירת הלחימה."
+          ]
+        }
+      ]
+    },
     {
       "id": "deep-himalaya-second-wave-risk",
       "title": "האסון בהימלאיה לא הסתיים: הסכנה עברה מהקרחון לאגמים החסומים",
@@ -1769,7 +2015,10 @@ window.NEWS_FEED = {
             "מפלסי האגמים, עוצמת הגשם, מצב הסכרים הטבעיים וקצב איתור הנעדרים."
           ]
         }
-      ]
+      ],
+      "image": "https://eoimages.gsfc.nasa.gov/images/imagerecords/43000/43391/himalaya_ali_2009359_lrg.jpg",
+      "imageCredit": "רכס ההימלאיה בצילום לוויין · NASA Earth Observatory",
+      "author": "אלחנן ברק · דסק העולם"
     },
     {
       "id": "deep-fed-ai-market-divergence",
@@ -1816,54 +2065,10 @@ window.NEWS_FEED = {
             "נאום יו״ר הפד, תשואות האג״ח, מניות השבבים והיקף ההשתתפות בעליות."
           ]
         }
-      ]
-    },
-    {
-      "id": "deep-ai-supply-chain-policy",
-      "title": "ממפעל HBM באינדיאנה עד מפגש G20: ה־AI הופך למדיניות תעשייתית",
-      "subtitle": "SK Hynix משקיעה בייצור, וראשי OpenAI ואנבידיה מגיעים לזירת המדיניות הבינלאומית.",
-      "summary": "שני הפרסומים מצביעים על מעבר מהתמקדות במודלים בלבד לתשתית, שבבים, כוח אדם וכללים בין־מדינתיים.",
-      "category": "עומק",
-      "source": "ניתוח המערכת · Reuters · SK Hynix",
-      "sourceUrl": "https://www.reuters.com/world/asia-pacific/sk-hynix-holds-groundbreaking-ceremony-4-billion-indiana-ai-chip-packaging-2026-08-27/",
-      "publishedAt": "2026-08-27T17:59:36+03:00",
-      "readTime": "4 דקות",
-      "featured": false,
-      "facts": [
-        "מתקן SK Hynix יעלה יותר מ־4 מיליארד דולר.",
-        "תחילת פעילות מתוכננת ל־2028.",
-        "מפגש G20 הטכנולוגי ייערך בשבוע הבא.",
-        "הדיון כולל AI וטכנולוגיות מתפתחות."
       ],
-      "body": [
-        {
-          "heading": "מה מאומת",
-          "paragraphs": [
-            "החברה החלה בהקמת מתקן אריזה ומחקר באינדיאנה.",
-            "אלטמן והואנג צפויים להשתתף בכינוס G20 טכנולוגי."
-          ]
-        },
-        {
-          "heading": "מה השתנה",
-          "paragraphs": [
-            "שרשרת האספקה של AI מקבלת יותר השקעות פיזיות בארה״ב.",
-            "הדיון הבינלאומי עובר גם לרמת שרים ומנהיגי חברות."
-          ]
-        },
-        {
-          "heading": "ניתוח",
-          "paragraphs": [
-            "השליטה בשבבי זיכרון, אריזה מתקדמת וכוח אדם הופכת למרכיב אסטרטגי.",
-            "ההשפעה המעשית תהיה תלויה בלוחות זמנים, בתמריצי CHIPS ובהסכמות רגולטוריות."
-          ]
-        },
-        {
-          "heading": "מה לעקוב",
-          "paragraphs": [
-            "פרטי הכינוס, קצב הבנייה, מענקי הממשל וזמינות HBM ב־2027–2028."
-          ]
-        }
-      ]
+      "image": "https://www.federalreserve.gov/photogallery/files/DSC_2627-pw.jpg",
+      "imageCredit": "בניין הפדרל ריזרב בוושינגטון · Federal Reserve",
+      "author": "נדב רום · דסק כלכלה"
     }
   ],
   "videos": [],
