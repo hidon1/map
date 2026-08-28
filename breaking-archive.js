@@ -2022,5 +2022,131 @@ window.BREAKING_ARCHIVE = [
     "time": "08:57",
     "title": "S&P השאירה את דירוג סין על A+ עם תחזית יציבה וצפי לצמיחה של 4% ומעלה",
     "urgent": true
+  },
+  {
+    "articleId": "freedom-edge-drill-september-1357-20260828",
+    "id": "flash-20260828-0337-freedom-edge-drill",
+    "publishedAt": "2026-08-28T03:37:51+03:00",
+    "source": "Reuters · צבא דרום קוריאה",
+    "time": "03:37",
+    "title": "דרום קוריאה, יפן וארה״ב יקיימו ב־9–11 בספטמבר תרגיל משולש מול איומי צפון קוריאה",
+    "urgent": false
+  },
+  {
+    "articleId": "nepal-border-lake-overflow-1357-20260828",
+    "id": "flash-20260828-0448-nepal-lake-overflow",
+    "publishedAt": "2026-08-28T04:48:48+03:00",
+    "source": "Reuters · רשויות נפאל וסין",
+    "time": "04:48",
+    "title": "אגם חסימה בגבול נפאל–סין גלש לנהר; 489 הרוגים בנפאל וחמישה בטיבט וכמעט אלף נעדרים",
+    "urgent": true
+  },
+  {
+    "articleId": "maariv-winter-poll-1357-20260828",
+    "id": "flash-20260828-0751-maariv-winter-poll",
+    "publishedAt": "2026-08-28T07:51:00+03:00",
+    "source": "מעריב · לזר מחקרים",
+    "time": "07:51",
+    "title": "סקר מעריב: ישר! 25, הליכוד 20, עמך ישראל של עופר וינטר 5; הציונות הדתית מתחת לסף",
+    "urgent": false
+  },
+  {
+    "articleId": "norway-king-harald-dies-1357-20260828",
+    "id": "flash-20260828-0955-king-harald-dies",
+    "publishedAt": "2026-08-28T09:55:00+03:00",
+    "source": "Reuters · בית המלוכה הנורווגי",
+    "time": "09:55",
+    "title": "מלך נורווגיה האראלד החמישי מת בגיל 89; בנו האקון ירש את הכתר",
+    "urgent": true
+  },
+  {
+    "articleId": "lucid-air-recall-fire-risk-1357-20260828",
+    "id": "flash-20260828-1025-lucid-air-recall",
+    "publishedAt": "2026-08-28T10:25:00+03:00",
+    "source": "Reuters · NHTSA",
+    "time": "10:25",
+    "title": "Lucid מחזירה 27,185 מכוניות Air בארה״ב בשל מעגל תאורה שעלול להתחמם ולגרום לשריפה",
+    "urgent": false
+  },
+  {
+    "articleId": "supreme-court-prosecutor-freeze-1357-20260828",
+    "id": "flash-20260828-1139-supreme-prosecutor-freeze",
+    "publishedAt": "2026-08-28T11:39:00+03:00",
+    "source": "כיכר השבת · בית המשפט העליון",
+    "time": "11:39",
+    "title": "ברק־ארז הקפיאה זמנית את העברת הטיפול בפרשת הפצ״רית לפרקליט המדינה עמית איסמן",
+    "urgent": true
+  },
+  {
+    "articleId": "tencent-open-source-ai-model-1357-20260828",
+    "id": "flash-20260828-1237-tencent-open-model",
+    "publishedAt": "2026-08-28T12:37:00+03:00",
+    "source": "Reuters · Tencent",
+    "time": "12:37",
+    "title": "Tencent פרסמה תצוגה מקדימה של מודל AI פתוח למשימות קוד, מחקר וניתוח פיננסי",
+    "urgent": false
+  },
+  {
+    "articleId": "romania-black-sea-ship-sinks-1357-20260828",
+    "id": "flash-20260828-1244-romania-ship-sinks",
+    "publishedAt": "2026-08-28T12:44:00+03:00",
+    "source": "Reuters · רומניה",
+    "time": "12:44",
+    "title": "רומניה חוקרת כיצד ספינת מטען עלתה באש וטבעה באזור הכלכלי שלה בים השחור",
+    "urgent": true
+  },
+  {
+    "articleId": "washington-voting-rights-march-1357-20260828",
+    "id": "flash-20260828-1304-washington-rights-march",
+    "publishedAt": "2026-08-28T13:04:00+03:00",
+    "source": "Reuters",
+    "time": "13:04",
+    "title": "אלפים צעדו בוושינגטון והזהירו מפגיעה בזכויות הצבעה ואזרח לקראת בחירות האמצע",
+    "urgent": false
+  },
+  {
+    "articleId": "us-mexico-cheese-names-dispute-1357-20260828",
+    "id": "flash-20260828-1307-us-mexico-cheese",
+    "publishedAt": "2026-08-28T13:07:00+03:00",
+    "source": "Reuters",
+    "time": "13:07",
+    "title": "מחלוקת על שמות גבינות הפכה למכשול בשיחות הסחר בין ארצות הברית למקסיקו",
+    "urgent": false
+  },
+  {
+    "articleId": "south-sudan-cattle-raid-1357-20260828",
+    "id": "flash-20260828-1309-south-sudan-raid",
+    "publishedAt": "2026-08-28T13:09:00+03:00",
+    "source": "Reuters · ממשלות וראפ ויוניטי",
+    "time": "13:09",
+    "title": "לפחות 49 בני אדם נהרגו ו־33 נפצעו בפשיטה על מחנה רועים בדרום סודאן",
+    "urgent": true
+  },
+  {
+    "articleId": "didi-argentina-investment-1357-20260828",
+    "id": "flash-20260828-1318-didi-argentina",
+    "publishedAt": "2026-08-28T13:18:37+03:00",
+    "source": "Reuters · Didi",
+    "time": "13:18",
+    "title": "Didi תשקיע יותר מ־200 מיליון דולר בארגנטינה ותתרחב ליותר מ־350 יישובים",
+    "urgent": false
+  },
+  {
+    "articleId": "korean-families-nepal-helicopters-1357-20260828",
+    "id": "flash-20260828-1323-korean-families-nepal",
+    "publishedAt": "2026-08-28T13:23:07+03:00",
+    "source": "Reuters",
+    "time": "13:23",
+    "title": "משפחות תשעה עובדים דרום־קוריאנים הנעדרים בנפאל מבקשות גישה דחופה במסוקים",
+    "urgent": true
+  },
+  {
+    "articleId": "india-july-industrial-output-1357-20260828",
+    "id": "flash-20260828-1338-india-output",
+    "publishedAt": "2026-08-28T13:38:00+03:00",
+    "source": "Reuters · ממשלת הודו",
+    "time": "13:38",
+    "title": "התפוקה התעשייתית בהודו עלתה 6.7% ביולי — מעל תחזית 6% של כלכלני Reuters",
+    "urgent": false
   }
 ];

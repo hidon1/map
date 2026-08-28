@@ -1652,6 +1652,16 @@
     }
     .score-divider { color: var(--muted); font-weight: 950; }
     .score-result-meta { border-right: 1px solid var(--line); padding-right: 12px; }
+    .score-outcome {
+      width: fit-content;
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: #0b6647;
+      background: rgba(32,166,110,.11);
+      font-size: .6rem;
+      font-weight: 950;
+      line-height: 1.35;
+    }
     .score-aggregate { color: var(--ink); font-size: .62rem; font-weight: 900; }
     .score-scorers { color: var(--muted); font-size: .59rem; font-weight: 800; line-height: 1.45; }
     .score-source { color: #1973ba; font-size: .59rem; font-weight: 900; }
@@ -1663,6 +1673,7 @@
     @media (max-width: 920px) {
       .newsroom-v3 .score-row { grid-template-columns: minmax(100px,.65fr) minmax(250px,1.55fr); }
       .score-result-meta { grid-column: 1 / -1; grid-template-columns: repeat(3,minmax(0,auto)); justify-content: start; border: 0; padding: 7px 0 0; border-top: 1px dashed var(--line); }
+      .score-outcome { grid-column: 1 / -1; }
       .score-scorers { grid-column: 1 / -1; }
     }
     @media (max-width: 700px) {
@@ -2029,10 +2040,11 @@
             ? `<span class="score-kickoff">${escapeHtml(item.kickoff || item.status || "טרם החל")}</span>`
             : `<span class="score-goal ${winner === "home" ? "is-winner" : ""}">${escapeHtml(homeScore)}</span><span class="score-divider">:</span><span class="score-goal ${winner === "away" ? "is-winner" : ""}">${escapeHtml(awayScore)}</span>`;
           const scorerLabel = item.scorers ? `, מבקיעים: ${item.scorers}` : "";
+          const outcomeLabel = item.outcome ? `, ${item.outcome}` : "";
           const ariaLabel = scheduled
             ? `${home} נגד ${away}, ${item.status || item.kickoff || "טרם החל"}`
-            : `${home} ${homeScore}, ${away} ${awayScore}${scorerLabel}`;
-          return `<a class="score-row state-${group.id}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="--score-delay:${Math.min(item._index * 45,315)}ms"><div class="score-context"><span class="score-league-chip">${escapeHtml(item.league)}</span><span class="score-date">${escapeHtml(item.dateLabel || "")}</span></div><div class="score-match" aria-label="${escapeHtml(ariaLabel)}"><span class="score-team home ${winner === "home" ? "is-winner" : ""}">${teamCrest(home,homeMeta)}<span class="team-name">${escapeHtml(home)}</span></span>${result}<span class="score-team away ${winner === "away" ? "is-winner" : ""}">${teamCrest(away,awayMeta)}<span class="team-name">${escapeHtml(away)}</span></span></div><div class="score-result-meta"><span class="score-status ${group.id === "live" ? "live" : ""}"><i></i>${escapeHtml(item.status || group.note)}</span>${detail ? `<span class="score-aggregate">${escapeHtml(detail)}</span>` : ""}${item.scorers ? `<span class="score-scorers">מבקיעים: ${escapeHtml(item.scorers)}</span>` : ""}<span class="score-source">${escapeHtml(item.source || "")} ↗</span></div></a>`;
+            : `${home} ${homeScore}, ${away} ${awayScore}${outcomeLabel}${scorerLabel}`;
+          return `<a class="score-row state-${group.id}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="--score-delay:${Math.min(item._index * 45,315)}ms"><div class="score-context"><span class="score-league-chip">${escapeHtml(item.league)}</span><span class="score-date">${escapeHtml(item.dateLabel || "")}</span></div><div class="score-match" aria-label="${escapeHtml(ariaLabel)}"><span class="score-team home ${winner === "home" ? "is-winner" : ""}">${teamCrest(home,homeMeta)}<span class="team-name">${escapeHtml(home)}</span></span>${result}<span class="score-team away ${winner === "away" ? "is-winner" : ""}">${teamCrest(away,awayMeta)}<span class="team-name">${escapeHtml(away)}</span></span></div><div class="score-result-meta"><span class="score-status ${group.id === "live" ? "live" : ""}"><i></i>${escapeHtml(item.status || group.note)}</span>${item.outcome ? `<span class="score-outcome">${escapeHtml(item.outcome)}</span>` : ""}${detail ? `<span class="score-aggregate">${escapeHtml(detail)}</span>` : ""}${item.scorers ? `<span class="score-scorers">מבקיעים: ${escapeHtml(item.scorers)}</span>` : ""}<span class="score-source">${escapeHtml(item.source || "")} ↗</span></div></a>`;
         }).join("");
         return `<section class="score-group score-group-${group.id}"><div class="score-group-head"><div><span class="score-group-icon">${group.icon}</span><strong>${group.label}</strong></div><span>${groupItems.length} משחקים · ${group.note}${group.id === "final" ? " · בית מימין" : ""}</span></div><div class="score-group-list">${rows}</div></section>`;
       }).join("");
