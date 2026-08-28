@@ -1968,5 +1968,59 @@ window.BREAKING_ARCHIVE = [
     "time": "08:03",
     "title": "78 אירועי חבלה מתואמים בדרום תאילנד בסוף שבוע אחד; שלושה נפצעו",
     "urgent": true
+  },
+  {
+    "articleId": "germany-china-trade-0905-20260828",
+    "id": "flash-20260828-0803-german-china",
+    "publishedAt": "2026-08-28T08:03:00+03:00",
+    "source": "Reuters",
+    "time": "08:03",
+    "title": "התעשייה הגרמנית לוחצת על מרץ להקשיח את הקו מול סין; הגירעון התרחב ל־89.3 מיליארד אירו",
+    "urgent": false
+  },
+  {
+    "articleId": "china-property-poll-0905-20260828",
+    "id": "flash-20260828-0818-china-property",
+    "publishedAt": "2026-08-28T08:18:00+03:00",
+    "source": "Reuters Poll",
+    "time": "08:18",
+    "title": "סקר Reuters: השקעות הנדל״ן בסין צפויות לצנוח 20% השנה",
+    "urgent": false
+  },
+  {
+    "articleId": "indonesia-capital-transit-0905-20260828",
+    "id": "flash-20260828-0819-jakarta-transport",
+    "publishedAt": "2026-08-28T08:19:00+03:00",
+    "source": "Reuters",
+    "time": "08:19",
+    "title": "הפגנות ליד הפרלמנט בג׳קרטה שיבשו קווי רכבת ואוטובוס בבירה",
+    "urgent": true
+  },
+  {
+    "articleId": "northam-platinum-results-0905-20260828",
+    "id": "flash-20260828-0822-northam-dividend",
+    "publishedAt": "2026-08-28T08:22:00+03:00",
+    "source": "Reuters",
+    "time": "08:22",
+    "title": "Northam Platinum דיווחה על שיא תפוקה ודיבידנד סופי של 10 ראנד למניה",
+    "urgent": false
+  },
+  {
+    "articleId": "nova-poshta-depots-0905-20260828",
+    "id": "flash-20260828-0839-nova-poshta",
+    "publishedAt": "2026-08-28T08:39:00+03:00",
+    "source": "Reuters · Nova Poshta",
+    "time": "08:39",
+    "title": "תקיפות רוסיות הרסו מרכזי מיון של Nova Poshta ליד קייב ובסומי; העובדים ניצלו",
+    "urgent": true
+  },
+  {
+    "articleId": "china-sp-rating-0905-20260828",
+    "id": "flash-20260828-0857-china-sp-rating",
+    "publishedAt": "2026-08-28T08:57:00+03:00",
+    "source": "Reuters · S&P",
+    "time": "08:57",
+    "title": "S&P השאירה את דירוג סין על A+ עם תחזית יציבה וצפי לצמיחה של 4% ומעלה",
+    "urgent": true
   }
 ];
