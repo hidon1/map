@@ -1716,5 +1716,86 @@ window.BREAKING_ARCHIVE = [
     "time": "01:49",
     "title": "אוסטרליה הודיעה על 3.6 מיליון דולר סיוע לנפאל; מספר אזרחיה הנעדרים עלה ל־39",
     "urgent": true
+  },
+  {
+    "articleId": "ftc-youtube-policies-probe-0432-20260828",
+    "id": "flash-20260828-0203-ftc-youtube",
+    "publishedAt": "2026-08-28T02:03:00+03:00",
+    "source": "Reuters · Bloomberg",
+    "time": "02:03",
+    "title": "דיווח: FTC בודקת אם מדיניות ההשעיה והחשיפה של YouTube תאמה את התחייבויות הפלטפורמה",
+    "urgent": false
+  },
+  {
+    "articleId": "uk-business-confidence-lloyds-0432-20260828",
+    "id": "flash-20260828-0204-uk-business-confidence",
+    "publishedAt": "2026-08-28T02:04:00+03:00",
+    "source": "Reuters · Lloyds",
+    "time": "02:04",
+    "title": "מדד Lloyds: אמון העסקים בבריטניה עלה לשיא מאז מרץ",
+    "urgent": false
+  },
+  {
+    "articleId": "virgin-australia-capacity-0432-20260828",
+    "id": "flash-20260828-0217-virgin-australia",
+    "publishedAt": "2026-08-28T02:17:00+03:00",
+    "source": "Reuters",
+    "time": "02:17",
+    "title": "Virgin Australia תקצץ 3% מן הקיבולת המקומית לאחר עלייה של 21.9% ברווח הבסיסי",
+    "urgent": false
+  },
+  {
+    "articleId": "trump-iran-sanctions-0432-20260828",
+    "id": "flash-20260828-0222-trump-iran-sanctions",
+    "publishedAt": "2026-08-28T02:22:00+03:00",
+    "source": "The Times of Israel",
+    "time": "02:22",
+    "title": "מקורות: ארה״ב מעדיפה כעת לחץ וסנקציות על איראן ולא חידוש מזכר יוני",
+    "urgent": true
+  },
+  {
+    "articleId": "jewish-teachers-unions-adl-0432-20260828",
+    "id": "flash-20260828-0322-jewish-teachers-adl",
+    "publishedAt": "2026-08-28T03:22:00+03:00",
+    "source": "The Times of Israel · ADL",
+    "time": "03:22",
+    "title": "דוח ADL: עובדים יהודים באיגודי מורים בארה״ב מדווחים על צנזורה עצמית וחשש מהשלכות",
+    "urgent": false
+  },
+  {
+    "articleId": "typhoon-saudel-zhejiang-0432-20260828",
+    "id": "flash-20260828-0324-typhoon-saudel",
+    "publishedAt": "2026-08-28T03:24:00+03:00",
+    "source": "Reuters",
+    "time": "03:24",
+    "title": "הטייפון סאודל הגיע לחוף ג׳ג׳יאנג; סין שמרה על התרעה אדומה",
+    "urgent": true
+  },
+  {
+    "articleId": "g20-asheville-iran-0432-20260828",
+    "id": "flash-20260828-0329-g20-asheville",
+    "publishedAt": "2026-08-28T03:29:00+03:00",
+    "source": "Reuters · משרד האוצר האמריקני",
+    "time": "03:29",
+    "title": "ארה״ב תארח מפגש G20 באשוויל ותלחץ לצמצום קשרים כלכליים עם איראן",
+    "urgent": true
+  },
+  {
+    "articleId": "korea-freedom-edge-drill-0432-20260828",
+    "id": "flash-20260828-0337-korea-drill",
+    "publishedAt": "2026-08-28T03:37:00+03:00",
+    "source": "Reuters",
+    "time": "03:37",
+    "title": "דרום קוריאה, יפן וארה״ב יקיימו בספטמבר תרגיל הגנה מפני איום גרעיני וטילים",
+    "urgent": true
+  },
+  {
+    "articleId": "south-korea-national-ai-0432-20260828",
+    "id": "flash-20260828-0402-korea-national-ai",
+    "publishedAt": "2026-08-28T04:02:00+03:00",
+    "source": "Reuters · Yonhap",
+    "time": "04:02",
+    "title": "דיווח: דרום קוריאה בחרה ב־SK Telecom, Kakao ו־KT לפרויקט AI לאומי",
+    "urgent": false
   }
 ];
