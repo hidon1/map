@@ -1797,5 +1797,176 @@ window.BREAKING_ARCHIVE = [
     "time": "04:02",
     "title": "דיווח: דרום קוריאה בחרה ב־SK Telecom, Kakao ו־KT לפרויקט AI לאומי",
     "urgent": false
+  },
+  {
+    "articleId": "hormuz-traffic-diplomacy-0817-20260828",
+    "id": "flash-20260828-0434-hormuz-diplomacy",
+    "publishedAt": "2026-08-28T04:34:00+03:00",
+    "source": "Reuters",
+    "time": "04:34",
+    "title": "איראן מגבשת תנאים לפתיחת מצר הורמוז; קטאר ועומאן בוחנות נתיב תיווך",
+    "urgent": true
+  },
+  {
+    "articleId": "china-robot-industry-guidance-0817-20260828",
+    "id": "flash-20260828-0534-china-robots",
+    "publishedAt": "2026-08-28T05:34:00+03:00",
+    "source": "Reuters · NDRC",
+    "time": "05:34",
+    "title": "סין קוראת לפיתוח מסודר של תעשיית הרובוטים ולהימנעות מחיקוי עיוור",
+    "urgent": false
+  },
+  {
+    "articleId": "india-shares-it-rise-0817-20260828",
+    "id": "flash-20260828-0537-india-markets",
+    "publishedAt": "2026-08-28T05:37:00+03:00",
+    "source": "Reuters · NSE · BSE",
+    "time": "05:37",
+    "title": "מדדי הודו פתחו בעליות קלות בהובלת מניות הטכנולוגיה",
+    "urgent": false
+  },
+  {
+    "articleId": "south-korea-north-talks-0817-20260828",
+    "id": "flash-20260828-0558-korea-north-talks",
+    "publishedAt": "2026-08-28T05:58:00+03:00",
+    "source": "Reuters",
+    "time": "05:58",
+    "title": "סיאול תומכת בחידוש שיחות ארה״ב–צפון קוריאה בתנאי שלא תודר מן התהליך",
+    "urgent": true
+  },
+  {
+    "articleId": "nepal-flood-469-barrier-lake-0817-20260828",
+    "id": "flash-20260828-0604-correction-nepal-469",
+    "publishedAt": "2026-08-28T06:04:00+03:00",
+    "source": "Reuters · משטרת נפאל",
+    "time": "06:04",
+    "title": "תיקון ועדכון נוסף: משטרת נפאל העלתה את מניין ההרוגים בשיטפון ל־469",
+    "urgent": true
+  },
+  {
+    "articleId": "mizuho-radiant-case-0817-20260828",
+    "id": "flash-20260828-0619-mizuho-radiant",
+    "publishedAt": "2026-08-28T06:19:00+03:00",
+    "source": "Reuters",
+    "time": "06:19",
+    "title": "מיזוהו ביקש צו מניעה נגד Radiant World בבית משפט בסינגפור",
+    "urgent": false
+  },
+  {
+    "articleId": "nepal-flood-469-barrier-lake-0817-20260828",
+    "id": "flash-20260828-0621-nepal-barrier-lake",
+    "publishedAt": "2026-08-28T06:21:00+03:00",
+    "source": "Reuters · CCTV",
+    "time": "06:21",
+    "title": "צוות הנדסי סיני בוחן תעלת ניקוז לאגם מחסום מסוכן סמוך לגבול נפאל",
+    "urgent": true
+  },
+  {
+    "articleId": "vietnam-ai-chip-investment-0817-20260828",
+    "id": "flash-20260828-0652-vietnam-chips",
+    "publishedAt": "2026-08-28T06:52:00+03:00",
+    "source": "Reuters",
+    "time": "06:52",
+    "title": "וייטנאם מבקשת מקוואלקום וסמסונג להעמיק השקעות ב־AI ובשבבים",
+    "urgent": false
+  },
+  {
+    "articleId": "hormuz-traffic-diplomacy-0817-20260828",
+    "id": "flash-20260828-0656-hormuz-traffic",
+    "publishedAt": "2026-08-28T06:56:00+03:00",
+    "source": "Reuters · Kpler",
+    "time": "06:56",
+    "title": "שבע אוניות סחורות עברו במצר הורמוז ביום חמישי — פחות ממחצית מן היום הקודם",
+    "urgent": true
+  },
+  {
+    "articleId": "israel-weekend-rain-0817-20260828",
+    "id": "flash-20260828-0704-israel-rain",
+    "publishedAt": "2026-08-28T07:04:00+03:00",
+    "source": "כיכר השבת · השירות המטאורולוגי",
+    "time": "07:04",
+    "title": "ירידה בטמפרטורות; גשם מקומי אפשרי בשבת ומערכת רחבה יותר בראשון",
+    "urgent": false
+  },
+  {
+    "articleId": "western-wall-selichot-0817-20260828",
+    "id": "flash-20260828-0709-western-wall-selichot",
+    "publishedAt": "2026-08-28T07:09:00+03:00",
+    "source": "כיכר השבת · הקרן למורשת הכותל",
+    "time": "07:09",
+    "title": "יותר מ־50 אלף השתתפו הלילה במעמד הסליחות המרכזי בכותל",
+    "urgent": false
+  },
+  {
+    "articleId": "tempsens-ipo-debut-0817-20260828",
+    "id": "flash-20260828-0717-tempsens-ipo",
+    "publishedAt": "2026-08-28T07:17:00+03:00",
+    "source": "Reuters · NSE",
+    "time": "07:17",
+    "title": "Tempsens זינקה 111.3% בפתיחת המסחר לאחר הנפקה של 68 מיליון דולר",
+    "urgent": false
+  },
+  {
+    "articleId": "warsh-jackson-hole-test-0817-20260828",
+    "id": "flash-20260828-0731-warsh-jackson-hole",
+    "publishedAt": "2026-08-28T07:31:00+03:00",
+    "source": "Reuters",
+    "time": "07:31",
+    "title": "השווקים ממתינים לנאום קווין וורש בג׳קסון הול על אינפלציה ותשואות",
+    "urgent": false
+  },
+  {
+    "articleId": "right-bloc-merger-pressure-0817-20260828",
+    "id": "flash-20260828-0733-right-bloc-merger",
+    "publishedAt": "2026-08-28T07:33:00+03:00",
+    "source": "כיכר השבת · ישראל היום · הארץ",
+    "time": "07:33",
+    "title": "דיווח: נתניהו לחץ על בן גביר להתאחד עם סמוטריץ׳ — ונענה בסירוב",
+    "urgent": false
+  },
+  {
+    "articleId": "toyota-july-sales-0817-20260828",
+    "id": "flash-20260828-0733-toyota-sales",
+    "publishedAt": "2026-08-28T07:33:00+03:00",
+    "source": "Reuters · Toyota",
+    "time": "07:33",
+    "title": "מכירות טויוטה בעולם ירדו 4.8% ביולי על רקע חולשה בסין ובמזרח התיכון",
+    "urgent": false
+  },
+  {
+    "articleId": "brazil-lula-debt-0817-20260828",
+    "id": "flash-20260828-0740-brazil-debt",
+    "publishedAt": "2026-08-28T07:40:00+03:00",
+    "source": "Reuters",
+    "time": "07:40",
+    "title": "לולה אומר שחוב ברזיל אינו מדאיג לקדנציה נוספת; היחס הגיע ל־81.9% מהתוצר",
+    "urgent": false
+  },
+  {
+    "articleId": "iran-leadership-visibility-0817-20260828",
+    "id": "flash-20260828-0801-iran-leadership",
+    "publishedAt": "2026-08-28T08:01:00+03:00",
+    "source": "Reuters",
+    "time": "08:01",
+    "title": "מוג׳תבא חמינאי עדיין לא נראה או נשמע בפומבי מאז מינויו למנהיג איראן",
+    "urgent": true
+  },
+  {
+    "articleId": "google-eu-spam-policy-0817-20260828",
+    "id": "flash-20260828-0802-google-eu-spam",
+    "publishedAt": "2026-08-28T08:02:00+03:00",
+    "source": "Reuters · הנציבות האירופית",
+    "time": "08:02",
+    "title": "גוגל משנה את מדיניות הספאם באירופה בניסיון להימנע מקנס הגבלים",
+    "urgent": false
+  },
+  {
+    "articleId": "thailand-south-insurgency-0817-20260828",
+    "id": "flash-20260828-0803-thailand-south",
+    "publishedAt": "2026-08-28T08:03:00+03:00",
+    "source": "Reuters",
+    "time": "08:03",
+    "title": "78 אירועי חבלה מתואמים בדרום תאילנד בסוף שבוע אחד; שלושה נפצעו",
+    "urgent": true
   }
 ];
