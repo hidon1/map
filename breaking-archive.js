@@ -2148,5 +2148,77 @@ window.BREAKING_ARCHIVE = [
     "time": "13:38",
     "title": "התפוקה התעשייתית בהודו עלתה 6.7% ביולי — מעל תחזית 6% של כלכלני Reuters",
     "urgent": false
+  },
+  {
+    "articleId": "marvell-google-ai-revenue-timing-1558-20260828",
+    "id": "flash-20260828-1356-marvell-google-timing",
+    "publishedAt": "2026-08-28T13:56:00+03:00",
+    "source": "Reuters · Marvell",
+    "time": "13:56",
+    "title": "Marvell נחלשה לפני המסחר: ההכנסות המשמעותיות מעסקת השבבים עם Google צפויות רק מ־2029",
+    "urgent": false
+  },
+  {
+    "articleId": "china-cmc-generals-removed-1558-20260828",
+    "id": "flash-20260828-1416-china-cmc-generals",
+    "publishedAt": "2026-08-28T14:16:00+03:00",
+    "source": "Reuters · Xinhua",
+    "time": "14:16",
+    "title": "סין הסירה את ג׳אנג יושיה וליו ג׳נלי מן הוועדה הצבאית המרכזית של המדינה",
+    "urgent": true
+  },
+  {
+    "articleId": "tel-aviv-lake-child-rescue-1558-20260828",
+    "id": "flash-20260828-1417-tel-aviv-lake-child",
+    "publishedAt": "2026-08-28T14:17:00+03:00",
+    "source": "JDN · מד״א",
+    "time": "14:17",
+    "title": "ילד כבן חמש נמשה מאגם בפארק דרום בתל אביב ופונה במצב אנוש",
+    "urgent": true
+  },
+  {
+    "articleId": "unhcr-2027-budget-posts-cut-1558-20260828",
+    "id": "flash-20260828-1504-unhcr-budget-cuts",
+    "publishedAt": "2026-08-28T15:04:00+03:00",
+    "source": "Reuters · UNHCR",
+    "time": "15:04",
+    "title": "מסמכי UNHCR: תקציב 2027 יקוצץ לכ־7.14 מיליארד דולר וכ־3,500 משרות ייגרעו",
+    "urgent": false
+  },
+  {
+    "articleId": "nepal-two-lakes-monitoring-1558-20260828",
+    "id": "flash-20260828-1507-nepal-two-lakes-update",
+    "publishedAt": "2026-08-28T15:07:00+03:00",
+    "source": "Reuters · רשות האסונות של נפאל",
+    "time": "15:07",
+    "title": "עדכון: נפאל עוקבת אחר שני אגמים; המאגר הגדול ממשיך לגדול בלי מוצא נראה לעין",
+    "urgent": true
+  },
+  {
+    "articleId": "us-equity-funds-weekly-outflow-1558-20260828",
+    "id": "flash-20260828-1529-us-equity-fund-outflow",
+    "publishedAt": "2026-08-28T15:29:00+03:00",
+    "source": "Reuters · LSEG Lipper",
+    "time": "15:29",
+    "title": "קרנות מניות בארה״ב רשמו פדיון שבועי של 22.33 מיליארד דולר — הגדול מאז מרץ",
+    "urgent": false
+  },
+  {
+    "articleId": "poland-2027-budget-defense-1558-20260828",
+    "id": "flash-20260828-1532-poland-budget-defense",
+    "publishedAt": "2026-08-28T15:32:00+03:00",
+    "source": "Reuters · משרד האוצר הפולני",
+    "time": "15:32",
+    "title": "פולין מתכננת גירעון של 7.1% ב־2027 והוצאות ביטחון של 198 מיליארד זלוטי",
+    "urgent": false
+  },
+  {
+    "articleId": "canada-q2-gdp-rebound-1558-20260828",
+    "id": "flash-20260828-1536-canada-q2-gdp",
+    "publishedAt": "2026-08-28T15:36:00+03:00",
+    "source": "Reuters · Statistics Canada",
+    "time": "15:36",
+    "title": "כלכלת קנדה צמחה בקצב שנתי של 3.3% ברבעון השני ונמנעה ממיתון טכני",
+    "urgent": false
   }
 ];

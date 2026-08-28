@@ -1665,6 +1665,18 @@
     .score-aggregate { color: var(--ink); font-size: .62rem; font-weight: 900; }
     .score-scorers { color: var(--muted); font-size: .59rem; font-weight: 800; line-height: 1.45; }
     .score-source { color: #1973ba; font-size: .59rem; font-weight: 900; }
+    .score-verified {
+      width: fit-content;
+      padding: 2px 7px;
+      border: 1px solid color-mix(in srgb, #17885a 30%, var(--line));
+      border-radius: 999px;
+      color: #126b49;
+      background: color-mix(in srgb, #e8fff6 72%, var(--paper));
+      font-size: .56rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    [data-theme="dark"] .score-verified { color: #77e7bd; background: rgba(32,166,110,.09); }
     .state-final .score-status { color: #15734d; }
     .state-final .score-status i { background: #20a66e; box-shadow: 0 0 0 4px rgba(32,166,110,.1); }
     .state-scheduled .score-status i { background: #7e8da0; box-shadow: none; }
@@ -2044,7 +2056,7 @@
           const ariaLabel = scheduled
             ? `${home} נגד ${away}, ${item.status || item.kickoff || "טרם החל"}`
             : `${home} ${homeScore}, ${away} ${awayScore}${outcomeLabel}${scorerLabel}`;
-          return `<a class="score-row state-${group.id}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="--score-delay:${Math.min(item._index * 45,315)}ms"><div class="score-context"><span class="score-league-chip">${escapeHtml(item.league)}</span><span class="score-date">${escapeHtml(item.dateLabel || "")}</span></div><div class="score-match" aria-label="${escapeHtml(ariaLabel)}"><span class="score-team home ${winner === "home" ? "is-winner" : ""}">${teamCrest(home,homeMeta)}<span class="team-name">${escapeHtml(home)}</span></span>${result}<span class="score-team away ${winner === "away" ? "is-winner" : ""}">${teamCrest(away,awayMeta)}<span class="team-name">${escapeHtml(away)}</span></span></div><div class="score-result-meta"><span class="score-status ${group.id === "live" ? "live" : ""}"><i></i>${escapeHtml(item.status || group.note)}</span>${item.outcome ? `<span class="score-outcome">${escapeHtml(item.outcome)}</span>` : ""}${detail ? `<span class="score-aggregate">${escapeHtml(detail)}</span>` : ""}${item.scorers ? `<span class="score-scorers">מבקיעים: ${escapeHtml(item.scorers)}</span>` : ""}<span class="score-source">${escapeHtml(item.source || "")} ↗</span></div></a>`;
+          return `<a class="score-row state-${group.id}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="--score-delay:${Math.min(item._index * 45,315)}ms"><div class="score-context"><span class="score-league-chip">${escapeHtml(item.league)}</span><span class="score-date">${escapeHtml(item.dateLabel || "")}</span></div><div class="score-match" aria-label="${escapeHtml(ariaLabel)}"><span class="score-team home ${winner === "home" ? "is-winner" : ""}">${teamCrest(home,homeMeta)}<span class="team-name">${escapeHtml(home)}</span></span>${result}<span class="score-team away ${winner === "away" ? "is-winner" : ""}">${teamCrest(away,awayMeta)}<span class="team-name">${escapeHtml(away)}</span></span></div><div class="score-result-meta"><span class="score-status ${group.id === "live" ? "live" : ""}"><i></i>${escapeHtml(item.status || group.note)}</span>${item.outcome ? `<span class="score-outcome">${escapeHtml(item.outcome)}</span>` : ""}${detail ? `<span class="score-aggregate">${escapeHtml(detail)}</span>` : ""}${item.scorers ? `<span class="score-scorers">מבקיעים: ${escapeHtml(item.scorers)}</span>` : ""}${item.verifiedLabel ? `<span class="score-verified">✓ ${escapeHtml(item.verifiedLabel)}</span>` : ""}<span class="score-source">${escapeHtml(item.source || "")} ↗</span></div></a>`;
         }).join("");
         return `<section class="score-group score-group-${group.id}"><div class="score-group-head"><div><span class="score-group-icon">${group.icon}</span><strong>${group.label}</strong></div><span>${groupItems.length} משחקים · ${group.note}${group.id === "final" ? " · בית מימין" : ""}</span></div><div class="score-group-list">${rows}</div></section>`;
       }).join("");
