@@ -2220,5 +2220,21 @@ window.BREAKING_ARCHIVE = [
     "time": "15:36",
     "title": "כלכלת קנדה צמחה בקצב שנתי של 3.3% ברבעון השני ונמנעה ממיתון טכני",
     "urgent": false
-  }
+  },
+  {"articleId":"nepal-tunnel-rescue-correction-2204-20260831","id":"flash-20260831-0724-nepal-correction","publishedAt":"2026-08-31T07:24:00+03:00","source":"Reuters","time":"07:24","title":"תיקון: מניין האסון בנפאל עודכן ל־903 הרוגים ו־4,247 נעדרים בצד הנפאלי","urgent":true},
+  {"articleId":"israel-desalination-algae-restart-2204-20260831","id":"flash-20260831-1206-desalination","publishedAt":"2026-08-31T12:06:00+03:00","source":"ynet · רשות המים","time":"12:06","title":"חמישה מתקני התפלה הושבתו זמנית בשל עכירות ופריחת אצות; הפעילות חוזרת בהדרגה","urgent":true},
+  {"articleId":"kyiv-drone-barrage-fifth-day-2204-20260831","id":"flash-20260831-1222-kyiv-drones","publishedAt":"2026-08-31T12:22:00+03:00","source":"Reuters","time":"12:22","title":"מתקפות הכטב״מים על קייב נמשכות יום חמישי ברציפות; ארבעה נפצעו","urgent":true},
+  {"articleId":"indus-treaty-arbitration-2204-20260831","id":"flash-20260831-1425-indus-ruling","publishedAt":"2026-08-31T14:25:00+03:00","source":"Reuters · PCA","time":"14:25","title":"בית הדין בהאג קבע כי אמנת מי האינדוס נותרה בתוקף; הודו דחתה את סמכותו","urgent":false},
+  {"articleId":"noam-prison-10-protest-2204-20260831","id":"flash-20260831-1439-prison10-protest","publishedAt":"2026-08-31T14:39:00+03:00","source":"JDN","time":"14:39","title":"מפלגת נעם לישראל הודיעה על מחאה מול כלא 10 בעניין תנאי שירות לחיילים שומרי מצוות","urgent":false},
+  {"articleId":"degel-hatorah-minister-demand-2204-20260831","id":"flash-20260831-1655-degel-minister","publishedAt":"2026-08-31T16:55:00+03:00","source":"חדשות 13","time":"16:55","title":"דגל התורה צפויה לדרוש תפקיד שר בממשלה הבאה — שינוי מקו היסטורי","urgent":false},
+  {"articleId":"solberg-election-security-2204-20260831","id":"flash-20260831-1724-solberg-security","publishedAt":"2026-08-31T17:24:00+03:00","source":"וואלה","time":"17:24","title":"האבטחה סביב יו״ר ועדת הבחירות נעם סולברג תוגברה עד לאחר הבחירות","urgent":false},
+  {"articleId":"messi-international-retirement-2204-20260831","id":"flash-20260831-1816-messi-retires","publishedAt":"2026-08-31T18:16:00+03:00","source":"Reuters","time":"18:16","title":"ליאו מסי הודיע על פרישה מנבחרת ארגנטינה אחרי 207 הופעות ו־125 שערים","urgent":false},
+  {"articleId":"ada-yonath-obituary-2204-20260831","id":"flash-20260831-1901-ada-yonath","publishedAt":"2026-08-31T19:01:00+03:00","source":"מכון ויצמן למדע","time":"19:01","title":"כלת פרס נובל פרופ׳ עדה יונת הלכה לעולמה בגיל 87","urgent":false},
+  {"articleId":"modi-putin-ukraine-humanity-2204-20260831","id":"flash-20260831-1910-modi-putin","publishedAt":"2026-08-31T19:10:00+03:00","source":"Reuters","time":"19:10","title":"מודי אמר לפוטין כי יש לעבור ממלחמה אינסופית להפסקת הלחימה באוקראינה","urgent":false},
+  {"articleId":"dado-bar-kalifa-central-command-2204-20260831","id":"flash-20260831-1959-dado-command","publishedAt":"2026-08-31T19:59:00+03:00","source":"ישראל היום · דובר צה״ל","time":"19:59","title":"אושר מינוי האלוף דדו בר כליפא למפקד פיקוד המרכז במהלך 2027","urgent":true},
+  {"articleId":"idf-west-bank-resource-warning-2204-20260831","id":"flash-20260831-2003-idf-west-bank","publishedAt":"2026-08-31T20:03:00+03:00","source":"חדשות 13","time":"20:03","title":"הרמטכ״ל הזהיר שהמצב ביו״ש עלול לחייב הסטת כוחות ומשאבים מזירות אחרות","urgent":true},
+  {"articleId":"amazon-ftc-ad-lawsuit-2204-20260831","id":"flash-20260831-2119-amazon-ftc","publishedAt":"2026-08-31T21:19:00+03:00","source":"Reuters","time":"21:19","title":"ה־FTC ויותר מ־20 מדינות הגישו תביעה נגד Amazon על תמחור פרסום","urgent":false},
+  {"articleId":"segalovitz-joins-raam-final-2204-20260831","id":"flash-20260831-2122-segalovitz-raam","publishedAt":"2026-08-31T21:22:00+03:00","source":"ישראל היום","time":"21:22","title":"סגלוביץ׳ הצטרף רשמית לרע״ם ויוצב במקום השני ברשימה","urgent":true},
+  {"articleId":"us-fuel-economy-lower-2204-20260831","id":"flash-20260831-2132-us-fuel-standards","publishedAt":"2026-08-31T21:32:00+03:00","source":"Reuters","time":"21:32","title":"ממשל טראמפ צפוי להנמיך את יעד צריכת הדלק לרכב ל־34.5 מייל לגלון ב־2031","urgent":false},
+  {"articleId":"warsh-investment-surge-g20-2204-20260831","id":"flash-20260831-2200-warsh-g20","publishedAt":"2026-08-31T22:00:00+03:00","source":"Reuters","time":"22:00","title":"יו״ר הפד וורש ל־G20: עודף החיסכון העולמי מתחלף בגל השקעות","urgent":false}
 ];
