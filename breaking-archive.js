@@ -3047,5 +3047,50 @@ window.BREAKING_ARCHIVE = [
     "time": "19:48",
     "title": "סמוטריץ׳ ופייגלין חתמו על בלוק טכני; וינטר דחה הצטרפות",
     "urgent": false
+  },
+  {
+    "articleId": "haredi-school-fine-response-2201-20260901",
+    "id": "flash-20260901-2101-school-fine",
+    "publishedAt": "2026-09-01T21:01:00+03:00",
+    "source": "כיכר השבת · משרד החינוך",
+    "time": "21:01",
+    "title": "משרד החינוך גינה קנס של 20 שקלים על חריגה מתקנון צניעות",
+    "urgent": false
+  },
+  {
+    "articleId": "us-house-funding-bill-2201-20260901",
+    "id": "flash-20260901-2107-us-funding",
+    "publishedAt": "2026-09-01T21:07:00+03:00",
+    "source": "Reuters",
+    "time": "21:07",
+    "title": "בית הנבחרים אישר מימון זמני ומנע השבתת ממשל בארה״ב",
+    "urgent": true
+  },
+  {
+    "articleId": "hamas-arabid-capture-2201-20260901",
+    "id": "flash-20260901-2119-hamas-arabid",
+    "publishedAt": "2026-09-01T21:19:00+03:00",
+    "source": "כיכר השבת · שב״כ וצה״ל",
+    "time": "21:19",
+    "title": "שב״כ וצה״ל לכדו בעזה בכיר במנגנון ביטחון הפנים של חמאס",
+    "urgent": true
+  },
+  {
+    "articleId": "jerusalem-cafe-shabbat-decision-2201-20260901",
+    "id": "flash-20260901-2130-jerusalem-cafe",
+    "publishedAt": "2026-09-01T21:30:00+03:00",
+    "source": "כיכר השבת · N12",
+    "time": "21:30",
+    "title": "בית קפה בירושלים שוקל להפסיק לפעול בשבת לאחר שבועות של מחאות",
+    "urgent": false
+  },
+  {
+    "articleId": "ponevezh-eviction-protest-2201-20260901",
+    "id": "flash-20260901-2143-ponevezh-protest",
+    "publishedAt": "2026-09-01T21:43:00+03:00",
+    "source": "כיכר השבת",
+    "time": "21:43",
+    "title": "תלמידי הרב מרקוביץ׳ קבעו עצרת מחאה נגד פינוי הישיבה",
+    "urgent": false
   }
 ];
