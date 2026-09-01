@@ -2678,5 +2678,95 @@ window.BREAKING_ARCHIVE = [
     "time": "05:40",
     "title": "מניות הודו צפויות לפתוח בעליות לאחר נתוני צמיחה חזקים; הנפט מגביל את האופטימיות",
     "urgent": false
+  },
+  {
+    "articleId": "taiwan-chip-democracy-semicon-0807-20260901",
+    "id": "flash-20260901-0603-taiwan-chips",
+    "publishedAt": "2026-09-01T06:03:00+03:00",
+    "source": "Reuters",
+    "time": "06:03",
+    "title": "נשיא טאיוואן: עוצמת תעשיית השבבים נשענת על דמוקרטיה ושלטון חוק",
+    "urgent": false
+  },
+  {
+    "articleId": "smithsonian-latino-museum-existing-building-0807-20260901",
+    "id": "flash-20260901-0644-smithsonian-latino",
+    "publishedAt": "2026-09-01T06:44:00+03:00",
+    "source": "Reuters",
+    "time": "06:44",
+    "title": "הסמית׳סוניאן ימַקם את המוזיאון הלאומי הלטיני בבניין קיים; עלות ההתאמה מוערכת בכמיליארד דולר",
+    "urgent": false
+  },
+  {
+    "articleId": "myanmar-minaunghlaing-vietnam-0807-20260901",
+    "id": "flash-20260901-0647-myanmar-vietnam",
+    "publishedAt": "2026-09-01T06:47:00+03:00",
+    "source": "Reuters",
+    "time": "06:47",
+    "title": "מנהיג מיאנמר יבקר בווייטנאם ב־4–6 בספטמבר בניסיון להרחיב את קשריו האזוריים",
+    "urgent": false
+  },
+  {
+    "articleId": "north-korea-us-dialogue-signals-0807-20260901",
+    "id": "flash-20260901-0649-north-korea-dialogue",
+    "publishedAt": "2026-09-01T06:49:00+03:00",
+    "source": "Reuters",
+    "time": "06:49",
+    "title": "סיאול מזהה סימנים לאפשרות של חידוש דיאלוג בין קוריאה הצפונית לארה״ב; אין אישור למגעים ישירים",
+    "urgent": false
+  },
+  {
+    "articleId": "hormuz-transits-single-digits-0807-20260901",
+    "id": "flash-20260901-0700-hormuz-five-transits",
+    "publishedAt": "2026-09-01T07:00:00+03:00",
+    "source": "Reuters · נתוני מעקב",
+    "time": "07:00",
+    "title": "תנועת כלי השיט בהורמוז נותרה חד־ספרתית: כחמש מעברות ביום שני לעומת ממוצע של 14",
+    "urgent": true
+  },
+  {
+    "articleId": "massachusetts-generational-primaries-0807-20260901",
+    "id": "flash-20260901-0710-massachusetts-primaries",
+    "publishedAt": "2026-09-01T07:10:00+03:00",
+    "source": "Reuters",
+    "time": "07:10",
+    "title": "הפריימריז במסצ׳וסטס נפתחו כמבחן דורי במפלגה הדמוקרטית",
+    "urgent": false
+  },
+  {
+    "articleId": "houthi-alshabaab-liaison-killed-0807-20260901",
+    "id": "flash-20260901-0713-houthi-alshabaab",
+    "publishedAt": "2026-09-01T07:13:00+03:00",
+    "source": "בחדרי חרדים",
+    "time": "07:13",
+    "title": "דיווח: תקיפה אמריקנית חיסלה את איש הקשר בין החות׳ים לארגון א־שבאב",
+    "urgent": true
+  },
+  {
+    "articleId": "kenya-aviation-strike-ended-0807-20260901",
+    "id": "flash-20260901-0727-kenya-aviation-strike",
+    "publishedAt": "2026-09-01T07:27:00+03:00",
+    "source": "Reuters",
+    "time": "07:27",
+    "title": "עובדי התעופה בקניה סיימו את השביתה; הפעילות בניירובי חוזרת בהדרגה",
+    "urgent": false
+  },
+  {
+    "articleId": "desalination-algae-update-0807-20260901",
+    "id": "flash-20260901-0745-desalination-update",
+    "publishedAt": "2026-09-01T07:45:00+03:00",
+    "source": "בחדרי חרדים · עדכון",
+    "time": "07:45",
+    "title": "עדכון: רוב מתקני ההתפלה בדרום עדיין מושבתים; שורק חזר לפעילות חלקית",
+    "urgent": true
+  },
+  {
+    "articleId": "angels-yankees-10-1-0807-20260901",
+    "id": "flash-20260901-0751-angels-yankees",
+    "publishedAt": "2026-09-01T07:51:00+03:00",
+    "source": "Reuters · Field Level Media",
+    "time": "07:51",
+    "title": "האנג׳לס הביסו 10:1 את היאנקיז וקטעו רצף של שבעה הפסדים",
+    "urgent": false
   }
 ];
