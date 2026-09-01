@@ -2221,30 +2221,462 @@ window.BREAKING_ARCHIVE = [
     "title": "כלכלת קנדה צמחה בקצב שנתי של 3.3% ברבעון השני ונמנעה ממיתון טכני",
     "urgent": false
   },
-  {"articleId":"nepal-tunnel-rescue-correction-2204-20260831","id":"flash-20260831-0724-nepal-correction","publishedAt":"2026-08-31T07:24:00+03:00","source":"Reuters","time":"07:24","title":"תיקון: מניין האסון בנפאל עודכן ל־903 הרוגים ו־4,247 נעדרים בצד הנפאלי","urgent":true},
-  {"articleId":"israel-desalination-algae-restart-2204-20260831","id":"flash-20260831-1206-desalination","publishedAt":"2026-08-31T12:06:00+03:00","source":"ynet · רשות המים","time":"12:06","title":"חמישה מתקני התפלה הושבתו זמנית בשל עכירות ופריחת אצות; הפעילות חוזרת בהדרגה","urgent":true},
-  {"articleId":"kyiv-drone-barrage-fifth-day-2204-20260831","id":"flash-20260831-1222-kyiv-drones","publishedAt":"2026-08-31T12:22:00+03:00","source":"Reuters","time":"12:22","title":"מתקפות הכטב״מים על קייב נמשכות יום חמישי ברציפות; ארבעה נפצעו","urgent":true},
-  {"articleId":"indus-treaty-arbitration-2204-20260831","id":"flash-20260831-1425-indus-ruling","publishedAt":"2026-08-31T14:25:00+03:00","source":"Reuters · PCA","time":"14:25","title":"בית הדין בהאג קבע כי אמנת מי האינדוס נותרה בתוקף; הודו דחתה את סמכותו","urgent":false},
-  {"articleId":"noam-prison-10-protest-2204-20260831","id":"flash-20260831-1439-prison10-protest","publishedAt":"2026-08-31T14:39:00+03:00","source":"JDN","time":"14:39","title":"מפלגת נעם לישראל הודיעה על מחאה מול כלא 10 בעניין תנאי שירות לחיילים שומרי מצוות","urgent":false},
-  {"articleId":"degel-hatorah-minister-demand-2204-20260831","id":"flash-20260831-1655-degel-minister","publishedAt":"2026-08-31T16:55:00+03:00","source":"חדשות 13","time":"16:55","title":"דגל התורה צפויה לדרוש תפקיד שר בממשלה הבאה — שינוי מקו היסטורי","urgent":false},
-  {"articleId":"solberg-election-security-2204-20260831","id":"flash-20260831-1724-solberg-security","publishedAt":"2026-08-31T17:24:00+03:00","source":"וואלה","time":"17:24","title":"האבטחה סביב יו״ר ועדת הבחירות נעם סולברג תוגברה עד לאחר הבחירות","urgent":false},
-  {"articleId":"messi-international-retirement-2204-20260831","id":"flash-20260831-1816-messi-retires","publishedAt":"2026-08-31T18:16:00+03:00","source":"Reuters","time":"18:16","title":"ליאו מסי הודיע על פרישה מנבחרת ארגנטינה אחרי 207 הופעות ו־125 שערים","urgent":false},
-  {"articleId":"ada-yonath-obituary-2204-20260831","id":"flash-20260831-1901-ada-yonath","publishedAt":"2026-08-31T19:01:00+03:00","source":"מכון ויצמן למדע","time":"19:01","title":"כלת פרס נובל פרופ׳ עדה יונת הלכה לעולמה בגיל 87","urgent":false},
-  {"articleId":"modi-putin-ukraine-humanity-2204-20260831","id":"flash-20260831-1910-modi-putin","publishedAt":"2026-08-31T19:10:00+03:00","source":"Reuters","time":"19:10","title":"מודי אמר לפוטין כי יש לעבור ממלחמה אינסופית להפסקת הלחימה באוקראינה","urgent":false},
-  {"articleId":"dado-bar-kalifa-central-command-2204-20260831","id":"flash-20260831-1959-dado-command","publishedAt":"2026-08-31T19:59:00+03:00","source":"ישראל היום · דובר צה״ל","time":"19:59","title":"אושר מינוי האלוף דדו בר כליפא למפקד פיקוד המרכז במהלך 2027","urgent":true},
-  {"articleId":"idf-west-bank-resource-warning-2204-20260831","id":"flash-20260831-2003-idf-west-bank","publishedAt":"2026-08-31T20:03:00+03:00","source":"חדשות 13","time":"20:03","title":"הרמטכ״ל הזהיר שהמצב ביו״ש עלול לחייב הסטת כוחות ומשאבים מזירות אחרות","urgent":true},
-  {"articleId":"amazon-ftc-ad-lawsuit-2204-20260831","id":"flash-20260831-2119-amazon-ftc","publishedAt":"2026-08-31T21:19:00+03:00","source":"Reuters","time":"21:19","title":"ה־FTC ויותר מ־20 מדינות הגישו תביעה נגד Amazon על תמחור פרסום","urgent":false},
-  {"articleId":"segalovitz-joins-raam-final-2204-20260831","id":"flash-20260831-2122-segalovitz-raam","publishedAt":"2026-08-31T21:22:00+03:00","source":"ישראל היום","time":"21:22","title":"סגלוביץ׳ הצטרף רשמית לרע״ם ויוצב במקום השני ברשימה","urgent":true},
-  {"articleId":"us-fuel-economy-lower-2204-20260831","id":"flash-20260831-2132-us-fuel-standards","publishedAt":"2026-08-31T21:32:00+03:00","source":"Reuters","time":"21:32","title":"ממשל טראמפ צפוי להנמיך את יעד צריכת הדלק לרכב ל־34.5 מייל לגלון ב־2031","urgent":false},
-  {"articleId":"warsh-investment-surge-g20-2204-20260831","id":"flash-20260831-2200-warsh-g20","publishedAt":"2026-08-31T22:00:00+03:00","source":"Reuters","time":"22:00","title":"יו״ר הפד וורש ל־G20: עודף החיסכון העולמי מתחלף בגל השקעות","urgent":false},
-  {"articleId":"channel12-poll-winter-enters-0002-20260901","id":"flash-20260831-2105-channel12-poll","publishedAt":"2026-08-31T21:05:00+03:00","source":"חדשות 12","time":"21:05","title":"סקר חדשות 12: ישר! 24, הליכוד 23, עמך ישראל 4 והציונות הדתית מתחת לסף","urgent":true},
-  {"articleId":"maccabi-tlv-haifa-final-0002-20260901","id":"flash-20260831-2223-mta-haifa-final","publishedAt":"2026-08-31T22:23:00+03:00","source":"ספורט 5","time":"22:23","title":"סיום בבלומפילד: מכבי תל אביב ניצחה 1:3 את מכבי חיפה","urgent":false},
-  {"articleId":"sec-shareholder-proposal-state-power-0002-20260901","id":"flash-20260831-2230-sec-shareholders","publishedAt":"2026-08-31T22:30:00+03:00","source":"Reuters","time":"22:30","title":"יו״ר ה־SEC מקדם העברת כללי הצעות בעלי המניות למדינות","urgent":false},
-  {"articleId":"miki-levy-leaves-knesset-list-0002-20260901","id":"flash-20260831-2247-miki-levy","publishedAt":"2026-08-31T22:47:00+03:00","source":"N12","time":"22:47","title":"מיקי לוי הודיע שלא יתמודד לכנסת הבאה ויישאר ביש עתיד","urgent":true},
-  {"articleId":"bnei-brak-rabbi-akiva-closure-0002-20260901","id":"flash-20260831-2300-bnei-brak-closure","publishedAt":"2026-08-31T23:00:00+03:00","source":"עיריית בני ברק","time":"23:00","title":"רחוב רבי עקיבא בבני ברק נחסם בשני הכיוונים עד 05:00","urgent":false},
-  {"articleId":"wall-street-final-close-0002-20260901","id":"flash-20260831-2300-wall-street-close","publishedAt":"2026-08-31T23:00:00+03:00","source":"Reuters","time":"23:00","title":"וול סטריט נסגרה בירידות: S&P 500 ירד 0.33% והדאו 0.70%","urgent":false},
-  {"articleId":"us-supreme-court-ballroom-0002-20260901","id":"flash-20260831-2309-white-house-ballroom","publishedAt":"2026-08-31T23:09:00+03:00","source":"Reuters","time":"23:09","title":"העליון בארה״ב התיר להמשיך זמנית בבניית אולם הנשפים בבית הלבן","urgent":false},
-  {"articleId":"wella-us-ipo-filing-0002-20260901","id":"flash-20260831-2324-wella-ipo","publishedAt":"2026-08-31T23:24:00+03:00","source":"Reuters","time":"23:24","title":"Wella, בעלת OPI, הגישה מסמכים להנפקה בבורסת ניו יורק","urgent":false},
-  {"articleId":"trump-falklands-position-review-0002-20260901","id":"flash-20260831-2335-falklands-review","publishedAt":"2026-08-31T23:35:00+03:00","source":"Reuters","time":"23:35","title":"טראמפ: ארה״ב בוחנת מחדש את עמדתה בסכסוך על איי פוקלנד","urgent":true},
-  {"articleId":"apple-openai-circuit-plans-allegation-0002-20260901","id":"flash-20260831-2340-apple-openai","publishedAt":"2026-08-31T23:40:00+03:00","source":"Reuters","time":"23:40","title":"Apple טוענת שעובד OpenAI ניגש לתוכניות שבבים חסויות לפני שעזב","urgent":true}
+  {
+    "articleId": "nepal-tunnel-rescue-correction-2204-20260831",
+    "id": "flash-20260831-0724-nepal-correction",
+    "publishedAt": "2026-08-31T07:24:00+03:00",
+    "source": "Reuters",
+    "time": "07:24",
+    "title": "תיקון: מניין האסון בנפאל עודכן ל־903 הרוגים ו־4,247 נעדרים בצד הנפאלי",
+    "urgent": true
+  },
+  {
+    "articleId": "israel-desalination-algae-restart-2204-20260831",
+    "id": "flash-20260831-1206-desalination",
+    "publishedAt": "2026-08-31T12:06:00+03:00",
+    "source": "ynet · רשות המים",
+    "time": "12:06",
+    "title": "חמישה מתקני התפלה הושבתו זמנית בשל עכירות ופריחת אצות; הפעילות חוזרת בהדרגה",
+    "urgent": true
+  },
+  {
+    "articleId": "kyiv-drone-barrage-fifth-day-2204-20260831",
+    "id": "flash-20260831-1222-kyiv-drones",
+    "publishedAt": "2026-08-31T12:22:00+03:00",
+    "source": "Reuters",
+    "time": "12:22",
+    "title": "מתקפות הכטב״מים על קייב נמשכות יום חמישי ברציפות; ארבעה נפצעו",
+    "urgent": true
+  },
+  {
+    "articleId": "indus-treaty-arbitration-2204-20260831",
+    "id": "flash-20260831-1425-indus-ruling",
+    "publishedAt": "2026-08-31T14:25:00+03:00",
+    "source": "Reuters · PCA",
+    "time": "14:25",
+    "title": "בית הדין בהאג קבע כי אמנת מי האינדוס נותרה בתוקף; הודו דחתה את סמכותו",
+    "urgent": false
+  },
+  {
+    "articleId": "noam-prison-10-protest-2204-20260831",
+    "id": "flash-20260831-1439-prison10-protest",
+    "publishedAt": "2026-08-31T14:39:00+03:00",
+    "source": "JDN",
+    "time": "14:39",
+    "title": "מפלגת נעם לישראל הודיעה על מחאה מול כלא 10 בעניין תנאי שירות לחיילים שומרי מצוות",
+    "urgent": false
+  },
+  {
+    "articleId": "degel-hatorah-minister-demand-2204-20260831",
+    "id": "flash-20260831-1655-degel-minister",
+    "publishedAt": "2026-08-31T16:55:00+03:00",
+    "source": "חדשות 13",
+    "time": "16:55",
+    "title": "דגל התורה צפויה לדרוש תפקיד שר בממשלה הבאה — שינוי מקו היסטורי",
+    "urgent": false
+  },
+  {
+    "articleId": "solberg-election-security-2204-20260831",
+    "id": "flash-20260831-1724-solberg-security",
+    "publishedAt": "2026-08-31T17:24:00+03:00",
+    "source": "וואלה",
+    "time": "17:24",
+    "title": "האבטחה סביב יו״ר ועדת הבחירות נעם סולברג תוגברה עד לאחר הבחירות",
+    "urgent": false
+  },
+  {
+    "articleId": "messi-international-retirement-2204-20260831",
+    "id": "flash-20260831-1816-messi-retires",
+    "publishedAt": "2026-08-31T18:16:00+03:00",
+    "source": "Reuters",
+    "time": "18:16",
+    "title": "ליאו מסי הודיע על פרישה מנבחרת ארגנטינה אחרי 207 הופעות ו־125 שערים",
+    "urgent": false
+  },
+  {
+    "articleId": "ada-yonath-obituary-2204-20260831",
+    "id": "flash-20260831-1901-ada-yonath",
+    "publishedAt": "2026-08-31T19:01:00+03:00",
+    "source": "מכון ויצמן למדע",
+    "time": "19:01",
+    "title": "כלת פרס נובל פרופ׳ עדה יונת הלכה לעולמה בגיל 87",
+    "urgent": false
+  },
+  {
+    "articleId": "modi-putin-ukraine-humanity-2204-20260831",
+    "id": "flash-20260831-1910-modi-putin",
+    "publishedAt": "2026-08-31T19:10:00+03:00",
+    "source": "Reuters",
+    "time": "19:10",
+    "title": "מודי אמר לפוטין כי יש לעבור ממלחמה אינסופית להפסקת הלחימה באוקראינה",
+    "urgent": false
+  },
+  {
+    "articleId": "dado-bar-kalifa-central-command-2204-20260831",
+    "id": "flash-20260831-1959-dado-command",
+    "publishedAt": "2026-08-31T19:59:00+03:00",
+    "source": "ישראל היום · דובר צה״ל",
+    "time": "19:59",
+    "title": "אושר מינוי האלוף דדו בר כליפא למפקד פיקוד המרכז במהלך 2027",
+    "urgent": true
+  },
+  {
+    "articleId": "idf-west-bank-resource-warning-2204-20260831",
+    "id": "flash-20260831-2003-idf-west-bank",
+    "publishedAt": "2026-08-31T20:03:00+03:00",
+    "source": "חדשות 13",
+    "time": "20:03",
+    "title": "הרמטכ״ל הזהיר שהמצב ביו״ש עלול לחייב הסטת כוחות ומשאבים מזירות אחרות",
+    "urgent": true
+  },
+  {
+    "articleId": "amazon-ftc-ad-lawsuit-2204-20260831",
+    "id": "flash-20260831-2119-amazon-ftc",
+    "publishedAt": "2026-08-31T21:19:00+03:00",
+    "source": "Reuters",
+    "time": "21:19",
+    "title": "ה־FTC ויותר מ־20 מדינות הגישו תביעה נגד Amazon על תמחור פרסום",
+    "urgent": false
+  },
+  {
+    "articleId": "segalovitz-joins-raam-final-2204-20260831",
+    "id": "flash-20260831-2122-segalovitz-raam",
+    "publishedAt": "2026-08-31T21:22:00+03:00",
+    "source": "ישראל היום",
+    "time": "21:22",
+    "title": "סגלוביץ׳ הצטרף רשמית לרע״ם ויוצב במקום השני ברשימה",
+    "urgent": true
+  },
+  {
+    "articleId": "us-fuel-economy-lower-2204-20260831",
+    "id": "flash-20260831-2132-us-fuel-standards",
+    "publishedAt": "2026-08-31T21:32:00+03:00",
+    "source": "Reuters",
+    "time": "21:32",
+    "title": "ממשל טראמפ צפוי להנמיך את יעד צריכת הדלק לרכב ל־34.5 מייל לגלון ב־2031",
+    "urgent": false
+  },
+  {
+    "articleId": "warsh-investment-surge-g20-2204-20260831",
+    "id": "flash-20260831-2200-warsh-g20",
+    "publishedAt": "2026-08-31T22:00:00+03:00",
+    "source": "Reuters",
+    "time": "22:00",
+    "title": "יו״ר הפד וורש ל־G20: עודף החיסכון העולמי מתחלף בגל השקעות",
+    "urgent": false
+  },
+  {
+    "articleId": "channel12-poll-winter-enters-0002-20260901",
+    "id": "flash-20260831-2105-channel12-poll",
+    "publishedAt": "2026-08-31T21:05:00+03:00",
+    "source": "חדשות 12",
+    "time": "21:05",
+    "title": "סקר חדשות 12: ישר! 24, הליכוד 23, עמך ישראל 4 והציונות הדתית מתחת לסף",
+    "urgent": true
+  },
+  {
+    "articleId": "maccabi-tlv-haifa-final-0002-20260901",
+    "id": "flash-20260831-2223-mta-haifa-final",
+    "publishedAt": "2026-08-31T22:23:00+03:00",
+    "source": "ספורט 5",
+    "time": "22:23",
+    "title": "סיום בבלומפילד: מכבי תל אביב ניצחה 1:3 את מכבי חיפה",
+    "urgent": false
+  },
+  {
+    "articleId": "sec-shareholder-proposal-state-power-0002-20260901",
+    "id": "flash-20260831-2230-sec-shareholders",
+    "publishedAt": "2026-08-31T22:30:00+03:00",
+    "source": "Reuters",
+    "time": "22:30",
+    "title": "יו״ר ה־SEC מקדם העברת כללי הצעות בעלי המניות למדינות",
+    "urgent": false
+  },
+  {
+    "articleId": "miki-levy-leaves-knesset-list-0002-20260901",
+    "id": "flash-20260831-2247-miki-levy",
+    "publishedAt": "2026-08-31T22:47:00+03:00",
+    "source": "N12",
+    "time": "22:47",
+    "title": "מיקי לוי הודיע שלא יתמודד לכנסת הבאה ויישאר ביש עתיד",
+    "urgent": true
+  },
+  {
+    "articleId": "bnei-brak-rabbi-akiva-closure-0002-20260901",
+    "id": "flash-20260831-2300-bnei-brak-closure",
+    "publishedAt": "2026-08-31T23:00:00+03:00",
+    "source": "עיריית בני ברק",
+    "time": "23:00",
+    "title": "רחוב רבי עקיבא בבני ברק נחסם בשני הכיוונים עד 05:00",
+    "urgent": false
+  },
+  {
+    "articleId": "wall-street-final-close-0002-20260901",
+    "id": "flash-20260831-2300-wall-street-close",
+    "publishedAt": "2026-08-31T23:00:00+03:00",
+    "source": "Reuters",
+    "time": "23:00",
+    "title": "וול סטריט נסגרה בירידות: S&P 500 ירד 0.33% והדאו 0.70%",
+    "urgent": false
+  },
+  {
+    "articleId": "us-supreme-court-ballroom-0002-20260901",
+    "id": "flash-20260831-2309-white-house-ballroom",
+    "publishedAt": "2026-08-31T23:09:00+03:00",
+    "source": "Reuters",
+    "time": "23:09",
+    "title": "העליון בארה״ב התיר להמשיך זמנית בבניית אולם הנשפים בבית הלבן",
+    "urgent": false
+  },
+  {
+    "articleId": "wella-us-ipo-filing-0002-20260901",
+    "id": "flash-20260831-2324-wella-ipo",
+    "publishedAt": "2026-08-31T23:24:00+03:00",
+    "source": "Reuters",
+    "time": "23:24",
+    "title": "Wella, בעלת OPI, הגישה מסמכים להנפקה בבורסת ניו יורק",
+    "urgent": false
+  },
+  {
+    "articleId": "trump-falklands-position-review-0002-20260901",
+    "id": "flash-20260831-2335-falklands-review",
+    "publishedAt": "2026-08-31T23:35:00+03:00",
+    "source": "Reuters",
+    "time": "23:35",
+    "title": "טראמפ: ארה״ב בוחנת מחדש את עמדתה בסכסוך על איי פוקלנד",
+    "urgent": true
+  },
+  {
+    "articleId": "apple-openai-circuit-plans-allegation-0002-20260901",
+    "id": "flash-20260831-2340-apple-openai",
+    "publishedAt": "2026-08-31T23:40:00+03:00",
+    "source": "Reuters",
+    "time": "23:40",
+    "title": "Apple טוענת שעובד OpenAI ניגש לתוכניות שבבים חסויות לפני שעזב",
+    "urgent": true
+  },
+  {
+    "articleId": "iran-next-strikes-under-review-0202-20260901",
+    "id": "flash-20260901-0017-iran-options",
+    "publishedAt": "2026-09-01T00:17:00+03:00",
+    "source": "N12",
+    "time": "00:17",
+    "title": "ארה״ב בוחנת אפשרויות לפעולות נוספות מול איראן; טרם התקבלה החלטה",
+    "urgent": true
+  },
+  {
+    "articleId": "brazil-ticket-bot-rules-0202-20260901",
+    "id": "flash-20260901-0036-brazil-ticket-bots",
+    "publishedAt": "2026-09-01T00:36:00+03:00",
+    "source": "Reuters",
+    "time": "00:36",
+    "title": "ברזיל אסרה רכישת כרטיסים אוטומטית בכמויות וחייבה גילוי מלא של עמלות",
+    "urgent": false
+  },
+  {
+    "articleId": "eisenkot-armed-security-recommendation-0202-20260901",
+    "id": "flash-20260901-0038-eisenkot-security",
+    "publishedAt": "2026-09-01T00:38:00+03:00",
+    "source": "N12",
+    "time": "00:38",
+    "title": "רמת האיום על איזנקוט הועלתה; הומלצה אבטחה חמושה מיידית",
+    "urgent": true
+  },
+  {
+    "articleId": "ukraine-us-sanctions-lobby-0202-20260901",
+    "id": "flash-20260901-0040-ukraine-sanctions-lobby",
+    "publishedAt": "2026-09-01T00:40:50+03:00",
+    "source": "Reuters",
+    "time": "00:40",
+    "title": "נציב הסנקציות האוקראיני יגיע לוושינגטון לקדם את החוק נגד רוסיה",
+    "urgent": false
+  },
+  {
+    "articleId": "barcelona-rayo-five-two-0202-20260901",
+    "id": "flash-20260901-0045-barcelona-rayo-final",
+    "publishedAt": "2026-09-01T00:45:00+03:00",
+    "source": "Reuters",
+    "time": "00:45",
+    "title": "סופי: ברצלונה הביסה את ראיו ואיקאנו 2:5 ועלתה לפסגת לה ליגה",
+    "urgent": false
+  },
+  {
+    "articleId": "spain-israel-disinformation-clash-0202-20260901",
+    "id": "flash-20260901-0100-spain-israel-clash",
+    "publishedAt": "2026-09-01T01:00:00+03:00",
+    "source": "JDN",
+    "time": "01:00",
+    "title": "ראש ממשלת ספרד האשים רשתות המזוהות עם ישראל; סער דחה את הטענה",
+    "urgent": false
+  },
+  {
+    "articleId": "driscoll-army-resignation-0202-20260901",
+    "id": "flash-20260901-0102-driscoll-resigns",
+    "publishedAt": "2026-09-01T01:02:32+03:00",
+    "source": "Reuters",
+    "time": "01:02",
+    "title": "מזכיר הצבא האמריקני דן דריסקול הגיש את התפטרותו לבית הלבן",
+    "urgent": true
+  },
+  {
+    "articleId": "boeing-engineers-talks-sept8-0202-20260901",
+    "id": "flash-20260901-0117-boeing-talks",
+    "publishedAt": "2026-09-01T01:17:00+03:00",
+    "source": "Reuters",
+    "time": "01:17",
+    "title": "Boeing ואיגוד המהנדסים יחזרו למשא ומתן ב־8 בספטמבר",
+    "urgent": false
+  },
+  {
+    "articleId": "trump-europe-media-grants-0202-20260901",
+    "id": "flash-20260901-0119-europe-media-grants",
+    "publishedAt": "2026-09-01T01:19:06+03:00",
+    "source": "Reuters",
+    "time": "01:19",
+    "title": "הממשל האמריקני מתכנן 4 מיליון דולר למדיה ימנית באירופה",
+    "urgent": false
+  },
+  {
+    "articleId": "uk-a7-sanctions-penalties-0202-20260901",
+    "id": "flash-20260901-0129-uk-a7-penalties",
+    "publishedAt": "2026-09-01T01:29:41+03:00",
+    "source": "Reuters",
+    "time": "01:29",
+    "title": "בריטניה הכפילה קנסות על הפרת סנקציות והתמקדה ברשת A7",
+    "urgent": true
+  },
+  {
+    "articleId": "north-carolina-mosque-attack-charge-0202-20260901",
+    "id": "flash-20260901-0136-mosque-attack-charge",
+    "publishedAt": "2026-09-01T01:36:00+03:00",
+    "source": "Reuters",
+    "time": "01:36",
+    "title": "נערה בת 17 הואשמה בסיוע לפיגוע במסגד בסן דייגו",
+    "urgent": true
+  },
+  {
+    "articleId": "trump-entertainment-tax-incentive-0202-20260901",
+    "id": "flash-20260901-0148-entertainment-tax",
+    "publishedAt": "2026-09-01T01:48:00+03:00",
+    "source": "Reuters",
+    "time": "01:48",
+    "title": "טראמפ קרא לקונגרס לאשר תמריצי מס להפקות קולנוע וטלוויזיה",
+    "urgent": false
+  },
+  {
+    "articleId": "us-iraq-helicopter-sale-0202-20260901",
+    "id": "flash-20260901-0149-iraq-helicopters",
+    "publishedAt": "2026-09-01T01:49:22+03:00",
+    "source": "Reuters",
+    "time": "01:49",
+    "title": "ארה״ב אישרה מכירת מסוקים לעיראק בשווי 800 מיליון דולר",
+    "urgent": true
+  },
+  {
+    "articleId": "kyiv-sixth-night-strikes-0559-20260901",
+    "id": "flash-20260901-0309-kyiv-sixth-night",
+    "publishedAt": "2026-09-01T03:09:00+03:00",
+    "source": "Reuters",
+    "time": "03:09",
+    "title": "קייב: ארבעה נהרגו ויותר מ־12 נפצעו בלילה שישי של תקיפות",
+    "urgent": true
+  },
+  {
+    "articleId": "china-taiwan-pacific-warning-0559-20260901",
+    "id": "flash-20260901-0353-china-taiwan-pacific",
+    "publishedAt": "2026-09-01T03:53:00+03:00",
+    "source": "Reuters",
+    "time": "03:53",
+    "title": "סין הזהירה מ״השלכות״ בשל נוכחות טייוואן בפורום מנהיגי האוקיינוס השקט",
+    "urgent": false
+  },
+  {
+    "articleId": "us-mail-voting-appeal-0559-20260901",
+    "id": "flash-20260901-0408-us-mail-voting-appeal",
+    "publishedAt": "2026-09-01T04:08:00+03:00",
+    "source": "Reuters",
+    "time": "04:08",
+    "title": "ממשל טראמפ ביקש מערכאת ערעור להסיר חסימה על כלל ההצבעה בדואר",
+    "urgent": false
+  },
+  {
+    "articleId": "india-fortis-forensic-audit-0559-20260901",
+    "id": "flash-20260901-0409-india-fortis-audit",
+    "publishedAt": "2026-09-01T04:09:00+03:00",
+    "source": "Reuters",
+    "time": "04:09",
+    "title": "בית משפט בהודו הורה למנות מבקר פורנזי בפרשת Daiichi–Fortis",
+    "urgent": false
+  },
+  {
+    "articleId": "shein-hong-kong-flat-debut-0559-20260901",
+    "id": "flash-20260901-0426-shein-hong-kong",
+    "publishedAt": "2026-09-01T04:26:00+03:00",
+    "source": "Reuters",
+    "time": "04:26",
+    "title": "Shein פתחה את המסחר בהונג קונג סביב מחיר ההנפקה",
+    "urgent": false
+  },
+  {
+    "articleId": "south-korea-2027-budget-0559-20260901",
+    "id": "flash-20260901-0427-korea-budget",
+    "publishedAt": "2026-09-01T04:27:00+03:00",
+    "source": "Reuters",
+    "time": "04:27",
+    "title": "דרום קוריאה הציגה תקציב 2027 בהיקף 599 מיליארד דולר",
+    "urgent": false
+  },
+  {
+    "articleId": "global-bonds-oil-asia-0559-20260901",
+    "id": "flash-20260901-0446-bonds-oil-asia",
+    "publishedAt": "2026-09-01T04:46:00+03:00",
+    "source": "Reuters",
+    "time": "04:46",
+    "title": "תשואת אג״ח ארה״ב ל־10 שנים עלתה ל־4.78%; ברנט נשאר מעל 91 דולר",
+    "urgent": true
+  },
+  {
+    "articleId": "cook-islands-port-us-nz-0559-20260901",
+    "id": "flash-20260901-0450-cook-port",
+    "publishedAt": "2026-09-01T04:50:00+03:00",
+    "source": "Reuters",
+    "time": "04:50",
+    "title": "ארה״ב וניו זילנד יממנו שדרוג נמל באיי קוק ב־60 מיליון דולר",
+    "urgent": false
+  },
+  {
+    "articleId": "mexico-cartel-bombs-rise-0559-20260901",
+    "id": "flash-20260901-0451-mexico-bombs",
+    "publishedAt": "2026-09-01T04:51:00+03:00",
+    "source": "Reuters",
+    "time": "04:51",
+    "title": "מקסיקו: מכונית תופת בזקטקאס פצעה 11 וגרמה נזק לכ־40 מבנים",
+    "urgent": true
+  },
+  {
+    "articleId": "tesla-australia-court-expert-0559-20260901",
+    "id": "flash-20260901-0509-tesla-australia-expert",
+    "publishedAt": "2026-09-01T05:09:00+03:00",
+    "source": "Reuters",
+    "time": "05:09",
+    "title": "שופט באוסטרליה שוקל גישה של מומחה בית משפט להנדסת Tesla",
+    "urgent": false
+  },
+  {
+    "articleId": "asia-ai-factory-expansion-0559-20260901",
+    "id": "flash-20260901-0537-asia-ai-factories",
+    "publishedAt": "2026-09-01T05:37:00+03:00",
+    "source": "Reuters",
+    "time": "05:37",
+    "title": "בום ה־AI דוחף להתרחבות במפעלי יפן, דרום קוריאה וסין",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260901-0540-india-shares",
+    "publishedAt": "2026-09-01T05:40:00+03:00",
+    "source": "Reuters",
+    "time": "05:40",
+    "title": "מניות הודו צפויות לפתוח בעליות לאחר נתוני צמיחה חזקים; הנפט מגביל את האופטימיות",
+    "urgent": false
+  }
 ];
