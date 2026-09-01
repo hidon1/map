@@ -2966,5 +2966,86 @@ window.BREAKING_ARCHIVE = [
     "time": "17:39",
     "title": "מוסא דיאבי חזר לבאייר לברקוזן מאל־איתיחאד",
     "urgent": false
+  },
+  {
+    "articleId": "gutliv-ben-gvir-talks-report-2001-20260901",
+    "id": "flash-20260901-1749-gutliv-ben-gvir",
+    "publishedAt": "2026-09-01T17:49:00+03:00",
+    "source": "כיכר השבת",
+    "time": "17:49",
+    "title": "דיווח: טלי גוטליב פתוחה להצעה קונקרטית מחוץ לליכוד",
+    "urgent": false
+  },
+  {
+    "articleId": "tronchon-vuelta-stage10-2001-20260901",
+    "id": "flash-20260901-1841-tronchon-vuelta",
+    "publishedAt": "2026-09-01T18:41:00+03:00",
+    "source": "Reuters",
+    "time": "18:41",
+    "title": "באסטיאן טרונשון ניצח בפוטו־פיניש בקטע העשירי של הוואלטה",
+    "urgent": false
+  },
+  {
+    "articleId": "rudiger-germany-retirement-2001-20260901",
+    "id": "flash-20260901-1913-rudiger-retirement",
+    "publishedAt": "2026-09-01T19:13:00+03:00",
+    "source": "Reuters",
+    "time": "19:13",
+    "title": "אנטוניו רודיגר פרש מנבחרת גרמניה אחרי 86 הופעות",
+    "urgent": false
+  },
+  {
+    "articleId": "ag-opposes-mahash-appointments-2001-20260901",
+    "id": "flash-20260901-1916-ag-mahash",
+    "publishedAt": "2026-09-01T19:16:00+03:00",
+    "source": "כיכר השבת",
+    "time": "19:16",
+    "title": "היועמ״שית ביקשה מבג״ץ לעצור את מינויי מח״ש בתקופת הבחירות",
+    "urgent": false
+  },
+  {
+    "articleId": "enzo-fernandez-man-city-report-2001-20260901",
+    "id": "flash-20260901-1920-enzo-city",
+    "publishedAt": "2026-09-01T19:20:00+03:00",
+    "source": "Reuters",
+    "time": "19:20",
+    "title": "דיווחים: מנצ׳סטר סיטי סיכמה על רכישת אנזו פרננדס ב־125 מיליון ליש״ט",
+    "urgent": false
+  },
+  {
+    "articleId": "us-embassy-iran-alert-2001-20260901",
+    "id": "flash-20260901-1930-bandar-abbas-alert",
+    "publishedAt": "2026-09-01T19:30:00+03:00",
+    "source": "כיכר השבת",
+    "time": "19:30",
+    "title": "דיווחים על פיצוצים בבנדר עבאס; שגרירות ארה״ב בישראל פרסמה התרעה",
+    "urgent": true
+  },
+  {
+    "articleId": "germany-russia-leipzig-drone-2001-20260901",
+    "id": "flash-20260901-1931-germany-russia-drone",
+    "publishedAt": "2026-09-01T19:31:00+03:00",
+    "source": "Reuters",
+    "time": "19:31",
+    "title": "גרמניה האשימה את רוסיה בניסיון תקיפת רחפנים בנמל התעופה לייפציג",
+    "urgent": true
+  },
+  {
+    "articleId": "us-strikes-iran-2001-20260901",
+    "id": "flash-20260901-1932-us-strikes-iran",
+    "publishedAt": "2026-09-01T19:32:00+03:00",
+    "source": "Reuters",
+    "time": "19:32",
+    "title": "צבא ארה״ב הודיע כי הוא תוקף מטרות באיראן",
+    "urgent": true
+  },
+  {
+    "articleId": "smotrich-feiglin-bloc-2001-20260901",
+    "id": "flash-20260901-1948-smotrich-feiglin",
+    "publishedAt": "2026-09-01T19:48:00+03:00",
+    "source": "כיכר השבת",
+    "time": "19:48",
+    "title": "סמוטריץ׳ ופייגלין חתמו על בלוק טכני; וינטר דחה הצטרפות",
+    "urgent": false
   }
 ];
