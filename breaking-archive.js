@@ -2768,5 +2768,77 @@ window.BREAKING_ARCHIVE = [
     "time": "07:51",
     "title": "האנג׳לס הביסו 10:1 את היאנקיז וקטעו רצף של שבעה הפסדים",
     "urgent": false
+  },
+  {
+    "articleId": "lithuanian-rabbis-musical-selichot-0900-20260901",
+    "id": "flash-20260901-0752-musical-selichot",
+    "publishedAt": "2026-09-01T07:52:00+03:00",
+    "source": "כיכר השבת",
+    "time": "07:52",
+    "title": "הרבנים דב לנדו ומשה הלל הירש קראו לרשויות שלא לממן מופעי סליחות מוזיקליים",
+    "urgent": false
+  },
+  {
+    "articleId": "ohana-school-route-posters-0900-20260901",
+    "id": "flash-20260901-0759-ohana-school-posters",
+    "publishedAt": "2026-09-01T07:59:00+03:00",
+    "source": "ערוץ 7",
+    "time": "07:59",
+    "title": "יו״ר הכנסת אוחנה: מודעות מחאה נתלו לאורך הדרך של ילדיי לבית הספר",
+    "urgent": false
+  },
+  {
+    "articleId": "france-fast-fashion-penalties-0900-20260901",
+    "id": "flash-20260901-0804-france-fast-fashion",
+    "publishedAt": "2026-09-01T08:04:00+03:00",
+    "source": "Reuters",
+    "time": "08:04",
+    "title": "צרפת החלה להטיל קנסות על פריטי אופנה מהירה; Shein ו־Temu במוקד",
+    "urgent": false
+  },
+  {
+    "articleId": "unhcr-malaysia-myanmar-return-0900-20260901",
+    "id": "flash-20260901-0831-unhcr-malaysia",
+    "publishedAt": "2026-09-01T08:31:00+03:00",
+    "source": "Reuters · UNHCR",
+    "time": "08:31",
+    "title": "UNHCR: מיאנמר עדיין אינה בטוחה להחזרת פליטים; הנציבות אינה שותפה לתוכנית מלזיה",
+    "urgent": true
+  },
+  {
+    "articleId": "openai-apple-trade-secret-response-0900-20260901",
+    "id": "flash-20260901-0832-openai-apple-response",
+    "publishedAt": "2026-09-01T08:32:00+03:00",
+    "source": "Reuters · מסמכי בית משפט",
+    "time": "08:32",
+    "title": "OpenAI דחתה בבית המשפט את טענות Apple לגניבת סודות מסחריים",
+    "urgent": false
+  },
+  {
+    "articleId": "yair-golan-legal-action-0900-20260901",
+    "id": "flash-20260901-0844-yair-golan-lawsuit",
+    "publishedAt": "2026-09-01T08:44:00+03:00",
+    "source": "ערוץ 7 · גל״צ",
+    "time": "08:44",
+    "title": "יאיר גולן הודיע כי יגיש תביעת דיבה נגד שרה נתניהו",
+    "urgent": false
+  },
+  {
+    "articleId": "desalination-water-agriculture-0900-20260901",
+    "id": "flash-20260901-0849-water-agriculture-update",
+    "publishedAt": "2026-09-01T08:49:00+03:00",
+    "source": "כל רגע · דיווחי כתבים",
+    "time": "08:49",
+    "title": "עדכון: דווח על לחץ מים המסכן גידולים בפתחת ניצנה ועל חשש לשיבושים באזור ירושלים",
+    "urgent": true
+  },
+  {
+    "articleId": "nfl-australia-annual-plan-0900-20260901",
+    "id": "flash-20260901-0851-nfl-australia",
+    "publishedAt": "2026-09-01T08:51:00+03:00",
+    "source": "Reuters · NFL",
+    "time": "08:51",
+    "title": "ה־NFL רוצה להפוך את המשחק באוסטרליה לאירוע שנתי; הבכורה ב־11 בספטמבר",
+    "urgent": false
   }
 ];
