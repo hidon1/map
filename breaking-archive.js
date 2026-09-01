@@ -2840,5 +2840,131 @@ window.BREAKING_ARCHIVE = [
     "time": "08:51",
     "title": "ה־NFL רוצה להפוך את המשחק באוסטרליה לאירוע שנתי; הבכורה ב־11 בספטמבר",
     "urgent": false
+  },
+  {
+    "articleId": "texas-data-center-freeze-1757-20260901",
+    "id": "flash-20260901-1303-texas-data-centers",
+    "publishedAt": "2026-09-01T13:03:00+03:00",
+    "source": "Reuters",
+    "time": "13:03",
+    "title": "טקסס מקשיחה חיבורי מרכזי נתונים לאחר שבקשות החשמל בארה״ב חצו 700 ג׳יגה־ואט",
+    "urgent": false
+  },
+  {
+    "articleId": "iran-us-interim-deal-1757-20260901",
+    "id": "flash-20260901-1413-iran-interim",
+    "publishedAt": "2026-09-01T14:13:00+03:00",
+    "source": "Reuters",
+    "time": "14:13",
+    "title": "איראן קוראת לארה״ב לחזור להסכם הביניים; טראמפ מאיים בתגובה נוספת",
+    "urgent": true
+  },
+  {
+    "articleId": "haredi-teen-bus-injury-1757-20260901",
+    "id": "flash-20260901-1442-jerusalem-bus-injury",
+    "publishedAt": "2026-09-01T14:42:00+03:00",
+    "source": "כיכר השבת · איחוד הצלה",
+    "time": "14:42",
+    "title": "נער חרדי בן 16 נפגע מאוטובוס בכניסה לירושלים; מצבו בינוני ויציב",
+    "urgent": true
+  },
+  {
+    "articleId": "crown-heights-hate-crime-1757-20260901",
+    "id": "flash-20260901-1601-crown-heights-arrest",
+    "publishedAt": "2026-09-01T16:01:00+03:00",
+    "source": "כיכר השבת · COLive",
+    "time": "16:01",
+    "title": "קראון הייטס: נעצר חשוד שאיים לרצוח ילדים חרדים",
+    "urgent": true
+  },
+  {
+    "articleId": "kiryat-yovel-school-protest-1757-20260901",
+    "id": "flash-20260901-1615-kiryat-yovel-petition",
+    "publishedAt": "2026-09-01T16:15:00+03:00",
+    "source": "כיכר השבת",
+    "time": "16:15",
+    "title": "קריית יובל: הקהילה החרדית הודיעה על עתירה נגד פתיחת תיכון ממלכתי",
+    "urgent": false
+  },
+  {
+    "articleId": "bank-israel-rate-cut-1757-20260901",
+    "id": "flash-20260901-1635-bank-israel-rate",
+    "publishedAt": "2026-09-01T16:35:00+03:00",
+    "source": "כיכר השבת · בנק ישראל",
+    "time": "16:35",
+    "title": "בנק ישראל הפחית את הריבית ברבע נקודת אחוז",
+    "urgent": true
+  },
+  {
+    "articleId": "better-rail-legal-warning-1757-20260901",
+    "id": "flash-20260901-1653-better-rail-warning",
+    "publishedAt": "2026-09-01T16:53:00+03:00",
+    "source": "כיכר השבת",
+    "time": "16:53",
+    "title": "רכבת ישראל דורשת להסיר את Better Rail ומאיימת בהליך משפטי",
+    "urgent": false
+  },
+  {
+    "articleId": "water-crisis-response-1757-20260901",
+    "id": "flash-20260901-1701-water-response",
+    "publishedAt": "2026-09-01T17:01:00+03:00",
+    "source": "כיכר השבת · משרד האנרגיה",
+    "time": "17:01",
+    "title": "משבר המים: שני מתקני התפלה נוספים אושרו להפעלה והשאיבה מהכינרת תוגברה",
+    "urgent": true
+  },
+  {
+    "articleId": "us-manufacturing-august-1757-20260901",
+    "id": "flash-20260901-1702-us-manufacturing",
+    "publishedAt": "2026-09-01T17:02:00+03:00",
+    "source": "Reuters",
+    "time": "17:02",
+    "title": "הייצור בארה״ב האט באוגוסט; מחירי התשומות נשארו גבוהים",
+    "urgent": false
+  },
+  {
+    "articleId": "uk-west-bank-response-1757-20260901",
+    "id": "flash-20260901-1705-uk-west-bank",
+    "publishedAt": "2026-09-01T17:05:00+03:00",
+    "source": "Reuters",
+    "time": "17:05",
+    "title": "בריטניה מבטיחה תגובה מקיפה לתוכניות ההתיישבות בגדה בשבועות הקרובים",
+    "urgent": true
+  },
+  {
+    "articleId": "netanyahu-election-live-1757-20260901",
+    "id": "flash-20260901-1713-netanyahu-live",
+    "publishedAt": "2026-09-01T17:13:00+03:00",
+    "source": "כיכר השבת",
+    "time": "17:13",
+    "title": "נתניהו פתח שידור קמפיין והתייחס לווינטר, בן גביר והאיחוד עם פייגלין",
+    "urgent": false
+  },
+  {
+    "articleId": "netanyahu-school-ai-message-1757-20260901",
+    "id": "flash-20260901-1728-netanyahu-school-ai",
+    "publishedAt": "2026-09-01T17:28:00+03:00",
+    "source": "כיכר השבת · לע״מ",
+    "time": "17:28",
+    "title": "נתניהו לתלמידים בלוד: למדו להשתמש בכלי בינה מלאכותית",
+    "urgent": false
+  },
+  {
+    "articleId": "canada-liberal-by-elections-1757-20260901",
+    "id": "flash-20260901-1731-canada-elections",
+    "publishedAt": "2026-09-01T17:31:00+03:00",
+    "source": "Reuters",
+    "time": "17:31",
+    "title": "הליברלים בקנדה ניצחו בשלוש בחירות מיוחדות ושמרו על הרוב הצר",
+    "urgent": false
+  },
+  {
+    "articleId": "diaby-leverkusen-return-1757-20260901",
+    "id": "flash-20260901-1739-diaby-leverkusen",
+    "publishedAt": "2026-09-01T17:39:00+03:00",
+    "source": "Reuters",
+    "time": "17:39",
+    "title": "מוסא דיאבי חזר לבאייר לברקוזן מאל־איתיחאד",
+    "urgent": false
   }
 ];
