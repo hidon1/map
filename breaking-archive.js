@@ -3155,5 +3155,50 @@ window.BREAKING_ARCHIVE = [
     "time": "23:47",
     "title": "רוכב אופנוע בן 23 נפצע באורח בינוני בירושלים",
     "urgent": false
+  },
+  {
+    "articleId": "iran-jordan-kuwait-confirmed-0200-20260902",
+    "id": "flash-20260902-0038-jordan-missiles-confirmed",
+    "publishedAt": "2026-09-02T00:38:00+03:00",
+    "source": "צבא ירדן · כיכר השבת",
+    "time": "00:38",
+    "title": "עדכון: ירדן אישרה 13 חדירות טילים; עשרה יורטו ושלושה נפלו בשטח פתוח",
+    "urgent": true
+  },
+  {
+    "articleId": "sality-botnet-takedown-0200-20260902",
+    "id": "flash-20260902-0101-sality-takedown",
+    "publishedAt": "2026-09-02T01:01:00+03:00",
+    "source": "Reuters · משרד המשפטים האמריקאי",
+    "time": "01:01",
+    "title": "ארה״ב ושותפות אירופיות החלו לפרק את רשת הבוטים Sality",
+    "urgent": false
+  },
+  {
+    "articleId": "edouard-gulf-landfall-0200-20260902",
+    "id": "flash-20260902-0107-edouard-landfall",
+    "publishedAt": "2026-09-02T01:07:00+03:00",
+    "source": "Reuters · מרכז ההוריקנים הלאומי",
+    "time": "01:07",
+    "title": "הסופה הטרופית אדואר עלתה לחוף בגבול טקסס–לואיזיאנה",
+    "urgent": true
+  },
+  {
+    "articleId": "iran-jordan-kuwait-confirmed-0200-20260902",
+    "id": "flash-20260902-0111-kuwait-air-defense",
+    "publishedAt": "2026-09-02T01:11:00+03:00",
+    "source": "צבא כווית · וואלה",
+    "time": "01:11",
+    "title": "כווית הפעילה מערכי הגנה אווירית לאחר חדירת כטב״מים איראניים",
+    "urgent": true
+  },
+  {
+    "articleId": "un-iran-monitoring-vote-0200-20260902",
+    "id": "flash-20260902-0131-un-iran-vote",
+    "publishedAt": "2026-09-02T01:31:00+03:00",
+    "source": "Reuters",
+    "time": "01:31",
+    "title": "מועצת הביטחון צפויה להצביע ב־17 בספטמבר על הארכת הפיקוח על סנקציות איראן",
+    "urgent": false
   }
 ];
