@@ -3092,5 +3092,68 @@ window.BREAKING_ARCHIVE = [
     "time": "21:43",
     "title": "תלמידי הרב מרקוביץ׳ קבעו עצרת מחאה נגד פינוי הישיבה",
     "urgent": false
+  },
+  {
+    "articleId": "idf-kusra-minyan-dismissal-0002-20260902",
+    "id": "flash-20260901-2204-idf-minyan-dismissal",
+    "publishedAt": "2026-09-01T22:04:00+03:00",
+    "source": "כיכר השבת",
+    "time": "22:04",
+    "title": "מפקד מילואים הודח לאחר שחייליו תועדו בתפילה בכפר קוסרה",
+    "urgent": false
+  },
+  {
+    "articleId": "beit-shemesh-water-warning-0002-20260902",
+    "id": "flash-20260901-2220-beit-shemesh-water",
+    "publishedAt": "2026-09-01T22:20:00+03:00",
+    "source": "כיכר השבת",
+    "time": "22:20",
+    "title": "תקלה ארצית: חשש לשיבושים באספקת המים בבית שמש",
+    "urgent": false
+  },
+  {
+    "articleId": "iran-jordan-retaliation-0002-20260902",
+    "id": "flash-20260901-2259-iran-jordan-retaliation",
+    "publishedAt": "2026-09-01T22:59:00+03:00",
+    "source": "כיכר השבת · דיווח ראשוני",
+    "time": "22:59",
+    "title": "דיווח ראשוני: איראן שיגרה טילים ונראו ניסיונות יירוט ממזרח לירדן",
+    "urgent": true
+  },
+  {
+    "articleId": "netanyahu-oct7-failure-0002-20260902",
+    "id": "flash-20260901-2319-netanyahu-oct7",
+    "publishedAt": "2026-09-01T23:19:00+03:00",
+    "source": "כיכר השבת",
+    "time": "23:19",
+    "title": "נתניהו: לא הייתה בגידה ב־7 באוקטובר, אבל היה כישלון גדול",
+    "urgent": false
+  },
+  {
+    "articleId": "putin-donetsk-claims-0002-20260902",
+    "id": "flash-20260901-2332-putin-donetsk-claim",
+    "publishedAt": "2026-09-01T23:32:00+03:00",
+    "source": "Reuters",
+    "time": "23:32",
+    "title": "פוטין טוען להתקדמות רוסית בדונצק; רויטרס לא אימתה את הנתונים",
+    "urgent": false
+  },
+  {
+    "articleId": "g20-imbalances-debt-0002-20260902",
+    "id": "flash-20260901-2336-g20-communique",
+    "publishedAt": "2026-09-01T23:36:00+03:00",
+    "source": "Reuters",
+    "time": "23:36",
+    "title": "בכיר אמריקאי: נותרו מחלוקות ב־G20 על חוסר איזון וחוב ריבוני",
+    "urgent": false
+  },
+  {
+    "articleId": "jerusalem-motorcycle-injury-0002-20260902",
+    "id": "flash-20260901-2347-jerusalem-motorcycle",
+    "publishedAt": "2026-09-01T23:47:00+03:00",
+    "source": "כיכר השבת",
+    "time": "23:47",
+    "title": "רוכב אופנוע בן 23 נפצע באורח בינוני בירושלים",
+    "urgent": false
   }
 ];
