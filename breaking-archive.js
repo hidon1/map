@@ -3315,9 +3315,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T15:35:00+03:00",
     "source": "לשכת ראש הממשלה · כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/news/tkqlbv",
+    "time": "15:35",
     "title": "נתניהו בביקור בקו הצהוב: ישראל שולטת בכ־60% מהרצועה ולא תיסוג",
-    "urgent": true,
-    "time": "15:35"
+    "urgent": true
   },
   {
     "articleId": "fuel-excise-cut-recommendation-1800-20260902",
@@ -3325,9 +3325,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T16:02:00+03:00",
     "source": "כאן חדשות · כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/israel-news/smotrich-fuel-tax-reduction-treasury-legal-advisor",
+    "time": "16:02",
     "title": "יועמ״ש האוצר המליץ לאשר הפחתה של כחצי שקל במס הבלו",
-    "urgent": true,
-    "time": "16:02"
+    "urgent": true
   },
   {
     "articleId": "skver-hasid-released-1800-20260902",
@@ -3335,9 +3335,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T16:30:00+03:00",
     "source": "כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/haredim-news/squire-hasid-released-military-prison",
+    "time": "16:30",
     "title": "אברך מסקווירא שוחרר מוקדם מכלא 10, יממה לפני ברית בנו",
-    "urgent": false,
-    "time": "16:30"
+    "urgent": false
   },
   {
     "articleId": "rabbi-padida-obituary-1800-20260902",
@@ -3345,9 +3345,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T17:22:00+03:00",
     "source": "כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/dayan-haamet/tkqqdy",
+    "time": "17:22",
     "title": "המשגיח הרב ישראל מאיר יוסף פדידה נפטר בבני ברק",
-    "urgent": true,
-    "time": "17:22"
+    "urgent": true
   },
   {
     "articleId": "google-adx-remedy-ruling-1800-20260902",
@@ -3355,9 +3355,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T17:31:00+03:00",
     "source": "Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/google-defeats-us-bid-force-ad-tech-sale-2026-09-02/",
+    "time": "17:31",
     "title": "שופטת בארה״ב דחתה את דרישת הממשל לכפות על Google למכור את AdX",
-    "urgent": true,
-    "time": "17:31"
+    "urgent": true
   },
   {
     "articleId": "russia-germany-leipzig-drone-1800-20260902",
@@ -3365,8 +3365,68 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T17:51:27+03:00",
     "source": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/russia-summons-german-diplomat-protest-over-fabricated-leipzig-drone-attack-2026-09-02/",
+    "time": "17:51",
     "title": "רוסיה זימנה את הנציג הגרמני ודחתה את הטענה למתקפת רחפן בלייפציג",
-    "urgent": true,
-    "time": "17:51"
+    "urgent": true
+  },
+  {
+    "articleId": "walla-smotrich-zehut-poll-2000-20260902",
+    "id": "flash-20260902-1651-walla-smotrich-zehut-poll",
+    "publishedAt": "2026-09-02T16:51:00+03:00",
+    "source": "וואלה",
+    "sourceUrl": "https://news.walla.co.il/item/3865040",
+    "time": "16:51",
+    "title": "סקר וואלה חדש: איחוד הציונות הדתית וזהות עובר עם חמישה מנדטים",
+    "urgent": true
+  },
+  {
+    "articleId": "yavne-stabbing-investigation-2000-20260902",
+    "id": "flash-20260902-1737-yavne-stabbing",
+    "publishedAt": "2026-09-02T17:37:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/stabbing-incident-yavne",
+    "time": "17:37",
+    "title": "חשד לרצח ביבנה: גבר כבן 70 נמצא דקור ללא רוח חיים",
+    "urgent": true
+  },
+  {
+    "articleId": "nepal-jewish-missing-rescue-2000-20260902",
+    "id": "flash-20260902-1830-nepal-jewish-missing",
+    "publishedAt": "2026-09-02T18:30:00+03:00",
+    "source": "כיכר השבת · Chabad.org",
+    "sourceUrl": "https://www.kikar.co.il/world-news/nepal-floods-30-jews-missing-chabad-rescue",
+    "time": "18:30",
+    "title": "בית חב״ד בנפאל מרכז מידע על כ־30 יהודים מנותקי קשר",
+    "urgent": true
+  },
+  {
+    "articleId": "france-settlement-import-sanctions-2000-20260902",
+    "id": "flash-20260902-1832-france-settlement-sanctions",
+    "publishedAt": "2026-09-02T18:32:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/world-news/france-foreign-minister-settlers-violence-sanction",
+    "time": "18:32",
+    "title": "שר החוץ הצרפתי קרא לסנקציות נוספות ולחסימת יבוא מההתנחלויות",
+    "urgent": true
+  },
+  {
+    "articleId": "anthropic-retail-agent-blueprints-2000-20260902",
+    "id": "flash-20260902-1901-anthropic-retail-agents",
+    "publishedAt": "2026-09-02T19:01:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/anthropic-launches-ai-agent-blueprints-retailers-ahead-holiday-shopping-season-2026-09-02/",
+    "time": "19:01",
+    "title": "Anthropic השיקה תבניות לסוכני קניות וקמעונאות על Claude",
+    "urgent": true
+  },
+  {
+    "articleId": "budapest-jewish-event-march-relocated-2000-20260902",
+    "id": "flash-20260902-1935-budapest-march-relocated",
+    "publishedAt": "2026-09-02T19:35:00+03:00",
+    "source": "כיכר השבת · EMIH",
+    "sourceUrl": "https://www.kikar.co.il/world-news/budapest-synagogue-pro-palestinian-protest",
+    "time": "19:35",
+    "title": "בודפשט: מסלול מחאה הוזז מן הכניסה לאירועי הקהילה היהודית",
+    "urgent": true
   }
 ];
