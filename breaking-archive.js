@@ -3200,5 +3200,50 @@ window.BREAKING_ARCHIVE = [
     "time": "01:31",
     "title": "מועצת הביטחון צפויה להצביע ב־17 בספטמבר על הארכת הפיקוח על סנקציות איראן",
     "urgent": false
+  },
+  {
+    "id": "flash-20260902-0452-dropbox-breach",
+    "articleId": "dropbox-5000-accounts-breach-0600-20260902",
+    "publishedAt": "2026-09-02T04:52:00+03:00",
+    "time": "04:52",
+    "title": "Dropbox: כ־5,000 חשבונות נפגעו בפריצה שאפשרה צפייה והורדת תוכן",
+    "source": "Reuters · Dropbox",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260902-0453-north-drone-alerts",
+    "articleId": "north-drone-alerts-0600-20260902",
+    "publishedAt": "2026-09-02T04:53:00+03:00",
+    "time": "04:53",
+    "title": "התרעות חדירת כלי טיס עוין הופעלו בהגושרים, מעיין ברוך וכפר יובל",
+    "source": "פיקוד העורף · כיכר השבת",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260902-0456-us-completes-iran-wave",
+    "articleId": "us-iran-regional-exchange-0600-20260902",
+    "publishedAt": "2026-09-02T04:56:00+03:00",
+    "time": "04:56",
+    "title": "צבא ארה״ב: הושלם גל התקיפות האחרון נגד יעדי משמרות המהפכה באיראן",
+    "source": "Reuters · צבא ארה״ב",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260902-0520-north-interceptors",
+    "articleId": "north-drone-alerts-0600-20260902",
+    "publishedAt": "2026-09-02T05:20:00+03:00",
+    "time": "05:20",
+    "title": "צה״ל: שוגרו מיירטים לעבר מטרה חשודה שחצתה מלבנון; אין נפגעים",
+    "source": "צה״ל · ערוץ 7",
+    "urgent": true
+  },
+  {
+    "id": "flash-20260902-0541-us-iran-exchange",
+    "articleId": "us-iran-regional-exchange-0600-20260902",
+    "publishedAt": "2026-09-02T05:41:00+03:00",
+    "time": "05:41",
+    "title": "ארה״ב ואיראן החליפו תקיפות; ירדן ובחריין דיווחו על יירוטים",
+    "source": "Reuters · צבאות האזור",
+    "urgent": true
   }
 ];
