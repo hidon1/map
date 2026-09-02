@@ -3428,5 +3428,12 @@ window.BREAKING_ARCHIVE = [
     "time": "19:35",
     "title": "בודפשט: מסלול מחאה הוזז מן הכניסה לאירועי הקהילה היהודית",
     "urgent": true
-  }
+  },
+  {"articleId":"ebola-test-negative-israel-2200-20260902","id":"flash-20260902-2011-ebola-tests-negative","publishedAt":"2026-09-02T20:11:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/scoop-news/83473","time":"20:11","title":"משרד הבריאות: בדיקות האבולה של הנוסע שחזר מקונגו שליליות","urgent":false},
+  {"articleId":"winter-draft-coalition-condition-2200-20260902","id":"flash-20260902-2024-winter-draft-law","publishedAt":"2026-09-02T20:24:00+03:00","source":"כיכר השבת · ynet","sourceUrl":"https://www.kikar.co.il/israel-news/winter-party-haredi-draft-coalition-demands","time":"20:24","title":"עופר וינטר: לא נצטרף לממשלה שתנציח השתמטות משירות","urgent":true},
+  {"articleId":"malta-fenech-acquittal-2200-20260902","id":"flash-20260902-2044-malta-fenech-acquittal","publishedAt":"2026-09-02T20:44:00+03:00","source":"Reuters","sourceUrl":"https://www.reuters.com/world/malta-court-acquits-businessman-car-bomb-murder-anti-corruption-journalist-2026-09-02/","time":"20:44","title":"מלטה: יורגן פנך זוכה מהזמנת רצח העיתונאית דפנה קרואנה גליציה","urgent":true},
+  {"articleId":"london-siyum-hashas-2200-20260902","id":"flash-20260902-2059-london-siyum-hashas","publishedAt":"2026-09-02T20:59:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/haredim-news/tkqyv6","time":"20:59","title":"אלפים השתתפו במעמד סיום הש״ס בלונדון","urgent":false},
+  {"articleId":"yaakobi-indictment-decision-2200-20260902","id":"flash-20260902-2117-yaakobi-indictment","publishedAt":"2026-09-02T21:17:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/israel-news/prison-service-commissioner-indictment","time":"21:17","title":"הפרקליטות החליטה להעמיד לדין את נציב שב״ס קובי יעקובי","urgent":true},
+  {"articleId":"idf-iran-alert-target-bank-2200-20260902","id":"flash-20260902-2140-idf-iran-alert","publishedAt":"2026-09-02T21:40:00+03:00","source":"כיכר השבת · ynet","sourceUrl":"https://www.kikar.co.il/world-news/iran-israel-military-escalation","time":"21:40","title":"מערכת הביטחון העלתה כוננות מול אפשרות לחידוש ירי איראני","urgent":true},
+  {"articleId":"nazareth-three-murders-evening-2200-20260902","id":"flash-20260902-2152-nazareth-three-murders","publishedAt":"2026-09-02T21:52:00+03:00","source":"ynet","sourceUrl":"https://www.ynet.co.il/news/article/bj3attruge","time":"21:52","title":"שלושה בני אדם נרצחו בנצרת בתוך ערב אחד","urgent":true}
 ];
