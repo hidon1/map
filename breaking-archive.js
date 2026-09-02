@@ -3308,5 +3308,65 @@ window.BREAKING_ARCHIVE = [
     "time": "08:25",
     "title": "שתי אוניות מסחר טורקיות התנגשו מול איסטנבול; אבד קשר עם אחת",
     "urgent": true
+  },
+  {
+    "articleId": "netanyahu-yellow-line-gaza-1800-20260902",
+    "id": "flash-20260902-1535-netanyahu-yellow-line",
+    "publishedAt": "2026-09-02T15:35:00+03:00",
+    "source": "לשכת ראש הממשלה · כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/news/tkqlbv",
+    "title": "נתניהו בביקור בקו הצהוב: ישראל שולטת בכ־60% מהרצועה ולא תיסוג",
+    "urgent": true,
+    "time": "15:35"
+  },
+  {
+    "articleId": "fuel-excise-cut-recommendation-1800-20260902",
+    "id": "flash-20260902-1602-fuel-excise-recommendation",
+    "publishedAt": "2026-09-02T16:02:00+03:00",
+    "source": "כאן חדשות · כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/smotrich-fuel-tax-reduction-treasury-legal-advisor",
+    "title": "יועמ״ש האוצר המליץ לאשר הפחתה של כחצי שקל במס הבלו",
+    "urgent": true,
+    "time": "16:02"
+  },
+  {
+    "articleId": "skver-hasid-released-1800-20260902",
+    "id": "flash-20260902-1630-skver-release",
+    "publishedAt": "2026-09-02T16:30:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/haredim-news/squire-hasid-released-military-prison",
+    "title": "אברך מסקווירא שוחרר מוקדם מכלא 10, יממה לפני ברית בנו",
+    "urgent": false,
+    "time": "16:30"
+  },
+  {
+    "articleId": "rabbi-padida-obituary-1800-20260902",
+    "id": "flash-20260902-1722-rabbi-padida",
+    "publishedAt": "2026-09-02T17:22:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/dayan-haamet/tkqqdy",
+    "title": "המשגיח הרב ישראל מאיר יוסף פדידה נפטר בבני ברק",
+    "urgent": true,
+    "time": "17:22"
+  },
+  {
+    "articleId": "google-adx-remedy-ruling-1800-20260902",
+    "id": "flash-20260902-1731-google-adtech-ruling",
+    "publishedAt": "2026-09-02T17:31:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/google-defeats-us-bid-force-ad-tech-sale-2026-09-02/",
+    "title": "שופטת בארה״ב דחתה את דרישת הממשל לכפות על Google למכור את AdX",
+    "urgent": true,
+    "time": "17:31"
+  },
+  {
+    "articleId": "russia-germany-leipzig-drone-1800-20260902",
+    "id": "flash-20260902-1751-russia-germany-diplomat",
+    "publishedAt": "2026-09-02T17:51:27+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/russia-summons-german-diplomat-protest-over-fabricated-leipzig-drone-attack-2026-09-02/",
+    "title": "רוסיה זימנה את הנציג הגרמני ודחתה את הטענה למתקפת רחפן בלייפציג",
+    "urgent": true,
+    "time": "17:51"
   }
 ];
