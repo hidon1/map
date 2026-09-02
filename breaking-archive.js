@@ -3290,5 +3290,23 @@ window.BREAKING_ARCHIVE = [
     "time": "07:32",
     "title": "מספר ההרוגים בשיטפונות בנפאל חצה את האלף",
     "urgent": true
+  },
+  {
+    "articleId": "yankees-beat-angels-0900-20260902",
+    "id": "flash-20260902-0820-yankees-angels",
+    "publishedAt": "2026-09-02T08:20:00+03:00",
+    "source": "Reuters · MLB",
+    "time": "08:20",
+    "title": "ניו יורק יאנקיז ניצחה 3:7 את לוס אנג׳לס איינג׳לס",
+    "urgent": true
+  },
+  {
+    "articleId": "turkish-vessels-collision-0900-20260902",
+    "id": "flash-20260902-0825-turkish-vessels",
+    "publishedAt": "2026-09-02T08:25:00+03:00",
+    "source": "לשכת מושל איסטנבול · Reuters",
+    "time": "08:25",
+    "title": "שתי אוניות מסחר טורקיות התנגשו מול איסטנבול; אבד קשר עם אחת",
+    "urgent": true
   }
 ];
