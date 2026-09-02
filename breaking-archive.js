@@ -3315,9 +3315,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T15:35:00+03:00",
     "source": "לשכת ראש הממשלה · כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/news/tkqlbv",
+    "time": "15:35",
     "title": "נתניהו בביקור בקו הצהוב: ישראל שולטת בכ־60% מהרצועה ולא תיסוג",
-    "urgent": true,
-    "time": "15:35"
+    "urgent": true
   },
   {
     "articleId": "fuel-excise-cut-recommendation-1800-20260902",
@@ -3325,9 +3325,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T16:02:00+03:00",
     "source": "כאן חדשות · כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/israel-news/smotrich-fuel-tax-reduction-treasury-legal-advisor",
+    "time": "16:02",
     "title": "יועמ״ש האוצר המליץ לאשר הפחתה של כחצי שקל במס הבלו",
-    "urgent": true,
-    "time": "16:02"
+    "urgent": true
   },
   {
     "articleId": "skver-hasid-released-1800-20260902",
@@ -3335,9 +3335,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T16:30:00+03:00",
     "source": "כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/haredim-news/squire-hasid-released-military-prison",
+    "time": "16:30",
     "title": "אברך מסקווירא שוחרר מוקדם מכלא 10, יממה לפני ברית בנו",
-    "urgent": false,
-    "time": "16:30"
+    "urgent": false
   },
   {
     "articleId": "rabbi-padida-obituary-1800-20260902",
@@ -3345,9 +3345,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T17:22:00+03:00",
     "source": "כיכר השבת",
     "sourceUrl": "https://www.kikar.co.il/dayan-haamet/tkqqdy",
+    "time": "17:22",
     "title": "המשגיח הרב ישראל מאיר יוסף פדידה נפטר בבני ברק",
-    "urgent": true,
-    "time": "17:22"
+    "urgent": true
   },
   {
     "articleId": "google-adx-remedy-ruling-1800-20260902",
@@ -3355,9 +3355,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T17:31:00+03:00",
     "source": "Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/google-defeats-us-bid-force-ad-tech-sale-2026-09-02/",
+    "time": "17:31",
     "title": "שופטת בארה״ב דחתה את דרישת הממשל לכפות על Google למכור את AdX",
-    "urgent": true,
-    "time": "17:31"
+    "urgent": true
   },
   {
     "articleId": "russia-germany-leipzig-drone-1800-20260902",
@@ -3365,9 +3365,9 @@ window.BREAKING_ARCHIVE = [
     "publishedAt": "2026-09-02T17:51:27+03:00",
     "source": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/russia-summons-german-diplomat-protest-over-fabricated-leipzig-drone-attack-2026-09-02/",
+    "time": "17:51",
     "title": "רוסיה זימנה את הנציג הגרמני ודחתה את הטענה למתקפת רחפן בלייפציג",
-    "urgent": true,
-    "time": "17:51"
+    "urgent": true
   },
   {
     "articleId": "walla-smotrich-zehut-poll-2000-20260902",
@@ -3429,13 +3429,76 @@ window.BREAKING_ARCHIVE = [
     "title": "בודפשט: מסלול מחאה הוזז מן הכניסה לאירועי הקהילה היהודית",
     "urgent": true
   },
-  {"articleId":"ebola-test-negative-israel-2200-20260902","id":"flash-20260902-2011-ebola-tests-negative","publishedAt":"2026-09-02T20:11:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/scoop-news/83473","time":"20:11","title":"משרד הבריאות: בדיקות האבולה של הנוסע שחזר מקונגו שליליות","urgent":false},
-  {"articleId":"winter-draft-coalition-condition-2200-20260902","id":"flash-20260902-2024-winter-draft-law","publishedAt":"2026-09-02T20:24:00+03:00","source":"כיכר השבת · ynet","sourceUrl":"https://www.kikar.co.il/israel-news/winter-party-haredi-draft-coalition-demands","time":"20:24","title":"עופר וינטר: לא נצטרף לממשלה שתנציח השתמטות משירות","urgent":true},
-  {"articleId":"malta-fenech-acquittal-2200-20260902","id":"flash-20260902-2044-malta-fenech-acquittal","publishedAt":"2026-09-02T20:44:00+03:00","source":"Reuters","sourceUrl":"https://www.reuters.com/world/malta-court-acquits-businessman-car-bomb-murder-anti-corruption-journalist-2026-09-02/","time":"20:44","title":"מלטה: יורגן פנך זוכה מהזמנת רצח העיתונאית דפנה קרואנה גליציה","urgent":true},
-  {"articleId":"london-siyum-hashas-2200-20260902","id":"flash-20260902-2059-london-siyum-hashas","publishedAt":"2026-09-02T20:59:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/haredim-news/tkqyv6","time":"20:59","title":"אלפים השתתפו במעמד סיום הש״ס בלונדון","urgent":false},
-  {"articleId":"yaakobi-indictment-decision-2200-20260902","id":"flash-20260902-2117-yaakobi-indictment","publishedAt":"2026-09-02T21:17:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/israel-news/prison-service-commissioner-indictment","time":"21:17","title":"הפרקליטות החליטה להעמיד לדין את נציב שב״ס קובי יעקובי","urgent":true},
-  {"articleId":"idf-iran-alert-target-bank-2200-20260902","id":"flash-20260902-2140-idf-iran-alert","publishedAt":"2026-09-02T21:40:00+03:00","source":"כיכר השבת · ynet","sourceUrl":"https://www.kikar.co.il/world-news/iran-israel-military-escalation","time":"21:40","title":"מערכת הביטחון העלתה כוננות מול אפשרות לחידוש ירי איראני","urgent":true},
-  {"articleId":"nazareth-three-murders-evening-2200-20260902","id":"flash-20260902-2152-nazareth-three-murders","publishedAt":"2026-09-02T21:52:00+03:00","source":"ynet","sourceUrl":"https://www.ynet.co.il/news/article/bj3attruge","time":"21:52","title":"שלושה בני אדם נרצחו בנצרת בתוך ערב אחד","urgent":true},
+  {
+    "articleId": "ebola-test-negative-israel-2200-20260902",
+    "id": "flash-20260902-2011-ebola-tests-negative",
+    "publishedAt": "2026-09-02T20:11:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/scoop-news/83473",
+    "time": "20:11",
+    "title": "משרד הבריאות: בדיקות האבולה של הנוסע שחזר מקונגו שליליות",
+    "urgent": false
+  },
+  {
+    "articleId": "winter-draft-coalition-condition-2200-20260902",
+    "id": "flash-20260902-2024-winter-draft-law",
+    "publishedAt": "2026-09-02T20:24:00+03:00",
+    "source": "כיכר השבת · ynet",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/winter-party-haredi-draft-coalition-demands",
+    "time": "20:24",
+    "title": "עופר וינטר: לא נצטרף לממשלה שתנציח השתמטות משירות",
+    "urgent": true
+  },
+  {
+    "articleId": "malta-fenech-acquittal-2200-20260902",
+    "id": "flash-20260902-2044-malta-fenech-acquittal",
+    "publishedAt": "2026-09-02T20:44:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/malta-court-acquits-businessman-car-bomb-murder-anti-corruption-journalist-2026-09-02/",
+    "time": "20:44",
+    "title": "מלטה: יורגן פנך זוכה מהזמנת רצח העיתונאית דפנה קרואנה גליציה",
+    "urgent": true
+  },
+  {
+    "articleId": "london-siyum-hashas-2200-20260902",
+    "id": "flash-20260902-2059-london-siyum-hashas",
+    "publishedAt": "2026-09-02T20:59:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/haredim-news/tkqyv6",
+    "time": "20:59",
+    "title": "אלפים השתתפו במעמד סיום הש״ס בלונדון",
+    "urgent": false
+  },
+  {
+    "articleId": "yaakobi-indictment-decision-2200-20260902",
+    "id": "flash-20260902-2117-yaakobi-indictment",
+    "publishedAt": "2026-09-02T21:17:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/prison-service-commissioner-indictment",
+    "time": "21:17",
+    "title": "הפרקליטות החליטה להעמיד לדין את נציב שב״ס קובי יעקובי",
+    "urgent": true
+  },
+  {
+    "articleId": "idf-iran-alert-target-bank-2200-20260902",
+    "id": "flash-20260902-2140-idf-iran-alert",
+    "publishedAt": "2026-09-02T21:40:00+03:00",
+    "source": "כיכר השבת · ynet",
+    "sourceUrl": "https://www.kikar.co.il/world-news/iran-israel-military-escalation",
+    "time": "21:40",
+    "title": "מערכת הביטחון העלתה כוננות מול אפשרות לחידוש ירי איראני",
+    "urgent": true
+  },
+  {
+    "articleId": "nazareth-three-murders-evening-2200-20260902",
+    "id": "flash-20260902-2152-nazareth-three-murders",
+    "publishedAt": "2026-09-02T21:52:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/bj3attruge",
+    "time": "21:52",
+    "title": "שלושה בני אדם נרצחו בנצרת בתוך ערב אחד",
+    "urgent": true
+  },
   {
     "articleId": "fuel-excise-cut-approved-midnight-20260903",
     "id": "flash-20260902-2233-fuel-excise-approved",
@@ -3534,6 +3597,46 @@ window.BREAKING_ARCHIVE = [
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/microsoft-reveal-azure-cloud-sales-financial-reporting-shift-2026-09-02/",
     "time": "23:31",
     "title": "Microsoft תתחיל לחשוף את הכנסות Azure מדי רבעון",
+    "urgent": false
+  },
+  {
+    "articleId": "trump-iran-campaign-duration-0202-20260903",
+    "id": "flash-20260903-0014-trump-iran-duration",
+    "publishedAt": "2026-09-03T00:14:00+03:00",
+    "source": "Israel National News",
+    "sourceUrl": "https://www.israelnationalnews.com/news/432624",
+    "time": "00:14",
+    "title": "טראמפ: המערכה המחודשת נגד איראן לא תימשך עוד זמן רב",
+    "urgent": true
+  },
+  {
+    "articleId": "accelevation-us-ipo-0202-20260903",
+    "id": "flash-20260903-0122-accelevation-ipo",
+    "publishedAt": "2026-09-03T01:22:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/transactional/olympus-backed-accelevation-files-us-ipo-2026-09-02/",
+    "time": "01:22",
+    "title": "Accelevation הגישה תשקיף להנפקה בארה״ב",
+    "urgent": false
+  },
+  {
+    "articleId": "diamondbacks-phillies-mccann-0202-20260903",
+    "id": "flash-20260903-0136-dbacks-phillies",
+    "publishedAt": "2026-09-03T01:36:00+03:00",
+    "source": "Reuters · Field Level Media",
+    "sourceUrl": "https://www.reuters.com/sports/baseball/d-backs-edge-phillies-james-mccann-hr-retake-3rd-nl-wild-card-spot--flm-2026-09-02/",
+    "time": "01:36",
+    "title": "אריזונה ניצחה 0:1 את פילדלפיה וחזרה למקום השלישי בוויילד קארד",
+    "urgent": false
+  },
+  {
+    "articleId": "nscale-contracted-revenue-0202-20260903",
+    "id": "flash-20260903-0141-nscale-contracts",
+    "publishedAt": "2026-09-03T01:41:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/nscale-touts-103-billion-contracted-revenue-ahead-potential-ipo-information-2026-09-02/",
+    "time": "01:41",
+    "title": "Nscale הציגה 103 מיליארד דולר בהכנסות חוזיות לקראת הנפקה אפשרית",
     "urgent": false
   }
 ];
