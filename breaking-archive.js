@@ -3202,48 +3202,93 @@ window.BREAKING_ARCHIVE = [
     "urgent": false
   },
   {
-    "id": "flash-20260902-0452-dropbox-breach",
     "articleId": "dropbox-5000-accounts-breach-0600-20260902",
+    "id": "flash-20260902-0452-dropbox-breach",
     "publishedAt": "2026-09-02T04:52:00+03:00",
+    "source": "Reuters · Dropbox",
     "time": "04:52",
     "title": "Dropbox: כ־5,000 חשבונות נפגעו בפריצה שאפשרה צפייה והורדת תוכן",
-    "source": "Reuters · Dropbox",
     "urgent": false
   },
   {
-    "id": "flash-20260902-0453-north-drone-alerts",
     "articleId": "north-drone-alerts-0600-20260902",
+    "id": "flash-20260902-0453-north-drone-alerts",
     "publishedAt": "2026-09-02T04:53:00+03:00",
+    "source": "פיקוד העורף · כיכר השבת",
     "time": "04:53",
     "title": "התרעות חדירת כלי טיס עוין הופעלו בהגושרים, מעיין ברוך וכפר יובל",
-    "source": "פיקוד העורף · כיכר השבת",
     "urgent": true
   },
   {
-    "id": "flash-20260902-0456-us-completes-iran-wave",
     "articleId": "us-iran-regional-exchange-0600-20260902",
+    "id": "flash-20260902-0456-us-completes-iran-wave",
     "publishedAt": "2026-09-02T04:56:00+03:00",
+    "source": "Reuters · צבא ארה״ב",
     "time": "04:56",
     "title": "צבא ארה״ב: הושלם גל התקיפות האחרון נגד יעדי משמרות המהפכה באיראן",
-    "source": "Reuters · צבא ארה״ב",
     "urgent": true
   },
   {
-    "id": "flash-20260902-0520-north-interceptors",
     "articleId": "north-drone-alerts-0600-20260902",
+    "id": "flash-20260902-0520-north-interceptors",
     "publishedAt": "2026-09-02T05:20:00+03:00",
+    "source": "צה״ל · ערוץ 7",
     "time": "05:20",
     "title": "צה״ל: שוגרו מיירטים לעבר מטרה חשודה שחצתה מלבנון; אין נפגעים",
-    "source": "צה״ל · ערוץ 7",
     "urgent": true
   },
   {
-    "id": "flash-20260902-0541-us-iran-exchange",
     "articleId": "us-iran-regional-exchange-0600-20260902",
+    "id": "flash-20260902-0541-us-iran-exchange",
     "publishedAt": "2026-09-02T05:41:00+03:00",
+    "source": "Reuters · צבאות האזור",
     "time": "05:41",
     "title": "ארה״ב ואיראן החליפו תקיפות; ירדן ובחריין דיווחו על יירוטים",
-    "source": "Reuters · צבאות האזור",
+    "urgent": true
+  },
+  {
+    "articleId": "global-bond-selloff-0800-20260902",
+    "id": "flash-20260902-0611-bond-selloff",
+    "publishedAt": "2026-09-02T06:11:00+03:00",
+    "source": "Reuters",
+    "time": "06:11",
+    "title": "מכירת האג״ח העולמית העמיקה; תשואת ארה״ב ל־10 שנים סביב 4.81%",
+    "urgent": false
+  },
+  {
+    "articleId": "honda-cost-cuts-0800-20260902",
+    "id": "flash-20260902-0622-honda-cost-cuts",
+    "publishedAt": "2026-09-02T06:22:00+03:00",
+    "source": "Reuters",
+    "time": "06:22",
+    "title": "הונדה הציבה יעד חיסכון של 1.5 טריליון ין עד 2030",
+    "urgent": false
+  },
+  {
+    "articleId": "f35-hormuz-sam-0800-20260902",
+    "id": "flash-20260902-0658-f35-hormuz",
+    "publishedAt": "2026-09-02T06:58:00+03:00",
+    "source": "Axios · כיכר השבת",
+    "time": "06:58",
+    "title": "דיווח: טיל נ״מ איראני נורה לעבר F‑35 אמריקני; אין נפגעים",
+    "urgent": true
+  },
+  {
+    "articleId": "south-hebron-arrests-0800-20260902",
+    "id": "flash-20260902-0722-south-hebron-arrests",
+    "publishedAt": "2026-09-02T07:22:00+03:00",
+    "source": "משטרת ישראל · כיכר השבת",
+    "time": "07:22",
+    "title": "שלושה חשודים נוספים נעצרו בחשד לאלימות בדרום הר חברון",
+    "urgent": true
+  },
+  {
+    "articleId": "nepal-flood-toll-0800-20260902",
+    "id": "flash-20260902-0732-nepal-flood-toll",
+    "publishedAt": "2026-09-02T07:32:00+03:00",
+    "source": "Reuters",
+    "time": "07:32",
+    "title": "מספר ההרוגים בשיטפונות בנפאל חצה את האלף",
     "urgent": true
   }
 ];
