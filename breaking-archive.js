@@ -3435,5 +3435,105 @@ window.BREAKING_ARCHIVE = [
   {"articleId":"london-siyum-hashas-2200-20260902","id":"flash-20260902-2059-london-siyum-hashas","publishedAt":"2026-09-02T20:59:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/haredim-news/tkqyv6","time":"20:59","title":"אלפים השתתפו במעמד סיום הש״ס בלונדון","urgent":false},
   {"articleId":"yaakobi-indictment-decision-2200-20260902","id":"flash-20260902-2117-yaakobi-indictment","publishedAt":"2026-09-02T21:17:00+03:00","source":"כיכר השבת","sourceUrl":"https://www.kikar.co.il/israel-news/prison-service-commissioner-indictment","time":"21:17","title":"הפרקליטות החליטה להעמיד לדין את נציב שב״ס קובי יעקובי","urgent":true},
   {"articleId":"idf-iran-alert-target-bank-2200-20260902","id":"flash-20260902-2140-idf-iran-alert","publishedAt":"2026-09-02T21:40:00+03:00","source":"כיכר השבת · ynet","sourceUrl":"https://www.kikar.co.il/world-news/iran-israel-military-escalation","time":"21:40","title":"מערכת הביטחון העלתה כוננות מול אפשרות לחידוש ירי איראני","urgent":true},
-  {"articleId":"nazareth-three-murders-evening-2200-20260902","id":"flash-20260902-2152-nazareth-three-murders","publishedAt":"2026-09-02T21:52:00+03:00","source":"ynet","sourceUrl":"https://www.ynet.co.il/news/article/bj3attruge","time":"21:52","title":"שלושה בני אדם נרצחו בנצרת בתוך ערב אחד","urgent":true}
+  {"articleId":"nazareth-three-murders-evening-2200-20260902","id":"flash-20260902-2152-nazareth-three-murders","publishedAt":"2026-09-02T21:52:00+03:00","source":"ynet","sourceUrl":"https://www.ynet.co.il/news/article/bj3attruge","time":"21:52","title":"שלושה בני אדם נרצחו בנצרת בתוך ערב אחד","urgent":true},
+  {
+    "articleId": "fuel-excise-cut-approved-midnight-20260903",
+    "id": "flash-20260902-2233-fuel-excise-approved",
+    "publishedAt": "2026-09-02T22:33:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/smotrich-fuel-tax-reduction-approved-legal-advisor",
+    "time": "22:33",
+    "title": "אישור משפטי להפחתת הבלו על הדלק; הצו עדיין דורש חתימה",
+    "urgent": true
+  },
+  {
+    "articleId": "haredi-protest-police-home-midnight-20260903",
+    "id": "flash-20260902-2247-haredi-police-protest",
+    "publishedAt": "2026-09-02T22:47:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/haredi-protest-police-chief-home",
+    "time": "22:47",
+    "title": "עימותים במחאה חרדית סמוך לביתו של ראש אגף התנועה בירושלים",
+    "urgent": true
+  },
+  {
+    "articleId": "road-675-fatal-crash-midnight-20260903",
+    "id": "flash-20260902-2249-road-675-crash",
+    "publishedAt": "2026-09-02T22:49:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/scoop-news/83491",
+    "time": "22:49",
+    "title": "שני הרוגים ושני פצועים קשה בתאונה בכביש 675",
+    "urgent": true
+  },
+  {
+    "articleId": "idf-ephraim-menashe-drill-midnight-20260903",
+    "id": "flash-20260902-2249-idf-ephraim-menashe-drill",
+    "publishedAt": "2026-09-02T22:49:00+03:00",
+    "source": "כיכר השבת · הודעת צה״ל",
+    "sourceUrl": "https://www.kikar.co.il/scoop-news/83489",
+    "time": "22:49",
+    "title": "צה״ל: תרגיל מתוכנן בבוקר בחטיבות אפרים ומנשה",
+    "urgent": false
+  },
+  {
+    "articleId": "openai-automated-shutdown-midnight-20260903",
+    "id": "flash-20260902-2302-openai-auto-shutdown",
+    "publishedAt": "2026-09-02T23:02:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/openai-is-building-automated-shutdown-capabilities-ai-tools-letter-lawmakers-2026-09-02/",
+    "time": "23:02",
+    "title": "OpenAI מסרה למחוקקים שהיא מפתחת יכולות כיבוי אוטומטיות לכלי AI",
+    "urgent": false
+  },
+  {
+    "articleId": "snowflake-raises-forecast-midnight-20260903",
+    "id": "flash-20260902-2311-snowflake-forecast",
+    "publishedAt": "2026-09-02T23:11:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/snowflake-lifts-annual-product-revenue-forecast-demand-cloud-data-platform-2026-09-02/",
+    "time": "23:11",
+    "title": "Snowflake העלתה תחזית הכנסות מוצר; המניה זינקה במסחר המאוחר",
+    "urgent": false
+  },
+  {
+    "articleId": "nordic-fas-fifa-eu-talks-midnight-20260903",
+    "id": "flash-20260902-2311-nordic-fifa-eu",
+    "publishedAt": "2026-09-02T23:11:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/three-nordic-fas-seek-eu-talks-over-fifa-governance-concerns-2026-09-02/",
+    "time": "23:11",
+    "title": "שלוש התאחדויות נורדיות מבקשות דיון אירופי על ממשל פיפ״א",
+    "urgent": false
+  },
+  {
+    "articleId": "haredi-parenting-course-ashkelon-midnight-20260903",
+    "id": "flash-20260902-2316-haredi-parenting-course",
+    "publishedAt": "2026-09-02T23:16:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/haredi-authority-parenting-course-ashkelon",
+    "time": "23:16",
+    "title": "מאות זוגות סיימו קורס מוגנות של הרשות החרדית באשקלון",
+    "urgent": false
+  },
+  {
+    "articleId": "broadcom-revenue-forecast-midnight-20260903",
+    "id": "flash-20260902-2319-broadcom-forecast",
+    "publishedAt": "2026-09-02T23:19:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/broadcom-forecasts-quarterly-revenue-below-estimates-2026-09-02/",
+    "time": "23:19",
+    "title": "Broadcom פרסמה תחזית הכנסות נמוכה מעט מציפיות השוק",
+    "urgent": false
+  },
+  {
+    "articleId": "microsoft-azure-sales-reporting-midnight-20260903",
+    "id": "flash-20260902-2331-microsoft-azure-sales",
+    "publishedAt": "2026-09-02T23:31:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/microsoft-reveal-azure-cloud-sales-financial-reporting-shift-2026-09-02/",
+    "time": "23:31",
+    "title": "Microsoft תתחיל לחשוף את הכנסות Azure מדי רבעון",
+    "urgent": false
+  }
 ];
