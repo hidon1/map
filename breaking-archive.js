@@ -3776,5 +3776,84 @@ window.BREAKING_ARCHIVE = [
     "time": "05:41",
     "title": "הזהב עלה ל־4,409.97 דולר עם היחלשות הדולר והתשואות",
     "urgent": false
+  },
+  {
+    "articleId": "hormuz-86-ships-diverted-0858-20260903",
+    "id": "flash-20260903-0643-hormuz-ships",
+    "publishedAt": "2026-09-03T06:43:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/world-news/us-naval-blockade-iran-86-ships-diverted",
+    "time": "06:43",
+    "title": "דיווח: 86 כלי שיט הוסטו במסגרת הפעילות הימית מול איראן",
+    "urgent": true
+  },
+  {
+    "articleId": "channel13-blocs-tied-0858-20260903",
+    "id": "flash-20260903-0653-channel13-poll",
+    "publishedAt": "2026-09-03T06:53:00+03:00",
+    "source": "Times of Israel",
+    "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/poll-shows-pro-netanyahu-bloc-pulling-even-with-opponents-in-sharp-shift/",
+    "time": "06:53",
+    "title": "סקר חדשות 13: שני הגושים על 53 מנדטים והמפלגות הערביות עם 14",
+    "urgent": true
+  },
+  {
+    "articleId": "daf-yomi-hullin-126-0858-20260903",
+    "id": "flash-20260903-0700-daf-yomi-hullin-126",
+    "publishedAt": "2026-09-03T07:00:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/daf-yomi/tkku7t",
+    "time": "07:00",
+    "title": "שיעור הדף היומי: חולין דף קכ״ו",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260903-0708-trump-hormuz",
+    "publishedAt": "2026-09-03T07:08:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/world-news/trump-hormuz-strait-iran-us-deployment-2027",
+    "time": "07:08",
+    "title": "טראמפ התייחס למערכה סביב הורמוז ולהמשך ההיערכות האמריקנית",
+    "urgent": true
+  },
+  {
+    "articleId": "winter-draft-commentary-0858-20260903",
+    "id": "flash-20260903-0714-winter-draft-commentary",
+    "publishedAt": "2026-09-03T07:14:00+03:00",
+    "source": "כיכר השבת · טור דעה",
+    "sourceUrl": "https://www.kikar.co.il/haredim-news/tkrsvm",
+    "time": "07:14",
+    "title": "טור פרשנות חרדי מנתח את שינוי המסר של עופר וינטר בנושא הגיוס",
+    "urgent": false
+  },
+  {
+    "articleId": "north-korea-kim-rules-0858-20260903",
+    "id": "flash-20260903-0718-north-korea-rules",
+    "publishedAt": "2026-09-03T07:18:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/north-korea-ruling-party-revisions-bolster-kim-jong-uns-control-report-says-2026-09-03/",
+    "time": "07:18",
+    "title": "מחקר דרום־קוריאני: תקנון המפלגה חיזק את סמכויות קים",
+    "urgent": false
+  },
+  {
+    "articleId": "weather-israel-cooling-0858-20260903",
+    "id": "flash-20260903-0720-israel-weather",
+    "publishedAt": "2026-09-03T07:20:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/thop0g-42",
+    "time": "07:20",
+    "title": "תחזית: עננות בבוקר וירידה קלה בטמפרטורות",
+    "urgent": false
+  },
+  {
+    "articleId": "us-troop-deployments-iran-0858-20260903",
+    "id": "flash-20260903-0724-us-deployments",
+    "publishedAt": "2026-09-03T07:24:00+03:00",
+    "source": "Times of Israel · דיווח WSJ",
+    "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/report-hegseth-extending-us-troop-deployments-in-mideast-as-trump-weighs-declaring-iran-war-over/",
+    "time": "07:24",
+    "title": "דיווח: ארה״ב מאריכה הצבות צבאיות במזרח התיכון אל תוך 2027",
+    "urgent": true
   }
 ];
