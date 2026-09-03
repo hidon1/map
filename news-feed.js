@@ -1,502 +1,425 @@
 window.NEWS_FEED = {
   "articles": [
     {
-      "body": "צוותי מד״א הוזעקו לפנות בוקר לכביש 1 ליד מחלף השומרוני ומצאו רוכב אופנוע כבן 30 ללא סימני חיים. מותו נקבע במקום. לא פורסם עדיין מה הוביל לתאונה, והנסיבות נבדקות.",
+      "body": "סקר חדשות 13 שפורסם הבוקר מציב את גוש נתניהו ואת הגוש המתנגד לו על 53 מנדטים כל אחד, בעוד המפלגות הערביות מחזיקות יחד 14. בין המספרים שפורסמו: ישר! בראשות גדי איזנקוט עם 22, הליכוד עם 21, ביחד עם 12, איחוד הציונות הדתית–זהות עם 6, מפלגת עופר וינטר עם 4 ורע״ם עם 5. הכתבה אינה מפרסמת טבלה מלאה לכל המפלגות ולכן הסקר לא הוזן לגרף המנדטים עד לאימות מלוא 120 המושבים.",
       "category": "בארץ",
-      "facts": [],
-      "featured": false,
-      "id": "road1-motorcyclist-fatal-0600-20260903",
+      "facts": [
+        "53 מנדטים לכל אחד משני הגושים",
+        "14 למפלגות הערביות",
+        "940 נשאלים; טעות דגימה ±3.4%"
+      ],
+      "featured": true,
+      "id": "channel13-blocs-tied-0858-20260903",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
       "imageCredit": "דגל ישראל · Wikimedia Commons",
-      "publishedAt": "2026-09-03T03:15:00+03:00",
+      "publishedAt": "2026-09-03T06:53:00+03:00",
       "readTime": "3 דקות",
-      "source": "כיכר השבת",
-      "sourceUrl": "https://www.kikar.co.il/scoop-news/83497",
-      "subtitle": "מד״א קבע את מותו של גבר כבן 30 ליד מחלף השומרוני; נסיבות התאונה נבדקות.",
-      "summary": "מד״א קבע את מותו של גבר כבן 30 ליד מחלף השומרוני; נסיבות התאונה נבדקות.",
-      "title": "רוכב אופנוע נהרג בתאונה בכביש 1"
+      "source": "Times of Israel",
+      "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/poll-shows-pro-netanyahu-bloc-pulling-even-with-opponents-in-sharp-shift/",
+      "subtitle": "בסקר שפורסם הבוקר אין רוב לאף גוש; ישר! מובילה עם 22 והליכוד עם 21.",
+      "summary": "בסקר שפורסם הבוקר אין רוב לאף גוש; ישר! מובילה עם 22 והליכוד עם 21.",
+      "title": "סקר חדשות 13: שני הגושים על 53 מנדטים, המפלגות הערביות מכריעות"
     },
     {
-      "body": "צה״ל מסר כי כוחותיו אבטחו כניסת משטרה ואזרחים ישראלים לאל־מוע׳ייר כדי להשיב בעלי חיים שנגנבו. במהלך הפרת סדר אלימה בוצע ירי לעבר מסיתים מרכזיים וזוהו פגיעות. זהו דיווח הצבא; האירוע ואופן ניהולו נמצאים בבדיקה.",
+      "body": "בשעות הבוקר צפויה עננות, ובהמשך היום יהיה בהיר עד מעונן חלקית עם ירידה קלה בטמפרטורות. ביום שישי צפויה התקררות נוספת והטמפרטורות יהיו רגילות לעונה; בשבת לא צפוי שינוי ניכר.",
       "category": "בארץ",
       "facts": [],
       "featured": false,
-      "id": "el-mughayyir-clash-review-0600-20260903",
+      "id": "weather-israel-cooling-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
+      "imageCredit": "דגל ישראל · Wikimedia Commons",
+      "publishedAt": "2026-09-03T07:20:00+03:00",
+      "readTime": "3 דקות",
+      "source": "כיכר השבת",
+      "sourceUrl": "https://www.kikar.co.il/israel-news/thop0g-42",
+      "subtitle": "השירות המטאורולוגי צופה ירידה קלה בטמפרטורות והמשך התמתנות ביום שישי.",
+      "summary": "השירות המטאורולוגי צופה ירידה קלה בטמפרטורות והמשך התמתנות ביום שישי.",
+      "title": "תחזית: עננות בבוקר והקלה הדרגתית בחום"
+    },
+    {
+      "body": "התנגשות קשה סמוך לכפר יחזקאל הסתיימה במותם של שני גברים כבני 30. שני בני אדם נוספים פונו במצב קשה ובינוני. נסיבות התאונה נבדקות.",
+      "category": "בארץ",
+      "facts": [],
+      "featured": false,
+      "id": "kfar-yehezkel-fatal-crash-0858-20260903",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
       "imageCredit": "דגל ישראל · Wikimedia Commons",
       "publishedAt": "2026-09-03T01:14:00+03:00",
       "readTime": "3 דקות",
       "source": "כיכר השבת",
-      "sourceUrl": "https://www.kikar.co.il/scoop-news/83495",
-      "subtitle": "הכוח אבטח כניסת משטרה ואזרחים להשבת בעלי חיים שנגנבו; בצבא בודקים את ניהול האירוע.",
-      "summary": "הכוח אבטח כניסת משטרה ואזרחים להשבת בעלי חיים שנגנבו; בצבא בודקים את ניהול האירוע.",
-      "title": "הפרת סדר באל־מוע׳ייר: צה״ל דיווח על ירי לעבר מסיתים מרכזיים"
+      "sourceUrl": "https://www.kikar.co.il/scoop-news/83496",
+      "subtitle": "צוותי החירום קבעו את מותם של שני גברים כבני 30 ופינו שני נפגעים נוספים.",
+      "summary": "צוותי החירום קבעו את מותם של שני גברים כבני 30 ופינו שני נפגעים נוספים.",
+      "title": "שני הרוגים ושני פצועים בתאונה ליד כפר יחזקאל"
     },
     {
-      "body": "צה״ל עדכן על תרגיל בגזרות אפרים ומנשה משעות הבוקר ועד הצהריים. תורגש תנועה מוגברת של כלי רכב וכוחות ביטחון. הצבא הדגיש שהתרגיל תוכנן מראש ושאין מדובר באירוע ביטחוני.",
-      "category": "בארץ",
-      "facts": [],
-      "featured": false,
-      "id": "ephraim-menashe-drill-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
-      "imageCredit": "דגל ישראל · Wikimedia Commons",
-      "publishedAt": "2026-09-02T22:49:00+03:00",
-      "readTime": "3 דקות",
-      "source": "כיכר השבת",
-      "sourceUrl": "https://www.kikar.co.il/scoop-news/83489",
-      "subtitle": "צה״ל הודיע כי מדובר בתרגיל מתוכנן וכי אין חשש לאירוע ביטחוני.",
-      "summary": "צה״ל הודיע כי מדובר בתרגיל מתוכנן וכי אין חשש לאירוע ביטחוני.",
-      "title": "תרגיל צבאי באפרים ובמנשה: תנועה ערה של כוחות עד הצהריים"
-    },
-    {
-      "body": "שלושה בני אדם נרצחו בשני אירועי ירי נפרדים בנצרת בתוך שעות. המשטרה אספה ממצאים ובודקת קשר אפשרי בין הזירות. רכב שרוף אותר בסביבה, אך טרם פורסמה קביעה רשמית הקושרת אותו לירי.",
-      "category": "בארץ",
-      "facts": [],
-      "featured": false,
-      "id": "nazareth-triple-murder-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
-      "imageCredit": "דגל ישראל · Wikimedia Commons",
-      "publishedAt": "2026-09-02T21:52:00+03:00",
-      "readTime": "3 דקות",
-      "source": "כיכר השבת",
-      "sourceUrl": "https://www.kikar.co.il/israel-news/nazareth-triple-murder-shooting",
-      "subtitle": "המשטרה פתחה בחקירה; רכב שרוף אותר בקרבת אחת הזירות.",
-      "summary": "המשטרה פתחה בחקירה; רכב שרוף אותר בקרבת אחת הזירות.",
-      "title": "שלושה נרצחו בשני אירועי ירי בנצרת בתוך שעות"
-    },
-    {
-      "body": "טור דעה בכיכר השבת עוסק בשם רשימתו של עופר וינטר וטוען כי לביטוי משמעות ציבורית ודתית רחבה. מדובר בעמדה פרשנית, לא בסקר או בהחלטה פוליטית, והיא משקפת ויכוח על זהות ושפה בציבור החרדי.",
+      "body": "בטור דעה בכיכר השבת טוען ישי כהן כי עופר וינטר הקשיח את התבטאויותיו בנושא חוק הגיוס על רקע מצבו בסקרים וההתקרבות למועד סגירת הרשימות. מדובר בניתוח פוליטי של הכותב; הנתונים והכוונות המיוחסים לשחקנים אינם מוצגים כעובדה מאומתת עצמאית.",
       "category": "חרדים",
       "facts": [],
       "featured": false,
-      "id": "haredi-opinion-amcha-israel-0600-20260903",
+      "id": "winter-draft-commentary-0858-20260903",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
       "imageCredit": "דגל ישראל · Wikimedia Commons",
-      "publishedAt": "2026-09-02T23:41:00+03:00",
+      "publishedAt": "2026-09-03T07:14:00+03:00",
       "readTime": "3 דקות",
-      "source": "כיכר השבת · דעה",
-      "sourceUrl": "https://www.kikar.co.il/haredim/tkr68s",
-      "subtitle": "טור דעה מותח ביקורת על השימוש הפוליטי בביטוי ומבחין בין מסר מאחד למיתוג מפלגתי.",
-      "summary": "טור דעה מותח ביקורת על השימוש הפוליטי בביטוי ומבחין בין מסר מאחד למיתוג מפלגתי.",
-      "title": "פרשנות חרדית: השם ״עמך ישראל״ מעורר ויכוח על ייצוג ומסורת"
+      "source": "כיכר השבת · טור דעה",
+      "sourceUrl": "https://www.kikar.co.il/haredim-news/tkrsvm",
+      "subtitle": "ישי כהן מנתח את שינוי המסר של וינטר לקראת סגירת הרשימות; זו פרשנות ולא דיווח עובדתי מוסכם.",
+      "summary": "ישי כהן מנתח את שינוי המסר של וינטר לקראת סגירת הרשימות; זו פרשנות ולא דיווח עובדתי מוסכם.",
+      "title": "פרשנות חרדית: עופר וינטר משנה דגש סביב חוק הגיוס"
     },
     {
-      "body": "שיעור חדש בסדרת התניא עוסק במאבק בין נטיות שונות בנפש ובהתמודדות עם תחושת כישלון. המסר המרכזי הוא לראות בעבודה היומיומית תהליך מתמשך. זהו תוכן תורני והגותי ולא דיווח הלכתי מחייב.",
+      "body": "כיכר השבת פרסם את שיעור הדף היומי למסכת חולין, דף קכ״ו. המדור מצרף את הלומדים למחזור היומי ומאפשר חזרה מסודרת על הסוגיה.",
       "category": "חרדים",
       "facts": [],
       "featured": false,
-      "id": "tanya-inner-struggle-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
-      "imageCredit": "דגל ישראל · Wikimedia Commons",
-      "publishedAt": "2026-09-02T23:40:00+03:00",
+      "id": "daf-yomi-hullin-126-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Talmud.jpg",
+      "imageCredit": "תלמוד · Wikimedia Commons",
+      "publishedAt": "2026-09-03T07:00:00+03:00",
       "readTime": "3 דקות",
       "source": "כיכר השבת",
-      "sourceUrl": "https://www.kikar.co.il/haredim-news/tkr7ui",
-      "subtitle": "הרב יעקבזון הסביר כיצד מתח רוחני מתמשך יכול להפוך למנוע של צמיחה.",
-      "summary": "הרב יעקבזון הסביר כיצד מתח רוחני מתמשך יכול להפוך למנוע של צמיחה.",
-      "title": "שיעור תניא: המאבק הפנימי כחלק מעבודת האדם"
+      "sourceUrl": "https://www.kikar.co.il/daf-yomi/tkku7t",
+      "subtitle": "שיעור הבוקר היומי מוקדש לדף קכ״ו במסכת חולין.",
+      "summary": "שיעור הבוקר היומי מוקדש לדף קכ״ו במסכת חולין.",
+      "title": "הדף היומי: חולין דף קכ״ו"
     },
     {
-      "body": "גורמים איראניים דיווחו על 18 הרוגים ו־108 פצועים בתקיפות האמריקניות האחרונות. הסהר האדום האיראני דיווח בנפרד על נפגעים בחתונה סמוך להורמוז. המספרים פורסמו בידי איראן ולא אומתו עצמאית במלואם; ארה״ב מסרה שאינה מכוונת לאזרחים והאו״ם הביע דאגה.",
+      "body": "לפי דיווח שצוטט ב-Times of Israel, שר ההגנה פיט הגסת׳ מאריך הצבות של צוותי ספינות, מערכי הגנה אווירית וצנחנים במזרח התיכון אל תוך 2027. הדיווח מדבר על כ־50 אלף אנשי צבא באזור, בשעה שהבית הלבן שוקל כיצד להגדיר את השלב הבא במלחמה עם איראן.",
       "category": "עולם",
       "facts": [],
       "featured": true,
-      "id": "iran-civilian-toll-concern-0600-20260903",
+      "id": "us-troop-deployments-iran-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20United%20States.svg",
+      "imageCredit": "דגל ארצות הברית · Wikimedia Commons",
+      "publishedAt": "2026-09-03T07:24:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Times of Israel · דיווח WSJ",
+      "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/report-hegseth-extending-us-troop-deployments-in-mideast-as-trump-weighs-declaring-iran-war-over/",
+      "subtitle": "וול סטריט ג׳ורנל דיווח כי הפנטגון מאריך את שירותם באזור של כ־50 אלף חיילים ואנשי צוות.",
+      "summary": "וול סטריט ג׳ורנל דיווח כי הפנטגון מאריך את שירותם באזור של כ־50 אלף חיילים ואנשי צוות.",
+      "title": "דיווח: ארה״ב מאריכה הצבות במזרח התיכון אל תוך 2027"
+    },
+    {
+      "body": "לפי דיווח שפורסם בכיכר השבת, 86 כלי שיט מסחריים הוסטו מנתיבם במסגרת הפעילות האמריקנית מול איראן; שלוש ספינות הושבתו ושתיים נבדקו. המספרים מיוחסים לדיווח ואינם אישור עצמאי של כל מקרה בנפרד.",
+      "category": "עולם",
+      "facts": [],
+      "featured": false,
+      "id": "hormuz-86-ships-diverted-0858-20260903",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iran.svg",
       "imageCredit": "דגל איראן · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:03:00+03:00",
+      "publishedAt": "2026-09-03T06:43:00+03:00",
+      "readTime": "3 דקות",
+      "source": "כיכר השבת",
+      "sourceUrl": "https://www.kikar.co.il/world-news/us-naval-blockade-iran-86-ships-diverted",
+      "subtitle": "הדיווח מתאר עשרות ספינות שהוסטו, שלוש שהושבתו ושתיים שנבדקו.",
+      "summary": "הדיווח מתאר עשרות ספינות שהוסטו, שלוש שהושבתו ושתיים שנבדקו.",
+      "title": "דיווח: 86 כלי שיט הוסטו במסגרת הלחץ הימי על איראן"
+    },
+    {
+      "body": "מכון מחקר דרום־קוריאני דיווח כי תיקונים שאושרו בפברואר מעניקים לקים ג׳ונג און סמכות מפורשת לכנס ולנהל את הפוליטביורו, למנות ולהדיח בכירים ולפרק גופי מפלגה. זהו ניתוח של המכון, המבוסס על בחינת תקנון מפלגת השלטון בצפון קוריאה.",
+      "category": "עולם",
+      "facts": [],
+      "featured": false,
+      "id": "north-korea-kim-rules-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20North%20Korea.svg",
+      "imageCredit": "דגל קוריאה הצפונית · Wikimedia Commons",
+      "publishedAt": "2026-09-03T07:18:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/asia-pacific/north-korea-ruling-party-revisions-bolster-kim-jong-uns-control-report-says-2026-09-03/",
+      "subtitle": "מכון המזוהה עם שירות הביון בסיאול טוען כי השינויים הרחיבו את שליטת המנהיג במוסדות המפלגה.",
+      "summary": "מכון המזוהה עם שירות הביון בסיאול טוען כי השינויים הרחיבו את שליטת המנהיג במוסדות המפלגה.",
+      "title": "מחקר דרום־קוריאני: שינויי תקנון חיזקו את סמכויות קים"
+    },
+    {
+      "body": "ההסלמה המחודשת במלחמה עם איראן עוררה ביקורת בינלאומית מחודשת על הפגיעה באזרחים. Reuters דיווח על 18 הרוגים ו־108 פצועים בתקיפות אמריקניות אחרונות ועל שיגורי תגובה איראניים לעבר יעדים באזור; חלק מהמספרים עדיין נמסרים בידי הצדדים ונדרשים לאימות מתמשך.",
+      "category": "עולם",
+      "facts": [],
+      "featured": false,
+      "id": "iran-civilian-toll-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iran.svg",
+      "imageCredit": "דגל איראן · Wikimedia Commons",
+      "publishedAt": "2026-09-03T06:30:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters",
       "sourceUrl": "https://www.reuters.com/world/middle-east/iran-war-escalation-raises-concern-over-civilian-death-toll-2026-09-03/",
-      "subtitle": "איראן דיווחה על 18 הרוגים ו־108 פצועים בגל האחרון; ארה״ב אומרת שאינה מכוונת לאזרחים.",
-      "summary": "איראן דיווחה על 18 הרוגים ו־108 פצועים בגל האחרון; ארה״ב אומרת שאינה מכוונת לאזרחים.",
-      "title": "הסלמת התקיפות באיראן מעלה דאגה לנפגעים אזרחיים"
+      "subtitle": "דיווח Reuters מרכז נתוני נפגעים וטענות על תקיפות אמריקניות ותגובות איראניות באזור.",
+      "summary": "דיווח Reuters מרכז נתוני נפגעים וטענות על תקיפות אמריקניות ותגובות איראניות באזור.",
+      "title": "הסלמת התקיפות מחדדת את שאלת הפגיעה באזרחים באיראן"
     },
     {
-      "body": "רוסיה הורתה לסגור את סניפי מכון גתה בשטחה, לפי שר החוץ סרגיי לברוב. גרמניה האשימה את רוסיה בתקרית רחפנים בשדה התעופה לייפציג–האלה וגם סגרה קונסוליה רוסית בבון. הצעדים מחריפים את העימות הדיפלומטי והתרבותי.",
-      "category": "עולם",
-      "facts": [],
-      "featured": false,
-      "id": "russia-goethe-closure-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Russia.svg",
-      "imageCredit": "דגל רוסיה · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:19:00+03:00",
-      "readTime": "3 דקות",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/russia-close-goethe-institut-branches-after-german-drone-incident-foreign-2026-09-03/",
-      "subtitle": "המהלך בא לאחר שברלין האשימה את מוסקבה בתקרית בנמל התעופה לייפציג–האלה.",
-      "summary": "המהלך בא לאחר שברלין האשימה את מוסקבה בתקרית בנמל התעופה לייפציג–האלה.",
-      "title": "רוסיה הורתה לסגור את סניפי מכון גתה בעקבות תקרית הרחפנים"
-    },
-    {
-      "body": "נשיא פלאו ויו״ר פורום איי האוקיינוס השקט, סורנגל וויפס הבן, קרא למדינות האזור לגבש עמדה משותפת בעקבות ניסוי הטיל הבליסטי שביצעה סין ביולי. טרם פורסם נוסח סופי של הודעת 18 חברות הפורום.",
-      "category": "עולם",
-      "facts": [],
-      "featured": false,
-      "id": "pacific-china-missile-unity-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Palau.svg",
-      "imageCredit": "דגל פלאו · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:18:00+03:00",
-      "readTime": "3 דקות",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/chair-pacific-leaders-meeting-urges-united-front-china-missile-test-2026-09-03/",
-      "subtitle": "נציגי 18 החברות בפורום דנים בתגובה משותפת לניסוי הבליסטי של סין מיולי.",
-      "summary": "נציגי 18 החברות בפורום דנים בתגובה משותפת לניסוי הבליסטי של סין מיולי.",
-      "title": "יו״ר פורום איי האוקיינוס השקט דורש חזית אחידה מול ניסוי הטיל הסיני"
-    },
-    {
-      "body": "אוסטרליה וארצות הברית הודיעו שיעמיקו את קשרי ההגנה ואת יוזמות פריסת הכוחות באוסטרליה. לא נמסר מספר חיילים חדש. הן הכריזו גם על סיוע משותף של 580 מיליון דולר למדינות איי האוקיינוס השקט.",
-      "category": "עולם",
-      "facts": [],
-      "featured": false,
-      "id": "australia-us-defence-ties-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Australia.svg",
-      "imageCredit": "דגל אוסטרליה · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:33:00+03:00",
-      "readTime": "3 דקות",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/australia-us-boost-defence-ties-chinas-pacific-influence-grows-2026-09-03/",
-      "subtitle": "הצדדים דנו בהרחבת הנוכחות האמריקנית ובסיוע משותף למדינות האיים, על רקע השפעת סין.",
-      "summary": "הצדדים דנו בהרחבת הנוכחות האמריקנית ובסיוע משותף למדינות האיים, על רקע השפעת סין.",
-      "title": "אוסטרליה וארה״ב מעמיקות את שיתוף הפעולה הביטחוני באוקיינוס השקט"
-    },
-    {
-      "body": "מחיר הזהב הספוטי עלה ב־0.5% ל־4,409.97 דולר לאונקיה בשעה 02:19 GMT, והחוזים האמריקניים עלו ב־0.9% ל־4,455.30 דולר. דולר ותשואות חלשים תמכו במתכת לקראת דוח התעסוקה בארצות הברית.",
+      "body": "לפי Reuters, הודו קיבלה הזרמות חוץ בהיקף 136.38 מיליארד דולר, ובהן 127 מיליארד דולר בפיקדונות במטבע חוץ של תושבי חוץ. הנתונים מעניקים לבנק המרכזי כרית רחבה יותר בשוק המטבע, והרופי התחזק בפתיחה מאזור 94.97 ל־94.30–94.35 לדולר.",
       "category": "כלכלה",
       "facts": [],
       "featured": false,
-      "id": "gold-dollar-yields-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20United%20States.svg",
-      "imageCredit": "דגל ארצות הברית · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:41:00+03:00",
-      "readTime": "3 דקות",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/india/gold-rises-dollar-yields-ease-with-us-nonfarm-payrolls-report-spotlight-2026-09-03/",
-      "subtitle": "המשקיעים ממתינים לדוח התעסוקה האמריקני ביום שישי; החוזים על הזהב עלו ב־0.9%.",
-      "summary": "המשקיעים ממתינים לדוח התעסוקה האמריקני ביום שישי; החוזים על הזהב עלו ב־0.9%.",
-      "title": "הזהב עלה ל־4,409.97 דולר כשהדולר והתשואות נחלשו"
-    },
-    {
-      "body": "GIFT Nifty נסחר סביב 24,094 נקודות, מעל סגירת Nifty 50 ביום רביעי ברמה 23,914.45. המדדים ההודיים איבדו בערך אחוז בשלושה ימים. נפט יקר ועליית תשואות עלולים לרסן את ההתאוששות בכלכלה יבואנית אנרגיה.",
-      "category": "כלכלה",
-      "facts": [],
-      "featured": false,
-      "id": "india-shares-rebound-capped-0600-20260903",
+      "id": "india-nri-deposits-rupee-0858-20260903",
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20India.svg",
       "imageCredit": "דגל הודו · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:38:00+03:00",
+      "publishedAt": "2026-09-03T06:00:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/india/indian-shares-likely-rebound-after-recent-slide-higher-oil-prices-cap-upside-2026-09-03/",
-      "subtitle": "GIFT Nifty הצביע על פתיחה חיובית לאחר שלושה ימי ירידות במדדים המקומיים.",
-      "summary": "GIFT Nifty הצביע על פתיחה חיובית לאחר שלושה ימי ירידות במדדים המקומיים.",
-      "title": "המניות בהודו צפויות לתקן, אך הנפט והתשואות מגבילים את העלייה"
+      "sourceUrl": "https://www.reuters.com/world/india/indias-127-bln-nri-deposits-arm-rbi-with-more-firepower-setting-rupee-up-rally-2026-09-03/",
+      "subtitle": "פיקדונות תושבי חוץ וחוב חיצוני הגדילו את מרחב הפעולה של הבנק המרכזי מול תנודות ברופי.",
+      "summary": "פיקדונות תושבי חוץ וחוב חיצוני הגדילו את מרחב הפעולה של הבנק המרכזי מול תנודות ברופי.",
+      "title": "הודו צברה 136.38 מיליארד דולר של הזרמות חוץ"
     },
     {
-      "body": "מניות ואג״ח באסיה רשמו עליות הקלה כשהמשקיעים המתינו לנתונים מארצות הברית ולהתבטאויות בנקים מרכזיים. הין שמר על חלק מהעליות והתשואות ביפן ירדו לפני מכרז אג״ח. זהו תיקון נקודתי, לא הוכחה לשינוי מגמה.",
+      "body": "מסחר הבוקר באסיה התאפיין בעליות הקלה במניות ובאג״ח. מדד MSCI לאזור עלה 0.8%, והמשקיעים בחנו את מכרז האג״ח ביפן ואת הסיכוי לעליית ריבית, שהוערך ב־62%. מוקד השבוע נותר דוח התעסוקה האמריקני.",
       "category": "כלכלה",
       "facts": [],
       "featured": false,
-      "id": "global-relief-rally-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan.svg",
-      "imageCredit": "דגל יפן · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:02:00+03:00",
+      "id": "global-markets-relief-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_Stock_Exchange_Arrows.jpg",
+      "imageCredit": "הבורסה של טוקיו · Wikimedia Commons",
+      "publishedAt": "2026-09-03T07:40:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters",
       "sourceUrl": "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-03/",
-      "subtitle": "התשואות ביפן נסוגו לפני מכרז חוב, והין שמר על התחזקותו.",
-      "summary": "התשואות ביפן נסוגו לפני מכרז חוב, והין שמר על התחזקותו.",
-      "title": "מניות ואג״ח באסיה פתחו בעליות לקראת נתוני ארה״ב"
+      "subtitle": "מדד MSCI לאסיה–פסיפיק עלה 0.8%, בעוד הין והתשואות היפניות עמדו במוקד.",
+      "summary": "מדד MSCI לאסיה–פסיפיק עלה 0.8%, בעוד הין והתשואות היפניות עמדו במוקד.",
+      "title": "מניות ואג״ח באסיה עלו; המשקיעים ממתינים לנתוני התעסוקה"
     },
     {
-      "body": "מנכ״לית קרן המטבע קריסטלינה גאורגייבה אמרה כי עליית תשואות האג״ח מאיימת על ההתקדמות בטיפול בחובות של מדינות מתפתחות. תשואות גבוהות מייקרות מחזור חוב ומצמצמות תקציבים, אך האזהרה אינה תחזית חדלות פירעון למדינה מסוימת.",
+      "body": "סברבנק מסר כי הוא מכוון לרווח שיא, אך הזהיר שהצריכה ברוסיה מאטה. השילוב מדגיש את הפער בין רווחיות הבנק לבין הלחץ הרחב יותר על משקי הבית והפעילות המקומית.",
       "category": "כלכלה",
       "facts": [],
       "featured": false,
-      "id": "imf-bond-yields-debt-warning-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Nations.svg",
-      "imageCredit": "דגל האו״ם · Wikimedia Commons",
-      "publishedAt": "2026-09-03T03:22:00+03:00",
+      "id": "sberbank-profit-consumption-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Russia.svg",
+      "imageCredit": "דגל רוסיה · Wikimedia Commons",
+      "publishedAt": "2026-09-03T05:50:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/imfs-georgieva-says-rising-bond-yields-threaten-progress-developing-country-debt-2026-09-03/",
-      "subtitle": "קריסטלינה גאורגייבה הזהירה שהלחץ מורגש במדינות עשירות ובעלות הכנסה נמוכה.",
-      "summary": "קריסטלינה גאורגייבה הזהירה שהלחץ מורגש במדינות עשירות ובעלות הכנסה נמוכה.",
-      "title": "קרן המטבע: תשואות גבוהות מסכנות את ההתקדמות בטיפול בחובות"
+      "sourceUrl": "https://www.reuters.com/business/finance/russias-sberbank-targets-record-profits-warns-slowing-consumption-2026-09-03/",
+      "subtitle": "הבנק הגדול ברוסיה מציג יעד רווח גבוה לצד סימנים להתמתנות בביקוש המקומי.",
+      "summary": "הבנק הגדול ברוסיה מציג יעד רווח גבוה לצד סימנים להתמתנות בביקוש המקומי.",
+      "title": "סברבנק מכוון לרווח שיא ומזהיר מהאטה בצריכה"
     },
     {
-      "body": "פרנסס טיאפו ניצח את ריי סקאמוטו 3:6, 6:7(2), 5:7 והעפיל לסיבוב השלישי באליפות ארצות הברית. טיאפו שלט בשובר השוויון במערכה השנייה וסגר את המשחק בשלישית בלי לאבד מערכה.",
+      "body": "נסטלה הודיעה על השקעה של 393 מיליון דולר בהקמת מפעל חדש בברזיל לייצור תחליפי חלב אם. המהלך משקף את המשך ההשקעה של חברות מזון גלובליות בשווקים גדולים וצומחים באמריקה הלטינית.",
+      "category": "כלכלה",
+      "facts": [],
+      "featured": false,
+      "id": "nestle-brazil-formula-plant-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brazil.svg",
+      "imageCredit": "דגל ברזיל · Wikimedia Commons",
+      "publishedAt": "2026-09-03T05:45:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/healthcare-pharmaceuticals/nestle-build-infant-formula-plant-brazil-part-393-million-investment-2026-09-03/",
+      "subtitle": "החברה מתכננת מפעל לתחליפי חלב אם כחלק מהרחבת הייצור במדינה.",
+      "summary": "החברה מתכננת מפעל לתחליפי חלב אם כחלק מהרחבת הייצור במדינה.",
+      "title": "נסטלה תשקיע 393 מיליון דולר במפעל חדש בברזיל"
+    },
+    {
+      "body": "אליאל פרץ העלה את באר שבע ליתרון בדקה ה־23, אלון תורג׳מן איזן בדקה ה־50 וג׳בון איסט קבע 1:2 בדקה ה־66. נאור סבג כבש בפנדל בתוספת הזמן וקבע 2:2. אחרי המשחק לבאר שבע ארבע נקודות ולהפועל חיפה שתיים.",
+      "category": "ספורט",
+      "facts": [],
+      "featured": true,
+      "id": "hapoel-beersheva-haifa-draw-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Turner_Stadium.jpg",
+      "imageCredit": "אצטדיון טרנר · Wikimedia Commons",
+      "publishedAt": "2026-09-02T22:30:00+03:00",
+      "readTime": "3 דקות",
+      "source": "ההתאחדות לכדורגל בישראל",
+      "sourceUrl": "https://www.football.org.il/leagues/games/game/?game_id=1120565",
+      "subtitle": "נאור סבג השווה בפנדל בדקה ה־95; באר שבע עם ארבע נקודות וחיפה עם שתיים.",
+      "summary": "נאור סבג השווה בפנדל בדקה ה־95; באר שבע עם ארבע נקודות וחיפה עם שתיים.",
+      "title": "הפועל באר שבע והפועל חיפה נפרדו ב־2:2 דרמטי"
+    },
+    {
+      "body": "קרלוס אלקראס איבד את המערכה הראשונה, אך השיב בייגל במערכה השנייה והשתלט על המשחק. הניצחון בארבע מערכות העלה אותו לסיבוב השלישי באליפות ארצות הברית.",
       "category": "ספורט",
       "facts": [],
       "featured": false,
-      "id": "tiafoe-sakamoto-usopen-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20United%20States.svg",
-      "imageCredit": "דגל ארצות הברית · Wikimedia Commons",
-      "publishedAt": "2026-09-03T05:28:00+03:00",
+      "id": "alcaraz-faria-usopen-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Spain.svg",
+      "imageCredit": "דגל ספרד · Wikimedia Commons",
+      "publishedAt": "2026-09-03T06:24:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/sports/tennis/tiafoe-reaches-us-open-third-round-with-straight-sets-win-over-sakamoto-2026-09-03/",
-      "subtitle": "האמריקני גבר 3:6, 6:7(2), 5:7 על היפני ושמר על מאזן מערכות נקי.",
-      "summary": "האמריקני גבר 3:6, 6:7(2), 5:7 על היפני ושמר על מאזן מערכות נקי.",
-      "title": "טיאפו ניצח את סקאמוטו בשלוש מערכות והעפיל לסיבוב השלישי"
+      "sourceUrl": "https://www.reuters.com/sports/tennis/slow-start-strong-finish-alcaraz-makes-us-open-third-round-2026-09-03/",
+      "subtitle": "הספרדי גבר על ז׳יימה פאריה 4:6, 6:0, 6:3, 6:2.",
+      "summary": "הספרדי גבר על ז׳יימה פאריה 4:6, 6:0, 6:3, 6:2.",
+      "title": "אלקראס התאושש מפתיחה איטית והעפיל לסיבוב השלישי"
     },
     {
-      "body": "ניו יורק מטס ניצחה 4:10 את טמפה ביי וזכתה בסדרה. קרסון מוראביטו וברט בייטי חבטו דאבלים של שלוש ריצות, וחואן סוטו הוסיף הום־ראן. טמפה ביי ספגה הפסד שני בסדרה.",
+      "body": "ג׳קסון צ׳וריו רשם ארבע חבטות, ובהן הום־ראן מספר 21 שלו העונה, ומילווקי ניצחה את שיקגו קאבס 5:9. הברוורס עלו למאזן 53:87 והגדילו את יתרונם בבית המרכזי של הנשיונל ליג לתשעה משחקים.",
       "category": "ספורט",
       "facts": [],
       "featured": false,
-      "id": "mets-rays-10-4-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20United%20States.svg",
-      "imageCredit": "דגל ארצות הברית · Wikimedia Commons",
-      "publishedAt": "2026-09-03T04:54:00+03:00",
+      "id": "brewers-cubs-9-5-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wrigley_Field.jpg",
+      "imageCredit": "ריגלי פילד · Wikimedia Commons",
+      "publishedAt": "2026-09-03T06:17:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters · Field Level Media",
-      "sourceUrl": "https://www.reuters.com/sports/baseball/mets-ride-pair-3-run-doubles-series-win-over-rays--flm-2026-09-03/",
-      "subtitle": "קרסון מוראביטו וברט בייטי הובילו את ההתקפה; חואן סוטו הוסיף הום־ראן.",
-      "summary": "קרסון מוראביטו וברט בייטי הובילו את ההתקפה; חואן סוטו הוסיף הום־ראן.",
-      "title": "המטס ניצחו 4:10 את טמפה ביי עם שני דאבלים של שלוש ריצות"
+      "sourceUrl": "https://www.reuters.com/sports/baseball/jackson-chourio-powers-brewers-second-straight-win-over-cubs--flm-2026-09-03/",
+      "subtitle": "ארבע חבטות והום־ראן מספר 21 הגדילו את יתרון הברוורס בבית המרכזי לתשעה משחקים.",
+      "summary": "ארבע חבטות והום־ראן מספר 21 הגדילו את יתרון הברוורס בבית המרכזי לתשעה משחקים.",
+      "title": "צ׳וריו הוביל את מילווקי ל־5:9 על הקאבס"
     },
     {
-      "body": "איגנסיו בוסה ניצח את מרקוס גירון 6:3, 3:6, 3:6, 7:6(6), 1:6. בוסה התאושש מהפסד במערכה הראשונה ומאיבוד שובר שוויון ברביעית, והשתלט על המערכה המכרעת בדרך לסיבוב הבא.",
+      "body": "ספנסר טורקלסון חבט הום־ראן בן שתי ריצות באינינג ה־12 ופתח מהלך של חמש ריצות. דטרויט מנעה סוויפ בסדרה וניצחה 6:11 אחרי משחק עתיר שינויי יתרון.",
       "category": "ספורט",
       "facts": [],
       "featured": false,
-      "id": "buse-giron-usopen-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20United%20States.svg",
-      "imageCredit": "דגל ארצות הברית · Wikimedia Commons",
-      "publishedAt": "2026-09-03T04:07:00+03:00",
-      "readTime": "3 דקות",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/sports/tennis/buse-follows-grandfathers-footsteps-with-victory-us-open-2026-09-03/",
-      "subtitle": "הפרואני התאושש מפיגור וגבר 6:3, 3:6, 3:6, 7:6(6), 1:6.",
-      "summary": "הפרואני התאושש מפיגור וגבר 6:3, 3:6, 3:6, 7:6(6), 1:6.",
-      "title": "איגנסיו בוסה ניצח את מרקוס גירון בחמש מערכות"
-    },
-    {
-      "body": "טורונטו בלו ג׳ייז ניצחה 0:11 את קליבלנד. ולדימיר גררו ג׳וניור סיים עם שלוש חבטות, הום־ראן וחמישה RBI; דילן סיז זרק שישה אינינגים ללא ריצה. טורונטו התקרבה למרחק משחק וחצי מקליבלנד במאבק על המקום השלישי בוויילד קארד.",
-      "category": "ספורט",
-      "facts": [],
-      "featured": false,
-      "id": "bluejays-guardians-11-0-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Canada.svg",
-      "imageCredit": "דגל קנדה · Wikimedia Commons",
-      "publishedAt": "2026-09-03T04:35:00+03:00",
+      "id": "tigers-twins-11-6-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Target_Field_2010.jpg",
+      "imageCredit": "טארגט פילד · Wikimedia Commons",
+      "publishedAt": "2026-09-03T07:19:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters · Field Level Media",
-      "sourceUrl": "https://www.reuters.com/sports/baseball/vladimir-guerrero-jr-ignites-blue-jays-rout-guardians--flm-2026-09-03/",
-      "subtitle": "הבלו ג׳ייז צמצמו את הפער במרוץ לוויילד קארד למשחק וחצי.",
-      "summary": "הבלו ג׳ייז צמצמו את הפער במרוץ לוויילד קארד למשחק וחצי.",
-      "title": "טורונטו הביסה 0:11 את קליבלנד; גררו ג׳וניור עם חמישה RBI"
+      "sourceUrl": "https://www.reuters.com/sports/baseball/spencer-torkelson-tigers-put-away-twins-12th-inning--flm-2026-09-03/",
+      "subtitle": "הטייגרס קלעו חמש ריצות באינינג האחרון; טורקלסון חבט הום־ראן של שתי ריצות.",
+      "summary": "הטייגרס קלעו חמש ריצות באינינג האחרון; טורקלסון חבט הום־ראן של שתי ריצות.",
+      "title": "דטרויט הכריעה את מינסוטה 6:11 באינינג ה־12"
     },
     {
-      "body": "יוניסף העריך שכ־20 מיליון ילדים משתמשי אינטרנט ב־21 מדינות חוו בשנה אחת פגיעה מינית מקוונת. קרוב לאחד מכל חמישה בני 12–17 במדגם דיווח על פגיעה וכמעט 60% מן המקרים התרחשו בפלטפורמות חברתיות. זהו אומדן, לא ספירה עולמית מלאה.",
+      "body": "החברה זיהתה ב־30 ביוני תקרית במערכת C-Track המשמשת בתי משפט ב־11 מדינות בארצות הברית, באיי הבתולה, בקנדה ובאונטריו. לפי החברה, גורם לא מורשה ניגש במרץ לחלק מהקבצים, ובהם שמות ומידע אישי; החקירה וההודעות לנפגעים נמשכות.",
       "category": "טכנולוגיה",
       "facts": [],
       "featured": false,
-      "id": "unicef-online-abuse-estimate-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Nations.svg",
-      "imageCredit": "דגל האו״ם · Wikimedia Commons",
-      "publishedAt": "2026-09-03T03:06:00+03:00",
+      "id": "thomson-reuters-cyber-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Computer_Security_lock.jpg",
+      "imageCredit": "אבטחת מחשבים · Wikimedia Commons",
+      "publishedAt": "2026-09-03T06:06:00+03:00",
       "readTime": "3 דקות",
       "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/technology/unicef-estimates-20-million-children-suffered-online-sexual-abuse-one-year-2026-09-03/",
-      "subtitle": "ההערכה מבוססת על סקר בקרב משתמשי אינטרנט בני 12–17; רוב הדיווחים נקשרו לפלטפורמות חברתיות.",
-      "summary": "ההערכה מבוססת על סקר בקרב משתמשי אינטרנט בני 12–17; רוב הדיווחים נקשרו לפלטפורמות חברתיות.",
-      "title": "יוניסף: כ־20 מיליון ילדים ב־21 מדינות חוו פגיעה מינית ברשת בשנה"
+      "sourceUrl": "https://www.reuters.com/legal/litigation/thomson-reuters-detects-cybersecurity-incident-says-unauthorized-party-accessed-2026-09-03/",
+      "subtitle": "Thomson Reuters דיווחה שגורם לא מורשה ניגש לקבצים שכללו פרטים אישיים.",
+      "summary": "Thomson Reuters דיווחה שגורם לא מורשה ניגש לקבצים שכללו פרטים אישיים.",
+      "title": "תקרית סייבר במערכת C-Track חשפה קבצים במערכות בתי משפט"
     },
     {
-      "body": "KEPCO הציעה לסמסונג אלקטרוניקס לשלם מראש 20 טריליון וון, כ־15 מיליארד דולר, עבור חשמל עד 2031, לפי Chosun Ilbo. ל־SK Hynix הוצע תשלום מוקדם של 5 טריליון וון. זו הצעה מדווחת, לא הסכם חתום.",
+      "body": "Reuters מתאר גל של ביקורי מנהלים ומשקיעים זרים במרכזי הטכנולוגיה של סין. המוקד הוא לא רק מוצרים חדשים, אלא היכולת הסינית להעביר רובוטים, מערכות בינה מלאכותית וכלי רכב חשמליים מפיתוח לייצור בקנה מידה גדול.",
       "category": "טכנולוגיה",
       "facts": [],
       "featured": false,
-      "id": "korea-samsung-power-prepay-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Korea.svg",
-      "imageCredit": "דגל קוריאה הדרומית · Wikimedia Commons",
-      "publishedAt": "2026-09-03T04:29:00+03:00",
+      "id": "tech-pilgrims-china-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20China.svg",
+      "imageCredit": "דגל סין · Wikimedia Commons",
+      "publishedAt": "2026-09-03T05:35:00+03:00",
       "readTime": "3 דקות",
-      "source": "Reuters · Chosun Ilbo",
-      "sourceUrl": "https://www.reuters.com/world/asia-pacific/south-korea-utility-proposes-samsung-pays-15-billion-advance-power-paper-says-2026-09-03/",
-      "subtitle": "לפי דיווח מקומי, KEPCO מבקשת לממן הרחבת רשת שתשרת מפעלי שבבים עד 2031.",
-      "summary": "לפי דיווח מקומי, KEPCO מבקשת לממן הרחבת רשת שתשרת מפעלי שבבים עד 2031.",
-      "title": "חברת החשמל הקוריאנית הציעה לסמסונג להקדים תשלום של 15 מיליארד דולר"
-    }
-  ],
-  "breaking": [
-    {
-      "articleId": "mets-rays-10-4-0600-20260903",
-      "id": "flash-20260903-0454-mets-rays",
-      "publishedAt": "2026-09-03T04:54:00+03:00",
-      "source": "Reuters · Field Level Media",
-      "sourceUrl": "https://www.reuters.com/sports/baseball/mets-ride-pair-3-run-doubles-series-win-over-rays--flm-2026-09-03/",
-      "time": "04:54",
-      "title": "המטס ניצחו 4:10 את טמפה ביי וזכו בסדרה",
-      "urgent": false
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/china/tech-pilgrims-flock-china-global-innovation-race-heats-up-2026-09-03/",
+      "subtitle": "שנזן, שנגחאי והאנגג׳ואו מושכות מבקרים המבקשים להבין את קצב הפיתוח ברובוטיקה, AI ורכב חשמלי.",
+      "summary": "שנזן, שנגחאי והאנגג׳ואו מושכות מבקרים המבקשים להבין את קצב הפיתוח ברובוטיקה, AI ורכב חשמלי.",
+      "title": "מנהלים ומשקיעים זרים יוצאים לסיורי טכנולוגיה בסין"
     },
     {
-      "articleId": "iran-civilian-toll-concern-0600-20260903",
-      "id": "flash-20260903-0503-iran-civilian-toll",
-      "publishedAt": "2026-09-03T05:03:00+03:00",
+      "body": "Uber וחברת הבינה המלאכותית Wayve הודיעו על השקת נסיעות אוטונומיות בלונדון. השירות מציב את הבירה הבריטית כעיר האירופית השנייה שבה Uber מפעילה רובוטקסי, לאחר זאגרב, ויעמוד במבחן רגולטורי ובטיחותי צפוף.",
+      "category": "טכנולוגיה",
+      "facts": [],
+      "featured": false,
+      "id": "uber-wayve-london-robotaxi-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wayve_self-driving_car.jpg",
+      "imageCredit": "רכב ניסוי של Wayve · Wikimedia Commons",
+      "publishedAt": "2026-09-03T02:02:00+03:00",
+      "readTime": "3 דקות",
       "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/middle-east/iran-war-escalation-raises-concern-over-civilian-death-toll-2026-09-03/",
-      "time": "05:03",
-      "title": "איראן דיווחה על 18 הרוגים ו־108 פצועים בגל התקיפות האחרון",
-      "urgent": true
-    },
-    {
-      "articleId": "pacific-china-missile-unity-0600-20260903",
-      "id": "flash-20260903-0518-pacific-missile",
-      "publishedAt": "2026-09-03T05:18:00+03:00",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/chair-pacific-leaders-meeting-urges-united-front-china-missile-test-2026-09-03/",
-      "time": "05:18",
-      "title": "יו״ר פורום איי האוקיינוס השקט קרא לתגובה אחידה לניסוי הטיל הסיני",
-      "urgent": false
-    },
-    {
-      "articleId": "russia-goethe-closure-0600-20260903",
-      "id": "flash-20260903-0519-russia-goethe",
-      "publishedAt": "2026-09-03T05:19:00+03:00",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/russia-close-goethe-institut-branches-after-german-drone-incident-foreign-2026-09-03/",
-      "time": "05:19",
-      "title": "רוסיה הורתה לסגור את סניפי מכון גתה",
-      "urgent": false
-    },
-    {
-      "id": "flash-20260903-0525-us-funding-bill",
-      "publishedAt": "2026-09-03T05:25:00+03:00",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/legal/government/trump-signs-bill-avert-government-shutdown-before-midterm-elections-2026-09-03/",
-      "time": "05:25",
-      "title": "טראמפ חתם על חוק מימון זמני ומנע השבתת ממשל",
-      "urgent": true
-    },
-    {
-      "articleId": "tiafoe-sakamoto-usopen-0600-20260903",
-      "id": "flash-20260903-0528-tiafoe-sakamoto",
-      "publishedAt": "2026-09-03T05:28:00+03:00",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/sports/tennis/tiafoe-reaches-us-open-third-round-with-straight-sets-win-over-sakamoto-2026-09-03/",
-      "time": "05:28",
-      "title": "טיאפו ניצח את סקאמוטו בשלוש מערכות והעפיל לסיבוב השלישי",
-      "urgent": false
-    },
-    {
-      "articleId": "australia-us-defence-ties-0600-20260903",
-      "id": "flash-20260903-0533-australia-us-defence",
-      "publishedAt": "2026-09-03T05:33:00+03:00",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/australia-us-boost-defence-ties-chinas-pacific-influence-grows-2026-09-03/",
-      "time": "05:33",
-      "title": "אוסטרליה וארה״ב הודיעו על העמקת שיתוף הפעולה הביטחוני",
-      "urgent": false
-    },
-    {
-      "articleId": "gold-dollar-yields-0600-20260903",
-      "id": "flash-20260903-0541-gold-rise",
-      "publishedAt": "2026-09-03T05:41:00+03:00",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/india/gold-rises-dollar-yields-ease-with-us-nonfarm-payrolls-report-spotlight-2026-09-03/",
-      "time": "05:41",
-      "title": "הזהב עלה ל־4,409.97 דולר עם היחלשות הדולר והתשואות",
-      "urgent": false
+      "sourceUrl": "https://www.reuters.com/business/uber-ai-firm-wayve-launch-londons-first-robotaxis-2026-09-02/",
+      "subtitle": "לונדון תהיה העיר האירופית השנייה בשירות, אחרי זאגרב.",
+      "summary": "לונדון תהיה העיר האירופית השנייה בשירות, אחרי זאגרב.",
+      "title": "Uber ו-Wayve משיקות נסיעות רובוטקסי בלונדון"
     }
   ],
   "deepDives": [
     {
-      "author": "אלעד ברק · פרשן המערכת (שם עט)",
-      "body": "העובדות המאומתות תחילה: הבוקר נרשמה באסיה עליית הקלה במניות ובאג״ח, הין שמר על חלק מהתחזקותו והתשואות ביפן ירדו לקראת מכרז חוב. במקביל, הזהב עלה ב־0.5% ל־4,409.97 דולר לאונקיה, כשהדולר ותשואות האג״ח האמריקניות נחלשו. הנפט דווקא נסוג מעט במסחר המוקדם: ברנט ל־95.20 דולר ו־WTI ל־90.77 דולר, אך שתי החביות עדיין משקפות פרמיית סיכון גבוהה סביב העימות עם איראן ומצר הורמוז.\n\nאלה נתונים נקודתיים, לא הוכחה שהסערה חלפה. בארצות הברית נסגרו המדדים המרכזיים בעליות ביום רביעי, אחרי שלושה ימי ירידות, והמשקיעים ממתינים לדוח התעסוקה של יום שישי. בהודו, החוזים הצביעו על תיקון חיובי אחרי נסיגה של בערך אחוז בשלושה ימים, אולם נפט יקר ותשואות גבוהות ממשיכים להגביל את מרחב העלייה. קרן המטבע הבינלאומית הוסיפה אזהרה רחבה: עליית תשואות מקשה על מדינות מתפתחות למחזר חוב ומאיימת על ההתקדמות בהסדרי חוב.\n\nמכאן מתחיל הניתוח. העלייה הבוקר נראית יותר כמו הפוגה בחיפוש אחר מחיר שיווי משקל מאשר מעבר ברור ל״מצב סיכון״. כאשר מניות, אג״ח וזהב עולים יחד, השוק מאותת שהוא רוצה גם השתתפות בהתאוששות וגם הגנה. זו אינה סתירה: מנהלי כספים יכולים להחזיר חשיפה למניות אחרי ירידה, ובאותה שעה להאריך מח״מ או להחזיק זהב מפני שהם חוששים מאינפלציה, מלחמה או טעות מדיניות.\n\nהמשתנה הראשון הוא התעסוקה בארצות הברית. דוח חלש במידה מתונה עשוי להוריד תשואות ולעודד ציפיות להקלה מוניטרית. דוח חלש מאוד עלול להפוך מהר לאות האטה ולהכביד על מניות. דוח חזק עשוי לתמוך בצמיחה, אך גם לדחות הורדת ריבית. לכן השוק אינו ממתין רק למספר המשרות; הוא יבחן את השכר, שיעור האבטלה והתיקונים לחודשים קודמים.\n\nהמשתנה השני הוא הנפט. ירידה של פחות מחצי אחוז אינה מוחקת את הסיכון הגיאופוליטי. כל עוד קיימים איומים על התנועה במצר הורמוז, חברות משלמות יותר על ביטוח ועל חלופות לוגיסטיות. עבור הודו, אירופה וישראל זה עלול לעבור למחירי תחבורה ויבוא. עבור ארצות הברית, נפט יקר מקשה על מאבק באינפלציה בדיוק כשהמשקיעים מבקשים ריבית נמוכה יותר.\n\nהמשתנה השלישי הוא החוב. תשואות גבוהות אינן רק מספר על מסך: הן מעלות עלויות משכנתה, מימון עסקי ומחזור חוב ממשלתי. במדינות חלשות, המרווח בין צמיחה להוצאה על ריבית מצטמצם במהירות. לכן אזהרת קרן המטבע מחברת בין התנודה היומית באג״ח לבין סיכון פיסקלי ארוך טווח.\n\nמה צריך לעקוב אחריו עכשיו: נתוני התעסוקה המקדימים, תנועת הנפט סביב 90–95 דולר, תוצאות מכרז האג״ח היפני, הדולר מול הין, והאם עליות המניות מתרחבות מעבר למספר מצומצם של חברות טכנולוגיה. אם התשואות ימשיכו לרדת בלי זינוק בנפט, ההקלה עשויה להתבסס. אם הנפט והתשואות יעלו יחד, הלחץ יחזור במהירות.\n\nהמשמעות למשקיע ולמקבל החלטות אינה לבחור כותרת אחת, אלא לזהות את הקשר בין שלושת המחירים: כסף, אנרגיה ואשראי. רק תנועה עקבית ביניהם תאותת שהפוגת הבוקר הפכה למגמה.",
-      "category": "כלכלה",
+      "author": "אורי שקד · פרשן המערכת (שם עט)",
+      "body": "העובדות המאומתות תחילה: סקר חדשות 13 שפורסם הבוקר מציב את גוש נתניהו ואת הגוש המתנגד לו על 53 מנדטים כל אחד, כאשר המפלגות הערביות מחזיקות יחד 14. בין הרשימות שמספריהן פורסמו: ישר! בראשות גדי איזנקוט עם 22 מנדטים, הליכוד עם 21, ביחד עם 12, איחוד הציונות הדתית–זהות עם 6, רשימת עופר וינטר עם 4 ורע״ם עם 5. הסקר נערך בקרב 940 נשאלים וטעות הדגימה שפורסמה היא 3.4 אחוזים. מאחר שהפרסום הזמין אינו כולל טבלת 120 מושבים מלאה, המספרים לא הוכנסו ללוח הסקרים הגרפי.\n\nמה השתנה: מרבית הסקרים בחודשים האחרונים העניקו יתרון ברור יותר לגוש המתנגד לנתניהו. השוויון החדש אינו יוצר רוב, אך הוא משנה את אופן ניהול הימים שלפני סגירת הרשימות ב־8 בספטמבר. באותו בוקר פרסם ישי כהן בכיכר השבת טור פרשנות שלפיו עופר וינטר משנה את הדגש סביב חוק הגיוס על רקע מצבו בסקרים. זו טענה פרשנית של הכותב, ולא עובדה שהוכחה עצמאית, אך היא מדגימה את הלחץ על רשימות קטנות לבדל את עצמן במהירות.\n\nמכאן הניתוח: הנתון החשוב ביותר איננו מי מוביל ברשימה הבודדת, אלא העובדה ששני הגושים רחוקים שמונה מנדטים מרוב. במצב כזה, כל איחוד טכני, פרישה או גלישה מתחת לאחוז החסימה עשויים לשנות את חלוקת המושבים בלי שינוי דרמטי במספר המצביעים. מפלגה שמקבלת ארבעה מנדטים בסקר עלולה להפוך לנכס קואליציוני; אותה מפלגה, אם תיפול מתחת לסף, עלולה לבזבז קולות ולהעביר בפועל מושבים לגוש היריב.\n\nהמשמעות המעשית היא שמועד סגירת הרשימות חשוב כמעט כמו יום הבחירות. המפלגות הגדולות צריכות להחליט אם הן מעדיפות להרחיב את המותג שלהן או להציל שותפים פוטנציאליים. הרשימות הקטנות צריכות להוכיח שהן עוברות את הסף, או להגיע להסכם שמפחית את הסיכון. במקביל, המפלגות הערביות מחזיקות כוח מספרי משמעותי, אך היכולת לתרגם אותו להשפעה תלויה בשיעור ההצבעה, באחדות הרשימות ובנכונות הגושים האחרים לשיתוף פעולה.\n\nצריך להיזהר ממסקנה מהירה שסקר אחד מבשר תפנית קבועה. טעות הדגימה, ניסוח השאלות והנחות לגבי רשימות שעדיין משתנות יכולים להזיז כמה מנדטים. בנוסף, הפרסום החלקי אינו מאפשר לבדוק כעת את כל חלוקת המושבים מפלגה אחר מפלגה.\n\nמה לעקוב אחריו: טבלת הסקר המלאה אם תפורסם, החלטות האיחוד והפרישה עד 8 בספטמבר, סקרים נוספים מאולפנים אחרים, ושאלת אחוז החסימה של הרשימות הקטנות. רק רצף של מדידות דומות, לאחר סגירת הרשימות, יוכל להראות אם מדובר בשינוי עומק או ברעש של שבוע פוליטי תנודתי.\n\nעוד נקודה היא ההבחנה בין גודל מפלגה לבין יכולת להרכיב קואליציה. רשימה שמובילה במספר המנדטים אינה בהכרח מחזיקה במסלול מעשי ל־61, במיוחד כאשר שותפות אפשריות מציבות קווים אדומים הדדיים. לכן הקמפיינים צפויים להדגיש מעתה לא רק מי ראוי לראשות הממשלה, אלא גם איזו מפה קואליציונית ניתנת לביצוע. זה עשוי להגביר לחץ להצגת התחייבויות ברורות, אך גם לעודד עמימות שתשאיר אפשרויות פתוחות לאחר הבחירות.",
+      "category": "בארץ",
       "facts": [],
       "featured": true,
       "featuredAnalysis": true,
-      "id": "deep-relief-rally-jobs-oil-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20United%20States.svg",
-      "imageCredit": "דגל ארצות הברית · Wikimedia Commons",
-      "publishedAt": "2026-09-03T06:00:15+03:00",
-      "readTime": "6 דקות",
+      "id": "deep-polls-list-deadline-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
+      "imageCredit": "דגל ישראל · Wikimedia Commons",
+      "publishedAt": "2026-09-03T08:58:00+03:00",
+      "readTime": "7 דקות",
       "secondarySources": [
         {
-          "name": "Reuters · שווקים",
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-03/"
+          "name": "Times of Israel · הסקר",
+          "url": "https://www.timesofisrael.com/liveblog_entry/poll-shows-pro-netanyahu-bloc-pulling-even-with-opponents-in-sharp-shift/"
         },
         {
-          "name": "Reuters · זהב",
-          "url": "https://www.reuters.com/world/india/gold-rises-dollar-yields-ease-with-us-nonfarm-payrolls-report-spotlight-2026-09-03/"
+          "name": "כיכר השבת · טור ישי כהן",
+          "url": "https://www.kikar.co.il/haredim-news/tkrsvm"
+        }
+      ],
+      "source": "ניתוח המערכת · Times of Israel",
+      "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/poll-shows-pro-netanyahu-bloc-pulling-even-with-opponents-in-sharp-shift/",
+      "subtitle": "הסקר החדש משנה את הלחץ על הרשימות הקטנות, אך פרסום חלקי ומועד סגירת הרשימות מחייבים זהירות.",
+      "summary": "הסקר החדש משנה את הלחץ על הרשימות הקטנות, אך פרסום חלקי ומועד סגירת הרשימות מחייבים זהירות.",
+      "title": "שוויון בגושים, מרוץ נגד השעון: מה באמת אומר סקר חדשות 13",
+      "wordCount": 423
+    },
+    {
+      "author": "תומר לביא · פרשן המערכת (שם עט)",
+      "body": "הדיווחים המאומתים מצביעים על הארכת ההיערכות האמריקנית במזרח התיכון, על עשרות כלי שיט שהוסטו ועל מחירי נפט שנותרו סביב 90–95 דולר לחבית. במקביל, Reuters מתאר החרפה מחודשת של שאלת הפגיעה באזרחים. כל אחד מהנתונים מגיע ממקור אחר, ולכן יש להבחין בין עובדה מאושרת, דיווח מיוחס והערכה צבאית.\n\nהניתוח: הארכת הצבות לתוך 2027 אומרת שהמערכת האמריקנית אינה מתכננת רק סבב קצר. ספינות, סוללות הגנה וצנחנים דורשים כוח אדם, תחזוקה ושרשרת אספקה. כשהדבר מצטרף לשיבושים במצר הורמוז, העלות הכלכלית אינה תלויה רק בשאלה אם ספינה נפגעה; גם ביטוח, המתנה ושינוי נתיב מתגלגלים למחיר האנרגיה והסחורות.\n\nמה לעקוב אחריו: הודעה רשמית של הפנטגון על היקף הכוחות, נתוני תנועת המכליות במצר, תגובת איראן, והאם מחיר ברנט פורץ מחדש מעל רמות השיא האחרונות. ירידה זמנית במחיר אינה מבטלת את הסיכון כל עוד נתיבי השיט אינם יציבים.",
+      "category": "עולם",
+      "facts": [],
+      "featured": false,
+      "featuredAnalysis": false,
+      "id": "deep-hormuz-long-deployment-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iran.svg",
+      "imageCredit": "דגל איראן · Wikimedia Commons",
+      "publishedAt": "2026-09-03T08:58:00+03:00",
+      "readTime": "5 דקות",
+      "secondarySources": [
+        {
+          "name": "Times of Israel · הצבות",
+          "url": "https://www.timesofisrael.com/liveblog_entry/report-hegseth-extending-us-troop-deployments-in-mideast-as-trump-weighs-declaring-iran-war-over/"
         },
         {
           "name": "Reuters · נפט",
           "url": "https://www.reuters.com/business/energy/oil-edges-down-investors-weigh-uncertainty-over-us-iran-strikes-2026-09-03/"
         },
         {
-          "name": "Reuters · קרן המטבע",
-          "url": "https://www.reuters.com/world/china/imfs-georgieva-says-rising-bond-yields-threaten-progress-developing-country-debt-2026-09-03/"
+          "name": "Reuters · אזרחים",
+          "url": "https://www.reuters.com/world/middle-east/iran-war-escalation-raises-concern-over-civilian-death-toll-2026-09-03/"
         }
       ],
-      "source": "ניתוח המערכת · Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-03/",
-      "subtitle": "המניות והאג״ח באסיה התאוששו, אך הנפט, התשואות ודוח התעסוקה משאירים את תמונת המאקרו שברירית.",
-      "summary": "המניות והאג״ח באסיה התאוששו, אך הנפט, התשואות ודוח התעסוקה משאירים את תמונת המאקרו שברירית.",
-      "title": "עליות של הקלה, לא סוף הסיכון: השוק בין תעסוקה, נפט וחוב",
-      "wordCount": 415
+      "source": "ניתוח המערכת · Times of Israel ו-Reuters",
+      "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/report-hegseth-extending-us-troop-deployments-in-mideast-as-trump-weighs-declaring-iran-war-over/",
+      "subtitle": "הארכת הכוחות והשיבושים הימיים מראים שהסיכון הביטחוני והכלכלי מתמזגים.",
+      "summary": "הארכת הכוחות והשיבושים הימיים מראים שהסיכון הביטחוני והכלכלי מתמזגים.",
+      "title": "מהצבה זמנית לנוכחות ממושכת: מחיר המערכה סביב הורמוז",
+      "wordCount": 131
     },
     {
       "author": "נועם רז · פרשן המערכת (שם עט)",
-      "body": "העובדות: איראן פרסמה נתוני נפגעים מן התקיפות האחרונות, ובכללם 18 הרוגים ו־108 פצועים. הסהר האדום האיראני דיווח על פגיעה בחתונה סמוך למצר הורמוז. ארצות הברית אומרת שאינה מכוונת לאזרחים, מזכ״ל האו״ם הביע דאגה וכווית דיווחה על יירוטים נוספים. חלק מן המספרים אינם ניתנים לאימות עצמאי מיידי.\n\nהניתוח: ככל שהמערכה נמשכת, הסיכון לנזק אגבי, לטעות בזיהוי ולזליגה למדינות שכנות גדל. הצדדים משתמשים במידע כדי להצדיק את פעולותיהם, ולכן יש לייחס כל מספר למקורו ולא להפוך טענה למסקנה. גם אם המטרות מוגדרות צבאיות, תשתיות וריכוזי אוכלוסייה סמוכים יוצרים מרחב שבו טעות יכולה לשנות את מהלך ההסלמה.\n\nמה לעקוב: אימות בלתי תלוי של הנפגעים, תגובת האו״ם, חקירות זירות אזרחיות, שינוי ברשימת המטרות והאם מדינות המפרץ מדווחות על חדירות נוספות.",
-      "category": "ביטחון",
-      "facts": [],
-      "featured": true,
-      "featuredAnalysis": true,
-      "id": "deep-civilians-escalation-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iran.svg",
-      "imageCredit": "דגל איראן · Wikimedia Commons",
-      "publishedAt": "2026-09-03T06:00:15+03:00",
-      "readTime": "6 דקות",
-      "secondarySources": [
-        {
-          "name": "Reuters · נפגעים אזרחיים",
-          "url": "https://www.reuters.com/world/middle-east/iran-war-escalation-raises-concern-over-civilian-death-toll-2026-09-03/"
-        },
-        {
-          "name": "Reuters · נפט",
-          "url": "https://www.reuters.com/business/energy/oil-edges-down-investors-weigh-uncertainty-over-us-iran-strikes-2026-09-03/"
-        }
-      ],
-      "source": "ניתוח המערכת · Reuters",
-      "sourceUrl": "https://www.reuters.com/world/middle-east/iran-war-escalation-raises-concern-over-civilian-death-toll-2026-09-03/",
-      "subtitle": "המספרים האיראניים, ההכחשה האמריקנית ודאגת האו״ם מחייבים להפריד בין עובדות לטענות הצדדים.",
-      "summary": "המספרים האיראניים, ההכחשה האמריקנית ודאגת האו״ם מחייבים להפריד בין עובדות לטענות הצדדים.",
-      "title": "כשהאש מתרחבת אל העורף: מבחן האימות והאחריות באיראן",
-      "wordCount": 116
-    },
-    {
-      "author": "תמר הלוי · פרשן המערכת (שם עט)",
-      "body": "העובדות: יוניסף העריך שכ־20 מיליון ילדים משתמשי אינטרנט ב־21 מדינות חוו פגיעה מינית מקוונת בשנה אחת. כמעט 60% מן האירועים שעליהם דווח התרחשו בפלטפורמות חברתיות. מדובר באומדן המבוסס על סקרים, לא בספירה גלובלית מלאה.\n\nהניתוח: המספרים מעבירים את האחריות מן המשתמש הבודד אל תכנון המערכת. ברירות מחדל של פרטיות, הגבלת קשר מצד זרים, איתור דפוסים מסוכנים ותהליך דיווח נגיש לילדים צריכים להיבנות לפני ההשקה. במקביל, רגולציה חייבת להגן בלי להפוך למעקב גורף. המבחן אינו כמה הודעות בטיחות מוצגות, אלא כמה מהר פגיעה נעצרת וכמה קל לנפגע לקבל סיוע.\n\nמה לעקוב: פרסום מדדי בטיחות ניתנים להשוואה, אכיפת חובת גיל ופרטיות והרחבת המחקר למדינות נוספות.",
+      "body": "שלושה סיפורים שונים מציירים תמונה אחת: מערכת בתי משפט נפגעה מאירוע סייבר, מנהלים זרים נוסעים לסין כדי ללמוד כיצד היא מקצרת את הדרך ממעבדה לייצור, ו-Uber ו-Wayve מעבירות רובוטקסי נוסף לרחובות אירופה. העובדות שונות, אך כולן עוסקות באותו צוואר בקבוק — אמון במערכות דיגיטליות שפועלות בעולם הפיזי.\n\nהניתוח: היתרון כבר אינו רק במודל חכם יותר. מנצחת מי שמחברת אבטחה, רגולציה, נתונים ותפעול בקנה מידה. C-Track ממחישה כיצד חולשה במערכת אחת יכולה לחשוף מידע של מוסדות רבים. הרובוטקסי ממחיש את הכיוון ההפוך: מוצר יכול להיות מוכן טכנולוגית, אך להיתקע בלי מסגרת בטיחותית ואמון ציבורי.\n\nמה לעקוב אחריו: היקף הנפגעים בתקרית C-Track, תנאי הרישוי בלונדון, שיעור ההתערבות האנושית בנסיעות האוטונומיות, והאם חברות מערביות חוזרות מסיורי סין עם השקעות, שותפויות או שינוי ממשי באסטרטגיית הייצור.",
       "category": "טכנולוגיה",
       "facts": [],
-      "featured": true,
-      "featuredAnalysis": true,
-      "id": "deep-child-safety-platforms-0600-20260903",
-      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Nations.svg",
-      "imageCredit": "דגל האו״ם · Wikimedia Commons",
-      "publishedAt": "2026-09-03T06:00:15+03:00",
-      "readTime": "6 דקות",
+      "featured": false,
+      "featuredAnalysis": false,
+      "id": "deep-trust-stack-tech-0858-20260903",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20China.svg",
+      "imageCredit": "דגל סין · Wikimedia Commons",
+      "publishedAt": "2026-09-03T08:58:00+03:00",
+      "readTime": "5 דקות",
       "secondarySources": [
         {
-          "name": "Reuters · אומדן יוניסף",
-          "url": "https://www.reuters.com/technology/unicef-estimates-20-million-children-suffered-online-sexual-abuse-one-year-2026-09-03/"
+          "name": "Reuters · C-Track",
+          "url": "https://www.reuters.com/legal/litigation/thomson-reuters-detects-cybersecurity-incident-says-unauthorized-party-accessed-2026-09-03/"
         },
         {
-          "name": "UNICEF · הגנת ילדים",
-          "url": "https://www.unicef.org/protection/violence-against-children-online"
+          "name": "Reuters · Wayve",
+          "url": "https://www.reuters.com/business/uber-ai-firm-wayve-launch-londons-first-robotaxis-2026-09-02/"
+        },
+        {
+          "name": "Reuters · סין",
+          "url": "https://www.reuters.com/world/china/tech-pilgrims-flock-china-global-innovation-race-heats-up-2026-09-03/"
         }
       ],
       "source": "ניתוח המערכת · Reuters",
-      "sourceUrl": "https://www.reuters.com/technology/unicef-estimates-20-million-children-suffered-online-sexual-abuse-one-year-2026-09-03/",
-      "subtitle": "אומדן יוניסף ממחיש שהבעיה רחבה ושמנגנוני דיווח בלבד אינם מספיקים בלי תכנון מונע.",
-      "summary": "אומדן יוניסף ממחיש שהבעיה רחבה ושמנגנוני דיווח בלבד אינם מספיקים בלי תכנון מונע.",
-      "title": "בטיחות ילדים ברשת אינה תוסף: היא החלטת מוצר",
-      "wordCount": 103
+      "sourceUrl": "https://www.reuters.com/legal/litigation/thomson-reuters-detects-cybersecurity-incident-says-unauthorized-party-accessed-2026-09-03/",
+      "subtitle": "סייבר בבתי משפט, רובוטקסי בלונדון וסיורי חדשנות בסין מדגישים שהאתגר עובר מהדגמה להפעלה.",
+      "summary": "סייבר בבתי משפט, רובוטקסי בלונדון וסיורי חדשנות בסין מדגישים שהאתגר עובר מהדגמה להפעלה.",
+      "title": "טכנולוגיה בקנה מידה: האמון הופך לתשתית",
+      "wordCount": 122
     }
   ],
   "markets": [
@@ -509,7 +432,7 @@ window.NEWS_FEED = {
       "sourceUrl": "https://www.reuters.com/business/us-stock-index-futures-subdued-oil-treasury-yields-rise-iran-tensions-2026-09-02/",
       "status": "סגירה · 02.09 23:00",
       "symbol": "SPX",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
+      "updatedAt": "2026-09-03T08:58:00+03:00",
       "value": "7,666.63"
     },
     {
@@ -521,7 +444,7 @@ window.NEWS_FEED = {
       "sourceUrl": "https://www.reuters.com/business/us-stock-index-futures-subdued-oil-treasury-yields-rise-iran-tensions-2026-09-02/",
       "status": "סגירה · 02.09 23:00",
       "symbol": "IXIC",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
+      "updatedAt": "2026-09-03T08:58:00+03:00",
       "value": "26,217.83"
     },
     {
@@ -533,7 +456,7 @@ window.NEWS_FEED = {
       "sourceUrl": "https://www.reuters.com/business/us-stock-index-futures-subdued-oil-treasury-yields-rise-iran-tensions-2026-09-02/",
       "status": "סגירה · 02.09 23:00",
       "symbol": "DJI",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
+      "updatedAt": "2026-09-03T08:58:00+03:00",
       "value": "53,061.89"
     },
     {
@@ -545,56 +468,56 @@ window.NEWS_FEED = {
       "sourceUrl": "https://www.google.com/finance/quote/TSLA:NASDAQ",
       "status": "מסחר מאוחר · 03.09 03:15",
       "symbol": "TSLA",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
+      "updatedAt": "2026-09-03T08:58:00+03:00",
       "value": "$357.01"
     },
     {
-      "change": "−0.26% · −$0.24",
+      "change": "−0.42% · −$0.38",
       "direction": "down",
       "name": "WTI",
-      "note": "ירידה קלה כשהמשקיעים שקלו את אי־הוודאות סביב התקיפות",
+      "note": "נסיגה קלה לצד אי־ודאות סביב התקיפות והמעבר בהורמוז",
       "source": "Reuters",
       "sourceUrl": "https://www.reuters.com/business/energy/oil-edges-down-investors-weigh-uncertainty-over-us-iran-strikes-2026-09-03/",
-      "status": "מסחר מוקדם · 03.09 03:29",
+      "status": "מסחר מוקדם · 03.09 08:15",
       "symbol": "CL",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
-      "value": "$90.77"
+      "updatedAt": "2026-09-03T08:58:00+03:00",
+      "value": "$90.63"
     },
     {
-      "change": "−0.45% · −$0.43",
+      "change": "−0.62% · −$0.59",
       "direction": "down",
       "name": "Brent",
-      "note": "פרמיית הסיכון נותרה גבוהה אף שהמחיר נסוג",
+      "note": "פרמיית הסיכון נותרה גבוהה למרות הירידה",
       "source": "Reuters",
       "sourceUrl": "https://www.reuters.com/business/energy/oil-edges-down-investors-weigh-uncertainty-over-us-iran-strikes-2026-09-03/",
-      "status": "מסחר מוקדם · 03.09 03:29",
+      "status": "מסחר מוקדם · 03.09 08:15",
       "symbol": "BZ",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
-      "value": "$95.20"
+      "updatedAt": "2026-09-03T08:58:00+03:00",
+      "value": "$95.04"
     },
     {
-      "change": "+0.50% · +$21.90 בקירוב",
+      "change": "+1.00% · כ־+$44",
       "direction": "up",
       "name": "זהב",
-      "note": "הדולר והתשואות נחלשו לקראת דוח התעסוקה",
+      "note": "הדולר והתשואות נחלשו לקראת נתוני התעסוקה",
       "source": "Reuters",
       "sourceUrl": "https://www.reuters.com/world/india/gold-rises-dollar-yields-ease-with-us-nonfarm-payrolls-report-spotlight-2026-09-03/",
-      "status": "ספוט · 03.09 05:19",
+      "status": "ספוט · 03.09 08:15",
       "symbol": "XAU",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
-      "value": "$4,409.97"
+      "updatedAt": "2026-09-03T08:58:00+03:00",
+      "value": "$4,434.70"
     },
     {
-      "change": "+0.38% · +$291",
+      "change": "+0.17% · +$134",
       "direction": "up",
       "name": "Bitcoin",
-      "note": "המחיר האחרון הזמין במסחר רציף",
+      "note": "מחיר מסחר רציף בזמן העדכון",
       "source": "נתוני שוק",
       "sourceUrl": "https://www.google.com/finance/quote/BTC-USD",
-      "status": "מסחר רציף · 03.09 06:00",
+      "status": "מסחר רציף · 03.09 08:58",
       "symbol": "BTC",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
-      "value": "$77,718"
+      "updatedAt": "2026-09-03T08:58:00+03:00",
+      "value": "$77,766"
     },
     {
       "change": "+0.50% · +$11.99",
@@ -605,7 +528,7 @@ window.NEWS_FEED = {
       "sourceUrl": "https://www.google.com/finance/quote/ETH-USD",
       "status": "מסחר רציף · 03.09 06:00",
       "symbol": "ETH",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
+      "updatedAt": "2026-09-03T08:58:00+03:00",
       "value": "$2,403.62"
     },
     {
@@ -617,15 +540,15 @@ window.NEWS_FEED = {
       "sourceUrl": "https://www.boi.org.il/roles/markets/exchange-rates/",
       "status": "שער יציג · 02.09",
       "symbol": "USDILS",
-      "updatedAt": "2026-09-03T06:00:15+03:00",
+      "updatedAt": "2026-09-03T08:58:00+03:00",
       "value": "₪3.0420"
     }
   ],
   "meta": {
     "contentPolicy": "גבול מהדורה קשיח: הכתבות, הספורט, השווקים והמדיה מתחלפים בכל עדכון; ארכיון המבזקים בלבד נשמר לצמיתות",
-    "edition": "מהדורת בוקר · ישראל, איראן, שווקים, ספורט וטכנולוגיה",
+    "edition": "מהדורת בוקר · פוליטיקה, הורמוז, שווקים, ספורט וטכנולוגיה",
     "locale": "he-IL",
-    "updatedAt": "2026-09-03T06:00:15+03:00"
+    "updatedAt": "2026-09-03T08:58:00+03:00"
   },
   "polls": [
     {
@@ -687,7 +610,7 @@ window.NEWS_FEED = {
       "shortSource": "וואלה",
       "source": "וואלה · תרחיש איחוד הציונות הדתית וזהות",
       "sourceUrl": "https://news.walla.co.il/item/3865040",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -748,7 +671,7 @@ window.NEWS_FEED = {
       "shortSource": "וואלה",
       "source": "וואלה · תרחיש איחוד ומעבר טלי גוטליב",
       "sourceUrl": "https://news.walla.co.il/item/3865040",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -805,7 +728,7 @@ window.NEWS_FEED = {
       "shortSource": "חדשות 12",
       "source": "חדשות 12 · לאחר הקמת עמך ישראל",
       "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-15cb223b69850a1026.htm",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [],
@@ -834,7 +757,7 @@ window.NEWS_FEED = {
       "shortSource": "כאן 11",
       "source": "כאן 11 · תרחיש עופר וינטר",
       "sourceUrl": "https://www.kan.org.il/content/kan-news/politic/1094245/",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -888,7 +811,7 @@ window.NEWS_FEED = {
       "shortSource": "מעריב",
       "source": "מעריב · תרחיש עופר וינטר",
       "sourceUrl": "https://www.maariv.co.il/news/politics/article-1360437",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -938,7 +861,7 @@ window.NEWS_FEED = {
       "shortSource": "14",
       "source": "עכשיו 14 · תרחיש עופר וינטר",
       "sourceUrl": "https://www.c14.co.il/article/1681141",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -980,7 +903,7 @@ window.NEWS_FEED = {
       "shortSource": "זמן ישראל",
       "source": "זמן ישראל · תרחיש עופר וינטר",
       "sourceUrl": "https://www.zman.co.il/718546/",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -1036,7 +959,7 @@ window.NEWS_FEED = {
       "shortSource": "i24",
       "source": "i24NEWS · ערוץ 15 · תרחיש עופר וינטר",
       "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-a44c587c",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -1082,7 +1005,7 @@ window.NEWS_FEED = {
       "shortSource": "13",
       "source": "חדשות 13",
       "sourceUrl": "https://13tv.co.il/item/news/politics/politics/ykep2-905329839/",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -1125,7 +1048,7 @@ window.NEWS_FEED = {
       "shortSource": "12·וינטר",
       "source": "חדשות 12 · תרחיש עופר וינטר",
       "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-cb0dba3ba4430a1027.htm",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -1163,7 +1086,7 @@ window.NEWS_FEED = {
       "shortSource": "ישראל היום",
       "source": "ישראל היום",
       "sourceUrl": "https://www.skarim.org/polls",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     },
     {
       "belowThreshold": [
@@ -1213,129 +1136,201 @@ window.NEWS_FEED = {
       "shortSource": "16",
       "source": "ערוץ 16",
       "sourceUrl": "https://www.skarim.org/polls",
-      "verifiedAt": "2026-09-03T06:00:15+03:00"
+      "verifiedAt": "2026-09-03T08:58:00+03:00"
     }
   ],
   "scores": [
     {
-      "awayColor": "#092c5c",
-      "dateLabel": "03.09",
-      "homeColor": "#002d72",
-      "id": "mlb-mets-rays-20260903-final",
-      "league": "MLB",
-      "outcome": "המטס ניצחו בסדרה",
+      "awayColor": "#e4002b",
+      "dateLabel": "02.09",
+      "homeColor": "#c8102e",
+      "id": "ipl-hbs-hhaifa-20260902-final",
+      "league": "ליגת העל",
+      "outcome": "שוויון דרמטי",
       "score": [
-        "10",
-        "4"
-      ],
-      "scorers": "מוראביטו ובייטי: דאבלים של 3 ריצות; סוטו: הום־ראן",
-      "source": "Reuters · Field Level Media",
-      "sourceUrl": "https://www.reuters.com/sports/baseball/mets-ride-pair-3-run-doubles-series-win-over-rays--flm-2026-09-03/",
-      "state": "final",
-      "status": "סופי",
-      "teams": [
-        "ניו יורק מטס",
-        "טמפה ביי רייז"
-      ],
-      "verifiedAt": "2026-09-03T06:00:15+03:00",
-      "verifiedLabel": "אומת 06:00",
-      "winner": "home"
-    },
-    {
-      "awayColor": "#e31937",
-      "dateLabel": "03.09",
-      "homeColor": "#134a8e",
-      "id": "mlb-bluejays-guardians-20260903-final",
-      "league": "MLB",
-      "outcome": "טורונטו במרחק משחק וחצי מן הוויילד קארד",
-      "score": [
-        "11",
-        "0"
-      ],
-      "scorers": "גררו ג׳וניור: הום־ראן ו־5 RBI",
-      "source": "Reuters · Field Level Media",
-      "sourceUrl": "https://www.reuters.com/sports/baseball/vladimir-guerrero-jr-ignites-blue-jays-rout-guardians--flm-2026-09-03/",
-      "state": "final",
-      "status": "סופי",
-      "teams": [
-        "טורונטו בלו ג׳ייז",
-        "קליבלנד גארדיאנס"
-      ],
-      "verifiedAt": "2026-09-03T06:00:15+03:00",
-      "verifiedLabel": "אומת 06:00",
-      "winner": "home"
-    },
-    {
-      "awayColor": "#bc002d",
-      "dateLabel": "03.09",
-      "homeColor": "#1d428a",
-      "id": "usopen-tiafoe-sakamoto-20260903-final",
-      "league": "US Open",
-      "outcome": "טיאפו בסיבוב השלישי",
-      "score": [
-        "3",
-        "0"
-      ],
-      "scorers": "3:6, 6:7(2), 5:7",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/sports/tennis/tiafoe-reaches-us-open-third-round-with-straight-sets-win-over-sakamoto-2026-09-03/",
-      "state": "final",
-      "status": "סופי",
-      "teams": [
-        "פרנסס טיאפו",
-        "ריי סקאמוטו"
-      ],
-      "verifiedAt": "2026-09-03T06:00:15+03:00",
-      "verifiedLabel": "אומת 06:00",
-      "winner": "home"
-    },
-    {
-      "awayColor": "#3c3b6e",
-      "dateLabel": "03.09",
-      "homeColor": "#d91023",
-      "id": "usopen-buse-giron-20260903-final",
-      "league": "US Open",
-      "outcome": "בוסה העפיל לאחר חמש מערכות",
-      "score": [
-        "3",
+        "2",
         "2"
       ],
-      "scorers": "6:3, 3:6, 3:6, 7:6(6), 1:6",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/sports/tennis/buse-follows-grandfathers-footsteps-with-victory-us-open-2026-09-03/",
+      "scorers": "פרץ 23, איסט 66; תורג׳מן 50, סבג 95 (פ׳)",
+      "source": "ההתאחדות לכדורגל בישראל",
+      "sourceUrl": "https://www.football.org.il/leagues/games/game/?game_id=1120565",
       "state": "final",
       "status": "סופי",
       "teams": [
-        "איגנסיו בוסה",
-        "מרקוס גירון"
+        "הפועל באר שבע",
+        "הפועל חיפה"
       ],
-      "verifiedAt": "2026-09-03T06:00:15+03:00",
-      "verifiedLabel": "אומת 06:00",
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
+      "winner": "draw"
+    },
+    {
+      "awayColor": "#12284b",
+      "dateLabel": "03.09",
+      "homeColor": "#0e3386",
+      "id": "mlb-cubs-brewers-20260902-final",
+      "league": "MLB",
+      "outcome": "מילווקי ביתרון 9 משחקים בבית",
+      "score": [
+        "5",
+        "9"
+      ],
+      "scorers": "צ׳וריו: 4 חבטות והום־ראן",
+      "source": "Reuters · Field Level Media",
+      "sourceUrl": "https://www.reuters.com/sports/baseball/jackson-chourio-powers-brewers-second-straight-win-over-cubs--flm-2026-09-03/",
+      "state": "final",
+      "status": "סופי",
+      "teams": [
+        "שיקגו קאבס",
+        "מילווקי ברוורס"
+      ],
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
+      "winner": "away"
+    },
+    {
+      "awayColor": "#0c2340",
+      "dateLabel": "03.09",
+      "homeColor": "#002b5c",
+      "id": "mlb-twins-tigers-20260902-final",
+      "league": "MLB",
+      "outcome": "דטרויט מנעה סוויפ",
+      "score": [
+        "6",
+        "11"
+      ],
+      "scorers": "טורקלסון: הום־ראן של 2 ריצות באינינג 12",
+      "source": "Reuters · Field Level Media",
+      "sourceUrl": "https://www.reuters.com/sports/baseball/spencer-torkelson-tigers-put-away-twins-12th-inning--flm-2026-09-03/",
+      "state": "final",
+      "status": "סופי · 12 אינינגים",
+      "teams": [
+        "מינסוטה טווינס",
+        "דטרויט טייגרס"
+      ],
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
+      "winner": "away"
+    },
+    {
+      "awayColor": "#00a3e0",
+      "dateLabel": "03.09",
+      "homeColor": "#004687",
+      "id": "mlb-royals-marlins-20260902-final",
+      "league": "MLB",
+      "outcome": "מיאמי קלעה את 6 הריצות האחרונות",
+      "score": [
+        "6",
+        "9"
+      ],
+      "scorers": "סאנוחה ומרסי: הום־ראנים",
+      "source": "Reuters · Field Level Media",
+      "sourceUrl": "https://www.reuters.com/sports/baseball/javier-sanoja-marlins-overcome-slow-start-best-royals--flm-2026-09-03/",
+      "state": "final",
+      "status": "סופי",
+      "teams": [
+        "קנזס סיטי רויאלס",
+        "מיאמי מרלינס"
+      ],
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
+      "winner": "away"
+    },
+    {
+      "awayColor": "#27251f",
+      "dateLabel": "03.09",
+      "homeColor": "#002d62",
+      "id": "mlb-astros-whitesox-20260902-final",
+      "league": "MLB",
+      "outcome": "יוסטון הגדילה את יתרונה במערב",
+      "score": [
+        "2",
+        "0"
+      ],
+      "scorers": "ולאסקז: סינגל של 2 ריצות באינינג 8",
+      "source": "Reuters · Field Level Media",
+      "sourceUrl": "https://www.reuters.com/sports/baseball/nelson-velazquez-breaks-late-scoreless-tie-leads-astros-past-white-sox--flm-2026-09-03/",
+      "state": "final",
+      "status": "סופי",
+      "teams": [
+        "יוסטון אסטרוס",
+        "שיקגו וייט סוקס"
+      ],
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
       "winner": "home"
     },
     {
-      "awayColor": "#aa151b",
+      "awayColor": "#046a38",
       "dateLabel": "03.09",
-      "homeColor": "#de2910",
-      "id": "usopen-bu-jodar-20260902-final",
+      "homeColor": "#aa151b",
+      "id": "usopen-alcaraz-faria-20260903-final",
       "league": "US Open",
-      "outcome": "בו, שנכנס כלאקי לוזר, העפיל",
+      "outcome": "אלקראס בסיבוב השלישי",
       "score": [
         "3",
-        "0"
+        "1"
       ],
-      "scorers": "2:6, 1:6, 1:6",
+      "scorers": "4:6, 6:0, 6:3, 6:2",
       "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/sports/tennis/lucky-loser-bu-sends-jodar-out-us-open-rain-affected-opener-2026-09-02/",
+      "sourceUrl": "https://www.reuters.com/sports/tennis/slow-start-strong-finish-alcaraz-makes-us-open-third-round-2026-09-03/",
       "state": "final",
       "status": "סופי",
       "teams": [
-        "בו יונצ׳אוקטה",
-        "רפאל חודאר"
+        "קרלוס אלקראס",
+        "ז׳יימה פאריה"
       ],
-      "verifiedAt": "2026-09-03T06:00:15+03:00",
-      "verifiedLabel": "אומת 06:00",
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
       "winner": "home"
+    },
+    {
+      "awayColor": "#f7d117",
+      "dateLabel": "03.09",
+      "homeColor": "#d71920",
+      "id": "ipl-hapoel-ta-beitar-20260903-scheduled",
+      "league": "ליגת העל",
+      "outcome": "משחק הערב",
+      "score": [
+        "",
+        ""
+      ],
+      "scorers": "",
+      "source": "Sofascore",
+      "sourceUrl": "https://www.sofascore.com/football/match/hapoel-tel-aviv-beitar-jerusalem/eecsWhc",
+      "state": "scheduled",
+      "status": "20:30 · טרם החל",
+      "teams": [
+        "הפועל תל אביב",
+        "בית״ר ירושלים"
+      ],
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
+      "winner": null
+    },
+    {
+      "awayColor": "#8ac3ee",
+      "dateLabel": "03.09",
+      "homeColor": "#0067b1",
+      "id": "laliga-sociedad-celta-20260903-scheduled",
+      "league": "לה ליגה",
+      "outcome": "משחק ליגה",
+      "score": [
+        "",
+        ""
+      ],
+      "scorers": "",
+      "source": "ESPN",
+      "sourceUrl": "https://www.espn.com/soccer/match/_/gameId/401882867/celta-vigo-real-sociedad",
+      "state": "scheduled",
+      "status": "22:00 · טרם החל",
+      "teams": [
+        "ריאל סוסיאדד",
+        "סלטה ויגו"
+      ],
+      "verifiedAt": "2026-09-03T08:58:00+03:00",
+      "verifiedLabel": "אומת 08:58",
+      "winner": null
     }
   ],
   "socialPulse": [],
