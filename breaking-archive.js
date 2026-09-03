@@ -3638,5 +3638,143 @@ window.BREAKING_ARCHIVE = [
     "time": "01:41",
     "title": "Nscale הציגה 103 מיליארד דולר בהכנסות חוזיות לקראת הנפקה אפשרית",
     "urgent": false
+  },
+  {
+    "articleId": "unicef-online-abuse-estimate-0600-20260903",
+    "id": "flash-20260903-0306-unicef-online-abuse",
+    "publishedAt": "2026-09-03T03:06:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/unicef-estimates-20-million-children-suffered-online-sexual-abuse-one-year-2026-09-03/",
+    "time": "03:06",
+    "title": "יוניסף: כ־20 מיליון ילדים ב־21 מדינות חוו פגיעה מינית מקוונת בשנה",
+    "urgent": false
+  },
+  {
+    "articleId": "road1-motorcyclist-fatal-0600-20260903",
+    "id": "flash-20260903-0315-road1-motorcyclist",
+    "publishedAt": "2026-09-03T03:15:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/scoop-news/83497",
+    "time": "03:15",
+    "title": "רוכב אופנוע כבן 30 נהרג בתאונה בכביש 1",
+    "urgent": false
+  },
+  {
+    "articleId": "imf-bond-yields-debt-warning-0600-20260903",
+    "id": "flash-20260903-0322-imf-yields-debt",
+    "publishedAt": "2026-09-03T03:22:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/imfs-georgieva-says-rising-bond-yields-threaten-progress-developing-country-debt-2026-09-03/",
+    "time": "03:22",
+    "title": "קרן המטבע: תשואות גבוהות מאיימות על התקדמות בהסדרי חוב",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260903-0346-oil-edges-down",
+    "publishedAt": "2026-09-03T03:46:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/energy/oil-edges-down-investors-weigh-uncertainty-over-us-iran-strikes-2026-09-03/",
+    "time": "03:46",
+    "title": "הנפט נסוג קלות: ברנט 95.20 דולר ו־WTI 90.77 דולר",
+    "urgent": false
+  },
+  {
+    "articleId": "buse-giron-usopen-0600-20260903",
+    "id": "flash-20260903-0407-buse-giron",
+    "publishedAt": "2026-09-03T04:07:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/tennis/buse-follows-grandfathers-footsteps-with-victory-us-open-2026-09-03/",
+    "time": "04:07",
+    "title": "איגנסיו בוסה ניצח את מרקוס גירון בחמש מערכות",
+    "urgent": false
+  },
+  {
+    "articleId": "korea-samsung-power-prepay-0600-20260903",
+    "id": "flash-20260903-0429-kepco-samsung",
+    "publishedAt": "2026-09-03T04:29:00+03:00",
+    "source": "Reuters · Chosun Ilbo",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/south-korea-utility-proposes-samsung-pays-15-billion-advance-power-paper-says-2026-09-03/",
+    "time": "04:29",
+    "title": "KEPCO הציעה לסמסונג תשלום מוקדם של 15 מיליארד דולר לחשמל",
+    "urgent": false
+  },
+  {
+    "articleId": "mets-rays-10-4-0600-20260903",
+    "id": "flash-20260903-0454-mets-rays",
+    "publishedAt": "2026-09-03T04:54:00+03:00",
+    "source": "Reuters · Field Level Media",
+    "sourceUrl": "https://www.reuters.com/sports/baseball/mets-ride-pair-3-run-doubles-series-win-over-rays--flm-2026-09-03/",
+    "time": "04:54",
+    "title": "המטס ניצחו 4:10 את טמפה ביי וזכו בסדרה",
+    "urgent": false
+  },
+  {
+    "articleId": "iran-civilian-toll-concern-0600-20260903",
+    "id": "flash-20260903-0503-iran-civilian-toll",
+    "publishedAt": "2026-09-03T05:03:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/middle-east/iran-war-escalation-raises-concern-over-civilian-death-toll-2026-09-03/",
+    "time": "05:03",
+    "title": "איראן דיווחה על 18 הרוגים ו־108 פצועים בגל התקיפות האחרון",
+    "urgent": true
+  },
+  {
+    "articleId": "pacific-china-missile-unity-0600-20260903",
+    "id": "flash-20260903-0518-pacific-missile",
+    "publishedAt": "2026-09-03T05:18:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/chair-pacific-leaders-meeting-urges-united-front-china-missile-test-2026-09-03/",
+    "time": "05:18",
+    "title": "יו״ר פורום איי האוקיינוס השקט קרא לתגובה אחידה לניסוי הטיל הסיני",
+    "urgent": false
+  },
+  {
+    "articleId": "russia-goethe-closure-0600-20260903",
+    "id": "flash-20260903-0519-russia-goethe",
+    "publishedAt": "2026-09-03T05:19:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/russia-close-goethe-institut-branches-after-german-drone-incident-foreign-2026-09-03/",
+    "time": "05:19",
+    "title": "רוסיה הורתה לסגור את סניפי מכון גתה",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260903-0525-us-funding-bill",
+    "publishedAt": "2026-09-03T05:25:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/government/trump-signs-bill-avert-government-shutdown-before-midterm-elections-2026-09-03/",
+    "time": "05:25",
+    "title": "טראמפ חתם על חוק מימון זמני ומנע השבתת ממשל",
+    "urgent": true
+  },
+  {
+    "articleId": "tiafoe-sakamoto-usopen-0600-20260903",
+    "id": "flash-20260903-0528-tiafoe-sakamoto",
+    "publishedAt": "2026-09-03T05:28:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/tennis/tiafoe-reaches-us-open-third-round-with-straight-sets-win-over-sakamoto-2026-09-03/",
+    "time": "05:28",
+    "title": "טיאפו ניצח את סקאמוטו בשלוש מערכות והעפיל לסיבוב השלישי",
+    "urgent": false
+  },
+  {
+    "articleId": "australia-us-defence-ties-0600-20260903",
+    "id": "flash-20260903-0533-australia-us-defence",
+    "publishedAt": "2026-09-03T05:33:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/australia-us-boost-defence-ties-chinas-pacific-influence-grows-2026-09-03/",
+    "time": "05:33",
+    "title": "אוסטרליה וארה״ב הודיעו על העמקת שיתוף הפעולה הביטחוני",
+    "urgent": false
+  },
+  {
+    "articleId": "gold-dollar-yields-0600-20260903",
+    "id": "flash-20260903-0541-gold-rise",
+    "publishedAt": "2026-09-03T05:41:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/india/gold-rises-dollar-yields-ease-with-us-nonfarm-payrolls-report-spotlight-2026-09-03/",
+    "time": "05:41",
+    "title": "הזהב עלה ל־4,409.97 דולר עם היחלשות הדולר והתשואות",
+    "urgent": false
   }
 ];
