@@ -1,72 +1,1495 @@
 (() => {
-const U="2026-09-07T09:00:00+03:00";
-const A=(id,category,title,summary,source,sourceUrl,publishedAt,x={})=>({id,category,title,summary,subtitle:x.subtitle||summary,body:x.body||[{heading:"מה קרה",paragraphs:[summary]},{heading:"הפרטים המאומתים",paragraphs:[x.detail||"הפרטים נבדקו מול הפרסום המקורי; מידע שלא פורסם במקור אינו מוצג כעובדה."]},{heading:"למה זה חשוב",paragraphs:[x.context||"המשך הסיפור ייבחן מול הודעות רשמיות ונתונים נוספים."]}],facts:x.facts||[],featured:!!x.featured,image:x.image,imageCredit:x.imageCredit,publishedAt,readTime:x.readTime||"3 דקות",source,sourceUrl,secondarySources:x.secondarySources||[]});
-const kan={id:"kan-hendel-zalicha-2026-09-06",date:"2026-09-06",publishedDate:"2026-09-06",source:"כאן חדשות · הסקר האחרון",shortSource:"כאן",pollster:"לא פורסם בכתבה הזמינה",scenario:"הנדל וזליכה ברשימה משותפת",fieldworkDate:null,fieldworkEndDate:null,parties:{"ישר!":23,"הליכוד":20,"ביחד":13,"הדמוקרטים":8,"יהדות התורה":8,"ישראל ביתנו":7,"עוצמה יהודית":7,"ש״ס":7,"חד״ש–תע״ל / המשותפת":7,"רע״ם":6,"הציונות הדתית":6,"עמך ישראל":4,"הנדל–זליכה":4},belowThreshold:[{party:"כחול לבן",percent:null},{party:"הציבור החרדי",percent:null}],sourceUrl:"https://www.kan.org.il/lobby/skarim/",verifiedAt:U};
-const ch13={id:"channel13-full-2026-09-02",date:"2026-09-02",publishedDate:"2026-09-02",source:"חדשות 13",shortSource:"13",pollster:"המדד, סטט־נט, פרויקט המדגם, אסקריא ו־Hive",scenario:"לאחר האיחודים",fieldworkDate:null,fieldworkEndDate:null,marginOfError:"±3.4%",sampleSize:940,parties:{"ישר!":22,"הליכוד":21,"ביחד":12,"הדמוקרטים":11,"חד״ש–תע״ל / המשותפת":9,"ישראל ביתנו":8,"יהדות התורה":8,"עוצמה יהודית":7,"ש״ס":7,"הציונות הדתית–זהות":6,"רע״ם":5,"עמך ישראל":4},belowThreshold:[{party:"בית ציוני–המילואימניקים",percent:2.2},{party:"כחול לבן",percent:1.2},{party:"האחדות",percent:.6},{party:"הציבור החרדי",percent:.3},{party:"מקום לכולנו",percent:.3},{party:"הכלכלית",percent:.2}],sourceUrl:"https://13tv.co.il/item/news/politics/politics/survey-905340911/",verifiedAt:U};
-const walla={id:"walla-union-2026-09-02",date:"2026-09-02",publishedDate:"2026-09-02",source:"וואלה · תרחיש איחוד",shortSource:"וואלה",pollster:"לזר מחקרים · Panel4All",scenario:"איחוד הציונות הדתית וזהות",fieldworkDate:"2026-09-01",fieldworkEndDate:"2026-09-02",marginOfError:"±4.4%",parties:{"ישר!":24,"הליכוד":22,"ביחד":15,"הדמוקרטים":10,"ישראל ביתנו":9,"יהדות התורה":8,"חד״ש–תע״ל / המשותפת":8,"עוצמה יהודית":7,"ש״ס":7,"הציונות הדתית–זהות":5,"רע״ם":5},belowThreshold:[{party:"בית ציוני–המילואימניקים",percent:3},{party:"עמך ישראל",percent:2.3},{party:"הכלכלית",percent:2},{party:"כחול לבן",percent:.7}],sourceUrl:"https://news.walla.co.il/item/3865040",verifiedAt:U};
-const articles=[
-A("lists-open-0802-20260907","בארץ","היום נפתחת הגשת הרשימות: מערכת הבחירות נכנסת לשלב המחייב","בשעה 13:00 צפויה להתחיל הגשת רשימות המועמדים, חמישים יום לפני ההצבעה.","כיכר השבת","https://www.kikar.co.il/scoop-news","2026-09-07T07:30:00+03:00",{featured:true,detail:"לפי הדיווח, עמך ישראל של עופר וינטר צפויה להגיש רשימה היום, ובליכוד נמשכו דיונים על השריונים.",context:"המסמכים שיימסרו לוועדת הבחירות יקבעו אילו חיבורים אכן יצאו לפועל.",facts:["פתיחת ההגשה: 13:00","50 יום לבחירות","הבחירות: 27 באוקטובר"]}),
-A("kan-poll-0802-20260907","בארץ","סקר כאן: 52 לגוש נתניהו, 51 לגוש איזנקוט — ואין רוב","ישר! מקבלת 23 מנדטים, הליכוד 20 וביחד 13; הנדל–זליכה ועמך ישראל עם ארבעה כל אחת.","כאן חדשות","https://www.kan.org.il/lobby/skarim/","2026-09-06T21:30:00+03:00",{featured:true,image:"https://i.kikar.co.il/2026/09/06/2de66580-aa22-11f1-a241-2193649ffc80__h1080_w1920.jpg?width=1400",imageCredit:"איזנקוט ונתניהו · חיים גולדברג ואבשלום ששוני, Flash90",detail:"מלוא 120 המושבים הוזנו למרכז הסקרים. מועדי עבודת השדה וגודל המדגם לא פורסמו בכתבה הזמינה ומסומנים כחסרים.",facts:["גוש נתניהו: 52","גוש איזנקוט: 51","13 לרשימות שאינן משויכות"]}),
-A("gaza-ied-response-0900-20260907","בארץ","מטען פגע בכלי הנדסי בצפון הרצועה; צה״ל תקף תשתיות חמאס","לא היו נפגעים לכוחות; צה״ל הגדיר את הפעלת המטען במרחב הקו הצהוב הפרה של הסכם הפסקת האש.","כיכר השבת · הודעת צה״ל","https://www.kikar.co.il/security-news/idf-strikes-gaza-hamas-ceasefire-violation","2026-09-07T07:36:00+03:00",{featured:true,detail:"לפי הודעת דובר צה״ל שצוטטה בדיווח, הכלי נפגע ביום ראשון ובתגובה הותקפו במהלך הלילה תשתיות ששימשו לקידום מתווי טרור.",context:"היקף התקיפות והמשך התגובה ייבחנו מול הודעות רשמיות נוספות; אין להסיק מהאירוע לבדו על שינוי רחב בהסכם.",facts:["אין נפגעים לכוחות","המטען הופעל בצפון הרצועה","התגובה בוצעה במהלך הלילה"]}),
-A("heat-wave-0802-20260907","בארץ","החום מתחזק: עד 39 מעלות באילת והכבדה בעומסים","הטמפרטורות עולות בהרים ובפנים הארץ, ומחר צפויה הכבדה נוספת.","כיכר השבת","https://www.kikar.co.il/israel-news/thop0g-44","2026-09-07T07:29:00+03:00",{detail:"התחזית מציינת 28 מעלות בירושלים, 30 בתל אביב, 32 בבאר שבע ו־39 באילת.",facts:["ירושלים 18–28","תל אביב 24–30","אילת 28–39"]}),
-A("channel14-ruling-0802-20260907","בארץ","בית המשפט חייב את ערוץ 14 ועיתונאי ב־100 אלף שקל","בית משפט השלום ברחובות קיבל חלקית תביעת לשון הרע על פרסומים מתקופת הקורונה.","כיכר השבת","https://www.kikar.co.il/law-and-order/channel-14-langerman-libel-compensation-ruling","2026-09-07T06:55:00+03:00",{detail:"לפי הדיווח, נקבע כי חלק מהפרסומים היו רשלניים ולא הוכחו; פסק הדין המלא הוא המסמך הקובע.",facts:["פיצוי: 100 אלף שקל","שלום רחובות"]}),
-A("selichot-skolen-0802-20260907","חרדים","סליחות ראשונות בסקולען לייקווד: האדמו״ר בטלית הירושה","האדמו״ר עבר לפני התיבה ובסיום עברו החסידים לקבל ברכת שנה טובה.","כיכר השבת","https://www.kikar.co.il/hasidism/tkyik6","2026-09-06T22:22:00+03:00",{image:"https://i.kikar.co.il/2026/09/06/8fc3d090-aa26-11f1-a241-2193649ffc80__h3235_w4826.JPG?width=1400",imageCredit:"סליחות ראשונות בסקולען לייקווד · באדיבות המצלם",detail:"לפי הכתבה, הטלית שבה השתמש האדמו״ר הייתה ירושה מאביו.",facts:["המעמד נערך בלייקווד","ברכת שנה טובה בסיום"]}),
-A("hadassah-karlebach-0900-20260907","חרדים","בגיל 99: נפטרה הדסה קרליבך, שסייעה להצלת ילדים בשואה","קרליבך פעלה כנערה לצד אביה בצרפת הכבושה והותירה מורשת של הצלה והנצחה.","כיכר השבת","https://www.kikar.co.il/haredim-news/hadassah-karlebach-holocaust-rescuer","2026-09-07T07:36:00+03:00",{detail:"לפי הדיווח, היא נולדה בלנינגרד, חייתה תחת רדיפות המשטר הסובייטי ולאחר מכן סייעה עם משפחתה למאות ילדים יהודים בצרפת.",context:"הכתבה נסמכת גם על דיווח COLive; נתוני ההצלה מוצגים כייחוס למקורות אלה.",facts:["נפטרה בגיל 99","ניצולת שואה","קרובת משפחת הרבי מליובאוויטש"]}),
-A("degel-paper-gafni-maklev-0900-20260907","חרדים","ביטאון דגל התורה: הדחת גפני ומקלב אינה הבעת אי־אמון","יתד נאמן טען שהשניים פעלו לפי הנחיות גדולי ישראל וכי השינוי נועד לרענון השורות.","כיכר השבת","https://www.kikar.co.il/haredim-news/degel-hatorah-responds-gafni-maklev-dismissal","2026-09-07T07:47:00+03:00",{featured:true,image:"https://i.kikar.co.il/2026/09/02/ae52e980-a6a5-11f1-ac42-b37e534359ed__h4385_w6575.jpg?width=1400",imageCredit:"אורי מקלב ומשה גפני · Olivier Fitoussi/Flash90",detail:"הביטאון לא נקב בשמותיהם בגוף ההודעה, וציין שהרכב הרשימה עדיין ממתין לאישור מועצת גדולי התורה.",context:"הנוסח הוא עמדת הביטאון; הרשימה המחייבת תהיה זו שתוגש לוועדת הבחירות.",facts:["הפרסום: 07:47","ממתינים לאישור המועצת"]}),
-A("hormuz-ships-0802-20260907","עולם","ארה״ב ואיראן תקפו כלי שיט סביב הורמוז; הנפט מטפס","התקיפות ההדדיות והאטת תנועת המכליות העלו מחדש חשש לשיבוש אספקה ממושך.","Reuters","https://www.reuters.com/business/energy/oil-extends-gains-after-us-iran-strike-ships-2026-09-07/","2026-09-07T07:15:00+03:00",{featured:true,detail:"ארה״ב מסרה שתקפה שלוש מכליות איראניות; משמרות המהפכה אמרו שתקפו שלוש מכליות ושלושה כלי שיט אמריקניים.",facts:["Brent: 96.97$","WTI: 92.24$","כ־10 אוניות סחורה ביום"]}),
-A("miami-crash-0802-20260907","עולם","חמישה נהרגו בהתרסקות מטוס מטען במיאמי; תיעוד חדש פורסם","מטוס מטען חרג מהמסלול, פגע בכלי רכב ועלה באש; חמישה נוספים נפצעו.","כיכר השבת","https://www.kikar.co.il/world-news/tkz75k","2026-09-07T07:07:00+03:00",{image:"https://i.kikar.co.il/2026/09/07/0ddfc070-aa71-11f1-a241-2193649ffc80__h1024_w576.jpg?width=900",imageCredit:"זירת התרסקות מטוס המטען במיאמי · תיעוד שפורסם בכיכר השבת",detail:"הרשויות חוקרות את החריגה מהמסלול בנמל התעופה הבינלאומי של מיאמי.",facts:["5 הרוגים","5 פצועים","3 במצב קריטי"]}),
-A("krakatau-0802-20260907","עולם","אנאק קראקאטאו התפרץ: אפר עד 15 קילומטרים וברקים בענן","הר הגעש במצר סונדה פלט לבה וענני אפר כבדים; אלפי טיסות הושפעו לפי הדיווח.","כיכר השבת","https://www.kikar.co.il/world-news/tkz7oi","2026-09-07T07:17:00+03:00",{image:"https://i.kikar.co.il/2026/09/07/ec2c5cc0-aa72-11f1-a111-1ba500bd48ff__h568_w320.jpg?width=900",imageCredit:"התפרצות אנאק קראקאטאו · תיעוד שפורסם בכיכר השבת",detail:"ההתפרצות לוותה בפיצוצים ובעמוד אפר שהתקדם לעבר ג׳אווה וסומטרה.",facts:["ענן אפר: עד 15,000 מטר","מצר סונדה"]}),
-A("germany-jews-0802-20260907","עולם","שגריר ישראל בגרמניה מזהיר: החיים היהודיים תחת איום","רון פרושאור קרא למעבר מהצהרות לצעדים מעשיים להגנת הקהילות.","כיכר השבת","https://www.kikar.co.il/world-news/israel-ambassador-germany-warns-jewish-life-threat","2026-09-07T06:57:00+03:00",{detail:"השגריר קשר את הדאגה להתפתחויות פוליטיות ולהתחזקות קצוות משני צדי המפה."}),
-A("us-mail-vote-0802-20260907","עולם","ממשל טראמפ שוב פונה לעליון להגבלת הצבעה בדואר","הממשל ביקש לאפשר כלל חדש לקראת בחירות האמצע בנובמבר.","Reuters","https://www.reuters.com/legal/government/trump-administration-renews-supreme-court-bid-limit-mail-in-voting-2026-09-06/","2026-09-07T01:20:00+03:00",{detail:"הכלל דורש רשימות מקבלי פתקים וברקוד ייחודי; מבקריו מזהירים מפסילת קולות.",facts:["בחירות: 3 בנובמבר","תגובות עד יום רביעי"]}),
-A("oil-rally-0802-20260907","כלכלה","הנפט מטפס והספנות מתייקרת: הורמוז במרכז השווקים","ברנט עלה 0.7% ו־WTI ב־0.8% לנוכח חשש לפגיעה ביצוא.","Reuters","https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/","2026-09-07T08:35:00+03:00",{detail:"OPEC+ הותירה את מדיניות התפוקה לאוקטובר ללא שינוי; הנתונים עודכנו בפרסום השווקים המאוחר יותר.",facts:["Brent 96.97$","WTI 92.24$","השוק האמריקני סגור היום"]}),
-A("ship-fuel-0802-20260907","כלכלה","מחסור בדלק אוניות מתקרב: מלאי הנמלים נמוך בכ־30%","בתי זיקוק מעדיפים דיזל ובנזין והמלחמות פוגעות באספקת מזוט.","Reuters","https://www.reuters.com/business/energy/ship-fuel-shortage-looms-refiners-strained-by-war-favour-other-products-2026-09-07/","2026-09-07T06:40:00+03:00",{detail:"הגירעון החזוי ברבעון השלישי הוא 218 אלף חביות ביום לעומת 6,000 שנה קודם.",facts:["גירעון: 218 אלף חביות ביום","מלאי נמוך בכ־30%"]}),
-A("asia-tech-markets-0900-20260907","כלכלה","מניות השבבים הובילו את אסיה; הנפט והתשואות מגבילים את החגיגה","ניקיי עלה 2.2% וקוספי 3.1%, בעוד השווקים ממתינים למדד המחירים האמריקני ביום שישי.","Reuters","https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/","2026-09-07T04:06:00+03:00",{featured:true,detail:"מדד MSCI לאסיה מחוץ ליפן עלה 1.1%, מדד CSI300 הוסיף 0.2% ותשואת אג״ח ארה״ב לעשר שנים עמדה על 4.7840%.",context:"עליות הטכנולוגיה משקפות אופטימיות לצמיחה, אך נפט יקר וציפיות להעלאות ריבית מוסיפים סיכון לאינפלציה.",facts:["ניקיי +2.2%","קוספי +3.1%","אג״ח ארה״ב 10 שנים: 4.7840%"]}),
-A("antonelli-monza-0802-20260907","ספורט","מהמקום ה־19 לניצחון: אנטונלי השלים קאמבק במונזה","קימי אנטונלי ניצח בגרנד פרי איטליה לפני ג׳ורג׳ ראסל ומקס ורסטאפן.","Formula 1","https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2","2026-09-06T18:20:00+03:00",{featured:true,detail:"האיטלקי זינק מהמקום ה־19 וסיים 3.857 שניות לפני ראסל.",facts:["אנטונלי: 1","ראסל: +3.857","ורסטאפן: +14.718"]}),
-A("arsenal-chelsea-0802-20260907","ספורט","ארסנל ניצחה 1:2 את צ׳לסי ועלתה למקום השני","האברץ ואודגור הפכו שער מוקדם של רוג׳רס; ארסנל עם תשע נקודות.","The Guardian","https://www.theguardian.com/football/live/2026/sep/06/arsenal-v-chelsea-premier-league-live","2026-09-06T20:25:00+03:00",{detail:"רוג׳רס כבש בדקה 2, האברץ ב־25 ואודגור ב־50.",facts:["ארסנל 2:1 צ׳לסי","ארסנל: 9 נקודות"]}),
-A("everton-united-0802-20260907","ספורט","מייטלנד־ניילס קבע 2:2 דרמטי מול מנצ׳סטר יונייטד","יונייטד הפכה בדקות 83 ו־88, אך אברטון השוותה בתוספת הזמן.","Reuters","https://www.reuters.com/sports/soccer/maitland-niles-screamer-earns-everton-2-2-draw-with-man-utd-2026-09-06/","2026-09-06T22:40:00+03:00",{detail:"מבאומו כבש לאברטון; ג׳ורג׳ וססקו הפכו; מייטלנד־ניילס השווה.",facts:["אברטון 2:2 יונייטד","אברטון 8; יונייטד 11"]}),
-A("juve-milan-0802-20260907","ספורט","גאטי חילץ ליובנטוס 1:1 מול מילאן בדקה ה־92","סיסה העלה את מילאן ליתרון בדקה 69 והבלם השווה בתוספת הזמן.","Reuters","https://www.reuters.com/sports/soccer/gatti-rescues-point-juventus-1-1-draw-with-ac-milan-2026-09-06/","2026-09-06T23:55:00+03:00",{detail:"שתי הקבוצות עם שבע נקודות; מילאן מעל יובנטוס בהפרש שערים.",facts:["1:1","סיסה 69; גאטי 92"]}),
-A("usopen-0802-20260907","ספורט","אלקראס ושלטון דהרו לרבע הגמר בניו יורק","אלקראס גבר על טומי פול בשלוש מערכות; שלטון עשה זאת מול ציציפאס.","Reuters","https://www.reuters.com/sports/tennis/shelton-stops-tsitsipas-sets-up-alcaraz-showdown-us-open-2026-09-07/","2026-09-07T04:20:00+03:00",{detail:"אלקראס ניצח 6:4, 6:3, 6:4; שלטון 6:2, 6:3, 6:4.",facts:["רבע הגמר: אלקראס–שלטון"]}),
-A("guardians-walkoff-0900-20260907","ספורט","קליבלנד ניצחה 2:3 בווקאוף ועלתה למקום הוויילד־קארד האחרון","דניאל שנימן הכניס את ריצת הניצחון באינינג העשירי מול דטרויט.","Reuters","https://www.reuters.com/sports/baseball/guardians-again-notch-walk-off-win-over-tigers--flm-2026-09-06/","2026-09-06T23:50:00+03:00",{detail:"זה היה הווקאוף השלישי של הגרדיאנס בארבעה משחקים; גאווין ויליאמס רשם 11 סטרייקאאוטים והגיע ל־228, המאזן המוביל ב־MLB.",context:"קליבלנד עלתה למאזן 73–71 ופתחה יתרון של משחק על טורונטו במאבק על כרטיס הוויילד־קארד האחרון באמריקן ליג.",facts:["קליבלנד 3:2 דטרויט","10 אינינגים","ויליאמס: 11 סטרייקאאוטים"]}),
-A("taiwan-chips-0802-20260907","טכנולוגיה","טייוואן הופכת שבבים לכלי דיפלומטי ומפזרת ייצור","ב־SEMICON הציגה הממשלה את התעשייה כבסיס לשותפות עם ארה״ב ואירופה.","Reuters","https://www.reuters.com/world/china/taiwan-flexes-chip-diplomacy-muscles-it-faces-pressure-share-ai-wealth-with-2026-09-07/","2026-09-07T05:26:00+03:00",{featured:true,detail:"TSMC משקיעה 265 מיליארד דולר באריזונה וחברות מתכננות עוד 20 מיליארד בארה״ב.",facts:["TSMC: 265 מיליארד דולר","תוספת מתוכננת: 20 מיליארד"]}),
-A("china-ai-chips-0802-20260907","טכנולוגיה","יצרניות שבבים סיניות מצמצמות פערים מול Nvidia","ניתוח מצביע על התרחבות חלופות מקומיות ולחץ גובר על יתרון Nvidia בסין.","Reuters Breakingviews","https://www.reuters.com/commentary/breakingviews/chinas-ai-dragons-breathe-fire-nvidias-moat-2026-09-07/","2026-09-07T06:10:00+03:00",{detail:"זהו טור ניתוח של Breakingviews ולא ידיעה רגילה; המסקנות מסומנות בהתאם."}),
-A("wmo-air-0802-20260907","טכנולוגיה","WMO: אירועי עשן שריפות קיצוניים שולשו מאז שנות התשעים","סוכנות מזג האוויר של האו״ם מזהירה ששריפות וגלי חום פוגעים באיכות האוויר.","Reuters","https://www.reuters.com/sustainability/cop/wildfires-heat-waves-threaten-undermine-air-quality-un-weather-agency-says-2026-09-07/","2026-09-07T07:01:00+03:00",{detail:"הדו״ח מדגיש PM2.5, אוזון ופערי ניטור של פחמן שחור ומיקרופלסטיק.",facts:["אירועי עשן קיצוניים שולשו","כ־100 אלף מקרי מוות נוספים בשנה במחקר המצוטט"]})
-];
-const analysis=`שלוש התפתחויות נפרדות מסמנות הבוקר את המתח האזורי, אך חשוב לא לחבר ביניהן כאילו היו מהלך אחד. בצפון רצועת עזה נפגע כלי הנדסי של צה״ל ממטען במרחב הקו הצהוב. לא היו נפגעים, וצה״ל מסר כי תקף במהלך הלילה תשתיות חמאס ששימשו לקידום מתווי טרור. זמן קצר לאחר מכן פורסמו הנחיות פינוי לכפר דיר א־זהראני בדרום לבנון. במקביל, סביב מצר הורמוז נמשכו תקיפות הדדיות בין ארה״ב לאיראן, ותנועת המכליות האטה.
-
-אלה זירות שונות, עם שחקנים, כללים ומטרות שונות. המשותף להן הוא דפוס של איתות לפני הסלמה או מיד אחריה. בעזה, הודעת התגובה מבקשת לקבוע שהפעלת המטען אינה אירוע טקטי זניח אלא הפרה של מסגרת הפסקת האש. בלבנון, הוראת פינוי היא קודם כול צעד להגנת אזרחים; היא עשויה להקדים פעולה, אך בעת פרסום המהדורה עדיין אינה הוכחה להיקף התקיפה או אפילו לכך שכבר בוצעה. בהורמוז, כלי השיט עצמם הפכו לזירת לחץ, ולכן גם ירידה בקצב המעבר היא מסר כלכלי ולא רק נתון תפעולי.
-
-מכאן נובע האתגר המרכזי: לכל צד יש אינטרס להציג פעולה מוגבלת כהוכחת נחישות, ובאותה עת להשאיר מרחב שמונע הידרדרות בלתי נשלטת. הצלחה טקטית יכולה להפוך לכישלון אסטרטגי אם הצד השני מפרש אותה כהזמנה לתגובה רחבה יותר. מנגד, היעדר תגובה עלול להיתפס כהסכמה לשינוי כללי המשחק. לכן השאלה החשובה איננה רק מה הותקף, אלא כיצד כל זירה מגדירה את קו הגבול הבא.
-
-ההשלכה על ישראל אינה מסתכמת בממד הצבאי. מחיר ברנט נע סביב 97 דולר לחבית ו־WTI סביב 92 דולר, על רקע החשש לשיבוש מתמשך בהורמוז. נפט יקר יותר יכול להעלות עלויות הובלה, ביטוח ויבוא, גם אם אספקה פיזית ממשיכה להגיע. תשואת אג״ח ארה״ב לעשר שנים עמדה על 4.7840%, והשווקים כבר מתמחרים לחץ אינפלציוני וריביות גבוהות יותר. כלומר, אירוע ימי רחוק יחסית יכול לעבור במהירות לחשבון האנרגיה וליוקר המחיה.
-
-מה צריך לבדוק מכאן? בעזה: האם צה״ל מפרסם פרטים נוספים על יעד התקיפות והאם חמאס מגיב. בלבנון: האם הוראת הפינוי מתרחבת ליישובים נוספים ומה מודיע דובר צה״ל לאחריה. בהורמוז: כמה אוניות עוברות בפועל, האם חברות ספנות משנות מסלול, ומה קורה לתעריפי הביטוח ולמחירי הנפט מעבר לתנודה של שעה אחת. אלה מדדים טובים יותר מכותרות דרמטיות.
-
-הקריאה הזהירה של הבוקר היא שהאזור נמצא במבחן של גבולות, לא בהכרח במלחמה אחודה. כל אחת משלוש הזירות עלולה להישאר מוגבלת, אך הצטברותן מגדילה את הסיכון לטעות בחישוב. לכן הערכת מצב אחראית צריכה להפריד בין עובדה, הודעה רשמית והערכה; לעקוב אחרי רצף פעולות ולא אחרי אירוע יחיד; ולבחון גם את ערוצי התקשורת בין הצדדים. השעות הקרובות ילמדו אם האיתותים יצרו הרתעה נקודתית או מדרגה נוספת בסולם ההסלמה.`;
-window.NEWS_FEED={articles,deepDives:[
-{id:"deep-regional-signals-0900-20260907",category:"עומק",title:"עזה, לבנון והורמוז: שלושה איתותים, שלושה סולמות הסלמה",summary:"האירועים אינם מהלך אחד, אך הצטברותם מגדילה את מחיר הטעות הצבאית והכלכלית.",subtitle:"כך מפרידים בין עובדות, הודעות ואיומים — ומה יכריע בשעות הקרובות.",body:analysis,author:"עמית רז · פרשן המערכת (שם עט)",source:"ניתוח המערכת",sourceUrl:"https://www.kikar.co.il/security-news/idf-strikes-gaza-hamas-ceasefire-violation",secondarySources:[{name:"כיכר השבת · מבזקי לבנון",url:"https://www.kikar.co.il/scoop-news"},{name:"Reuters · הורמוז ונפט",url:"https://www.reuters.com/business/energy/oil-extends-gains-after-us-iran-strike-ships-2026-09-07/"},{name:"Reuters · תמונת השווקים",url:"https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/"}],publishedAt:U,readTime:"7 דקות",featured:true,featuredAnalysis:true,wordCount:0},
-{id:"deep-hormuz-0802-20260907",category:"עומק",title:"הורמוז חזר להיות מחיר ולא רק מפה",summary:"תקיפות, ירידה בתנועת מכליות ומחסור בדלק אוניות מתחברים ללחץ על האספקה.",body:"העלייה בנפט פוגשת מלאי דלק אוניות נמוכים והעדפה של בתי זיקוק למוצרים רווחיים יותר. השילוב עלול לעבור לתעריפי הובלה ומשם למחירי יבוא. הנתון הקריטי הוא קצב המעבר בפועל במצר.",author:"מערכת החדשות",source:"Reuters",sourceUrl:"https://www.reuters.com/business/energy/oil-extends-gains-after-us-iran-strike-ships-2026-09-07/",secondarySources:[{name:"Reuters · דלק אוניות",url:"https://www.reuters.com/business/energy/ship-fuel-shortage-looms-refiners-strained-by-war-favour-other-products-2026-09-07/"},{name:"Reuters · תמונת השווקים",url:"https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/"}],publishedAt:U,readTime:"4 דקות"},
-{id:"deep-chip-0802-20260907",category:"עומק",title:"שבבים כמטבע מדיני: טייוואן מפזרת סיכון",summary:"ייצור בארה״ב ובאירופה מחזק בריתות אך מעביר השקעות אל מחוץ לאי.",body:"טייוואן משתמשת בכוח הייצור כדי להעמיק קשרים עם דמוקרטיות אחרות. השקעות הענק באריזונה מציעות עמידות, אך יוצרות ויכוח על המקום שבו יישאר הערך המוסף. המבחן יהיה היכן יישארו המחקר, האריזה המתקדמת וכוח האדם.",author:"מערכת החדשות",source:"Reuters",sourceUrl:"https://www.reuters.com/world/china/taiwan-flexes-chip-diplomacy-muscles-it-faces-pressure-share-ai-wealth-with-2026-09-07/",secondarySources:[{name:"Reuters Breakingviews · שבבי AI בסין",url:"https://www.reuters.com/commentary/breakingviews/chinas-ai-dragons-breathe-fire-nvidias-moat-2026-09-07/"},{name:"TSMC · פעילות עולמית",url:"https://www.tsmc.com/english/aboutTSMC"}],publishedAt:U,readTime:"4 דקות"}
-],markets:[
-{symbol:"SPX",name:"S&P 500",value:"7,718.60",change:"−0.38% · −29.11",direction:"down",status:"סגירת 04.09 · סגור היום",note:"תעסוקה חזקה הגבירה ציפיות להעלאת ריבית",source:"Reuters",sourceUrl:"https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",updatedAt:U},
-{symbol:"IXIC",name:"Nasdaq",value:"26,506.99",change:"−0.29% · −77.07",direction:"down",status:"סגירת 04.09",note:"לחץ מעליית תשואות",source:"Reuters",sourceUrl:"https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",updatedAt:U},
-{symbol:"DJI",name:"Dow Jones",value:"53,414.25",change:"−0.51% · −271.86",direction:"down",status:"סגירת 04.09",note:"לחץ רוחבי לאחר דוח התעסוקה",source:"Reuters",sourceUrl:"https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",updatedAt:U},
-{symbol:"RUT",name:"Russell 2000",value:"2,975.65",change:"+0.25% · +7.38",direction:"up",status:"סגירת 04.09",note:"מניות קטנות סיימו בעלייה",source:"נתוני שוק",sourceUrl:"https://www.google.com/finance/quote/RUT:INDEXRUSSELL",updatedAt:U},
-{symbol:"VIX",name:"VIX",value:"14.53",change:"+1.47% · +0.21",direction:"up",status:"סגירת 04.09",note:"עלייה מתונה בביקוש להגנה",source:"Cboe",sourceUrl:"https://www.cboe.com/tradable-products/vix/",updatedAt:U},
-{symbol:"CL",name:"WTI",value:"$92.24",change:"+0.80% · כ־+$0.73",direction:"up",status:"מסחר 07.09 · 04:06",note:"הסלמה סביב הורמוז",source:"Reuters",sourceUrl:"https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/",updatedAt:U},
-{symbol:"BZ",name:"Brent",value:"$96.97",change:"+0.70% · כ־+$0.67",direction:"up",status:"מסחר 07.09 · 04:06",note:"חשש לשיבוש יצוא",source:"Reuters",sourceUrl:"https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/",updatedAt:U},
-{symbol:"XAU",name:"זהב",value:"$4,406.00",change:"−0.50% · כ־−$22.1",direction:"down",status:"ספוט 07.09 · 04:06",note:"התשואות הגבוהות לחצו על המתכת",source:"Reuters",sourceUrl:"https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/",updatedAt:U},
-{symbol:"BTC",name:"Bitcoin",value:"$79,748",change:"−0.26% · −$204",direction:"down",status:"רציף · 09:00",note:"סביב 80 אלף",source:"נתוני שוק",sourceUrl:"https://www.google.com/finance/quote/BTC-USD",updatedAt:U},
-{symbol:"ETH",name:"Ethereum",value:"$2,504.49",change:"−0.26% · −$6.65",direction:"down",status:"רציף · 09:00",note:"ירידה קלה",source:"נתוני שוק",sourceUrl:"https://www.google.com/finance/quote/ETH-USD",updatedAt:U}
-],meta:{updatedAt:U,locale:"he-IL",edition:"מהדורת בוקר · עזה, לבנון, הורמוז ושווקים",contentPolicy:"מהדורת היום הוחלפה במלואה ב־08:02; עדכון 09:00 מחליף פריטים שהתיישנו ושומר רק תוכן שנבדק מחדש"},polls:[kan,ch13,walla],scores:[
-{id:"guardians-tigers-20260906-final",league:"MLB",dateLabel:"06.09",teams:["קליבלנד גארדיאנס","דטרויט טייגרס"],score:["3","2"],state:"final",status:"סופי · 10 אינינגים",outcome:"ווקאוף שלישי בארבעה משחקים",scorers:"דניאל שנימן הכניס את ריצת הניצחון",source:"Reuters",sourceUrl:"https://www.reuters.com/sports/baseball/guardians-again-notch-walk-off-win-over-tigers--flm-2026-09-06/",winner:"home",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"f1-monza-20260906-final",league:"פורמולה 1",dateLabel:"06.09",teams:["קימי אנטונלי","ג׳ורג׳ ראסל"],score:["1","2"],state:"final",status:"סופי",outcome:"אנטונלי זינק 19 וניצח",scorers:"פער 3.857 שניות",source:"Formula 1",sourceUrl:"https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2",winner:"home",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"arsenal-chelsea-20260906-final",league:"פרמייר ליג",dateLabel:"06.09",teams:["ארסנל","צ׳לסי"],score:["2","1"],state:"final",status:"סופי",scorers:"האברץ 25, אודגור 50; רוג׳רס 2",source:"The Guardian",sourceUrl:"https://www.theguardian.com/football/live/2026/sep/06/arsenal-v-chelsea-premier-league-live",winner:"home",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"everton-united-20260906-final",league:"פרמייר ליג",dateLabel:"06.09",teams:["אברטון","מנצ׳סטר יונייטד"],score:["2","2"],state:"final",status:"סופי",outcome:"שוויון בתוספת הזמן",source:"Reuters",sourceUrl:"https://www.reuters.com/sports/soccer/maitland-niles-screamer-earns-everton-2-2-draw-with-man-utd-2026-09-06/",winner:"draw",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"juve-milan-20260906-final",league:"סרייה א׳",dateLabel:"06.09",teams:["יובנטוס","מילאן"],score:["1","1"],state:"final",status:"סופי",scorers:"גאטי 92; סיסה 69",source:"Reuters",sourceUrl:"https://www.reuters.com/sports/soccer/gatti-rescues-point-juventus-1-1-draw-with-ac-milan-2026-09-06/",winner:"draw",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"mainz-hamburg-20260906-final",league:"בונדסליגה",dateLabel:"06.09",teams:["מיינץ","המבורג"],score:["5","0"],state:"final",status:"סופי",source:"Reuters",sourceUrl:"https://www.reuters.com/sports/soccer/mainz-thrash-hamburg-augsburg-go-top-with-win-frankfurt-2026-09-06/",winner:"home",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"alcaraz-paul-20260906-final",league:"US Open",dateLabel:"06.09",teams:["קרלוס אלקראס","טומי פול"],score:["3","0"],state:"final",status:"סופי",scorers:"6:4, 6:3, 6:4",source:"Reuters",sourceUrl:"https://www.reuters.com/sports/tennis/alcaraz-outguns-paul-reach-us-open-quarter-finals-2026-09-06/",winner:"home",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"shelton-tsitsipas-20260906-final",league:"US Open",dateLabel:"06.09",teams:["בן שלטון","סטפנוס ציציפאס"],score:["3","0"],state:"final",status:"סופי",scorers:"6:2, 6:3, 6:4",source:"Reuters",sourceUrl:"https://www.reuters.com/sports/tennis/shelton-stops-tsitsipas-sets-up-alcaraz-showdown-us-open-2026-09-07/",winner:"home",verifiedAt:U,verifiedLabel:"אומת 09:00"},
-{id:"redsox-orioles-20260906-final",league:"MLB",dateLabel:"06.09",teams:["בוסטון רד סוקס","בולטימור אוריולס"],score:["3","1"],state:"final",status:"סופי",outcome:"שמירה 400 לצ׳פמן",source:"Reuters",sourceUrl:"https://www.reuters.com/sports/baseball/aroldis-chapman-earns-400th-save-as-red-sox-sweep-orioles--flm-2026-09-06/",winner:"home",verifiedAt:U,verifiedLabel:"אומת 09:00"}
-],socialPulse:[],videos:[]};
-window.NEWS_FEED.deepDives[0].wordCount=analysis.trim().split(/\s+/).length;
+  window.NEWS_FEED = {
+  "articles": [
+    {
+      "id": "winter-list-1800-20260907",
+      "category": "בארץ",
+      "title": "עמך ישראל הגישה רשימה עצמאית: וינטר בחר באות ״ך״",
+      "summary": "עופר וינטר הגיש את רשימת עמך ישראל לכנסת ה־26 ללא חיבור למפלגה ותיקה.",
+      "subtitle": "עופר וינטר הגיש את רשימת עמך ישראל לכנסת ה־26 ללא חיבור למפלגה ותיקה.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "עופר וינטר הגיש את רשימת עמך ישראל לכנסת ה־26 ללא חיבור למפלגה ותיקה."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי הדיווח, וינטר ביקש את האות ״ך״ והציג רשימה הכוללת בין היתר את יוסף חדאד, נטלי שם טוב וערן בן־ארי. הגשת הרשימות נמשכת גם מחר, ולכן התמונה המלאה עדיין אינה סופית."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "המהלך מעביר את המפלגה משלב הצהרות למבחן עצמאי בקלפי ומחדד את שאלת אחוז החסימה בגוש הימין."
+          ]
+        }
+      ],
+      "facts": [
+        "האות המבוקשת: ״ך״",
+        "הרשימה הוגשה עצמאית",
+        "הגשת הרשימות מסתיימת ב־08.09"
+      ],
+      "featured": true,
+      "image": "https://i.kikar.co.il/2026/09/07/fc3c5e50-aac5-11f1-a111-1ba500bd48ff__h900_w1600.jpg?width=1400",
+      "imageCredit": "עופר וינטר ביום הגשת הרשימה · חיים גולדברג, Flash90",
+      "publishedAt": "2026-09-07T16:34:00+03:00",
+      "readTime": "3 דקות",
+      "source": "כיכר השבת",
+      "sourceUrl": "https://www.kikar.co.il/political-news/tkzw79",
+      "secondarySources": [
+        "https://www.gov.il/he/pages/ads_candidates"
+      ]
+    },
+    {
+      "id": "beaufort-encounter-1800-20260907",
+      "category": "בארץ",
+      "title": "שני לוחמי סיירת גולני נפצעו קל בהיתקלות ליד הבופור",
+      "summary": "צה״ל מסר כי מחבל חיזבאללה נהרג בהיתקלות שבה נפצעו שני לוחמים באורח קל.",
+      "subtitle": "צה״ל מסר כי מחבל חיזבאללה נהרג בהיתקלות שבה נפצעו שני לוחמים באורח קל.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "צה״ל מסר כי מחבל חיזבאללה נהרג בהיתקלות שבה נפצעו שני לוחמים באורח קל."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "על פי העדכון, האירוע התרחש באזור הבופור בדרום לבנון. הלוחמים פונו לקבלת טיפול רפואי ומשפחותיהם עודכנו."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "האירוע מצביע על חיכוך קרקעי נמשך בצפון במקביל לגל תקיפות בדרום לבנון."
+          ]
+        }
+      ],
+      "facts": [
+        "2 לוחמים נפצעו קל",
+        "מחבל חיזבאללה נהרג",
+        "אזור הבופור"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T16:01:00+03:00",
+      "readTime": "3 דקות",
+      "source": "חדשות 13",
+      "sourceUrl": "https://13tv.co.il/item/news/politics/security/day-1067-905347301/",
+      "secondarySources": [
+        "https://www.inn.co.il/news/705838"
+      ]
+    },
+    {
+      "id": "west-bank-violence-1800-20260907",
+      "category": "בארץ",
+      "title": "שני פלסטינים נהרגו וישראלי נפצע קשה בשני אירועים ביהודה ושומרון",
+      "summary": "שני מוקדי אלימות נפרדים הסתיימו בירי קטלני ובפציעת ישראלי מדקירה.",
+      "subtitle": "שני מוקדי אלימות נפרדים הסתיימו בירי קטלני ובפציעת ישראלי מדקירה.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "שני מוקדי אלימות נפרדים הסתיימו בירי קטלני ובפציעת ישראלי מדקירה."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "Reuters דיווחה כי ליד חג׳ה נהרג פלסטיני בן 19 בעימות שאליו הגיעו גם מתנחלים וחיילים. ליד קוסרה נורה למוות פלסטיני לאחר שלפי הצבא דקר ישראלי בן 20 ופצע אותו קשה."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "האירועים מדגישים את הסיכון שבהתלקחות מקומית ואת הצורך להפריד בין גרסאות הצדדים עד להשלמת הבדיקות."
+          ]
+        }
+      ],
+      "facts": [
+        "2 מוקדים נפרדים",
+        "2 פלסטינים נהרגו",
+        "ישראלי בן 20 נפצע קשה"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T16:24:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/middle-east/two-palestinians-killed-israeli-stabbed-west-bank-settler-violence-flares-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "nukhba-commander-1800-20260907",
+      "category": "בארץ",
+      "title": "צה״ל: מפקד פלוגת נוח׳בה יוסף עקילה חוסל בעיר עזה",
+      "summary": "צה״ל ושב״כ הודיעו כי יוסף עקילה, מפקד פלוגת נוח׳בה בחמאס, נהרג בתקיפה בעיר עזה.",
+      "subtitle": "צה״ל ושב״כ הודיעו כי יוסף עקילה, מפקד פלוגת נוח׳בה בחמאס, נהרג בתקיפה בעיר עזה.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "צה״ל ושב״כ הודיעו כי יוסף עקילה, מפקד פלוגת נוח׳בה בחמאס, נהרג בתקיפה בעיר עזה."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי ההודעה הישראלית, עקילה השתתף בלחימה נגד כוחות צה״ל וקידם מתווי טרור. הידיעה מבוססת על הודעת צה״ל ושב״כ."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "החיסול משתלב במאמץ לפגוע בדרגי הפיקוד של חמאס; ההשפעה המבצעית תיבחן לפי רציפות הפעילות בשטח."
+          ]
+        }
+      ],
+      "facts": [
+        "הודעת צה״ל ושב״כ",
+        "עיר עזה",
+        "מפקד פלוגת נוח׳בה"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T16:26:00+03:00",
+      "readTime": "3 דקות",
+      "source": "חדשות 13",
+      "sourceUrl": "https://13tv.co.il/item/news/politics/security/day-1067-905347301/",
+      "secondarySources": []
+    },
+    {
+      "id": "latest-polls-1800-20260907",
+      "category": "בארץ",
+      "title": "מרכז הסקרים עודכן: סקר ישראל היום החליף נתון ישן יותר",
+      "summary": "הסקר החדש במרכז מציג 24 מנדטים לישר!, 21 לליכוד ו־13 לביחד.",
+      "subtitle": "הסקר החדש במרכז מציג 24 מנדטים לישר!, 21 לליכוד ו־13 לביחד.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "הסקר החדש במרכז מציג 24 מנדטים לישר!, 21 לליכוד ו־13 לביחד."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "מכון קנטאר בראשות דודי חסיד אסף את הנתונים ב־2–3 בספטמבר בקרב 555 משיבים; טעות הדגימה המרבית היא 4.2%. כל 12 המפלגות שעברו את אחוז החסימה מסתכמות ב־120 מושבים."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "זהו סקר מאוחר יותר מסקר וואלה שהוצג קודם, אך הוא נערך לפני הגשת הרשימות ולכן אינו מודד את תגובת הציבור להרכבים שהוגשו היום."
+          ]
+        }
+      ],
+      "facts": [
+        "פרסום: 03.09",
+        "עבודת שדה: 02–03.09",
+        "מדגם: 555",
+        "טעות דגימה: ±4.2%"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-03T14:46:00+03:00",
+      "readTime": "3 דקות",
+      "source": "ישראל היום",
+      "sourceUrl": "https://www.israelhayom.co.il/news/politics/article/21348438",
+      "secondarySources": [
+        "https://www.kan.org.il/lobby/skarim/",
+        "https://13tv.co.il/item/news/politics/politics/survey-905340911/"
+      ]
+    },
+    {
+      "id": "belz-stark-1800-20260907",
+      "category": "חרדים",
+      "title": "בעלז החליפה נציג: אליקים שטארק ישובץ במקום ישראל אייכלר",
+      "summary": "חסידות בעלז הודיעה כי אליקים שטארק יהיה נציגה בכנסת ה־26, ואייכלר יעבור להנהגת התנועה.",
+      "subtitle": "חסידות בעלז הודיעה כי אליקים שטארק יהיה נציגה בכנסת ה־26, ואייכלר יעבור להנהגת התנועה.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "חסידות בעלז הודיעה כי אליקים שטארק יהיה נציגה בכנסת ה־26, ואייכלר יעבור להנהגת התנועה."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי ההודעה שפורסמה, אייכלר יעמוד בראש תנועת מחזיקי הדת ושטארק ישולב ברשימת יהדות התורה. ההרכב המלא עוד כפוף להסכמות בין אגודת ישראל לדגל התורה."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "זהו חילוף משמעותי נוסף ברשימה החרדית, לצד השינויים בדגל התורה, והוא מסמן העברת מוקדי כוח פנימית."
+          ]
+        }
+      ],
+      "facts": [
+        "שטארק לנציגות בכנסת",
+        "אייכלר יעמוד בראש מחזיקי הדת",
+        "הרשימה המלאה טרם נסגרה"
+      ],
+      "featured": true,
+      "image": "https://i.kikar.co.il/2026/09/07/7f285800-aabc-11f1-a241-2193649ffc80__h1200_w1600.jpeg?width=1400",
+      "imageCredit": "ישראל אייכלר ואליקים שטארק · אנשיל בעק ורפי קוץ, לפי כיכר השבת",
+      "publishedAt": "2026-09-07T16:03:00+03:00",
+      "readTime": "3 דקות",
+      "source": "כיכר השבת",
+      "sourceUrl": "https://www.kikar.co.il/political-news/tkzwah",
+      "secondarySources": [
+        "https://www.ynet.co.il/news/elections2026/article/h1fa5kndmx"
+      ]
+    },
+    {
+      "id": "bnei-brak-school-gate-1800-20260907",
+      "category": "חרדים",
+      "title": "שער בית ספר בבני ברק רותך; הורים פרצו אותו בבוקר",
+      "summary": "עימות סביב כניסה לבית ספר הסתיים בפתיחת שער שרותך, בעוד העירייה וההורים הציגו גרסאות שונות.",
+      "subtitle": "עימות סביב כניסה לבית ספר הסתיים בפתיחת שער שרותך, בעוד העירייה וההורים הציגו גרסאות שונות.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "עימות סביב כניסה לבית ספר הסתיים בפתיחת שער שרותך, בעוד העירייה וההורים הציגו גרסאות שונות."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "הורים טענו כי השער המרכזי נחסם והילדות לא יכלו להיכנס. העירייה מסרה כי עמדה לרשותן כניסה חלופית וכי הטיפול במתחם נמשך."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "האירוע ממחיש כיצד מחלוקת תשתיתית וחינוכית יכולה להפוך במהירות לעימות ציבורי; בירור מלא מחייב את שתי הגרסאות."
+          ]
+        }
+      ],
+      "facts": [
+        "השער רותך",
+        "ההורים פתחו אותו",
+        "העירייה טענה שהייתה כניסה חלופית"
+      ],
+      "featured": false,
+      "image": "https://i.kikar.co.il/2026/09/07/475b2f40-aaa5-11f1-a241-2193649ffc80__h1080_w810.jpeg?width=1400",
+      "imageCredit": "השער המרֻתך בבית הספר בבני ברק · באדיבות המצלם, לפי כיכר השבת",
+      "publishedAt": "2026-09-07T13:16:00+03:00",
+      "readTime": "3 דקות",
+      "source": "כיכר השבת",
+      "sourceUrl": "https://www.kikar.co.il/haredim-news/school-gate-welded-bnei-brak",
+      "secondarySources": []
+    },
+    {
+      "id": "utj-list-shakeup-1800-20260907",
+      "category": "חרדים",
+      "title": "יהדות התורה מתגבשת עם יעקב אשר בראש ושורת חילופים",
+      "summary": "הרשימה המסתמנת כוללת את יעקב אשר במקום הראשון ואת גולדקנופף, פינדרוס ופרוש אחריו.",
+      "subtitle": "הרשימה המסתמנת כוללת את יעקב אשר במקום הראשון ואת גולדקנופף, פינדרוס ופרוש אחריו.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "הרשימה המסתמנת כוללת את יעקב אשר במקום הראשון ואת גולדקנופף, פינדרוס ופרוש אחריו."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי ynet, המבנה עוד כפוף למשא ומתן בין דגל התורה לאגודת ישראל. השינוי בבעלז מציב את אליקים שטארק במקום שיועד לנציג החסידות."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "אחרי יציאתם של משה גפני ואורי מקלב, הרשימה משקפת חילופי דורות ומאבק מחודש על האיזון בין בתי הרבנים והחסידויות."
+          ]
+        }
+      ],
+      "facts": [
+        "יעקב אשר צפוי לעמוד בראש",
+        "6 נציגים לדגל ו־4 לאגודה לפי המתווה",
+        "ההרכב כפוף למו״מ"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T16:03:00+03:00",
+      "readTime": "3 דקות",
+      "source": "ynet",
+      "sourceUrl": "https://www.ynet.co.il/news/elections2026/article/h1fa5kndmx",
+      "secondarySources": [
+        "https://www.kikar.co.il/political-news/tkzwah"
+      ]
+    },
+    {
+      "id": "lebanon-kfar-rumman-1800-20260907",
+      "category": "עולם",
+      "title": "לבנון: 12 נהרגו בתקיפות בכפר רומאן; צה״ל בודק דיווחים על אזרחים",
+      "summary": "משרד הבריאות הלבנוני דיווח על 12 הרוגים; צה״ל מסר שתקף מעבירי נשק ובוחן את טענות הנפגעים.",
+      "subtitle": "משרד הבריאות הלבנוני דיווח על 12 הרוגים; צה״ל מסר שתקף מעבירי נשק ובוחן את טענות הנפגעים.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "משרד הבריאות הלבנוני דיווח על 12 הרוגים; צה״ל מסר שתקף מעבירי נשק ובוחן את טענות הנפגעים."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי Reuters, 11 בני אדם נהרגו בפגיעה בבניין ואיש צוות רפואי נהרג בתקיפת רכב נפרדת. בצה״ל אמרו שננקטו אמצעים לצמצום פגיעה בבלתי מעורבים והדיווחים נבדקים."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "מספר הנפגעים והמשך התקיפות מגבירים חשש להתרחבות הלחימה למרות הפסקת האש מיוני."
+          ]
+        }
+      ],
+      "facts": [
+        "12 הרוגים לפי לבנון",
+        "שתי תקיפות נפרדות",
+        "צה״ל בודק דיווחים על בלתי מעורבים"
+      ],
+      "featured": true,
+      "publishedAt": "2026-09-07T09:48:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/middle-east/israeli-strikes-southern-lebanese-town-kill-11-state-news-agency-says-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "germany-afd-result-1800-20260907",
+      "category": "עולם",
+      "title": "גרמניה: AfD זכתה בכמעט 44% בסקסוניה־אנהלט אך ללא רוב",
+      "summary": "מפלגת הימין הקיצוני סיימה ראשונה עם 39 מתוך 83 מושבים; מרץ שלל שיתוף פעולה.",
+      "subtitle": "מפלגת הימין הקיצוני סיימה ראשונה עם 39 מתוך 83 מושבים; מרץ שלל שיתוף פעולה.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "מפלגת הימין הקיצוני סיימה ראשונה עם 39 מתוך 83 מושבים; מרץ שלל שיתוף פעולה."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "התוצאה יותר מהכפילה את כוחה של AfD לעומת 2021. ה־CDU נחלשה לכ־18%, בעוד רוב המפלגות ממשיכות לשלול קואליציה בהובלת AfD."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "התוצאה מטלטלת את ממשלת פרידריך מרץ ומשמשת מבחן ליכולת מפלגות הממסד לבלום התחזקות פופוליסטית באירופה."
+          ]
+        }
+      ],
+      "facts": [
+        "כמעט 44% ל־AfD",
+        "39 מתוך 83 מושבים",
+        "אין רוב מוחלט"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T14:42:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/saxony-anhalt-election-delivers-blow-merz-warning-europe-2026-09-07/",
+      "secondarySources": [
+        "https://www.reuters.com/world/europe/far-right-afd-courts-conservative-support-after-historic-german-state-election-2026-09-07/"
+      ]
+    },
+    {
+      "id": "uae-alternative-routes-1800-20260907",
+      "category": "עולם",
+      "title": "איחוד האמירויות מרחיבה נתיבי יצוא חלופיים לעקיפת תלות בהורמוז",
+      "summary": "יועץ נשיאותי אמר כי אבו דאבי משקיעה בנמלים, צינורות ורכבות כדי לשמור על רציפות הסחר.",
+      "subtitle": "יועץ נשיאותי אמר כי אבו דאבי משקיעה בנמלים, צינורות ורכבות כדי לשמור על רציפות הסחר.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "יועץ נשיאותי אמר כי אבו דאבי משקיעה בנמלים, צינורות ורכבות כדי לשמור על רציפות הסחר."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "אנוואר גרגאש אמר שהמטרה היא למנוע מצב שבו יצוא האנרגיה והמסחר מוחזקים כבני ערובה של המלחמה בין ארה״ב לאיראן."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "חלופות פיזיות למצר עשויות להפחית סיכון נקודתי, אך הקמתן וקיבולתן יקבעו אם הן יכולות להשפיע על השוק בזמן משבר."
+          ]
+        }
+      ],
+      "facts": [
+        "השקעה בנמלים ובצינורות",
+        "נתיבי סחר חלופיים",
+        "חשש משיבוש בהורמוז"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T11:46:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/middle-east/uae-builds-alternative-trade-energy-routes-after-iran-attacks-official-says-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "oman-sidr-crew-1800-20260907",
+      "category": "עולם",
+      "title": "עומאן חילצה 16 אנשי צוות מהמכלית הסעודית סידר",
+      "summary": "מרכז הביטחון הימי של עומאן הודיע על פינוי אנשי הצוות לאחר תקיפה שיוחסה לאיראן.",
+      "subtitle": "מרכז הביטחון הימי של עומאן הודיע על פינוי אנשי הצוות לאחר תקיפה שיוחסה לאיראן.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "מרכז הביטחון הימי של עומאן הודיע על פינוי אנשי הצוות לאחר תקיפה שיוחסה לאיראן."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "המכלית סידר הייתה אחת משתי מכליות־על שהובילו נפט סעודי ונפגעו בשבוע שעבר בעת מעבר באזור מצר הורמוז."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "החילוץ ממחיש שהעימות הימי כבר יוצר סיכון ישיר לצוותים ולשרשרת אספקת הנפט, מעבר לתנודת מחירים."
+          ]
+        }
+      ],
+      "facts": [
+        "16 אנשי צוות חולצו",
+        "מכלית בבעלות סעודית",
+        "האירוע באזור הורמוז"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T14:03:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/middle-east/oman-says-it-evacuated-16-crew-members-saudi-sidr-vessel-attacked-by-iran-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "miami-crash-1800-20260907",
+      "category": "עולם",
+      "title": "מיאמי: חמישה נהרגו בהתרסקות מטוס מטען סמוך למסלול",
+      "summary": "המטוס חרג מהמסלול, פגע בכלי רכב ועלה באש; הרשויות חוקרות את רצף האירועים.",
+      "subtitle": "המטוס חרג מהמסלול, פגע בכלי רכב ועלה באש; הרשויות חוקרות את רצף האירועים.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "המטוס חרג מהמסלול, פגע בכלי רכב ועלה באש; הרשויות חוקרות את רצף האירועים."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי הדיווח, חמישה בני אדם נוספים נפצעו, שלושה מהם באורח קריטי. החקירה מתמקדת בחריגה מהמסלול בנמל התעופה הבינלאומי."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "ממצאי הבטיחות יקבעו אם הכשל היה תפעולי, טכני או סביבתי; עד אז אין לקבוע את הסיבה."
+          ]
+        }
+      ],
+      "facts": [
+        "5 הרוגים",
+        "5 פצועים",
+        "3 פצועים במצב קריטי"
+      ],
+      "featured": false,
+      "image": "https://i.kikar.co.il/2026/09/07/0ddfc070-aa71-11f1-a241-2193649ffc80__h1024_w576.jpg?width=900",
+      "imageCredit": "זירת התרסקות מטוס המטען במיאמי · תיעוד שפורסם בכיכר השבת",
+      "publishedAt": "2026-09-07T07:07:00+03:00",
+      "readTime": "3 דקות",
+      "source": "כיכר השבת",
+      "sourceUrl": "https://www.kikar.co.il/world-news/tkz75k",
+      "secondarySources": []
+    },
+    {
+      "id": "krakatau-eruption-1800-20260907",
+      "category": "עולם",
+      "title": "אנאק קראקאטאו התפרץ: עמוד אפר כבד עלה מעל מצר סונדה",
+      "summary": "הר הגעש פלט לבה ואפר לגובה רב, והדיווחים הצביעו על שיבושי תעופה באזור.",
+      "subtitle": "הר הגעש פלט לבה ואפר לגובה רב, והדיווחים הצביעו על שיבושי תעופה באזור.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "הר הגעש פלט לבה ואפר לגובה רב, והדיווחים הצביעו על שיבושי תעופה באזור."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "ההתפרצות לוותה בפיצוצים ובברקים בתוך ענן האפר, שהתפשט לכיוון ג׳אווה וסומטרה."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "אפר געשי בגובה נתיבי טיסה מחייב שינוי מסלולים ומעקב רציף אחר התפרצויות נוספות."
+          ]
+        }
+      ],
+      "facts": [
+        "עמוד אפר עד 15 ק״מ לפי הדיווח",
+        "מצר סונדה",
+        "מעקב תעופתי מוגבר"
+      ],
+      "featured": false,
+      "image": "https://i.kikar.co.il/2026/09/07/ec2c5cc0-aa72-11f1-a111-1ba500bd48ff__h568_w320.jpg?width=900",
+      "imageCredit": "התפרצות אנאק קראקאטאו · תיעוד שפורסם בכיכר השבת",
+      "publishedAt": "2026-09-07T07:17:00+03:00",
+      "readTime": "3 דקות",
+      "source": "כיכר השבת",
+      "sourceUrl": "https://www.kikar.co.il/world-news/tkz7oi",
+      "secondarySources": []
+    },
+    {
+      "id": "zim-improved-bid-1800-20260907",
+      "category": "כלכלה",
+      "title": "הפאג־לויד מכינה התאמות להצעת 4.2 מיליארד הדולר לרכישת צים",
+      "summary": "הקבוצה הגרמנית מציעה להרחיב הגנות על שליטה ישראלית ועל רציפות קווי הספנות.",
+      "subtitle": "הקבוצה הגרמנית מציעה להרחיב הגנות על שליטה ישראלית ועל רציפות קווי הספנות.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "הקבוצה הגרמנית מציעה להרחיב הגנות על שליטה ישראלית ועל רציפות קווי הספנות."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי Reuters, ההצעה כוללת חברה בשליטת פימי עם 16 אוניות, התחייבויות לקישור ימי והורדת סף ההחזקה הזרה המחייב דיווח מ־24% ל־10%. הקבינט צפוי לדון בעסקה בהמשך החודש."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "הוויכוח אינו רק על מחיר המניה: הוא עוסק בשליטה בתשתית אסטרטגית וביכולת ישראל לשמר שירותי ספנות בשעת חירום."
+          ]
+        }
+      ],
+      "facts": [
+        "שווי העסקה: 4.2 מיליארד דולר",
+        "16 אוניות לחברה ישראלית",
+        "סף החזקה זרה מוצע: 10%"
+      ],
+      "featured": true,
+      "publishedAt": "2026-09-07T17:46:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/middle-east/hapag-lloyd-plans-improvements-42-billion-bid-israels-zim-2026-09-07/",
+      "secondarySources": [
+        "https://investors.zim.com/news/news-details/2026/ZIM-to-be-Acquired-by-Hapag-Lloyd-for-35-00-per-Share-in-Cash-at-Aggregate-Cash-Consideration-of-Approximately-4-2-Billion-New-Israeli-Company-New-ZIM-to-Acquire-Portion-of-ZIMs-Business/default.aspx"
+      ]
+    },
+    {
+      "id": "oil-near-100-1800-20260907",
+      "category": "כלכלה",
+      "title": "הנפט נשאר סמוך לשיא של שישה שבועות על רקע התקיפות בים",
+      "summary": "ברנט נסחר סביב 97.5 דולר ו־WTI סביב 92.3 דולר, כשהתנועה בהורמוז נחלשה.",
+      "subtitle": "ברנט נסחר סביב 97.5 דולר ו־WTI סביב 92.3 דולר, כשהתנועה בהורמוז נחלשה.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "ברנט נסחר סביב 97.5 דולר ו־WTI סביב 92.3 דולר, כשהתנועה בהורמוז נחלשה."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "Reuters דיווחה כי ממוצע המעבר ירד לכעשר אוניות סחורה ביום בעשרת הימים האחרונים, השפל מאז מאי. OPEC+ הותירה את מדיניות התפוקה לאוקטובר ללא שינוי."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "משך השיבוש חשוב יותר מתנודה תוך־יומית: מחירי אנרגיה גבוהים עלולים לחלחל להובלה, מזון ואינפלציה."
+          ]
+        }
+      ],
+      "facts": [
+        "ברנט: $97.52",
+        "WTI: $92.27",
+        "כ־10 אוניות סחורה ביום"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T16:33:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/energy/oil-extends-gains-after-us-iran-strike-ships-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "wistron-gds-1800-20260907",
+      "category": "כלכלה",
+      "title": "ויסטרון מגייסת עד 1.48 מיליארד דולר כדי לממן ביקוש לשרתי AI",
+      "summary": "הספקית הטייוואנית פתחה מכירת תעודות פיקדון גלובליות למימון חומרי גלם במטבע זר.",
+      "subtitle": "הספקית הטייוואנית פתחה מכירת תעודות פיקדון גלובליות למימון חומרי גלם במטבע זר.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "הספקית הטייוואנית פתחה מכירת תעודות פיקדון גלובליות למימון חומרי גלם במטבע זר."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "ההצעה כוללת 25 מיליון תעודות, שכל אחת מייצגת עשר מניות. החברה הרחיבה קיבולת בטייוואן ופתחה ביולי מפעל של 700 מיליון דולר בטקסס."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "הגיוס מראה שהביקוש לתשתיות AI דורש הון חוזר וקיבולת ייצור, לא רק הזמנות לשבבים."
+          ]
+        }
+      ],
+      "facts": [
+        "עד $1.48 מיליארד",
+        "25 מיליון GDS",
+        "מפעל טקסס: $700 מיליון"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T12:00:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/asia-pacific/taiwans-wistron-launches-up-15-billion-gds-sale-term-sheet-shows-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "tiafoe-medvedev-1800-20260907",
+      "category": "ספורט",
+      "title": "טיאפו הדיח את מדבדב בשלוש מערכות והעפיל לרבע גמר אליפות ארה״ב",
+      "summary": "פרנסס טיאפו ניצח 7:6(1), 6:4, 7:6(6) ושבר מאזן אישי שלילי מול האלוף לשעבר.",
+      "subtitle": "פרנסס טיאפו ניצח 7:6(1), 6:4, 7:6(6) ושבר מאזן אישי שלילי מול האלוף לשעבר.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "פרנסס טיאפו ניצח 7:6(1), 6:4, 7:6(6) ושבר מאזן אישי שלילי מול האלוף לשעבר."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "האמריקני ניצל משחק רשת יעיל ושמר על קור רוח בשני שוברי שוויון. ברבע הגמר יפגוש את אלכס מיקלסן."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "הניצחון משאיר את טיאפו במרוץ להיות האמריקני הראשון שזוכה בגראנד סלאם לגברים מאז 2003."
+          ]
+        }
+      ],
+      "facts": [
+        "7:6(1), 6:4, 7:6(6)",
+        "רבע גמר",
+        "היריב הבא: אלכס מיקלסן"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T05:19:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/tennis/tiafoe-shines-peoples-court-slay-old-rival-medvedev-2026-09-06/",
+      "secondarySources": []
+    },
+    {
+      "id": "shelton-tsitsipas-1800-20260907",
+      "category": "ספורט",
+      "title": "שלטון עצר את ציציפאס וקבע רבע גמר מול אלקראס",
+      "summary": "בן שלטון ניצח 6:2, 6:3, 6:4 והעפיל לרבע גמר אליפות ארה״ב.",
+      "subtitle": "בן שלטון ניצח 6:2, 6:3, 6:4 והעפיל לרבע גמר אליפות ארה״ב.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "בן שלטון ניצח 6:2, 6:3, 6:4 והעפיל לרבע גמר אליפות ארה״ב."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "האמריקני שלט במערכה הראשונה, וציציפאס נזקק לטיפול רפואי בשנייה. שלטון יפגוש כעת את האלוף המכהן קרלוס אלקראס."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "המפגש הבא יחבר בין אחת ההגשות החזקות בסבב לבין שחקן ההגנה על התואר."
+          ]
+        }
+      ],
+      "facts": [
+        "6:2, 6:3, 6:4",
+        "רבע גמר",
+        "היריב הבא: קרלוס אלקראס"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T10:00:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/tennis/shelton-stops-tsitsipas-sets-up-alcaraz-showdown-us-open-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "dodgers-nationals-1800-20260907",
+      "category": "ספורט",
+      "title": "בטס הפך את המשחק בהום־ראן; הדודג׳רס ניצחו 5:7",
+      "summary": "מוקי בטס חבט הום־ראן של שלוש ריצות באינינג השמיני והעניק ללוס אנג׳לס ניצחון רביעי ברציפות.",
+      "subtitle": "מוקי בטס חבט הום־ראן של שלוש ריצות באינינג השמיני והעניק ללוס אנג׳לס ניצחון רביעי ברציפות.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "מוקי בטס חבט הום־ראן של שלוש ריצות באינינג השמיני והעניק ללוס אנג׳לס ניצחון רביעי ברציפות."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "בטס סיים עם ארבע ריצות מוכנסות והגיע להום־ראן ה־18 שלו העונה. הדודג׳רס עלו למאזן 86–57 ונשארו 1.5 משחקים ממילווקי במאבק על המאזן הטוב בליגה."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "המהפך חיזק את רצף הניצחונות של הקבוצה בשלב שבו יתרון הביתיות בפלייאוף עדיין פתוח."
+          ]
+        }
+      ],
+      "facts": [
+        "דודג׳רס 7:5 נשיונלס",
+        "בטס: 4 RBI",
+        "רצף של 4 ניצחונות"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T08:28:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/baseball/mookie-betts-blast-lifts-dodgers-over-nationals--flm-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "israel-national-fixtures-1800-20260907",
+      "category": "ספורט",
+      "title": "פורסם לוח נבחרת ישראל: אוסטריה בלינץ׳ וארבעה משחקים ב־11 ימים",
+      "summary": "הנבחרת תפתח מול אוסטריה ב־24 בספטמבר ותפגוש אחר כך את אירלנד וקוסובו.",
+      "subtitle": "הנבחרת תפתח מול אוסטריה ב־24 בספטמבר ותפגוש אחר כך את אירלנד וקוסובו.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "הנבחרת תפתח מול אוסטריה ב־24 בספטמבר ותפגוש אחר כך את אירלנד וקוסובו."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "אחרי המשחק בלינץ׳ תשחק ישראל מול אירלנד בדברצן ב־27 בספטמבר, מול קוסובו באותו אצטדיון ב־1 באוקטובר ושוב מול אירלנד בבאצ׳קה טופולה ב־4 באוקטובר."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "צפיפות המשחקים והאירוח מחוץ לישראל הופכים את ניהול הסגל וההתאוששות לגורם מרכזי בקמפיין."
+          ]
+        }
+      ],
+      "facts": [
+        "24.09: אוסטריה",
+        "27.09: אירלנד",
+        "01.10: קוסובו",
+        "04.10: אירלנד"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T09:30:00+03:00",
+      "readTime": "3 דקות",
+      "source": "ההתאחדות לכדורגל בישראל",
+      "sourceUrl": "https://www.football.org.il/?itemid=%7B40924B36-389F-4C5E-944E-CE95A834BCF2%7D",
+      "secondarySources": []
+    },
+    {
+      "id": "netanya-haifa-preview-1800-20260907",
+      "category": "ספורט",
+      "title": "ב־19:45: נתניה מארחת את הפועל חיפה; זערורה חוזר לסגל",
+      "summary": "מכבי נתניה תנסה לשמור על פתיחת עונה ללא הפסד מול הפועל חיפה במחזור השלישי.",
+      "subtitle": "מכבי נתניה תנסה לשמור על פתיחת עונה ללא הפסד מול הפועל חיפה במחזור השלישי.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "מכבי נתניה תנסה לשמור על פתיחת עונה ללא הפסד מול הפועל חיפה במחזור השלישי."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "בסאם זערורה צפוי להיכלל בסגל לאחר שהחלים מהר מהצפוי, בעוד ויטלי מורוזוב ייעדר. המשחק ייערך באצטדיון מרים וישודר בספורט 2."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "נתניה מגיעה עם ארבע נקודות משני משחקים; הפועל חיפה עם שתי נקודות ומחפשת ניצחון ראשון."
+          ]
+        }
+      ],
+      "facts": [
+        "פתיחה: 19:45",
+        "שידור: ספורט 2",
+        "נתניה: 4 נקודות",
+        "הפועל חיפה: 2 נקודות"
+      ],
+      "featured": true,
+      "publishedAt": "2026-09-07T11:14:00+03:00",
+      "readTime": "3 דקות",
+      "source": "וואלה ספורט",
+      "sourceUrl": "https://sports.walla.co.il/item/3866165",
+      "secondarySources": [
+        "https://www.leaan.co.il/events/%D7%9E%D7%9B%D7%91%D7%99-%D7%A0%D7%AA%D7%A0%D7%99%D7%94---%D7%94%D7%A4%D7%95%D7%A2%D7%9C-%D7%97%D7%99%D7%A4%D7%94/7207"
+      ]
+    },
+    {
+      "id": "antonelli-monza-1800-20260907",
+      "category": "ספורט",
+      "title": "מהמקום ה־19 לניצחון: אנטונלי השלים קאמבק יוצא דופן במונזה",
+      "summary": "קימי אנטונלי ניצח בגרנד פרי איטליה לפני ג׳ורג׳ ראסל ומקס ורסטאפן.",
+      "subtitle": "קימי אנטונלי ניצח בגרנד פרי איטליה לפני ג׳ורג׳ ראסל ומקס ורסטאפן.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "קימי אנטונלי ניצח בגרנד פרי איטליה לפני ג׳ורג׳ ראסל ומקס ורסטאפן."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "האיטלקי זינק מהמקום ה־19 וחצה את הקו 3.857 שניות לפני ראסל; ורסטאפן סיים שלישי."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "הקאמבק הביתי הוא אחד הניצחונות הבולטים בעונה וממחיש את השילוב בין אסטרטגיה לקצב מרוץ."
+          ]
+        }
+      ],
+      "facts": [
+        "אנטונלי: מקום 1",
+        "זינוק: מקום 19",
+        "הפער מראסל: 3.857 שניות"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-06T18:20:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Formula 1",
+      "sourceUrl": "https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2",
+      "secondarySources": []
+    },
+    {
+      "id": "un-ai-red-lines-1800-20260907",
+      "category": "טכנולוגיה",
+      "title": "נציב זכויות האדם של האו״ם דורש קווים אדומים לבינה מלאכותית",
+      "summary": "וולקר טירק הזהיר מפגיעה אפשרית בשירותים חיוניים, בתקשורת ובמערכות דמוקרטיות.",
+      "subtitle": "וולקר טירק הזהיר מפגיעה אפשרית בשירותים חיוניים, בתקשורת ובמערכות דמוקרטיות.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "וולקר טירק הזהיר מפגיעה אפשרית בשירותים חיוניים, בתקשורת ובמערכות דמוקרטיות."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "בנאום למועצת זכויות האדם קרא טירק למדינות ולחברות לקבוע מנגנוני הגנה, להגביל ריכוז כוח ולאסור נשק אוטונומי קטלני."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "הדיון מעביר את בטיחות ה־AI משאלת מוצר לסוגיה של זכויות, תשתיות ואחריות ציבורית."
+          ]
+        }
+      ],
+      "facts": [
+        "קריאה לקווים אדומים",
+        "דגש על תשתיות ודמוקרטיה",
+        "קריאה לאסור נשק אוטונומי קטלני"
+      ],
+      "featured": true,
+      "publishedAt": "2026-09-07T11:51:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/technology/ai-could-pose-existential-risk-humanity-un-rights-chief-warns-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "patagonia-data-centers-1800-20260907",
+      "category": "טכנולוגיה",
+      "title": "חברות טכנולוגיה בוחנות מרכזי נתונים ענקיים בפטגוניה",
+      "summary": "האקלים הקר, הקרקע והאנרגיה מושכים יזמים — אך החשמל והקישוריות עדיין מגבילים.",
+      "subtitle": "האקלים הקר, הקרקע והאנרגיה מושכים יזמים — אך החשמל והקישוריות עדיין מגבילים.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "האקלים הקר, הקרקע והאנרגיה מושכים יזמים — אך החשמל והקישוריות עדיין מגבילים."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "לפי Reuters, מיזמים בארגנטינה בוחנים קיבולות של מאות מגה־ואט ואף יותר, תחת משטר תמריצים למשקיעים. רבים מהם עדיין בשלבי תכנון."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "מרכזי נתונים ל־AI תלויים בזמינות חשמל, מים וסיבים; אתר זול אינו מספיק בלי חיבור יציב לרשת."
+          ]
+        }
+      ],
+      "facts": [
+        "אקלים קר ורוחות חזקות",
+        "פרויקטים בהיקף מאות מגה־ואט",
+        "אתגרי חשמל וקישוריות"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T13:03:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/energy/tech-companies-look-argentinas-windswept-patagonia-build-massive-data-centers-2026-09-07/",
+      "secondarySources": []
+    },
+    {
+      "id": "china-battery-pause-1800-20260907",
+      "category": "טכנולוגיה",
+      "title": "דיווח: סין עצרה זמנית אישורים למפעלי אגירת סוללות חדשים",
+      "summary": "ההקפאה נוגעת לפרויקטי ייצור חדשים בשוק שבו סין מחזיקה קיבולת עולמית מרכזית.",
+      "subtitle": "ההקפאה נוגעת לפרויקטי ייצור חדשים בשוק שבו סין מחזיקה קיבולת עולמית מרכזית.",
+      "body": [
+        {
+          "heading": "מה קרה",
+          "paragraphs": [
+            "ההקפאה נוגעת לפרויקטי ייצור חדשים בשוק שבו סין מחזיקה קיבולת עולמית מרכזית."
+          ]
+        },
+        {
+          "heading": "הפרטים המאומתים",
+          "paragraphs": [
+            "Reuters הסתמכה על דיווח של Cailianshe; הסיבה להשהיה ומשך הזמן שלה לא פורטו בפרסום הראשוני."
+          ]
+        },
+        {
+          "heading": "למה זה חשוב",
+          "paragraphs": [
+            "כל שינוי באישורי ייצור בסין עשוי להשפיע על קצב התרחבות האגירה ועל שרשראות אספקה, אך מוקדם לכמת את ההשפעה."
+          ]
+        }
+      ],
+      "facts": [
+        "השהיה זמנית לפי הדיווח",
+        "אין עדיין נימוק רשמי מפורט",
+        "סין מובילה בייצור סוללות אגירה"
+      ],
+      "featured": false,
+      "publishedAt": "2026-09-07T07:55:00+03:00",
+      "readTime": "3 דקות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/energy/china-pauses-approvals-battery-storage-manufacturing-projects-cailianshe-reports-2026-09-07/",
+      "secondarySources": []
+    }
+  ],
+  "deepDives": [
+    {
+      "id": "deep-lists-decision-1800-20260907",
+      "category": "עומק",
+      "title": "הרשימות יורדות מהלוח אל הפתק: יום ההתחייבויות הראשון",
+      "summary": "הגשת הרשימות חושפת את סדרי הכוח, אבל רק מחר תיסגר התמונה — ורק הסקרים שאחריה ימדדו את תגובת הבוחרים.",
+      "subtitle": "מה אושר, מה עוד עשוי להשתנות, ולמה ארבעה מנדטים הם אזור מסוכן במיוחד.",
+      "body": "הגשת הרשימות לכנסת החלה היום, ובתוך שעות הפכה מערכת הבחירות מאוסף של שמועות וחיבורים אפשריים למסמכים, שמות ואותיות. עופר וינטר הגיש את רשימת ״עמך ישראל״ באופן עצמאי וביקש את האות ״ך״; עוצמה יהודית, ישר! וישראל ביתנו נמנו גם הן עם הרשימות שהגיעו לוועדת הבחירות. במקביל, ביהדות התורה נרשם חילוף נוסף: בעלז הודיעה שאליקים שטארק יחליף את ישראל אייכלר כנציג החסידות בכנסת, בעוד ההרכב הכולל עדיין כפוף להסכמות בין אגודת ישראל לדגל התורה.\n\nמה השתנה היום? לפני ההגשה, איום בריצה עצמאית היה כלי מיקוח. מרגע שנמסרה רשימה, הוא הופך להתחייבות גלויה יותר — אך לא בהכרח סופית. חלון ההגשה נמשך גם מחר, ולכן אסור לקרוא את תמונת הערב כאילו היא פתק ההצבעה הסגור. עדיין ייתכנו התאמות, מאבקי אותיות והבהרות מצד ועדת הבחירות. ובכל זאת, עצם הופעתם של מועמדים בסדר מסוים מצמצמת את מרחב ההכחשה ומכריחה את המפלגות להסביר לציבור מי קודם למי.\n\nהסקר האחרון של ישראל היום וקנטאר, שפורסם ב־3 בספטמבר ונערך ב־2–3 בחודש, נתן לישר! 24 מנדטים, לליכוד 21, לביחד 13 ולעמך ישראל ארבעה בלבד. זהו נתון חשוב, אבל זמנו חשוב לא פחות: הנשאלים ענו לפני שהרשימות הוגשו בפועל. לכן הסקר מתאר נקודת מוצא ולא תגובה להרכבים שנחשפו היום. גם סקר כאן מ־6 בספטמבר מציב את וינטר באזור הסף. כשהמפלגה נמדדת על ארבעה מנדטים, כל טעות קמפיין, מועמד שנוי במחלוקת או מעבר של מצביעים אסטרטגיים עשויים לקבוע אם הקולות יתורגמו לייצוג.\n\nגם החילופים החרדיים אינם שינוי טכני בלבד. יציאתם של דמויות ותיקות ועלייתם של נציגים חדשים משקפות מאבק על נאמנות, סמכות ועל האופן שבו הציבור החרדי מבקש להציג את עצמו אחרי משבר חוק הגיוס. אולם הרשימה המאוחדת עדיין צריכה לאזן בין בתים רבניים, חסידויות ומוסדות, ולכן סדר המקומות עשוי להשתנות עד הרגע האחרון.\n\nבמישור הקמפייני, הגשת הרשימות משנה גם את סוג הטענות שהציבור יכול לבדוק. במקום הבטחות כלליות על ״נבחרת״ או ״אחדות״, אפשר לבחון כעת את סדר המועמדים, הייצוג האזורי והמקצועי, והפער בין מסרי הקמפיין להרכב שהוגש. למפלגות הגדולות יש יתרון של ארגון ופעילים; לקטנות יש הזדמנות להציג בהירות ורעננות. אבל היתרון הזה יישחק אם הרשימה תיראה מאולתרת או אם ראשיה ימסרו גרסאות סותרות על שותפות עתידית. גם לבוחרים המתלבטים יש כעת מידע ממשי יותר, ולכן השבוע הקרוב עשוי להיות פחות רעשני ויותר חשבונאי: מי עובר, מי מסכן גוש, ומי באמת מסוגל להרכיב שיתוף פעולה אחרי הבחירות.\n\nהמשמעות הרחבה היא שמחר יהיה יום של החלטות, לא רק של טקסים. מפלגות קטנות יצטרכו לבחור בין זהות עצמאית לסיכון של בזבוז קולות; מפלגות גדולות ינסו להפעיל לחץ בלי להיראות כמי שחוששות מתחרות. אחרי סגירת ההגשה, המבחן האמיתי יהיה כפול: האם ועדת הבחירות מאשרת את הרשימות והאותיות, והאם סקרים שנערכו אחרי ההגשה מראים תזוזה. עד אז, המספרים הקיימים הם מפה של ערב ההכרעה — לא תוצאתה.",
+      "author": "אורי לב · פרשן המערכת (שם עט)",
+      "source": "ועדת הבחירות המרכזית",
+      "sourceUrl": "https://www.gov.il/he/pages/ads_candidates",
+      "secondarySources": [
+        "https://www.kikar.co.il/political-news/tkzw79",
+        "https://www.kikar.co.il/political-news/tkzwah",
+        "https://www.israelhayom.co.il/news/politics/article/21348438",
+        "https://www.ynet.co.il/news/elections2026/article/bkrz6xn00gl"
+      ],
+      "publishedAt": "2026-09-07T18:00:00+03:00",
+      "readTime": "7 דקות",
+      "featured": true,
+      "featuredAnalysis": true,
+      "wordCount": 433
+    },
+    {
+      "id": "deep-zim-sovereignty-1800-20260907",
+      "category": "עומק",
+      "title": "עסקת צים: השאלה עברה ממחיר לשליטה תפעולית",
+      "summary": "ההתאמות להצעת הפאג־לויד מנסות לתרגם חשש ביטחוני להתחייבויות שניתן למדוד ולאכוף.",
+      "body": "ההצעה לרכוש את צים ב־4.2 מיליארד דולר אינה חדשה, אבל הדיון השתנה. לפי Reuters, הפאג־לויד עובדת עם ממשלת ישראל על נוסח משופר: פעילות בעלת 16 אוניות תוחזק בידי חברה בשליטה ישראלית של פימי, סף ההחזקה הזרה המחייב דיווח ירד ל־10%, ויוגדרו התחייבויות לקישור ימי ולמטענים רגישים. אלה פרטים קונקרטיים יותר מהבטחה כללית לשמור על ״האופי הישראלי״ של החברה.\n\nההקשר הוא כפול. עסקית, המיזוג מעניק לרוכשת קיבולת ורשת קווים בזמן שבו אוניות חדשות אינן זמינות במהירות. לאומית, ישראל מבקשת לוודא שגם במשבר תהיה לה כתובת שמחויבת להפעיל קווים חיוניים. לכן 16 האוניות אינן כל הסיפור; חשובים גם צוותי הניהול, זכויות ההחלטה, הגישה לנמלים והיכולת למנוע התערבות זרה במטען רגיש.\n\nמה השתנה היום הוא רמת הפירוט, לא עצם הסיכון. הקבינט צפוי לדון בעסקה בהמשך החודש, ואז יהיה צורך לבדוק אם ההגנות הן תנאי משפטי אכיף, לכמה זמן הן חלות ומה קורה אם הפעילות אינה רווחית. עד להחלטה, נכון לתאר את ההצעה כמתווה משופר שנמצא בבחינה — לא כאישור עסקה.",
+      "author": "מערכת החדשות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/middle-east/hapag-lloyd-plans-improvements-42-billion-bid-israels-zim-2026-09-07/",
+      "secondarySources": [
+        "https://investors.zim.com/news/news-details/2026/ZIM-to-be-Acquired-by-Hapag-Lloyd-for-35-00-per-Share-in-Cash-at-Aggregate-Cash-Consideration-of-Approximately-4-2-Billion-New-Israeli-Company-New-ZIM-to-Acquire-Portion-of-ZIMs-Business/default.aspx"
+      ],
+      "publishedAt": "2026-09-07T18:00:00+03:00",
+      "readTime": "5 דקות"
+    },
+    {
+      "id": "deep-ai-infrastructure-1800-20260907",
+      "category": "עומק",
+      "title": "בטיחות AI מתחילה בקוד — ונגמרת בחשמל, נשק ואחריות",
+      "summary": "אזהרת האו״ם ופיתוח מרכזי הנתונים מראים שהדיון בבינה מלאכותית כבר אינו רק טכנולוגי.",
+      "body": "נציב זכויות האדם של האו״ם קרא לקווים אדומים לבינה מלאכותית, כולל הגנות על שירותים חיוניים ומערכות דמוקרטיות ואיסור על נשק אוטונומי קטלני. באותו יום נחשף הצד הפיזי של המרוץ: חברות בוחנות מרכזי נתונים עצומים בפטגוניה, ויסטרון מגייסת הון לחומרי גלם עבור שרתי AI. שלושת הסיפורים מחוברים בשרשרת אחת — החלטת תוכנה דורשת שבבים, מפעלים, חשמל, קירור ומוסדות שמגדירים אחריות.\n\nמה מאומת: הביקוש לתשתיות ממשיך להתרחב; האו״ם דורש מנגנוני הגנה; ופרויקטים חדשים עדיין מתמודדים עם מגבלות רשת וקישוריות. מה עדיין פתוח: אילו כללים יהיו מחייבים, מי יישא באחריות לנזק, וכיצד ייאכפו מגבלות מעבר לגבולות.\n\nהנקודה המרכזית היא שרגולציה אינה יכולה להסתפק בבדיקת מודל לפני השקה. היא צריכה לעקוב גם אחרי שימושים, ספקי ענן, ריכוז כוח ותלות בתשתית. במקביל, לא כל הכרזה על מרכז נתונים הופכת לפרויקט פעיל: יש לבדוק חיבור חשמל, מים, סיבים ומימון. המדדים הבאים יהיו נוסחי החקיקה, התחייבויות החברות והתקדמות פיזית באתרי הבנייה — לא גודל ההבטחה בלבד.",
+      "author": "מערכת החדשות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/technology/ai-could-pose-existential-risk-humanity-un-rights-chief-warns-2026-09-07/",
+      "secondarySources": [
+        "https://www.reuters.com/business/energy/tech-companies-look-argentinas-windswept-patagonia-build-massive-data-centers-2026-09-07/",
+        "https://www.reuters.com/world/asia-pacific/taiwans-wistron-launches-up-15-billion-gds-sale-term-sheet-shows-2026-09-07/"
+      ],
+      "publishedAt": "2026-09-07T18:00:00+03:00",
+      "readTime": "5 דקות"
+    }
+  ],
+  "markets": [
+    {
+      "symbol": "SPX",
+      "name": "S&P 500",
+      "value": "7,718.60",
+      "change": "−0.38% · −29.11",
+      "direction": "down",
+      "status": "סגירת 04.09 · השוק סגור",
+      "note": "דוח תעסוקה חזק העלה ציפיות לריבית גבוהה יותר",
+      "source": "Reuters / LSEG",
+      "sourceUrl": "https://www.reuters.com/markets/",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "IXIC",
+      "name": "Nasdaq Composite",
+      "value": "26,506.99",
+      "change": "−0.29% · −77.07",
+      "direction": "down",
+      "status": "סגירת 04.09 · השוק סגור",
+      "note": "תשואות גבוהות לחצו על מניות צמיחה",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "DJI",
+      "name": "Dow Jones",
+      "value": "53,414.25",
+      "change": "−0.51% · −271.86",
+      "direction": "down",
+      "status": "סגירת 04.09 · השוק סגור",
+      "note": "ירידה רוחבית לאחר נתוני התעסוקה",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "value": "$354.08",
+      "change": "−5.96% · −$22.43",
+      "direction": "down",
+      "status": "סגירת 04.09 · השוק סגור",
+      "note": "הסגירה האחרונה משקפת ירידה חדה; אין מסחר רגיל היום",
+      "source": "Google Finance",
+      "sourceUrl": "https://www.google.com/finance/quote/TSLA:NASDAQ",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "VIX",
+      "name": "VIX",
+      "value": "14.53",
+      "change": "+1.47% · +0.21",
+      "direction": "up",
+      "status": "סגירת 04.09 · השוק סגור",
+      "note": "עלייה מתונה בביקוש להגנה",
+      "source": "Cboe",
+      "sourceUrl": "https://www.cboe.com/tradable-products/vix/",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "CL",
+      "name": "WTI",
+      "value": "$92.27",
+      "change": "+0.86% · +$0.79",
+      "direction": "up",
+      "status": "מסחר 07.09 · 16:33",
+      "note": "תקיפות על מכליות והאטה בתנועה בהורמוז",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/business/energy/oil-extends-gains-after-us-iran-strike-ships-2026-09-07/",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "BZ",
+      "name": "Brent",
+      "value": "$97.52",
+      "change": "+1.29% · כ־+$1.24",
+      "direction": "up",
+      "status": "מסחר 07.09 · 16:15",
+      "note": "שיא של כשבעה שבועות וחשש לשיבוש אספקה",
+      "source": "Reuters / LSEG",
+      "sourceUrl": "https://www.reuters.com/markets/",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "XAU",
+      "name": "זהב",
+      "value": "$4,401.10",
+      "change": "−0.65% · כ־−$28.79",
+      "direction": "down",
+      "status": "מסחר 07.09 · 16:15",
+      "note": "תשואות גבוהות וציפיות להידוק מוניטרי",
+      "source": "Reuters / LSEG",
+      "sourceUrl": "https://www.reuters.com/markets/",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "value": "$79,126",
+      "change": "−0.49% · −$391",
+      "direction": "down",
+      "status": "רציף · 18:00",
+      "note": "נסחר מתחת ל־80 אלף דולר",
+      "source": "נתוני שוק",
+      "sourceUrl": "https://www.google.com/finance/quote/BTC-USD",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "value": "$2,486.15",
+      "change": "+0.37% · +$9.26",
+      "direction": "up",
+      "status": "רציף · 18:00",
+      "note": "עלייה מתונה במסחר רציף",
+      "source": "נתוני שוק",
+      "sourceUrl": "https://www.google.com/finance/quote/ETH-USD",
+      "updatedAt": "2026-09-07T18:00:00+03:00"
+    }
+  ],
+  "meta": {
+    "updatedAt": "2026-09-07T18:33:00+03:00",
+    "locale": "he-IL",
+    "edition": "מהדורת ערב · הגשת הרשימות, הצפון, צים והורמוז",
+    "contentPolicy": "המהדורה הוחלפה במלואה ב־18:33; תמונות מציגות את האירוע או את נשוא הכתבה, ללא תמונות דגל כלליות"
+  },
+  "polls": [
+    {
+      "id": "kan-hendel-zalicha-2026-09-06",
+      "date": "2026-09-06",
+      "publishedDate": "2026-09-06",
+      "source": "כאן חדשות · הסקר האחרון",
+      "shortSource": "כאן",
+      "pollster": "לא פורסם בכתבה הזמינה",
+      "scenario": "הנדל וזליכה ברשימה משותפת",
+      "fieldworkDate": null,
+      "fieldworkEndDate": null,
+      "parties": {
+        "ישר!": 23,
+        "הליכוד": 20,
+        "ביחד": 13,
+        "הדמוקרטים": 8,
+        "יהדות התורה": 8,
+        "ישראל ביתנו": 7,
+        "עוצמה יהודית": 7,
+        "ש״ס": 7,
+        "חד״ש–תע״ל / המשותפת": 7,
+        "רע״ם": 6,
+        "הציונות הדתית": 6,
+        "עמך ישראל": 4,
+        "הנדל–זליכה": 4
+      },
+      "belowThreshold": [
+        {
+          "party": "כחול לבן",
+          "percent": null
+        },
+        {
+          "party": "הציבור החרדי",
+          "percent": null
+        }
+      ],
+      "sourceUrl": "https://www.kan.org.il/lobby/skarim/",
+      "verifiedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "id": "israelhayom-kantar-2026-09-03",
+      "date": "2026-09-03",
+      "publishedDate": "2026-09-03",
+      "source": "ישראל היום · הסקר האחרון",
+      "shortSource": "ישראל היום",
+      "pollster": "קנטאר · דודי חסיד",
+      "scenario": "מפת המנדטים לפני הגשת הרשימות",
+      "fieldworkDate": "2026-09-02",
+      "fieldworkEndDate": "2026-09-03",
+      "marginOfError": "±4.2%",
+      "sampleSize": 555,
+      "parties": {
+        "ישר!": 24,
+        "הליכוד": 21,
+        "ביחד": 13,
+        "הדמוקרטים": 9,
+        "ישראל ביתנו": 9,
+        "יהדות התורה": 8,
+        "עוצמה יהודית": 7,
+        "ש״ס": 7,
+        "חד״ש–תע״ל / המשותפת": 7,
+        "הציונות הדתית–זהות": 6,
+        "רע״ם": 5,
+        "עמך ישראל": 4
+      },
+      "belowThreshold": [
+        {
+          "party": "האחדות",
+          "percent": null
+        },
+        {
+          "party": "כחול לבן",
+          "percent": null
+        }
+      ],
+      "sourceUrl": "https://www.israelhayom.co.il/news/politics/article/21348438",
+      "verifiedAt": "2026-09-07T18:00:00+03:00"
+    },
+    {
+      "id": "channel13-full-2026-09-02",
+      "date": "2026-09-02",
+      "publishedDate": "2026-09-02",
+      "source": "חדשות 13",
+      "shortSource": "13",
+      "pollster": "המדד, סטט־נט, פרויקט המדגם, אסקריא ו־Hive",
+      "scenario": "לאחר האיחודים",
+      "fieldworkDate": null,
+      "fieldworkEndDate": null,
+      "marginOfError": "±3.4%",
+      "sampleSize": 940,
+      "parties": {
+        "ישר!": 22,
+        "הליכוד": 21,
+        "ביחד": 12,
+        "הדמוקרטים": 11,
+        "חד״ש–תע״ל / המשותפת": 9,
+        "ישראל ביתנו": 8,
+        "יהדות התורה": 8,
+        "עוצמה יהודית": 7,
+        "ש״ס": 7,
+        "הציונות הדתית–זהות": 6,
+        "רע״ם": 5,
+        "עמך ישראל": 4
+      },
+      "belowThreshold": [
+        {
+          "party": "בית ציוני–המילואימניקים",
+          "percent": 2.2
+        },
+        {
+          "party": "כחול לבן",
+          "percent": 1.2
+        },
+        {
+          "party": "האחדות",
+          "percent": 0.6
+        },
+        {
+          "party": "הציבור החרדי",
+          "percent": 0.3
+        },
+        {
+          "party": "מקום לכולנו",
+          "percent": 0.3
+        },
+        {
+          "party": "הכלכלית",
+          "percent": 0.2
+        }
+      ],
+      "sourceUrl": "https://13tv.co.il/item/news/politics/politics/survey-905340911/",
+      "verifiedAt": "2026-09-07T18:00:00+03:00"
+    }
+  ],
+  "scores": [
+    {
+      "id": "f1-monza-20260906-final",
+      "league": "פורמולה 1",
+      "dateLabel": "06.09",
+      "teams": [
+        "קימי אנטונלי",
+        "ג׳ורג׳ ראסל"
+      ],
+      "score": [
+        "1",
+        "2"
+      ],
+      "state": "final",
+      "status": "סופי",
+      "outcome": "אנטונלי זינק 19 וניצח",
+      "scorers": "פער 3.857 שניות",
+      "source": "Formula 1",
+      "sourceUrl": "https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2",
+      "winner": "home",
+      "verifiedAt": "2026-09-07T18:00:00+03:00",
+      "verifiedLabel": "אומת 18:00"
+    },
+    {
+      "id": "tiafoe-medvedev-20260906-final",
+      "league": "US Open",
+      "dateLabel": "06.09",
+      "teams": [
+        "פרנסס טיאפו",
+        "דניל מדבדב"
+      ],
+      "score": [
+        "3",
+        "0"
+      ],
+      "state": "final",
+      "status": "סופי",
+      "scorers": "7:6(1), 6:4, 7:6(6)",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/tennis/tiafoe-shines-peoples-court-slay-old-rival-medvedev-2026-09-06/",
+      "winner": "home",
+      "verifiedAt": "2026-09-07T18:00:00+03:00",
+      "verifiedLabel": "אומת 18:00"
+    },
+    {
+      "id": "shelton-tsitsipas-20260906-final",
+      "league": "US Open",
+      "dateLabel": "06.09",
+      "teams": [
+        "בן שלטון",
+        "סטפנוס ציציפאס"
+      ],
+      "score": [
+        "3",
+        "0"
+      ],
+      "state": "final",
+      "status": "סופי",
+      "scorers": "6:2, 6:3, 6:4",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/tennis/shelton-stops-tsitsipas-sets-up-alcaraz-showdown-us-open-2026-09-07/",
+      "winner": "home",
+      "verifiedAt": "2026-09-07T18:00:00+03:00",
+      "verifiedLabel": "אומת 18:00"
+    },
+    {
+      "id": "guardians-tigers-20260906-final",
+      "league": "MLB",
+      "dateLabel": "06.09",
+      "teams": [
+        "קליבלנד גארדיאנס",
+        "דטרויט טייגרס"
+      ],
+      "score": [
+        "3",
+        "2"
+      ],
+      "state": "final",
+      "status": "סופי · 10 אינינגים",
+      "outcome": "ווקאוף שלישי בארבעה משחקים",
+      "scorers": "דניאל שנימן הכניס את ריצת הניצחון",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/baseball/guardians-again-notch-walk-off-win-over-tigers--flm-2026-09-06/",
+      "winner": "home",
+      "verifiedAt": "2026-09-07T18:00:00+03:00",
+      "verifiedLabel": "אומת 18:00"
+    },
+    {
+      "id": "dodgers-nationals-20260906-final",
+      "league": "MLB",
+      "dateLabel": "06.09",
+      "teams": [
+        "וושינגטון נשיונלס",
+        "לוס אנג׳לס דודג׳רס"
+      ],
+      "score": [
+        "5",
+        "7"
+      ],
+      "state": "final",
+      "status": "סופי",
+      "outcome": "מהפך באינינג השמיני",
+      "scorers": "מוקי בטס, הום־ראן של 3 ריצות",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/sports/baseball/mookie-betts-blast-lifts-dodgers-over-nationals--flm-2026-09-07/",
+      "winner": "away",
+      "verifiedAt": "2026-09-07T18:00:00+03:00",
+      "verifiedLabel": "אומת 18:00"
+    },
+    {
+      "id": "netanya-haifa-20260907-scheduled",
+      "league": "ליגת העל",
+      "dateLabel": "07.09",
+      "teams": [
+        "מכבי נתניה",
+        "הפועל חיפה"
+      ],
+      "score": [
+        "",
+        ""
+      ],
+      "state": "scheduled",
+      "status": "הערב · 19:45",
+      "kickoff": "19:45",
+      "outcome": "אצטדיון מרים · ספורט 2",
+      "source": "וואלה ספורט",
+      "sourceUrl": "https://sports.walla.co.il/item/3866165",
+      "verifiedAt": "2026-09-07T18:00:00+03:00",
+      "verifiedLabel": "אומת 18:00"
+    },
+    {
+      "id": "israel-austria-20260924-scheduled",
+      "league": "ליגת האומות",
+      "dateLabel": "24.09",
+      "teams": [
+        "אוסטריה",
+        "ישראל"
+      ],
+      "score": [
+        "",
+        ""
+      ],
+      "state": "scheduled",
+      "status": "24.09 · לינץ׳",
+      "kickoff": "טרם פורסמה שעה",
+      "outcome": "פתיחת הקמפיין",
+      "source": "ההתאחדות לכדורגל",
+      "sourceUrl": "https://www.football.org.il/?itemid=%7B40924B36-389F-4C5E-944E-CE95A834BCF2%7D",
+      "verifiedAt": "2026-09-07T18:00:00+03:00",
+      "verifiedLabel": "אומת 18:00"
+    }
+  ],
+  "socialPulse": [],
+  "videos": []
+};
 })();
