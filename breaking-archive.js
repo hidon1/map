@@ -3855,5 +3855,65 @@ window.BREAKING_ARCHIVE = [
     "time": "07:24",
     "title": "דיווח: ארה״ב מאריכה הצבות צבאיות במזרח התיכון אל תוך 2027",
     "urgent": true
+  },
+  {
+    "articleId": "miami-crash-0802-20260907",
+    "id": "flash-20260907-0707-miami-crash",
+    "publishedAt": "2026-09-07T07:07:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/world-news/tkz75k",
+    "time": "07:07",
+    "title": "חמישה נהרגו בהתרסקות מטוס מטען במיאמי; חמישה נוספים נפצעו",
+    "urgent": true
+  },
+  {
+    "articleId": "hormuz-ships-0802-20260907",
+    "id": "flash-20260907-0715-hormuz-ships",
+    "publishedAt": "2026-09-07T07:15:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/energy/oil-extends-gains-after-us-iran-strike-ships-2026-09-07/",
+    "time": "07:15",
+    "title": "ארה״ב ואיראן תקפו כלי שיט; תנועת המכליות בהורמוז האטה",
+    "urgent": true
+  },
+  {
+    "articleId": "krakatau-0802-20260907",
+    "id": "flash-20260907-0717-krakatau",
+    "publishedAt": "2026-09-07T07:17:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/world-news/tkz7oi",
+    "time": "07:17",
+    "title": "אנאק קראקאטאו התפרץ; ענן האפר הגיע לפי הדיווח לגובה 15 קילומטרים",
+    "urgent": true
+  },
+  {
+    "articleId": "heat-wave-0802-20260907",
+    "id": "flash-20260907-0729-heat",
+    "publishedAt": "2026-09-07T07:29:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/israel-news/thop0g-44",
+    "time": "07:29",
+    "title": "הטמפרטורות עולות; מחר צפויה הכבדה נוספת בעומסי החום",
+    "urgent": false
+  },
+  {
+    "articleId": "lists-open-0802-20260907",
+    "id": "flash-20260907-0730-election-lists",
+    "publishedAt": "2026-09-07T07:30:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/scoop-news",
+    "time": "07:30",
+    "title": "היום ב־13:00 תיפתח הגשת רשימות המועמדים לכנסת",
+    "urgent": true
+  },
+  {
+    "articleId": "taiwan-chips-0802-20260907",
+    "id": "flash-20260907-0526-taiwan-chips",
+    "publishedAt": "2026-09-07T05:26:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/taiwan-flexes-chip-diplomacy-muscles-it-faces-pressure-share-ai-wealth-with-2026-09-07/",
+    "time": "05:26",
+    "title": "טייוואן מציגה את תעשיית השבבים ככלי לשותפות עם ארה״ב ואירופה",
+    "urgent": false
   }
 ];
