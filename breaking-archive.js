@@ -3974,5 +3974,105 @@ window.BREAKING_ARCHIVE = [
     "time": "08:24",
     "title": "צה״ל פרסם הנחיות פינוי לכפר דיר א־זהראני בדרום לבנון",
     "urgent": true
+  },
+  {
+    "articleId": "uae-alternative-routes-1800-20260907",
+    "id": "flash-20260907-1146-uae-alternative-routes",
+    "publishedAt": "2026-09-07T11:46:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/middle-east/uae-builds-alternative-trade-energy-routes-after-iran-attacks-official-says-2026-09-07/",
+    "time": "11:46",
+    "title": "איחוד האמירויות: מוקמים נתיבי יצוא וסחר חלופיים כדי לצמצם תלות בהורמוז",
+    "urgent": false
+  },
+  {
+    "articleId": "un-ai-red-lines-1800-20260907",
+    "id": "flash-20260907-1151-un-ai-red-lines",
+    "publishedAt": "2026-09-07T11:51:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/ai-could-pose-existential-risk-humanity-un-rights-chief-warns-2026-09-07/",
+    "time": "11:51",
+    "title": "נציב זכויות האדם של האו״ם קרא לקווים אדומים ולהגנות מחייבות בתחום ה־AI",
+    "urgent": false
+  },
+  {
+    "articleId": "bnei-brak-school-gate-1800-20260907",
+    "id": "flash-20260907-1316-bnei-brak-school-gate",
+    "publishedAt": "2026-09-07T13:16:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/haredim-news/school-gate-welded-bnei-brak",
+    "time": "13:16",
+    "title": "שער בית ספר בבני ברק רותך; הורים פתחו אותו והעירייה מסרה שהייתה כניסה חלופית",
+    "urgent": false
+  },
+  {
+    "articleId": "oman-sidr-crew-1800-20260907",
+    "id": "flash-20260907-1403-oman-sidr-crew",
+    "publishedAt": "2026-09-07T14:03:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/middle-east/oman-says-it-evacuated-16-crew-members-saudi-sidr-vessel-attacked-by-iran-2026-09-07/",
+    "time": "14:03",
+    "title": "עומאן הודיעה שחילצה 16 אנשי צוות מהמכלית הסעודית סידר",
+    "urgent": true
+  },
+  {
+    "articleId": "beaufort-encounter-1800-20260907",
+    "id": "flash-20260907-1601-beaufort-encounter",
+    "publishedAt": "2026-09-07T16:01:00+03:00",
+    "source": "חדשות 13",
+    "sourceUrl": "https://13tv.co.il/item/news/politics/security/day-1067-905347301/",
+    "time": "16:01",
+    "title": "צה״ל: שני לוחמי סיירת גולני נפצעו קל בהיתקלות ליד הבופור; מחבל חיזבאללה נהרג",
+    "urgent": true
+  },
+  {
+    "articleId": "belz-stark-1800-20260907",
+    "id": "flash-20260907-1603-belz-stark",
+    "publishedAt": "2026-09-07T16:03:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/political-news/tkzwah",
+    "time": "16:03",
+    "title": "בעלז הודיעה: אליקים שטארק ישובץ ברשימת יהדות התורה במקום ישראל אייכלר",
+    "urgent": false
+  },
+  {
+    "articleId": "west-bank-violence-1800-20260907",
+    "id": "flash-20260907-1624-west-bank-violence",
+    "publishedAt": "2026-09-07T16:24:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/middle-east/two-palestinians-killed-israeli-stabbed-west-bank-settler-violence-flares-2026-09-07/",
+    "time": "16:24",
+    "title": "שני פלסטינים נהרגו וישראלי נפצע קשה בשני אירועים נפרדים ביהודה ושומרון",
+    "urgent": true
+  },
+  {
+    "articleId": "nukhba-commander-1800-20260907",
+    "id": "flash-20260907-1626-nukhba-commander",
+    "publishedAt": "2026-09-07T16:26:00+03:00",
+    "source": "חדשות 13",
+    "sourceUrl": "https://13tv.co.il/item/news/politics/security/day-1067-905347301/",
+    "time": "16:26",
+    "title": "צה״ל ושב״כ: מפקד פלוגת נוח׳בה יוסף עקילה חוסל בעיר עזה",
+    "urgent": true
+  },
+  {
+    "articleId": "winter-list-1800-20260907",
+    "id": "flash-20260907-1634-winter-list-submitted",
+    "publishedAt": "2026-09-07T16:34:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/political-news/tkzw79",
+    "time": "16:34",
+    "title": "עמך ישראל של עופר וינטר הגישה רשימה עצמאית וביקשה את האות ״ך״",
+    "urgent": false
+  },
+  {
+    "articleId": "zim-improved-bid-1800-20260907",
+    "id": "flash-20260907-1746-zim-improved-bid",
+    "publishedAt": "2026-09-07T17:46:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/middle-east/hapag-lloyd-plans-improvements-42-billion-bid-israels-zim-2026-09-07/",
+    "time": "17:46",
+    "title": "הפאג־לויד מכינה התאמות להצעת 4.2 מיליארד הדולר לרכישת צים",
+    "urgent": false
   }
 ];
