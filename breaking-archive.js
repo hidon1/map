@@ -4074,5 +4074,85 @@ window.BREAKING_ARCHIVE = [
     "time": "17:46",
     "title": "הפאג־לויד מכינה התאמות להצעת 4.2 מיליארד הדולר לרכישת צים",
     "urgent": false
+  },
+  {
+    "articleId": "lists-democrats-raam-2000-20260907",
+    "id": "flash-20260907-1830-democrats-list",
+    "publishedAt": "2026-09-07T18:30:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/rjarvl200fg",
+    "time": "18:30",
+    "title": "מפלגת הדמוקרטים הגישה את רשימתה לוועדת הבחירות",
+    "urgent": false
+  },
+  {
+    "articleId": "lists-democrats-raam-2000-20260907",
+    "id": "flash-20260907-1849-raam-list",
+    "publishedAt": "2026-09-07T18:49:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/hj8oo8nume",
+    "time": "18:49",
+    "title": "רע״ם הגישה את רשימתה לכנסת",
+    "urgent": false
+  },
+  {
+    "articleId": "bit-payment-outage-2000-20260907",
+    "id": "flash-20260907-1901-bit-outage",
+    "publishedAt": "2026-09-07T19:01:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/r1tvcindml",
+    "time": "19:01",
+    "title": "תקלה ארצית דווחה בשירות התשלומים bit",
+    "urgent": false
+  },
+  {
+    "articleId": "michael-biton-blue-white-exit-2000-20260907",
+    "id": "flash-20260907-1902-michael-biton-exit",
+    "publishedAt": "2026-09-07T19:02:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/sjlhkv2dgx",
+    "time": "19:02",
+    "title": "מיכאל ביטון הודיע שלא יתמודד ברשימת כחול לבן",
+    "urgent": false
+  },
+  {
+    "articleId": "likud-reservations-court-2000-20260907",
+    "id": "flash-20260907-1910-likud-court-deadline",
+    "publishedAt": "2026-09-07T19:10:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/Ske11MDn00fl",
+    "time": "19:10",
+    "title": "בית הדין של הליכוד דן בעתירות לפני סגירת הרשימה",
+    "urgent": false
+  },
+  {
+    "articleId": "elector-conditional-order-2000-20260907",
+    "id": "flash-20260907-1920-elector-order",
+    "publishedAt": "2026-09-07T19:20:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/rk8dxwh00zg",
+    "time": "19:20",
+    "title": "בג״ץ הוציא צו על תנאי בעניין העברת מידע על מצביעים בזמן אמת",
+    "urgent": true
+  },
+  {
+    "articleId": "nahumi-yafe-haredi-public-2000-20260907",
+    "id": "flash-20260907-1926-nahumi-yafe",
+    "publishedAt": "2026-09-07T19:26:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/haredim-news/dr-naomi-yafe-joins-haredi-public-party-knesset",
+    "time": "19:26",
+    "title": "ד״ר נחומי יפה הצטרפה לרשימת הציבור החרדי לכנסת",
+    "urgent": false
+  },
+  {
+    "articleId": "gaza-bomb-planters-2000-20260907",
+    "id": "flash-20260907-1946-gaza-bomb-planters",
+    "publishedAt": "2026-09-07T19:46:00+03:00",
+    "source": "ynet",
+    "sourceUrl": "https://www.ynet.co.il/news/article/r1zqfp2ufx",
+    "time": "19:46",
+    "title": "צה״ל: שני מחבלים שזוהו מניחים מטען ברצועה חוסלו",
+    "urgent": true
   }
 ];
