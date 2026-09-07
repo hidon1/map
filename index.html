@@ -754,6 +754,9 @@
     .poll-source-tab.average { border-color: color-mix(in srgb, #d4a23b 55%, var(--line)); }
     .poll-source-tab.average .poll-source-icon { color: #1b2a3f; background: linear-gradient(145deg, #f8dd8b, #e7ac35); }
     .poll-source-tab.average.active { border-color: #d4a23b; color: #4d3812; background: color-mix(in srgb, #fff4cf 74%, var(--paper)); }
+    .poll-source-tab.latest { position: relative; padding-top: 15px; border-color: color-mix(in srgb, var(--green) 55%, var(--line)); }
+    .poll-source-tab.latest::after { content: "החדש ביותר"; position: absolute; top: 4px; left: 7px; border-radius: 999px; padding: 1px 6px; color: #fff; background: var(--green); font-size: .46rem; font-weight: 900; letter-spacing: .01em; }
+    .poll-source-tab.latest.active { border-color: var(--green); box-shadow: 0 8px 24px color-mix(in srgb, var(--green) 24%, transparent); }
     .polls-content { padding: 14px clamp(16px, 3vw, 30px) 30px; }
     .poll-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 11px; }
     .poll-meta-main h3 { margin: 0 0 3px; font: 900 clamp(1.25rem, 2.3vw, 1.85rem)/1.08 "Noto Serif Hebrew", serif; }
@@ -1973,7 +1976,7 @@
     }
 
     function renderNewsroomPulse() {
-      const polls = validPolls();
+      const polls = [...validPolls()].sort((a,b) => String(b.publishedDate || b.date).localeCompare(String(a.publishedDate || a.date)));
       const cards = [
         { icon:"●", label:"כתבות חדשות עכשיו", value:(NEWS_FEED.articles || []).length, color:"#e02b3b" },
         { icon:"¶", label:"ניתוחים וכתבות עומק", value:(NEWS_FEED.deepDives || []).length + deskStories().length, color:"#1580d8" },
@@ -2137,8 +2140,9 @@
       if (!customPollSelectionReady) { polls.forEach(poll => customPollIds.add(poll.id)); customPollSelectionReady = true; }
       const average = buildPollAverage(polls), selected = polls.filter(poll => customPollIds.has(poll.id));
       const custom = buildPollAverage(selected, { id:"custom-average", source:"ממוצע לפי בחירה", shortSource:"בחירה", isCustom:true }) || { id:"custom-average", source:"ממוצע לפי בחירה", shortSource:"בחירה", isAverage:true, isCustom:true, pollCount:0 };
-      const tabs = [average, custom, ...polls].filter(Boolean);
-      $("pollSourceTabs").innerHTML = `<div class="poll-tabs-intro"><strong>כל הסקרים במקום אחד</strong><span>${polls.length} סקרים אחרונים · אפשר לבחור מקור בודד או לבנות ממוצע אישי</span></div><div class="poll-tab-grid">${tabs.map(poll => `<button class="poll-source-tab ${poll.isAverage ? "average" : ""} ${poll.isCustom ? "custom" : ""} ${poll.id === activeId ? "active" : ""}" data-poll-id="${escapeHtml(poll.id)}"><span class="poll-source-icon">${poll.isCustom ? "✓" : poll.isAverage ? "∑" : escapeHtml(String(poll.shortSource || "•").length <= 3 ? poll.shortSource : initials(poll.shortSource))}</span><span class="poll-source-copy"><strong>${escapeHtml(poll.source)}</strong><small>${poll.isAverage ? `${poll.pollCount} סקרים בחישוב` : pollDateText(poll.date)}</small></span></button>`).join("")}</div><div class="custom-average-builder ${activeId === "custom-average" ? "open" : ""}" id="customAverageBuilder"><div class="custom-builder-head"><strong>בחרו אילו סקרים ייכנסו לממוצע</strong><span>המנדטים יעוגלו אוטומטית לסכום מדויק של 120</span></div><div class="custom-poll-choices">${polls.map(poll => `<label class="custom-poll-choice"><input type="checkbox" data-custom-poll="${escapeHtml(poll.id)}" ${customPollIds.has(poll.id) ? "checked" : ""}><span>${escapeHtml(poll.source)}</span></label>`).join("")}</div><div class="custom-builder-actions"><button class="custom-action primary" id="applyCustomAverage">חשב ממוצע מהנבחרים</button><button class="custom-action" id="selectAllPolls">בחר הכול</button><button class="custom-action" id="clearPollSelection">נקה בחירה</button></div></div>`;
+      const latestId = polls[0]?.id;
+      const tabs = [...polls, average, custom].filter(Boolean);
+      $("pollSourceTabs").innerHTML = `<div class="poll-tabs-intro"><strong>הסקרים המאומתים — החדש קודם</strong><span>${polls.length} סקרים מלאים של 120 מושבים · תאריך פרסום ועבודת שדה מוצגים בנפרד</span></div><div class="poll-tab-grid">${tabs.map(poll => `<button class="poll-source-tab ${poll.id === latestId ? "latest" : ""} ${poll.isAverage ? "average" : ""} ${poll.isCustom ? "custom" : ""} ${poll.id === activeId ? "active" : ""}" data-poll-id="${escapeHtml(poll.id)}"><span class="poll-source-icon">${poll.isCustom ? "✓" : poll.isAverage ? "∑" : escapeHtml(String(poll.shortSource || "•").length <= 3 ? poll.shortSource : initials(poll.shortSource))}</span><span class="poll-source-copy"><strong>${escapeHtml(poll.source)}</strong><small>${poll.isAverage ? `${poll.pollCount} סקרים בחישוב` : pollDateText(poll.date)}</small></span></button>`).join("")}</div><div class="custom-average-builder ${activeId === "custom-average" ? "open" : ""}" id="customAverageBuilder"><div class="custom-builder-head"><strong>בחרו אילו סקרים ייכנסו לממוצע</strong><span>המנדטים יעוגלו אוטומטית לסכום מדויק של 120</span></div><div class="custom-poll-choices">${polls.map(poll => `<label class="custom-poll-choice"><input type="checkbox" data-custom-poll="${escapeHtml(poll.id)}" ${customPollIds.has(poll.id) ? "checked" : ""}><span>${escapeHtml(poll.source)}</span></label>`).join("")}</div><div class="custom-builder-actions"><button class="custom-action primary" id="applyCustomAverage">חשב ממוצע מהנבחרים</button><button class="custom-action" id="selectAllPolls">בחר הכול</button><button class="custom-action" id="clearPollSelection">נקה בחירה</button></div></div>`;
       $("pollSourceTabs").querySelectorAll("[data-poll-id]").forEach(button => button.onclick = () => renderPoll(button.dataset.pollId));
       $("pollSourceTabs").querySelectorAll("[data-custom-poll]").forEach(input => input.onchange = () => input.checked ? customPollIds.add(input.dataset.customPoll) : customPollIds.delete(input.dataset.customPoll));
       $("selectAllPolls").onclick = () => { customPollIds = new Set(polls.map(poll => poll.id)); renderPoll("custom-average"); };
@@ -2233,7 +2237,8 @@
       updateElectionCountdown();
     }
     function openPolls() {
-      $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); toggleDrawer(false); renderPoll("average");
+      const latest = [...validPolls()].sort((a,b) => String(b.publishedDate || b.date).localeCompare(String(a.publishedDate || a.date)))[0];
+      $("searchLayer").classList.remove("open"); $("articleLayer").classList.remove("open"); toggleDrawer(false); renderPoll(latest?.id || "average");
       $("pollsLayer").classList.add("open"); document.body.classList.add("modal-open"); setTimeout(() => $("pollsClose").focus(), 30);
     }
     function renderVideos() {
