@@ -3915,5 +3915,64 @@ window.BREAKING_ARCHIVE = [
     "time": "05:26",
     "title": "טייוואן מציגה את תעשיית השבבים ככלי לשותפות עם ארה״ב ואירופה",
     "urgent": false
+  },
+  {
+    "articleId": "guardians-walkoff-0900-20260907",
+    "id": "flash-20260906-2350-guardians-walkoff",
+    "publishedAt": "2026-09-06T23:50:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/baseball/guardians-again-notch-walk-off-win-over-tigers--flm-2026-09-06/",
+    "time": "23:50",
+    "title": "קליבלנד ניצחה 2:3 את דטרויט בווקאוף ועלתה למקום הוויילד־קארד האחרון",
+    "urgent": false
+  },
+  {
+    "articleId": "asia-tech-markets-0900-20260907",
+    "id": "flash-20260907-0406-asia-tech-markets",
+    "publishedAt": "2026-09-07T04:06:00+03:00",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-07/",
+    "time": "04:06",
+    "title": "מניות השבבים הובילו את העליות באסיה; ניקיי עלה 2.2% וקוספי 3.1%",
+    "urgent": false
+  },
+  {
+    "articleId": "gaza-ied-response-0900-20260907",
+    "id": "flash-20260907-0736-gaza-ied-response",
+    "publishedAt": "2026-09-07T07:36:00+03:00",
+    "source": "כיכר השבת · הודעת צה״ל",
+    "sourceUrl": "https://www.kikar.co.il/security-news/idf-strikes-gaza-hamas-ceasefire-violation",
+    "time": "07:36",
+    "title": "כלי הנדסי נפגע ממטען בצפון הרצועה; צה״ל תקף תשתיות חמאס",
+    "urgent": true
+  },
+  {
+    "articleId": "degel-paper-gafni-maklev-0900-20260907",
+    "id": "flash-20260907-0747-degel-paper-response",
+    "publishedAt": "2026-09-07T07:47:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/haredim-news/degel-hatorah-responds-gafni-maklev-dismissal",
+    "time": "07:47",
+    "title": "ביטאון דגל התורה: הדחת גפני ומקלב אינה הבעת אי־אמון",
+    "urgent": false
+  },
+  {
+    "articleId": "hadassah-karlebach-0900-20260907",
+    "id": "flash-20260907-0759-hadassah-karlebach",
+    "publishedAt": "2026-09-07T07:59:00+03:00",
+    "source": "כיכר השבת",
+    "sourceUrl": "https://www.kikar.co.il/haredim-news/hadassah-karlebach-holocaust-rescuer",
+    "time": "07:59",
+    "title": "בגיל 99 נפטרה הדסה קרליבך, שסייעה להצלת מאות ילדים יהודים בשואה",
+    "urgent": false
+  },
+  {
+    "id": "flash-20260907-0824-deir-al-zahrani-evacuation",
+    "publishedAt": "2026-09-07T08:24:00+03:00",
+    "source": "כיכר השבת · מבזק",
+    "sourceUrl": "https://www.kikar.co.il/scoop-news",
+    "time": "08:24",
+    "title": "צה״ל פרסם הנחיות פינוי לכפר דיר א־זהראני בדרום לבנון",
+    "urgent": true
   }
 ];
